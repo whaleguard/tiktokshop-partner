@@ -4707,6 +4707,40 @@ video.kjv{width:100%;height:100%;object-fit:cover;display:block;background:#0b0b
  .hero-actions{margin-top:clamp(18px,3vh,30px)}
  .hero-actions .btn{min-height:52px}
 }
+
+/* ---------- 3D store section & market card links ---------- */
+.market-photo-link{display:block;color:inherit;text-decoration:none}
+.market-photo-link .market-photo img{transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.market-photo-link:hover .market-photo img{transform:scale(1.04)}
+.market-photo{position:relative}
+.market-3d{position:absolute;right:20px;bottom:20px;display:inline-flex;align-items:center;gap:8px;padding:10px 14px;background:rgba(8,8,8,.78);color:#fff;font-size:13px;font-weight:800;letter-spacing:.02em;border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);transition:background .25s}
+.market-3d::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 10px var(--cyan)}
+.market-photo-link:hover .market-3d{background:var(--red)}
+.market-tour-link{display:inline-flex;align-items:center;gap:8px;margin-top:22px;padding-bottom:3px;color:var(--text);font-size:15px;font-weight:800;text-decoration:none;border-bottom:2px solid var(--red)}
+.market-tour-link b{transition:transform .25s}
+.market-tour-link:hover b{transform:translateX(4px)}
+.tour-section{background:#080808;color:#fff;padding:var(--section-space) 0;overflow:hidden}
+.tour-inner{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(32px,5vw,88px);align-items:center}
+.tour-section .eyebrow{color:var(--cyan)}
+.tour-section h2{white-space:pre-line;font-size:clamp(36px,4.6vw,72px);font-weight:900;line-height:1.08;letter-spacing:-.06em;margin:0 0 26px}
+.tour-lead{color:#c9c9c9;font-size:clamp(16px,1.25vw,19px);line-height:1.75;max-width:560px;margin:0}
+.tour-points{list-style:none;margin:34px 0 0;padding:0;border-top:1px solid #2a2a2a}
+.tour-points li{display:grid;grid-template-columns:44px 1fr;gap:12px;padding:16px 0;border-bottom:1px solid #2a2a2a;font-size:15px;line-height:1.6;color:#e6e6e6}
+.tour-points b{color:var(--red);font-weight:900;letter-spacing:.04em}
+.tour-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.tour-actions .btn{min-height:54px;padding-inline:28px}
+.btn.tour-outline{background:transparent;color:#fff;border-color:#5a5a5a}
+.btn.tour-outline:hover{background:#fff;color:#080808;border-color:#fff}
+.tour-media{position:relative;display:block;aspect-ratio:16/9;overflow:hidden;background:#111;border:1px solid #2a2a2a;color:#fff;text-decoration:none}
+.tour-media video{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.tour-media:hover video{transform:scale(1.03)}
+.tour-badge{position:absolute;left:18px;top:18px;display:inline-flex;align-items:center;gap:8px;padding:8px 12px;background:var(--red);color:#fff;font-size:12px;font-weight:900;letter-spacing:.12em}
+.tour-badge i{width:7px;height:7px;border-radius:50%;background:#fff;animation:tourPulse 1.4s infinite}
+@keyframes tourPulse{50%{opacity:.25}}
+.tour-play{position:absolute;right:18px;bottom:18px;padding:12px 18px;background:#fff;color:#080808;font-size:14px;font-weight:800}
+@media (max-width:1023px){.tour-inner{grid-template-columns:1fr}.tour-media{order:-1}}
+@media (max-width:600px){.tour-actions .btn{flex:1 1 140px}.market-3d{right:12px;bottom:12px;font-size:12px;padding:8px 11px}.tour-points li{font-size:14px;grid-template-columns:36px 1fr}}
+@media (prefers-reduced-motion:reduce){.tour-badge i{animation:none}}
 </style>
 <script>new MutationObserver(()=>{for(const c of document.querySelectorAll('.stack td:not([data-label])')){let i=0,p=c;while(p=p.previousElementSibling)i+=p.colSpan;c.dataset.label=c.closest('table').rows[0].cells[i]?.textContent||''}}).observe(document,{childList:true,subtree:true})</script>
 </head>
@@ -4898,12 +4932,15 @@ video.kjv{width:100%;height:100%;object-fit:cover;display:block;background:#0b0b
         <div class="market-grid">
 
           <article class="market-panel">
+            <a class="market-photo-link" href="tour.html#tokyo" aria-label="3D Tokyo store">
             <figure class="market-photo">
               <img src="img/tokyo.jpg" alt="Tokyo Shibuya"
                    loading="lazy">
               <span class="market-big-code">JP</span>
               <span class="market-photo-label">TOKYO / JAPAN</span>
+              <span class="market-3d" data-i="mk_3d_badge">3D 매장 입장</span>
             </figure>
+            </a>
             <div class="market-content">
               <div class="market-title-row">
                 <h3 data-i="mk_jp">일본 시장</h3>
@@ -4915,16 +4952,20 @@ video.kjv{width:100%;height:100%;object-fit:cover;display:block;background:#0b0b
                 라이브 및 숏폼 커머스 운영.
               </p>
               <div id="mkJp" class="market-detail"></div>
+              <a class="market-tour-link" href="tour.html#tokyo"><span data-i="mk_tour_jp">도쿄점 3D 매장 둘러보기</span> <b aria-hidden="true">→</b></a>
             </div>
           </article>
 
           <article class="market-panel">
+            <a class="market-photo-link" href="tour.html#seoul" aria-label="3D Seoul store">
             <figure class="market-photo">
               <img src="img/seoul.jpg" alt="Seoul Seongsu"
                    loading="lazy">
               <span class="market-big-code">KR</span>
               <span class="market-photo-label">SEOUL / KOREA</span>
+              <span class="market-3d" data-i="mk_3d_badge">3D 매장 입장</span>
             </figure>
+            </a>
             <div class="market-content">
               <div class="market-title-row">
                 <h3 data-i="mk_kr">한국 시장</h3>
@@ -4936,6 +4977,7 @@ video.kjv{width:100%;height:100%;object-fit:cover;display:block;background:#0b0b
                 크로스보더 커머스 지원.
               </p>
               <div id="mkKr" class="market-detail"></div>
+              <a class="market-tour-link" href="tour.html#seoul"><span data-i="mk_tour_kr">서울점 3D 매장 둘러보기</span> <b aria-hidden="true">→</b></a>
             </div>
           </article>
 
@@ -4976,6 +5018,32 @@ video.kjv{width:100%;height:100%;object-fit:cover;display:block;background:#0b0b
           </a>
         </div>
 
+      </div>
+    </section>
+
+
+    <!-- 3D STORE -->
+    <section class="tour-section" id="tour">
+      <div class="wrap tour-inner">
+        <div class="tour-copy">
+          <span class="eyebrow">3D VIRTUAL STORE</span>
+          <h2 data-i="tr_t">매장에 오지 않아도,<br>매장을 걷습니다.</h2>
+          <p class="tour-lead" data-i="tr_s">서울·도쿄 쇼룸을 3D로 그대로 옮겼습니다. 매장을 걸어 다니며 진열대의 상품을 눌러 바로 구매하고, 유리 부스 안 라이브 방송까지 볼 수 있습니다.</p>
+          <ol class="tour-points">
+            <li><b>01</b><span data-i="tr_p1">서울·도쿄 각 3개 층 — K-뷰티, 라이프스타일, 크리에이터 스튜디오</span></li>
+            <li><b>02</b><span data-i="tr_p2">매대 위 상품을 누르면 옵션 선택 후 바로 구매</span></li>
+            <li><b>03</b><span data-i="tr_p3">라이브 부스에서 호스트 방송이 실제처럼 진행</span></li>
+          </ol>
+          <div class="tour-actions">
+            <a class="btn rs" href="tour.html#seoul" data-i="tr_seoul">서울점 입장</a>
+            <a class="btn tour-outline" href="tour.html#tokyo" data-i="tr_tokyo">도쿄점 입장</a>
+          </div>
+        </div>
+        <a class="tour-media" href="tour.html#seoul" aria-label="3D store">
+          <video class="kjv" src="video/tour.mp4" poster="img/tour/shot-seoul.jpg" autoplay muted loop playsinline preload="metadata" aria-hidden="true"></video>
+          <span class="tour-badge"><i></i>3D · LIVE</span>
+          <span class="tour-play" data-i="tr_play">둘러보기 시작</span>
+        </a>
       </div>
     </section>
 
@@ -5512,6 +5580,17 @@ ad_admins_h:["여기 등록된 이메일로 가입·로그인한 사람만 관�
 ad_addadm:["관리자 추가","Add admin","添加管理员","管理者を追加","Thêm quản trị"],ad_me:["나","You","我","自分","Bạn"],
 ad_refresh:["새로고침","Refresh","刷新","更新","Làm mới"],
 nav_mall:["TikTok Shop 몰", "TikTok Shop mall", "TikTok Shop 商城", "TikTok Shop モール", "TikTok Shop Mall"],
+mk_3d_badge:["3D 매장 입장", "Enter 3D store", "进入3D门店", "3D店舗へ", "Vào cửa hàng 3D"],
+mk_tour_jp:["도쿄점 3D 매장 둘러보기", "Walk the Tokyo 3D store", "漫游东京3D门店", "東京店を3Dで見る", "Tham quan cửa hàng 3D Tokyo"],
+mk_tour_kr:["서울점 3D 매장 둘러보기", "Walk the Seoul 3D store", "漫游首尔3D门店", "ソウル店を3Dで見る", "Tham quan cửa hàng 3D Seoul"],
+tr_t:["매장에 오지 않아도,\n매장을 걷습니다.", "Walk the store\nwithout being there.", "无需到店，\n也能逛遍门店。", "店に来なくても、\n店を歩ける。", "Dạo cửa hàng\nmà không cần đến tận nơi."],
+tr_s:["서울·도쿄 쇼룸을 3D로 그대로 옮겼습니다. 매장을 걸어 다니며 진열대의 상품을 눌러 바로 구매하고, 유리 부스 안 라이브 방송까지 볼 수 있습니다.", "Our Seoul and Tokyo showrooms, rebuilt in 3D. Walk the floors, tap any product on the shelf to buy it, and watch live broadcasts inside the glass studio booths.", "首尔、东京展厅原样搬进3D。在店内自由走动，点击货架商品即可购买，还能观看玻璃直播间里的直播。", "ソウル・東京のショールームを3Dでそのまま再現。店内を歩き、棚の商品をタップしてすぐ購入、ガラスブースのライブ配信も見られます。", "Showroom Seoul và Tokyo được tái hiện bằng 3D. Dạo quanh cửa hàng, chạm vào sản phẩm trên kệ để mua ngay và xem livestream trong các phòng kính."],
+tr_p1:["서울·도쿄 각 3개 층 — K-뷰티, 라이프스타일, 크리에이터 스튜디오", "Three floors each in Seoul and Tokyo — K-beauty, lifestyle, creator studios", "首尔、东京各三层——韩妆、生活方式、达人直播间", "ソウル・東京各3フロア — Kビューティー、ライフスタイル、クリエイタースタジオ", "Mỗi cửa hàng 3 tầng — K-beauty, phong cách sống, studio nhà sáng tạo"],
+tr_p2:["매대 위 상품을 누르면 옵션 선택 후 바로 구매", "Tap a product on the shelf, pick an option, buy instantly", "点击货架商品，选择规格后立即购买", "棚の商品をタップ、オプションを選んですぐ購入", "Chạm sản phẩm trên kệ, chọn tùy chọn và mua ngay"],
+tr_p3:["라이브 부스에서 호스트 방송이 실제처럼 진행", "Hosts broadcast live from glass studio booths", "主播在玻璃直播间里实时直播", "ガラスブースでホストがライブ配信", "Người dẫn phát trực tiếp từ phòng kính"],
+tr_seoul:["서울점 입장", "Enter Seoul", "进入首尔店", "ソウル店へ", "Vào Seoul"],
+tr_tokyo:["도쿄점 입장", "Enter Tokyo", "进入东京店", "東京店へ", "Vào Tokyo"],
+tr_play:["둘러보기 시작", "Start the tour", "开始漫游", "ツアーを始める", "Bắt đầu tham quan"],
 nav_tour:["3D 매장", "3D store", "3D 门店", "3D ストア", "Cửa hàng 3D"],
 cta_mall:["TikTok Shop 몰 가기 →", "Go to TikTok Shop mall →", "进入 TikTok Shop 商城 →", "TikTok Shop モールへ →", "Vào TikTok Shop Mall →"],
 ad_ord:["주문 관리", "Orders", "订单管理", "注文管理", "Đơn hàng"],

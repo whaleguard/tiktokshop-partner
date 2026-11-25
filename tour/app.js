@@ -505,8 +505,18 @@ async function init() {
   document.querySelectorAll('[data-enter]').forEach(b => { b.disabled = false; b.onclick = () => enter(b.dataset.enter); });
   $('#introLoading').hidden = true;
   const m = location.hash.match(/^#(seoul|tokyo)(?:-(\d))?/);
-  if (m) { level = +(m[2] || 1); }
   loop();
-  window.__tour = { player, goFloor, products, get level() { return level; }, get store() { return storeId; }, openProduct, renderer, enter, dbg: () => ({ walkTarget, hit: lastHit }), pickables: () => pickables, camera };
+  addEventListener('hashchange', async () => {
+    const h = location.hash.match(/^#(seoul|tokyo)(?:-(\d))?/); if (!h) return;
+    const lv = Math.min(3, Math.max(1, +(h[2] || 1)));
+    if (h[1] === storeId && lv === level && started) return;
+    if (!started) await enter(h[1]); else if (h[1] !== storeId) await goFloor(1, h[1]);
+    if (lv !== level) await goFloor(lv);
+  });
+  if (m) { // deep link from the homepage: walk straight into that store
+    await enter(m[1]);
+    const lv = +(m[2] || 1); if (lv > 1 && lv <= 3) { await goFloor(lv); }
+  }
+  window.__tour = { videoEls, player, goFloor, products, get level() { return level; }, get store() { return storeId; }, openProduct, renderer, enter, dbg: () => ({ walkTarget, hit: lastHit }), pickables: () => pickables, camera };
 }
 init();
