@@ -241,7 +241,7 @@ const player = { x: 0, z: 7, yaw: 0, pitch: .07, vx: 0, vz: 0, eye: 1.62 };
 let walkTarget = null;
 function spawn(floor, from) {
   let s = floor.spawn || { pos: [0, 1.6, 7], look: 0 };
-  if (from === 'portal') { const st = portals.find(p => p.f.type === 'elevator') || portals[0]; if (st) { const a = (st.f.rot || 0) * Math.PI / 180; s = { pos: [st.f.pos[0] + Math.sin(a) * 2.6, 1.6, st.f.pos[2] + Math.cos(a) * 2.6], look: 180 }; } }
+  if (from === 'portal') { const st = portals.find(p => p.f.type === 'elevator') || portals[0]; if (st) { const a = (st.f.rot || 0) * Math.PI / 180; const px = st.f.pos[0] + Math.sin(a) * 2.6, pz = st.f.pos[2] + Math.cos(a) * 2.6; s = { pos: [px, 1.6, pz], look: Math.atan2(0 - px, -(2 - pz)) * 180 / Math.PI }; } }
   player.x = s.pos[0]; player.z = s.pos[2];
   // spec "look" is degrees; 0 means looking into the store (toward -z)
   player.yaw = ((s.look || 0) * Math.PI / 180);
@@ -397,7 +397,7 @@ map.addEventListener('click', e => {
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const pname = p => (lang === 'ko' && p.dbName) || L(p.name);
 function renderHud(store, floor) {
-  $('#storeName').textContent = L(store.name);
+  $('#storeName').textContent = L(store.name).replace(/^TikTok Shop\s*/, '');
   $('#floorTitle').textContent = `${floor.level}F · ${L(floor.title)}`;
   document.querySelectorAll('[data-store]').forEach(b => b.classList.toggle('on', b.dataset.store === storeId));
   const fl = $('#floors'); fl.innerHTML = store.floors.slice().sort((a, b) => b.level - a.level).map(f => `<button data-level="${f.level}" class="${f.level === level ? 'on' : ''}"><b>${f.level}F</b><span>${esc(L(f.title))}</span></button>`).join('');

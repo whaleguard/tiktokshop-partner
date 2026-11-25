@@ -19,7 +19,7 @@ const S = {
   change_floor: ['다른 층으로 이동', 'Go to another floor', '前往其他楼层', '別のフロアへ', 'Sang tầng khác'],
   take_elevator: ['엘리베이터 타기', 'Take the elevator', '乘坐电梯', 'エレベーターに乗る', 'Đi thang máy'],
   map: ['지도', 'Map', '地图', 'マップ', 'Bản đồ'],
-  mall: ['온라인 몰', 'Online mall', '线上商城', 'オンラインモール', 'Cửa hàng online'],
+  mall: ['온라인 몰', 'Online mall', '线上商城', 'モール', 'Mua sắm'],
   cart: ['장바구니', 'Cart', '购物车', 'カート', 'Giỏ hàng'],
   home: ['홈', 'Home', '首页', 'ホーム', 'Trang chủ'],
   close: ['닫기', 'Close', '关闭', '閉じる', 'Đóng'],
