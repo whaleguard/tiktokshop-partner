@@ -1,0 +1,935 @@
+<!-- ======================================================
+     01. #aud — 신청 대상 4종
+     ====================================================== -->
+
+<!-- 브랜드 -->
+
+<article class="aud-card">
+  <figure class="aud-photo">
+    <img src="img/meeting.jpg"
+         alt="Brand partnership"
+         loading="lazy">
+    <span class="aud-index">01 / BRAND</span>
+  </figure>
+
+  <div class="aud-content">
+    <h3>${title}</h3>
+    <p>${description}</p>
+
+    <a class="aud-link"
+       href="#apply"
+       data-tab="brand">
+      ${applyLabel}
+    </a>
+  </div>
+</article>
+
+
+<!-- 크리에이터 -->
+
+<article class="aud-card">
+  <figure class="aud-photo">
+    <img src="img/creator.jpg"
+         alt="Creator partnership"
+         loading="lazy">
+    <span class="aud-index">02 / CREATOR</span>
+  </figure>
+
+  <div class="aud-content">
+    <h3>${title}</h3>
+    <p>${description}</p>
+
+    <a class="aud-link"
+       href="#apply"
+       data-tab="creator">
+      ${applyLabel}
+    </a>
+  </div>
+</article>
+
+
+<!-- 샵 입점 -->
+
+<article class="aud-card">
+  <figure class="aud-photo">
+    <img src="img/seoul.jpg"
+         alt="Shop partnership"
+         loading="lazy">
+    <span class="aud-index">03 / SELLER</span>
+  </figure>
+
+  <div class="aud-content">
+    <h3>${title}</h3>
+    <p>${description}</p>
+
+    <a class="aud-link"
+       href="#apply"
+       data-tab="shop">
+      ${applyLabel}
+    </a>
+  </div>
+</article>
+
+
+<!-- 구매 요청 -->
+
+<article class="aud-card">
+  <figure class="aud-photo">
+    <img src="img/logistics.jpg"
+         alt="Product sourcing and logistics"
+         loading="lazy">
+    <span class="aud-index">04 / BUYER</span>
+  </figure>
+
+  <div class="aud-content">
+    <h3>${title}</h3>
+    <p>${description}</p>
+
+    <a class="aud-link"
+       href="#apply"
+       data-tab="buy">
+      ${applyLabel}
+    </a>
+  </div>
+</article>
+
+
+<!-- ======================================================
+     02. #svgrid — 서비스 6종
+     ====================================================== -->
+
+<!-- 01. 브랜드 입점 및 시장 진출 -->
+
+<article class="sv-card">
+  <figure class="sv-photo">
+    <img src="img/meeting.jpg"
+         alt="Brand onboarding"
+         loading="lazy">
+  </figure>
+  <div class="sv-copy">
+    <span class="sv-num">01 /</span>
+    <div>
+      <h3>${title}</h3>
+      <p>${description}</p>
+    </div>
+  </div>
+</article>
+
+
+<!-- 02. TikTok Shop 개설 및 운영 -->
+
+<article class="sv-card">
+  <figure class="sv-photo">
+    <img src="img/tokyo2.jpg"
+         alt="Shop market entry"
+         loading="lazy">
+  </figure>
+  <div class="sv-copy">
+    <span class="sv-num">02 /</span>
+    <div>
+      <h3>${title}</h3>
+      <p>${description}</p>
+    </div>
+  </div>
+</article>
+
+
+<!-- 03. 크리에이터 매칭 -->
+
+<article class="sv-card">
+  <figure class="sv-photo">
+    <img src="img/creator2.jpg"
+         alt="Creator collaboration"
+         loading="lazy">
+  </figure>
+  <div class="sv-copy">
+    <span class="sv-num">03 /</span>
+    <div>
+      <h3>${title}</h3>
+      <p>${description}</p>
+    </div>
+  </div>
+</article>
+
+
+<!-- 04. 라이브커머스 방송 -->
+
+<article class="sv-card">
+  <figure class="sv-photo">
+    <img src="img/hero2.jpg"
+         alt="Live commerce production"
+         loading="lazy">
+  </figure>
+  <div class="sv-copy">
+    <span class="sv-num">04 /</span>
+    <div>
+      <h3>${title}</h3>
+      <p>${description}</p>
+    </div>
+  </div>
+</article>
+
+
+<!-- 05. 상품 소싱 및 물류 -->
+
+<article class="sv-card">
+  <figure class="sv-photo">
+    <img src="img/logistics.jpg"
+         alt="Product sourcing and fulfillment"
+         loading="lazy">
+  </figure>
+  <div class="sv-copy">
+    <span class="sv-num">05 /</span>
+    <div>
+      <h3>${title}</h3>
+      <p>${description}</p>
+    </div>
+  </div>
+</article>
+
+
+<!-- 06. 해외 유통 및 판매 운영 -->
+
+<article class="sv-card">
+  <figure class="sv-photo">
+    <img src="img/seoul2.jpg"
+         alt="Cross-border distribution"
+         loading="lazy">
+  </figure>
+  <div class="sv-copy">
+    <span class="sv-num">06 /</span>
+    <div>
+      <h3>${title}</h3>
+      <p>${description}</p>
+    </div>
+  </div>
+</article>
+
+
+<!-- ======================================================
+     03. #steps — 이용 절차 5단계
+     ====================================================== -->
+
+<article class="step-card">
+  <span class="step-num">01</span>
+  <h3>${steps[0].title}</h3>
+  <p>${steps[0].description}</p>
+</article>
+
+<article class="step-card">
+  <span class="step-num">02</span>
+  <h3>${steps[1].title}</h3>
+  <p>${steps[1].description}</p>
+</article>
+
+<article class="step-card">
+  <span class="step-num">03</span>
+  <h3>${steps[2].title}</h3>
+  <p>${steps[2].description}</p>
+</article>
+
+<article class="step-card">
+  <span class="step-num">04</span>
+  <h3>${steps[3].title}</h3>
+  <p>${steps[3].description}</p>
+</article>
+
+<article class="step-card">
+  <span class="step-num">05</span>
+  <h3>${steps[4].title}</h3>
+  <p>${steps[4].description}</p>
+</article>
+
+
+<!-- ======================================================
+     04. #stList — 스튜디오 특징 4종
+     ====================================================== -->
+
+<article class="st-feature">
+  <span class="st-num">01</span>
+  <h3>${features[0].title}</h3>
+  <p>${features[0].description}</p>
+</article>
+
+<article class="st-feature">
+  <span class="st-num">02</span>
+  <h3>${features[1].title}</h3>
+  <p>${features[1].description}</p>
+</article>
+
+<article class="st-feature">
+  <span class="st-num">03</span>
+  <h3>${features[2].title}</h3>
+  <p>${features[2].description}</p>
+</article>
+
+<article class="st-feature">
+  <span class="st-num">04</span>
+  <h3>${features[3].title}</h3>
+  <p>${features[3].description}</p>
+</article>
+
+
+<!-- ======================================================
+     05. #stRows — 라이브 방송 편성표
+     ====================================================== -->
+
+<!-- 방송 예정 -->
+
+<div class="st-row">
+  <time class="st-time">${time}</time>
+  <strong class="st-title">${title}</strong>
+  <span class="st-day">${day}</span>
+  <span class="st-status">${statusLabel}</span>
+</div>
+
+
+<!-- 실제 방송 중일 때만 on 적용 -->
+
+<div class="st-row on">
+  <time class="st-time">${time}</time>
+  <strong class="st-title">${title}</strong>
+  <span class="st-day">${day}</span>
+  <span class="st-status on">${statusLabel}</span>
+</div>
+
+
+<!-- ======================================================
+     06. #mkJp / #mkKr — 시장 상세 정보
+     ====================================================== -->
+
+<ul>
+  <li>${marketDetail1}</li>
+  <li>${marketDetail2}</li>
+  <li>${marketDetail3}</li>
+  <li>${marketDetail4}</li>
+</ul>
+
+
+<!-- ======================================================
+     07. #catFilters — 상품 카테고리 필터
+     ====================================================== -->
+
+<button type="button"
+        class="filter on"
+        data-cat="${categoryId}"
+        aria-pressed="true">
+  ${categoryName}
+</button>
+
+<button type="button"
+        class="filter"
+        data-cat="${categoryId}"
+        aria-pressed="false">
+  ${categoryName}
+</button>
+
+
+<!-- ======================================================
+     08. #prods — 상품 카드
+     ====================================================== -->
+
+<!--
+  상품 이미지 예시:
+  img/p-serum.jpg
+  img/p-snack.jpg
+  img/p-knit.jpg
+  img/p-earbuds.jpg
+
+  통화 기호:
+  일본 엔화 ¥
+  한국 원화 ₩
+
+  상품 ID / data-pick 외 추가 데이터 속성은
+  기존 클릭 이벤트 코드와 동일하게 유지.
+-->
+
+<article class="prod-card"
+         data-id="${productId}">
+
+  <figure class="prod-photo">
+    <img src="${image}"
+         alt="${productName}"
+         loading="lazy">
+
+    <!-- 샘플 가능한 상품에만 출력 -->
+    <span class="prod-sample">
+      ${sampleAvailableLabel}
+    </span>
+  </figure>
+
+  <div class="prod-body">
+
+    <span class="prod-brand">
+      ${brand}
+    </span>
+
+    <h3 class="prod-name">
+      ${productName}
+    </h3>
+
+    <div class="prod-price">
+      ${currency}${formattedPrice}
+    </div>
+
+    <div class="prod-meta">
+
+      <div>
+        <span>${commissionLabel}</span>
+        <strong class="commission">
+          ${commission}%
+        </strong>
+      </div>
+
+      <div>
+        <span>${moqLabel}</span>
+        <strong>${minimumQuantity}</strong>
+      </div>
+
+      <div>
+        <span>${sampleLabel}</span>
+        <strong>${sampleAvailability}</strong>
+      </div>
+
+    </div>
+
+    <div class="prod-actions">
+
+      <button type="button"
+              class="btn gh sm"
+              data-id="${productId}"
+              data-pick="creator">
+        ${sampleRequestLabel}
+      </button>
+
+      <button type="button"
+              class="btn rs sm"
+              data-id="${productId}"
+              data-pick="buy">
+        ${purchaseQuoteLabel}
+      </button>
+
+    </div>
+
+  </div>
+
+</article>
+
+
+<!-- ======================================================
+     09. #tabs — 신청 유형 탭
+     ====================================================== -->
+
+<button type="button"
+        class="tab on"
+        role="tab"
+        id="tab-brand"
+        data-tab="brand"
+        aria-selected="true"
+        aria-controls="fields">
+  ${brandTabLabel}
+</button>
+
+<button type="button"
+        class="tab"
+        role="tab"
+        id="tab-creator"
+        data-tab="creator"
+        aria-selected="false"
+        aria-controls="fields">
+  ${creatorTabLabel}
+</button>
+
+<button type="button"
+        class="tab"
+        role="tab"
+        id="tab-shop"
+        data-tab="shop"
+        aria-selected="false"
+        aria-controls="fields">
+  ${shopTabLabel}
+</button>
+
+<button type="button"
+        class="tab"
+        role="tab"
+        id="tab-buy"
+        data-tab="buy"
+        aria-selected="false"
+        aria-controls="fields">
+  ${buyTabLabel}
+</button>
+
+<button type="button"
+        class="tab"
+        role="tab"
+        id="tab-studio"
+        data-tab="studio"
+        aria-selected="false"
+        aria-controls="fields">
+  ${studioTabLabel}
+</button>
+
+
+<!-- ======================================================
+     10. #fdesc — 신청 유형 설명
+     ====================================================== -->
+
+<p>${formDescription}</p>
+
+
+<!-- ======================================================
+     11. #fields — 일반 텍스트 필드
+     ====================================================== -->
+
+<div class="fld">
+  <label for="${fieldId}">
+    ${label}<em aria-hidden="true">*</em>
+  </label>
+
+  <input class="inp"
+         id="${fieldId}"
+         name="${fieldName}"
+         type="text"
+         placeholder="${placeholder}"
+         value="${value}"
+         required>
+</div>
+
+
+<!-- 이메일 -->
+
+<div class="fld">
+  <label for="${fieldId}">
+    ${label}<em aria-hidden="true">*</em>
+  </label>
+
+  <input class="inp"
+         id="${fieldId}"
+         name="${fieldName}"
+         type="email"
+         autocomplete="email"
+         placeholder="${placeholder}"
+         value="${value}"
+         required>
+</div>
+
+
+<!-- 연락처 -->
+
+<div class="fld">
+  <label for="${fieldId}">
+    ${label}<em aria-hidden="true">*</em>
+  </label>
+
+  <input class="inp"
+         id="${fieldId}"
+         name="${fieldName}"
+         type="tel"
+         autocomplete="tel"
+         placeholder="${placeholder}"
+         value="${value}"
+         required>
+</div>
+
+
+<!-- 숫자 -->
+
+<div class="fld">
+  <label for="${fieldId}">
+    ${label}
+  </label>
+
+  <input class="inp"
+         id="${fieldId}"
+         name="${fieldName}"
+         type="number"
+         inputmode="numeric"
+         min="${min}"
+         step="${step}"
+         value="${value}"
+         placeholder="${placeholder}">
+</div>
+
+
+<!-- URL -->
+
+<div class="fld full">
+  <label for="${fieldId}">
+    ${label}
+  </label>
+
+  <input class="inp"
+         id="${fieldId}"
+         name="${fieldName}"
+         type="url"
+         inputmode="url"
+         placeholder="${placeholder}"
+         value="${value}">
+</div>
+
+
+<!-- 선택 필드 -->
+
+<div class="fld">
+  <label for="${fieldId}">
+    ${label}<em aria-hidden="true">*</em>
+  </label>
+
+  <select class="inp"
+          id="${fieldId}"
+          name="${fieldName}"
+          required>
+
+    <option value="">
+      ${selectPlaceholder}
+    </option>
+
+    <option value="${optionValue}">
+      ${optionLabel}
+    </option>
+
+  </select>
+</div>
+
+
+<!-- 날짜 -->
+
+<div class="fld">
+  <label for="${fieldId}">
+    ${label}
+  </label>
+
+  <input class="inp"
+         type="date"
+         id="${fieldId}"
+         name="${fieldName}"
+         value="${value}">
+</div>
+
+
+<!-- 체크박스 그룹 -->
+
+<div class="fld full">
+
+  <label id="${fieldId}-label">
+    ${label}
+  </label>
+
+  <div class="checks"
+       role="group"
+       aria-labelledby="${fieldId}-label">
+
+    <label class="check-item">
+      <input type="checkbox"
+             name="${fieldName}"
+             value="${optionValue1}">
+      <span>${optionLabel1}</span>
+    </label>
+
+    <label class="check-item">
+      <input type="checkbox"
+             name="${fieldName}"
+             value="${optionValue2}">
+      <span>${optionLabel2}</span>
+    </label>
+
+    <label class="check-item">
+      <input type="checkbox"
+             name="${fieldName}"
+             value="${optionValue3}">
+      <span>${optionLabel3}</span>
+    </label>
+
+  </div>
+
+</div>
+
+
+<!-- 라디오 그룹 -->
+
+<div class="fld full">
+
+  <label id="${fieldId}-label">
+    ${label}
+  </label>
+
+  <div class="checks"
+       role="radiogroup"
+       aria-labelledby="${fieldId}-label">
+
+    <label class="check-item">
+      <input type="radio"
+             name="${fieldName}"
+             value="${optionValue1}">
+      <span>${optionLabel1}</span>
+    </label>
+
+    <label class="check-item">
+      <input type="radio"
+             name="${fieldName}"
+             value="${optionValue2}">
+      <span>${optionLabel2}</span>
+    </label>
+
+  </div>
+
+</div>
+
+
+<!-- 상세 내용 -->
+
+<div class="fld full">
+
+  <label for="${fieldId}">
+    ${label}
+  </label>
+
+  <textarea class="inp"
+            id="${fieldId}"
+            name="${fieldName}"
+            rows="5"
+            placeholder="${placeholder}">${value}</textarea>
+
+  <p class="note">${fieldNote}</p>
+
+</div>
+
+
+<!-- 파일 첨부 -->
+
+<div class="fld full">
+
+  <label for="${fieldId}">
+    ${label}
+  </label>
+
+  <input class="inp"
+         id="${fieldId}"
+         name="${fieldName}"
+         type="file"
+         accept="${acceptTypes}">
+
+  <p class="note">${fileNote}</p>
+
+</div>
+
+
+<!-- 입력 오류 발생 시 -->
+
+<div class="fld">
+
+  <label for="${fieldId}">
+    ${label}
+  </label>
+
+  <input class="inp bad"
+         id="${fieldId}"
+         name="${fieldName}"
+         type="text"
+         value="${value}"
+         aria-invalid="true"
+         aria-describedby="${fieldId}-error">
+
+  <p class="msg er on"
+     id="${fieldId}-error">
+    ${errorMessage}
+  </p>
+
+</div>
+
+
+<!-- ======================================================
+     12. #contactBox — 담당자 연락처
+     ====================================================== -->
+
+<div>
+  <strong>${contactTitle}</strong>
+</div>
+
+<div>
+  ${emailLabel} :
+  <a href="mailto:${contactEmail}">
+    ${contactEmail}
+  </a>
+</div>
+
+<div>
+  ${phoneLabel} :
+  <a href="tel:${contactPhone}">
+    ${contactPhone}
+  </a>
+</div>
+
+<div>
+  ${businessHoursLabel} :
+  ${businessHours}
+</div>
+
+
+<!-- ======================================================
+     13. #myBox — 신청 조회 결과
+     ====================================================== -->
+
+<div class="tbl">
+
+  <table class="stack">
+
+    <thead>
+      <tr>
+        <th scope="col">${idLabel}</th>
+        <th scope="col">${typeLabel}</th>
+        <th scope="col">${nameLabel}</th>
+        <th scope="col">${dateLabel}</th>
+        <th scope="col">${statusLabel}</th>
+        <th scope="col">${updatedLabel}</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+      <tr>
+
+        <td data-label="${idLabel}">
+          <strong>${applicationId}</strong>
+        </td>
+
+        <td data-label="${typeLabel}">
+          ${applicationType}
+        </td>
+
+        <td data-label="${nameLabel}">
+          ${applicantName}
+        </td>
+
+        <td data-label="${dateLabel}">
+          ${createdAt}
+        </td>
+
+        <td data-label="${statusLabel}">
+          <span class="st-b s-${statusKey}">
+            ${translatedStatus}
+          </span>
+        </td>
+
+        <td data-label="${updatedLabel}">
+          ${updatedAt}
+        </td>
+
+      </tr>
+
+    </tbody>
+
+  </table>
+
+</div>
+
+<p class="note">
+  ${lookupResultNote}
+</p>
+
+
+<!-- 조회 결과 없음 -->
+
+<div class="empty">
+  <h3>${emptyTitle}</h3>
+  <p>${emptyDescription}</p>
+</div>
+
+
+<!-- ======================================================
+     14. #faqList — FAQ
+     ====================================================== -->
+
+<details>
+  <summary>${question}</summary>
+  <p>${answer}</p>
+</details>
+
+
+<!-- ======================================================
+     15. 신청 성공 / 오류 메시지
+     ====================================================== -->
+
+<!-- 성공 시 기존 #fmsg의 클래스와 내용 변경 -->
+
+<div id="fmsg"
+     class="msg ok on"
+     role="status"
+     aria-live="polite">
+
+  <strong>${successTitle}</strong>
+  <p>${successDescription}</p>
+  <p>${idLabel} : ${applicationId}</p>
+
+</div>
+
+
+<!-- 오류 시 -->
+
+<div id="fmsg"
+     class="msg er on"
+     role="alert">
+
+  <strong>${errorTitle}</strong>
+  <p>${errorDescription}</p>
+
+</div>
+
+
+<!-- ======================================================
+     16. 관리자 상태 배지
+     ====================================================== -->
+
+<span class="st-b s-new">${newLabel}</span>
+
+<span class="st-b s-review">${reviewLabel}</span>
+
+<span class="st-b s-progress">${progressLabel}</span>
+
+<span class="st-b s-done">${doneLabel}</span>
+
+<span class="st-b s-hold">${holdLabel}</span>
+
+<span class="st-b s-rejected">${rejectedLabel}</span>
+
+
+<!-- ======================================================
+     17. 공통 빈 상태
+     ====================================================== -->
+
+<div class="empty">
+  <h3>${emptyTitle}</h3>
+  <p>${emptyDescription}</p>
+</div>
+
+
+<!-- ======================================================
+     18. #footInfo / #disc
+     ====================================================== -->
+
+<!-- #footInfo 내부 -->
+
+<span>${companyLabel} : ${companyName}</span>
+
+<span>${representativeLabel} : ${representative}</span>
+
+<span>${registrationLabel} : ${registrationNumber}</span>
+
+<span>${addressLabel} : ${companyAddress}</span>
+
+<span>
+  ${emailLabel} :
+  <a href="mailto:${companyEmail}">
+    ${companyEmail}
+  </a>
+</span>
+
+
+<!-- #disc 내부 -->
+
+<p>${partnerDisclosure}</p>
+
+<p>${trademarkDisclosure}</p>
+
+<p>© ${year} ${companyName}. All rights reserved.</p>

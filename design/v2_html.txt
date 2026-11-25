@@ -1,0 +1,557 @@
+<div id="site">
+
+  <!-- HEADER -->
+  <header class="site-header" id="header">
+    <div class="header-inner">
+
+      <a class="logo" id="logoA" href="#top">
+        <span class="mark" id="markBox">
+          <svg class="ttg" viewBox="-1.5 -1.5 27 27"
+               aria-hidden="true">
+            <use href="#ttp" fill="#25F4EE"
+                 x="-.85" y="-.6"/>
+            <use href="#ttp" fill="#FE2C55"
+                 x=".85" y=".6"/>
+            <use href="#ttp" fill="currentColor"/>
+          </svg>
+        </span>
+        <span class="bname">TikTok Shop</span>
+      </a>
+
+      <span class="ttlock">
+        <span class="pline">한국 · 일본 운영 파트너</span>
+        <img id="badgeImg" src="" alt="" hidden>
+      </span>
+
+      <nav class="nav" id="nav" aria-label="Main navigation">
+        <a href="#services" data-i="nav_services">서비스</a>
+        <a href="#markets" data-i="nav_markets">진출 시장</a>
+        <a href="#studio" data-i="nav_studio">라이브 스튜디오</a>
+        <a href="#catalog" data-i="nav_catalog">상품 카탈로그</a>
+        <a href="#process" data-i="nav_process">이용 절차</a>
+        <a href="#faq" data-i="nav_faq">FAQ</a>
+        <a href="#my" data-i="nav_my">신청 조회</a>
+        <a href="#admin" id="adminLink"
+           data-i="nav_admin" hidden>관리자</a>
+        <a class="btn rs" href="#apply"
+           data-i="nav_apply">시작하기</a>
+      </nav>
+
+      <div class="header-actions">
+        <select id="langSel" aria-label="Language">
+          <option value="ko">한국어</option>
+          <option value="en">English</option>
+          <option value="zh">简体中文</option>
+          <option value="ja">日本語</option>
+          <option value="vi">Tiếng Việt</option>
+        </select>
+
+        <button id="menuBtn" type="button"
+                aria-label="Menu"
+                aria-controls="nav">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="site-main">
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero-inner">
+
+        <div class="hero-copy">
+          <div class="hero-brand">
+            <svg class="ttg" viewBox="-1.5 -1.5 27 27"
+                 aria-hidden="true">
+              <use href="#ttp" fill="#25F4EE"
+                   x="-.85" y="-.6"/>
+              <use href="#ttp" fill="#FE2C55"
+                   x=".85" y=".6"/>
+              <use href="#ttp" fill="currentColor"/>
+            </svg>
+            <span>TikTok Shop</span>
+            <span class="hero-brand-line"></span>
+            <span>KR / JP</span>
+          </div>
+
+          <h1 data-i="hero_t">
+            콘텐츠가<br>
+            커머스가 되는 순간.
+          </h1>
+
+          <p class="hero-desc" data-i="hero_s">
+            한국과 일본을 연결하는 새로운 커머스.
+            브랜드 입점부터 크리에이터 매칭,
+            라이브 방송과 판매 운영까지 함께합니다.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#apply" class="btn rs"
+               data-tab="brand" data-i="cta_brand">
+              브랜드 입점 신청
+            </a>
+            <a href="#apply" class="btn hero-outline"
+               data-tab="creator" data-i="cta_creator">
+              크리에이터 신청
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+
+          <figure class="hero-main-photo">
+            <img src="img/hero.jpg"
+                 alt="Live commerce studio"
+                 fetchpriority="high">
+            <div class="live-label">
+              <span class="live-dot"></span> LIVE
+            </div>
+          </figure>
+
+          <figure class="hero-secondary-photo">
+            <img src="img/host-jp.jpg"
+                 alt="Japan live shopping host">
+            <span class="photo-index">01 / JP</span>
+          </figure>
+
+          <figure class="hero-tertiary-photo">
+            <img src="img/hero2.jpg"
+                 alt="Beauty product live commerce">
+            <span class="photo-index">02 / KR</span>
+          </figure>
+
+          <div class="hero-product">
+            <img src="img/p-serum.jpg" alt="Beauty product">
+            <span>BEAUTY<br>COMMERCE</span>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="hero-market-strip">
+        <div class="market-strip-item">
+          <span class="market-code">JP</span>
+          <strong data-i="m_jp_live">
+            일본 라이브커머스 운영
+          </strong>
+        </div>
+        <div class="market-strip-item">
+          <span class="market-code">KR</span>
+          <strong data-i="m_kr_cb">
+            한국 브랜드 크로스보더 지원
+          </strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- AUDIENCE -->
+    <section class="section audience-section">
+      <div class="wrap">
+        <div class="section-head split-head">
+          <div>
+            <span class="eyebrow">01 / GET STARTED</span>
+            <h2 data-i="aud_t">
+              당신의 비즈니스,<br>더 큰 시장으로.
+            </h2>
+          </div>
+          <p data-i="aud_s">
+            브랜드, 크리에이터, 판매자, 구매자를
+            위한 맞춤형 운영 서비스를 제공합니다.
+          </p>
+        </div>
+
+        <!-- Dynamic audience cards -->
+        <div id="aud" class="aud-grid"></div>
+      </div>
+    </section>
+
+    <!-- MARKETS -->
+    <section class="section markets-section" id="markets">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">02 / CROSS-BORDER COMMERCE</span>
+          <h2 data-i="mk_t">
+            두 개의 시장.<br>하나의 커머스 네트워크.
+          </h2>
+        </div>
+
+        <div class="market-grid">
+
+          <article class="market-panel">
+            <figure class="market-photo">
+              <img src="img/tokyo.jpg" alt="Tokyo Shibuya"
+                   loading="lazy">
+              <span class="market-big-code">JP</span>
+              <span class="market-photo-label">TOKYO / JAPAN</span>
+            </figure>
+            <div class="market-content">
+              <div class="market-title-row">
+                <h3 data-i="mk_jp">일본 시장</h3>
+                <span class="market-tag"
+                      data-i="mk_jp_tag">JAPAN</span>
+              </div>
+              <p data-i="mk_jp_d">
+                현지 소비자와 크리에이터를 연결하는
+                라이브 및 숏폼 커머스 운영.
+              </p>
+              <div id="mkJp" class="market-detail"></div>
+            </div>
+          </article>
+
+          <article class="market-panel">
+            <figure class="market-photo">
+              <img src="img/seoul.jpg" alt="Seoul Seongsu"
+                   loading="lazy">
+              <span class="market-big-code">KR</span>
+              <span class="market-photo-label">SEOUL / KOREA</span>
+            </figure>
+            <div class="market-content">
+              <div class="market-title-row">
+                <h3 data-i="mk_kr">한국 시장</h3>
+                <span class="market-tag"
+                      data-i="mk_kr_tag">KOREA</span>
+              </div>
+              <p data-i="mk_kr_d">
+                한국 브랜드와 상품의 해외 진출을 위한
+                크로스보더 커머스 지원.
+              </p>
+              <div id="mkKr" class="market-detail"></div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="market-facts">
+          <div class="fact">
+            <strong class="fact-value" data-i="f1v">KR · JP</strong>
+            <span data-i="f1">양국 시장 운영</span>
+          </div>
+          <div class="fact">
+            <strong class="fact-value">LIVE</strong>
+            <span data-i="f2">라이브커머스</span>
+          </div>
+          <div class="fact">
+            <strong class="fact-value">B2B</strong>
+            <span data-i="f3">브랜드 유통 지원</span>
+          </div>
+          <div class="fact">
+            <strong class="fact-value">5</strong>
+            <span data-i="f4">다국어 서비스</span>
+          </div>
+        </div>
+
+        <div class="source-links">
+          <span data-i="src">시장 관련 참고 자료</span>
+          <a href="https://newsroom.tiktok.com/tiktok-shop-japan-1st-year-anniversary?lang=ja-JP"
+             target="_blank" rel="noopener noreferrer">
+            TikTok Newsroom JP ↗
+          </a>
+          <a href="https://newsroom.tiktok.com/ttsjpcb?lang=ko-KR"
+             target="_blank" rel="noopener noreferrer">
+            TikTok Newsroom KR ↗
+          </a>
+          <a href="https://eu.36kr.com/zh/p/3961291466440070"
+             target="_blank" rel="noopener noreferrer">
+            36Kr ↗
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section services-section" id="services">
+      <div class="wrap">
+
+        <div class="section-head split-head">
+          <div>
+            <span class="eyebrow">03 / WHAT WE DO</span>
+            <h2 data-i="sv_t">
+              입점부터 판매까지.<br>하나의 운영 파트너.
+            </h2>
+          </div>
+          <p data-i="sv_s">
+            시장 진출에 필요한 실질적인 업무를
+            하나의 운영 체계로 연결합니다.
+          </p>
+        </div>
+
+        <div id="svgrid" class="service-grid"></div>
+
+      </div>
+    </section>
+
+    <!-- STUDIO -->
+    <section class="studio-section" id="studio">
+
+      <div class="studio-cover">
+        <img src="img/studio-wide.jpg"
+             alt="In-store live commerce studio"
+             loading="lazy">
+
+        <div class="studio-cover-shade"></div>
+
+        <div class="wrap studio-cover-inner">
+          <span class="eyebrow">
+            04 / OUR LIVE COMMERCE STUDIO
+          </span>
+          <h2 data-i="st_t">
+            매장에서 시작되는<br>글로벌 라이브커머스.
+          </h2>
+          <p data-i="st_s">
+            실제 매장 안에 구축된 자체 방송 스튜디오.
+            상품 전시, 콘텐츠 제작, 라이브 판매를
+            한 공간에서 운영합니다.
+          </p>
+          <a href="#apply" class="btn cy"
+             data-tab="studio" data-i="st_cta">
+            스튜디오 이용 문의
+          </a>
+        </div>
+      </div>
+
+      <div class="studio-body">
+        <div class="wrap">
+
+          <div class="studio-gallery">
+            <figure class="studio-gallery-wide">
+              <img src="img/studio-wide2.jpg"
+                   alt="Live studio interior"
+                   loading="lazy">
+              <figcaption>01 / STUDIO</figcaption>
+            </figure>
+
+            <figure>
+              <img src="img/host-jp2.jpg"
+                   alt="Live host in Japan"
+                   loading="lazy">
+              <figcaption>02 / LIVE HOST</figcaption>
+            </figure>
+
+            <figure>
+              <img src="img/creator2.jpg"
+                   alt="Content creator"
+                   loading="lazy">
+              <figcaption>03 / CREATOR</figcaption>
+            </figure>
+          </div>
+
+          <div id="stList" class="studio-feature-grid"></div>
+
+          <div class="studio-board">
+            <div class="board-head">
+              <div>
+                <span class="eyebrow">LIVE SCHEDULE</span>
+                <h3 data-i="st_board">라이브 방송 편성표</h3>
+              </div>
+              <span class="board-live">
+                <span class="live-dot"></span>
+                LIVE COMMERCE
+              </span>
+            </div>
+
+            <div class="schedule-list" id="stRows"></div>
+
+            <p class="board-note" data-i="st_board_note">
+              방송 일정은 운영 상황에 따라 변경될 수 있습니다.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CATALOG -->
+    <section class="section catalog-section" id="catalog">
+      <div class="wrap">
+
+        <div class="section-head split-head">
+          <div>
+            <span class="eyebrow">05 / PRODUCT CATALOG</span>
+            <h2 data-i="cat_t">
+              다음 베스트셀러를<br>발견하세요.
+            </h2>
+          </div>
+          <p data-i="cat_s">
+            크리에이터 협업과 해외 유통을 위한 상품.
+            샘플 신청부터 대량 구매 견적까지 가능합니다.
+          </p>
+        </div>
+
+        <div id="catFilters" class="catalog-filters"></div>
+
+        <div id="prods" class="product-grid"></div>
+
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section process-section" id="process">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">06 / HOW IT WORKS</span>
+          <h2 data-i="pr_t">새로운 시장을 여는 5단계.</h2>
+        </div>
+
+        <div id="steps" class="process-grid"></div>
+      </div>
+    </section>
+
+    <!-- APPLY -->
+    <section class="section apply-section" id="apply">
+      <div class="wrap apply-layout">
+
+        <div class="apply-intro">
+          <span class="eyebrow">07 / JOIN US</span>
+          <h2 data-i="ap_t">비즈니스의<br>다음을 시작하세요.</h2>
+          <p data-i="ap_s">
+            원하는 신청 유형을 선택해 주세요.
+            담당자가 내용을 검토하고 안내해 드립니다.
+          </p>
+
+          <figure class="apply-photo">
+            <img src="img/meeting.jpg"
+                 alt="Business partnership meeting"
+                 loading="lazy">
+          </figure>
+
+          <div id="contactBox" class="contact-box"></div>
+        </div>
+
+        <div class="apply-panel">
+
+          <div id="tabs" class="tabs" role="tablist"
+               aria-label="Application type"></div>
+
+          <div id="fdesc" class="form-description"></div>
+
+          <form id="form">
+            <div id="fields" class="fields"></div>
+
+            <label class="consent-row" for="consent">
+              <input type="checkbox" id="consent"
+                     name="consent" required>
+              <span data-i="consent">
+                개인정보 수집 및 이용에 동의합니다.
+              </span>
+            </label>
+
+            <button id="sendBtn" type="submit"
+                    class="btn rs submit-btn"
+                    data-i="send">
+              신청서 제출하기
+            </button>
+
+            <p class="note" data-i="req_note">
+              필수 항목을 모두 입력해 주세요.
+            </p>
+          </form>
+
+          <div id="fmsg" class="msg"
+               role="status" aria-live="polite"></div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- LOOKUP -->
+    <section class="section lookup-section" id="my">
+      <div class="wrap lookup-layout">
+
+        <div>
+          <span class="eyebrow">08 / APPLICATION STATUS</span>
+          <h2 data-i="my_t">내 신청 현황</h2>
+          <p data-i="my_s">
+            접수번호와 신청 시 입력한 이메일을
+            이용해 진행 상황을 확인하세요.
+          </p>
+        </div>
+
+        <form id="lookup" class="lookup-form">
+
+          <div class="fld">
+            <label for="lkId" data-i="col_id">접수번호</label>
+            <input id="lkId" class="inp"
+                   type="text" autocomplete="off" required>
+          </div>
+
+          <div class="fld">
+            <label for="lkEmail" data-i="f_email">이메일</label>
+            <input id="lkEmail" class="inp"
+                   type="email" autocomplete="email" required>
+          </div>
+
+          <button class="btn primary" type="submit"
+                  data-i="lk_btn">조회하기</button>
+
+        </form>
+
+        <div id="myBox" class="lookup-result"
+             aria-live="polite"></div>
+
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq-section" id="faq">
+      <div class="wrap faq-layout">
+        <div class="section-head">
+          <span class="eyebrow">09 / HELP CENTER</span>
+          <h2 data-i="faq_t">자주 묻는 질문</h2>
+        </div>
+
+        <div id="faqList" class="faq-list"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="wrap">
+
+      <div class="footer-top">
+
+        <div class="footer-brand">
+          <a href="#top" class="logo">
+            <span class="mark">
+              <svg class="ttg" viewBox="-1.5 -1.5 27 27"
+                   aria-hidden="true">
+                <use href="#ttp" fill="#25F4EE"
+                     x="-.85" y="-.6"/>
+                <use href="#ttp" fill="#FE2C55"
+                     x=".85" y=".6"/>
+                <use href="#ttp" fill="currentColor"/>
+              </svg>
+            </span>
+            <span class="bname">TikTok Shop</span>
+          </a>
+
+          <p class="pline2">한국 · 일본 운영 파트너</p>
+        </div>
+
+        <div class="footer-nav">
+          <a href="#services" data-i="nav_services">서비스</a>
+          <a href="#markets" data-i="nav_markets">진출 시장</a>
+          <a href="#studio" data-i="nav_studio">라이브 스튜디오</a>
+          <a href="#catalog" data-i="nav_catalog">상품 카탈로그</a>
+          <a href="#process" data-i="nav_process">이용 절차</a>
+          <a href="#apply" data-i="nav_apply">신청하기</a>
+          <a href="#my" data-i="nav_my">신청 조회</a>
+          <a href="#faq" data-i="nav_faq">FAQ</a>
+        </div>
+
+      </div>
+
+      <div id="footInfo" class="footer-info"></div>
+      <div id="disc" class="footer-disclaimer"></div>
+
+    </div>
+  </footer>
+
+</div>
