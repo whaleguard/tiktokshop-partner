@@ -4697,6 +4697,15 @@ video.kjv{width:100%;height:100%;object-fit:cover;display:block;background:#0b0b
 
 
 @media(max-width:400px){#langSel{font-size:13px!important;padding-left:8px!important;padding-right:24px!important;max-width:none!important;width:auto!important}}
+
+/* keep hero CTAs above the fold on desktop: scale headline with viewport height */
+@media(min-width:1024px){
+ .hero h1{font-size:clamp(44px,min(5vw,8.4vh),84px)!important;margin-bottom:22px}
+ .hero-brand{margin-bottom:22px}
+ .hero-desc{font-size:clamp(16px,min(1.2vw,2.3vh),20px);line-height:1.7}
+ .hero-actions{margin-top:clamp(18px,3vh,30px)}
+ .hero-actions .btn{min-height:52px}
+}
 </style>
 <script>new MutationObserver(()=>{for(const c of document.querySelectorAll('.stack td:not([data-label])')){let i=0,p=c;while(p=p.previousElementSibling)i+=p.colSpan;c.dataset.label=c.closest('table').rows[0].cells[i]?.textContent||''}}).observe(document,{childList:true,subtree:true})</script>
 </head>
@@ -5964,7 +5973,7 @@ function route(){
 }
 
 /* ---------- events ---------- */
-$('#langSel').onchange=e=>{lang=e.target.value;try{localStorage.setItem('kj_lang',lang)}catch(_){}renderSite();if(isAdm())renderAdmin()};
+$('#langSel').onchange=e=>{lang=e.target.value;try{localStorage.setItem('kj_lang',lang)}catch(_){}renderSite();if(isAdm())renderAdmin();fitHero()};
 $('#menuBtn').onclick=()=>{const n=$('#nav');const o=n.classList.toggle('open');$('#menuBtn').setAttribute('aria-expanded',o)};
 $('#nav').addEventListener('click',e=>{if(e.target.closest('a')){$('#nav').classList.remove('open');$('#menuBtn').setAttribute('aria-expanded','false')}});
 $('#form').addEventListener('submit',submit);
@@ -5998,6 +6007,13 @@ if(sb){
 }else{rerender()}
 }
 
+
+/* fit hero headline so the CTA buttons stay above the fold on desktop */
+function fitHero(){const h=document.querySelector('.hero h1'),a=document.querySelector('.hero-actions');if(!h||!a)return;h.style.removeProperty('font-size');if(innerWidth<1024||innerHeight<560)return;
+ let fs=parseFloat(getComputedStyle(h).fontSize);const top=scrollY;let n=0;
+ while(a.getBoundingClientRect().bottom+top>innerHeight-20&&fs>38&&n++<40){fs-=2;h.style.setProperty('font-size',fs+'px','important')}}
+addEventListener('resize',()=>{clearTimeout(fitHero._t);fitHero._t=setTimeout(fitHero,120)});
+addEventListener('load',fitHero);if(document.fonts)document.fonts.ready.then(fitHero);setTimeout(fitHero,50);
 </script>
 </body>
 </html>
