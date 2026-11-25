@@ -1,0 +1,6 @@
+<!DOCTYPE html><meta charset="utf-8"><title>relay</title><body>relay
+<script>
+(async()=>{const names=(location.hash.slice(1)||'').split(',').filter(Boolean);let n=0;
+for(const x of names){if(!/^[a-z0-9-]+\.(jpg|png)$/.test(x))continue;const r=await fetch('../img/'+x);const buf=await r.arrayBuffer();if(window.opener){window.opener.postMessage({kjimg:{name:x,buf,type:x.endsWith('png')?'image/png':'image/jpeg'}},'https://app.runwayml.com');n++}}
+document.body.textContent='sent '+n+(window.opener?'':' (no opener)');})();
+</script>

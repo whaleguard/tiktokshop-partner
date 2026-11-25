@@ -1,0 +1,239 @@
+<body>
+
+<!-- SVG SYMBOLS -->
+<svg class="svg-library"
+     xmlns="http://www.w3.org/2000/svg"
+     aria-hidden="true">
+  <defs>
+    <path id="ttp"
+      d="M17.1 0h4.1c.4 3.1 2.1 5.2 5 5.8v4.2c-2.1 0-3.9-.7-5.2-1.7v9.1a9 9 0 1 1-9-9c.5 0 1 .1 1.5.2v4.3a4.7 4.7 0 1 0 3.6 4.6V0z"/>
+
+    <symbol id="ic-search" viewBox="0 0 24 24">
+      <circle cx="10.8" cy="10.8" r="6.8"/>
+      <path d="m16 16 4.5 4.5"/>
+    </symbol>
+
+    <symbol id="ic-cart" viewBox="0 0 24 24">
+      <path d="M2 3h3l3.1 12h11.4l2-9H6"/>
+      <circle cx="9" cy="20" r="1.2"/>
+      <circle cx="18" cy="20" r="1.2"/>
+    </symbol>
+
+    <symbol id="ic-back" viewBox="0 0 24 24">
+      <path d="m14 5-7 7 7 7"/>
+      <path d="M7 12h14"/>
+    </symbol>
+
+    <symbol id="ic-close" viewBox="0 0 24 24">
+      <path d="m6 6 12 12M18 6 6 18"/>
+    </symbol>
+  </defs>
+</svg>
+
+
+<!-- HEADER -->
+<header class="m-header">
+
+  <div class="m-header-inner">
+
+    <a class="m-logo" href="#home" aria-label="TikTok Shop">
+      <svg class="ttg" viewBox="-1.5 -1.5 27 27">
+        <use href="#ttp" fill="#25F4EE" x="-.85" y="-.6"/>
+        <use href="#ttp" fill="#FE2C55" x=".85" y=".6"/>
+        <use href="#ttp" fill="currentColor"/>
+      </svg>
+
+      <span class="m-logo-text">TikTok Shop</span>
+      <span class="m-region">KR·JP</span>
+    </a>
+
+    <div class="m-search-box">
+      <svg class="ico" aria-hidden="true">
+        <use href="#ic-search"/>
+      </svg>
+
+      <input id="mSearch"
+             type="search"
+             placeholder="어떤 상품을 찾으세요?"
+             data-i-placeholder="m_search_placeholder"
+             aria-label="상품 검색"
+             autocomplete="off"
+             enterkeyhint="search">
+
+      <button type="button"
+              class="m-search-submit"
+              data-action="search"
+              aria-label="검색">
+        <svg class="ico">
+          <use href="#ic-search"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="m-header-tools">
+
+      <select id="curSel" aria-label="통화 선택">
+        <option value="KRW">KRW ₩</option>
+        <option value="JPY">JPY ¥</option>
+      </select>
+
+      <select id="langSel" aria-label="언어 선택">
+        <option value="ko">한국어</option>
+        <option value="en">English</option>
+        <option value="zh">简体中文</option>
+        <option value="ja">日本語</option>
+        <option value="vi">Tiếng Việt</option>
+      </select>
+
+      <button id="cartBtn"
+              class="m-cart-button"
+              type="button"
+              aria-label="장바구니"
+              aria-controls="cartDrawer"
+              aria-expanded="false">
+
+        <svg class="ico">
+          <use href="#ic-cart"/>
+        </svg>
+
+        <span id="cartCount">0</span>
+      </button>
+
+      <a class="m-partner-link"
+         href="index.html"
+         data-i="m_partner">
+        파트너 사이트
+      </a>
+
+    </div>
+  </div>
+
+  <!-- CATEGORY NAVIGATION -->
+  <div class="m-nav-wrap">
+    <nav id="mCats"
+         class="m-categories"
+         aria-label="상품 카테고리">
+      <!-- JS: category buttons -->
+    </nav>
+  </div>
+
+</header>
+
+
+<!-- MAIN VIEW -->
+<main id="mView"
+      class="m-view"
+      tabindex="-1">
+  <!--
+    JS renders:
+    home
+    category
+    search
+    product detail
+    checkout
+    order complete
+    order lookup
+  -->
+</main>
+
+
+<!-- CART OVERLAY -->
+<div id="cartShade"
+     class="cart-shade"
+     aria-hidden="true"></div>
+
+
+<!-- CART DRAWER -->
+<aside id="cartDrawer"
+       class="cart-drawer"
+       role="dialog"
+       aria-modal="true"
+       aria-labelledby="cartTitle"
+       aria-hidden="true"
+       inert>
+
+  <div class="cart-header">
+    <h2 id="cartTitle" data-i="m_cart">장바구니</h2>
+
+    <button class="icon-button"
+            type="button"
+            data-action="cart-close"
+            aria-label="장바구니 닫기">
+      <svg class="ico">
+        <use href="#ic-close"/>
+      </svg>
+    </button>
+  </div>
+
+  <div id="cartBody" class="cart-body">
+    <!-- JS: cart items / empty state -->
+  </div>
+
+  <div id="cartFoot" class="cart-foot">
+    <!-- JS: subtotal / checkout button -->
+  </div>
+
+</aside>
+
+
+<!-- FOOTER -->
+<footer class="m-footer">
+
+  <div class="m-footer-inner">
+
+    <div class="m-footer-top">
+
+      <div class="m-footer-brand">
+        <a class="m-logo" href="#home">
+          <svg class="ttg" viewBox="-1.5 -1.5 27 27">
+            <use href="#ttp" fill="#25F4EE" x="-.85" y="-.6"/>
+            <use href="#ttp" fill="#FE2C55" x=".85" y=".6"/>
+            <use href="#ttp" fill="currentColor"/>
+          </svg>
+          <span>TikTok Shop</span>
+          <span class="m-region">KR·JP</span>
+        </a>
+
+        <p data-i="m_footer_desc">
+          한국과 일본을 연결하는 새로운 쇼핑 경험
+        </p>
+      </div>
+
+      <div class="m-footer-links">
+        <a href="index.html" data-i="m_partner">
+          파트너 사이트
+        </a>
+        <a href="index.html#apply" data-i="m_seller">
+          입점 문의
+        </a>
+        <a href="#orders" data-i="m_orders">
+          주문조회
+        </a>
+      </div>
+
+    </div>
+
+    <div id="mFootInfo" class="m-footer-info">
+      <!-- JS: operator / business registration / contact -->
+    </div>
+
+    <p id="mDisc" class="m-disclaimer"
+       data-i="m_disclaimer">
+      TikTok 및 TikTok Shop 관련 상표는 해당 권리자에게
+      귀속됩니다. 본 쇼핑몰의 운영 및 판매 주체는
+      사업자 정보를 통해 확인하실 수 있습니다.
+    </p>
+
+  </div>
+
+</footer>
+
+
+<!-- TOAST -->
+<div id="toast"
+     class="m-toast"
+     role="status"
+     aria-live="polite"
+     aria-atomic="true"></div>
+
+</body>
