@@ -1,0 +1,5523 @@
+{
+ "stores": [
+  {
+   "id": "seoul",
+   "name": {
+    "ko": "TikTok Shop 서울 쇼룸",
+    "en": "TikTok Shop Seoul Showroom",
+    "zh": "TikTok Shop 首尔体验店",
+    "ja": "TikTok Shop ソウルショールーム",
+    "vi": "TikTok Shop Showroom Seoul"
+   },
+   "concept": "성수동의 산업시설을 프리미엄 리테일 공간으로 재해석한 3층 쇼룸. 노출 콘크리트와 브러시드 스테인리스, 투명 유리, 블랙 메탈을 중심으로 구성하고 TikTok 레드와 시안을 제한적인 네온 및 디지털 사인에 적용한다. 1층에서는 실제 라이브 방송을 쇼윈도처럼 관람하고, 2층에서는 방송 상품을 체험하고 구매하며, 3층에서는 크리에이터의 콘텐츠 제작 현장을 관람한다. 모든 상품의 브랜드, 가격, 판매량, 평점은 가상 쇼룸 구현을 위한 예시 데이터이며 실제 판매 실적이 아니다. 각 층의 후면 좌측 계단 및 엘리베이터 위치는 동일하게 유지하고 주요 집기는 최소 1.6m 통로를 확보하도록 배치한다.",
+   "palette": {
+    "primary": "#FE2C55",
+    "accent": "#25F4EE",
+    "neutral": "#E5E3DF",
+    "dark": "#161618"
+   },
+   "floors": [
+    {
+     "level": 1,
+     "title": {
+      "ko": "K-뷰티 & 라이브 스트리트",
+      "en": "K-Beauty & Live Street",
+      "zh": "韩妆与直播街区",
+      "ja": "Kビューティー＆ライブストリート",
+      "vi": "K-Beauty và phố livestream"
+     },
+     "theme": "성수동 플래그십. 정면 전체 유리 파사드, 중앙 5m 폭 진입 동선, 좌측 유리 라이브 스튜디오 3개, 우측 프리미엄 뷰티 매대. 콘크리트 바닥에 스테인리스 집기를 적용하고 제품에 집중되는 4000K 조명과 블랙 천장을 사용한다.",
+     "size": [
+      26,
+      18
+     ],
+     "height": 4.5,
+     "floor_material": {
+      "pattern": "polished_concrete",
+      "color": "#B8B6B2",
+      "roughness": 0.32,
+      "metalness": 0.08
+     },
+     "wall_material": {
+      "pattern": "concrete",
+      "color": "#CECCC7",
+      "roughness": 0.85
+     },
+     "ceiling": {
+      "type": "exposed_duct",
+      "color": "#222225"
+     },
+     "lights": [
+      {
+       "type": "area",
+       "pos": [
+        0,
+        4.3,
+        6.5
+       ],
+       "color": "#FFFFFF",
+       "intensity": 5.2,
+       "size": [
+        10,
+        2
+       ],
+       "rot": 0
+      },
+      {
+       "type": "strip",
+       "pos": [
+        -4.5,
+        4.35,
+        0
+       ],
+       "color": "#FFFFFF",
+       "intensity": 3.5,
+       "size": [
+        0.1,
+        13
+       ],
+       "rot": 0
+      },
+      {
+       "type": "strip",
+       "pos": [
+        4.5,
+        4.35,
+        0
+       ],
+       "color": "#FFFFFF",
+       "intensity": 3.5,
+       "size": [
+        0.1,
+        13
+       ],
+       "rot": 0
+      },
+      {
+       "type": "area",
+       "pos": [
+        -10,
+        4.1,
+        5.4
+       ],
+       "color": "#FFF2E5",
+       "intensity": 4.5,
+       "size": [
+        3.6,
+        2.8
+       ],
+       "rot": 0
+      },
+      {
+       "type": "area",
+       "pos": [
+        -10,
+        4.1,
+        0.4
+       ],
+       "color": "#FFFFFF",
+       "intensity": 4.5,
+       "size": [
+        3.6,
+        2.8
+       ],
+       "rot": 0
+      },
+      {
+       "type": "area",
+       "pos": [
+        -10,
+        4.1,
+        -4.6
+       ],
+       "color": "#FFF5F0",
+       "intensity": 4.5,
+       "size": [
+        3.6,
+        2.8
+       ],
+       "rot": 0
+      },
+      {
+       "type": "spot",
+       "pos": [
+        5.5,
+        4.2,
+        4.9
+       ],
+       "color": "#FFF4E8",
+       "intensity": 6,
+       "size": [
+        0.18,
+        0.18
+       ],
+       "rot": 0
+      },
+      {
+       "type": "spot",
+       "pos": [
+        5.5,
+        4.2,
+        0.7
+       ],
+       "color": "#FFFFFF",
+       "intensity": 6,
+       "size": [
+        0.18,
+        0.18
+       ],
+       "rot": 0
+      },
+      {
+       "type": "spot",
+       "pos": [
+        5.5,
+        4.2,
+        -3.5
+       ],
+       "color": "#FFFFFF",
+       "intensity": 6,
+       "size": [
+        0.18,
+        0.18
+       ],
+       "rot": 0
+      },
+      {
+       "type": "strip",
+       "pos": [
+        12.2,
+        3.9,
+        0
+       ],
+       "color": "#FFFFFF",
+       "intensity": 4,
+       "size": [
+        0.08,
+        13
+       ],
+       "rot": 0
+      },
+      {
+       "type": "neon",
+       "pos": [
+        -7.85,
+        3.8,
+        0.4
+       ],
+       "color": "#FE2C55",
+       "intensity": 1.6,
+       "size": [
+        0.05,
+        2.8
+       ],
+       "rot": 90
+      },
+      {
+       "type": "neon",
+       "pos": [
+        -7.85,
+        3.8,
+        -4.6
+       ],
+       "color": "#25F4EE",
+       "intensity": 1.6,
+       "size": [
+        0.05,
+        2.8
+       ],
+       "rot": 90
+      },
+      {
+       "type": "area",
+       "pos": [
+        -8,
+        4.25,
+        -7.8
+       ],
+       "color": "#FFFFFF",
+       "intensity": 3.2,
+       "size": [
+        8,
+        1.6
+       ],
+       "rot": 0
+      }
+     ],
+     "fixtures": [
+      {
+       "id": "s1-entrance-led",
+       "type": "led_wall",
+       "pos": [
+        0,
+        0,
+        -8.75
+       ],
+       "rot": 0,
+       "size": [
+        7.8,
+        3.8,
+        0.35
+       ],
+       "color": "#080808",
+       "material": "gloss",
+       "label": {
+        "ko": "지금 뜨는 트렌드",
+        "en": "Trending Now",
+        "zh": "当下热门",
+        "ja": "今のトレンド",
+        "vi": "Xu hướng hiện tại"
+       },
+       "video": "hero",
+       "products": []
+      },
+      {
+       "id": "s1-live-booth-01",
+       "type": "studio_booth",
+       "pos": [
+        -10.2,
+        0,
+        5.4
+       ],
+       "rot": 90,
+       "size": [
+        3.2,
+        3.65,
+        4.4
+       ],
+       "color": "#222225",
+       "material": "glass",
+       "label": {
+        "ko": "라이브 01 · 스킨케어",
+        "en": "LIVE 01 · Skincare",
+        "zh": "直播01 · 护肤",
+        "ja": "ライブ01 · スキンケア",
+        "vi": "LIVE 01 · Chăm sóc da"
+       },
+       "text": "ON AIR / SKINCARE",
+       "video": "studio",
+       "products": [
+        "serum",
+        "pdrn-balm",
+        "heartleaf-toner",
+        "ampoule-duo",
+        "collagen-mask",
+        "calcium-stick"
+       ]
+      },
+      {
+       "id": "s1-live-booth-02",
+       "type": "studio_booth",
+       "pos": [
+        -10.2,
+        0,
+        0.4
+       ],
+       "rot": 90,
+       "size": [
+        3.2,
+        3.65,
+        4.4
+       ],
+       "color": "#E3DEDA",
+       "material": "glass",
+       "label": {
+        "ko": "라이브 02 · 메이크업",
+        "en": "LIVE 02 · Makeup",
+        "zh": "直播02 · 彩妆",
+        "ja": "ライブ02 · メイク",
+        "vi": "LIVE 02 · Trang điểm"
+       },
+       "text": "ON AIR / GET READY WITH ME",
+       "video": "creator",
+       "products": [
+        "cushion",
+        "tint",
+        "peel-lipliner",
+        "lip-oil",
+        "blush-stick",
+        "makeup-kit"
+       ]
+      },
+      {
+       "id": "s1-live-booth-03",
+       "type": "studio_booth",
+       "pos": [
+        -10.2,
+        0,
+        -4.6
+       ],
+       "rot": 90,
+       "size": [
+        3.2,
+        3.65,
+        4.4
+       ],
+       "color": "#414448",
+       "material": "glass",
+       "label": {
+        "ko": "라이브 03 · 헤어 & 뷰티",
+        "en": "LIVE 03 · Hair & Beauty",
+        "zh": "直播03 · 美发美容",
+        "ja": "ライブ03 · ヘア＆美容",
+        "vi": "LIVE 03 · Tóc và làm đẹp"
+       },
+       "text": "ON AIR / BEAUTY LAB",
+       "video": "studio",
+       "products": [
+        "hair-styler",
+        "hair-oil",
+        "scalp-brush",
+        "sunscreen",
+        "cleansing-balm",
+        "beauty-device"
+       ]
+      },
+      {
+       "id": "s1-street-neon",
+       "type": "neon_sign",
+       "pos": [
+        -12.82,
+        0,
+        7.5
+       ],
+       "rot": 90,
+       "size": [
+        1.4,
+        3.8,
+        0.12
+       ],
+       "color": "#FE2C55",
+       "material": "gloss",
+       "label": {
+        "ko": "라이브 스트리트",
+        "en": "Live Street",
+        "zh": "直播街区",
+        "ja": "ライブストリート",
+        "vi": "Phố livestream"
+       },
+       "text": "LIVE STREET",
+       "products": []
+      },
+      {
+       "id": "s1-best-island",
+       "type": "island_table",
+       "pos": [
+        5.5,
+        0,
+        5.1
+       ],
+       "rot": 0,
+       "size": [
+        4.8,
+        1.05,
+        1.6
+       ],
+       "color": "#C4C7C8",
+       "material": "metal",
+       "label": {
+        "ko": "지금 가장 인기 있는 상품",
+        "en": "Viral Bestsellers",
+        "zh": "热门畅销商品",
+        "ja": "バズりベストセラー",
+        "vi": "Sản phẩm bán chạy"
+       },
+       "text": "VIRAL BESTSELLERS",
+       "products": [
+        "pdrn-balm",
+        "heartleaf-toner",
+        "ampoule-duo",
+        "calcium-stick",
+        "collagen-mask",
+        "serum",
+        "peel-lipliner",
+        "cushion"
+       ]
+      },
+      {
+       "id": "s1-new-island",
+       "type": "island_table",
+       "pos": [
+        5.5,
+        0,
+        1.6
+       ],
+       "rot": 0,
+       "size": [
+        4.8,
+        1.05,
+        1.6
+       ],
+       "color": "#F5F4F1",
+       "material": "matte",
+       "label": {
+        "ko": "이번 주 신상품",
+        "en": "New This Week",
+        "zh": "本周新品",
+        "ja": "今週の新商品",
+        "vi": "Sản phẩm mới tuần này"
+       },
+       "text": "JUST DROPPED",
+       "products": [
+        "lip-oil",
+        "blush-stick",
+        "makeup-kit",
+        "rice-toner",
+        "beauty-device",
+        "cleansing-balm"
+       ]
+      },
+      {
+       "id": "s1-tester-bar",
+       "type": "tester_bar",
+       "pos": [
+        5.5,
+        0,
+        -1.9
+       ],
+       "rot": 0,
+       "size": [
+        4.8,
+        1.15,
+        1.6
+       ],
+       "color": "#F7F7F5",
+       "material": "gloss",
+       "label": {
+        "ko": "직접 체험하는 뷰티 바",
+        "en": "Beauty Try-on Bar",
+        "zh": "美妆试用台",
+        "ja": "ビューティー体験バー",
+        "vi": "Quầy thử mỹ phẩm"
+       },
+       "text": "TRY IT. LOVE IT. SHOP IT.",
+       "products": [
+        "cushion",
+        "tint",
+        "sunscreen",
+        "peel-lipliner",
+        "lip-oil",
+        "blush-stick",
+        "calcium-stick",
+        "pdrn-balm"
+       ]
+      },
+      {
+       "id": "s1-skincare-wall",
+       "type": "wall_shelf",
+       "pos": [
+        12.5,
+        0,
+        5.5
+       ],
+       "rot": -90,
+       "size": [
+        4.8,
+        3.1,
+        0.85
+       ],
+       "color": "#E4E4E2",
+       "material": "metal",
+       "label": {
+        "ko": "한국 스킨케어",
+        "en": "Korean Skincare",
+        "zh": "韩国护肤",
+        "ja": "韓国スキンケア",
+        "vi": "Chăm sóc da Hàn Quốc"
+       },
+       "text": "KOREAN SKINCARE",
+       "products": [
+        "serum",
+        "pdrn-balm",
+        "heartleaf-toner",
+        "ampoule-duo",
+        "rice-toner",
+        "sunscreen",
+        "cleansing-balm",
+        "calcium-stick"
+       ]
+      },
+      {
+       "id": "s1-makeup-wall",
+       "type": "wall_shelf",
+       "pos": [
+        12.5,
+        0,
+        0
+       ],
+       "rot": -90,
+       "size": [
+        4.8,
+        3.1,
+        0.85
+       ],
+       "color": "#F3F0ED",
+       "material": "matte",
+       "label": {
+        "ko": "메이크업 셀렉션",
+        "en": "Makeup Selection",
+        "zh": "彩妆精选",
+        "ja": "メイクセレクション",
+        "vi": "Bộ sưu tập trang điểm"
+       },
+       "text": "MAKEUP EDIT",
+       "products": [
+        "cushion",
+        "tint",
+        "peel-lipliner",
+        "lip-oil",
+        "blush-stick",
+        "makeup-kit"
+       ]
+      },
+      {
+       "id": "s1-mask-wall",
+       "type": "wall_shelf",
+       "pos": [
+        12.5,
+        0,
+        -5.4
+       ],
+       "rot": -90,
+       "size": [
+        4.8,
+        3.1,
+        0.85
+       ],
+       "color": "#E4E4E2",
+       "material": "metal",
+       "label": {
+        "ko": "마스크 & 뷰티 키트",
+        "en": "Masks & Beauty Kits",
+        "zh": "面膜与美容套装",
+        "ja": "マスク＆美容キット",
+        "vi": "Mặt nạ và bộ làm đẹp"
+       },
+       "text": "MASKS & KITS",
+       "products": [
+        "mask",
+        "collagen-mask",
+        "ampoule-duo",
+        "makeup-kit",
+        "cleansing-balm",
+        "beauty-device"
+       ]
+      },
+      {
+       "id": "s1-vanity-mirror",
+       "type": "vanity_mirror",
+       "pos": [
+        5.5,
+        0,
+        -3
+       ],
+       "rot": 0,
+       "size": [
+        4.6,
+        2.25,
+        0.12
+       ],
+       "color": "#D0D2D3",
+       "material": "metal",
+       "label": {
+        "ko": "메이크업 미러",
+        "en": "Beauty Mirror",
+        "zh": "美妆镜",
+        "ja": "メイクミラー",
+        "vi": "Gương trang điểm"
+       },
+       "products": []
+      },
+      {
+       "id": "s1-checkout",
+       "type": "checkout",
+       "pos": [
+        7.2,
+        0,
+        -6.2
+       ],
+       "rot": 0,
+       "size": [
+        4.4,
+        1.15,
+        1.35
+       ],
+       "color": "#202023",
+       "material": "metal",
+       "label": {
+        "ko": "결제 및 온라인 주문",
+        "en": "Checkout & Online Orders",
+        "zh": "结账与线上订单",
+        "ja": "お会計・オンライン注文",
+        "vi": "Thanh toán và đặt hàng"
+       },
+       "text": "CHECKOUT / SCAN & SHOP",
+       "products": []
+      },
+      {
+       "id": "s1-promotion-podium",
+       "type": "podium",
+       "pos": [
+        0,
+        0,
+        3.1
+       ],
+       "rot": 0,
+       "size": [
+        2.2,
+        0.65,
+        1.2
+       ],
+       "color": "#FE2C55",
+       "material": "matte",
+       "label": {
+        "ko": "오늘의 라이브 특가",
+        "en": "Today's Live Deals",
+        "zh": "今日直播特惠",
+        "ja": "本日のライブ特価",
+        "vi": "Ưu đãi livestream hôm nay"
+       },
+       "text": "LIVE ONLY",
+       "products": [
+        "ampoule-duo",
+        "makeup-kit",
+        "collagen-mask",
+        "pdrn-balm"
+       ]
+      },
+      {
+       "id": "s1-discovery-kiosk",
+       "type": "kiosk",
+       "pos": [
+        -3.3,
+        0,
+        -1.9
+       ],
+       "rot": 0,
+       "size": [
+        0.75,
+        1.85,
+        0.55
+       ],
+       "color": "#18181A",
+       "material": "metal",
+       "label": {
+        "ko": "상품 검색 및 구매",
+        "en": "Discover & Shop",
+        "zh": "搜索与购买",
+        "ja": "商品検索・購入",
+        "vi": "Khám phá và mua sắm"
+       },
+       "text": "FIND YOUR NEXT FAVORITE",
+       "products": []
+      },
+      {
+       "id": "s1-directory",
+       "type": "banner",
+       "pos": [
+        -4.4,
+        0,
+        7.6
+       ],
+       "rot": 0,
+       "size": [
+        0.9,
+        2.3,
+        0.18
+       ],
+       "color": "#202023",
+       "material": "matte",
+       "label": {
+        "ko": "층별 안내",
+        "en": "Floor Guide",
+        "zh": "楼层指南",
+        "ja": "フロアガイド",
+        "vi": "Hướng dẫn tầng"
+       },
+       "text": "1F BEAUTY & LIVE / 2F LIFESTYLE / 3F CREATOR STUDIOS",
+       "products": []
+      },
+      {
+       "id": "s1-plant",
+       "type": "plant",
+       "pos": [
+        11.9,
+        0,
+        8.1
+       ],
+       "rot": 0,
+       "size": [
+        0.75,
+        1.8,
+        0.75
+       ],
+       "color": "#486044",
+       "material": "matte",
+       "label": {
+        "ko": "실내 식재",
+        "en": "Indoor Plant",
+        "zh": "室内绿植",
+        "ja": "観葉植物",
+        "vi": "Cây nội thất"
+       },
+       "products": []
+      },
+      {
+       "id": "s1-stairs",
+       "type": "stairs",
+       "pos": [
+        -11.15,
+        0,
+        -7.65
+       ],
+       "rot": 90,
+       "size": [
+        2.3,
+        4.5,
+        3.5
+       ],
+       "color": "#333437",
+       "material": "metal",
+       "label": {
+        "ko": "2층으로 이동",
+        "en": "Stairs to 2F",
+        "zh": "前往二层",
+        "ja": "2階への階段",
+        "vi": "Cầu thang lên tầng 2"
+       },
+       "products": []
+      },
+      {
+       "id": "s1-elevator",
+       "type": "elevator",
+       "pos": [
+        -6.75,
+        0,
+        -7.65
+       ],
+       "rot": 0,
+       "size": [
+        2.4,
+        3.1,
+        2.5
+       ],
+       "color": "#BFC2C5",
+       "material": "metal",
+       "label": {
+        "ko": "엘리베이터",
+        "en": "Elevator",
+        "zh": "电梯",
+        "ja": "エレベーター",
+        "vi": "Thang máy"
+       },
+       "text": "1 / 2 / 3",
+       "products": []
+      }
+     ],
+     "spawn": {
+      "pos": [
+       0,
+       1.6,
+       8.1
+      ],
+      "look": 0
+     }
+    },
+    {
+     "level": 2,
+     "title": {
+      "ko": "패션 & 라이프스타일 마켓",
+      "en": "Fashion & Lifestyle Market",
+      "zh": "时尚生活集市",
+      "ja": "ファッション＆ライフスタイル",
+      "vi": "Thời trang và phong cách sống"
+     },
+     "theme": "성수동 편집숍과 프리미엄 마켓의 결합. 전면 좌측 패션, 전면 우측 테크, 중앙 라이프스타일, 후면 K-푸드 구성. 흑색 프레임과 천연 오크 매대를 사용하고 브랜드 레드는 프로모션 사인에만 적용한다.",
+     "size": [
+      26,
+      18
+     ],
+     "height": 4.5,
+     "floor_material": {
+      "pattern": "polished_concrete",
+      "color": "#C4C0B8",
+      "roughness": 0.42,
+      "metalness": 0.03
+     },
+     "wall_material": {
+      "pattern": "white_plaster",
+      "color": "#EFEEE9",
+      "roughness": 0.8
+     },
+     "ceiling": {
+      "type": "open_grid",
+      "color": "#29292B"
+     },
+     "lights": [
+      {
+       "type": "strip",
+       "pos": [
+        0,
+        4.35,
+        0
+       ],
+       "color": "#FFFFFF",
+       "intensity": 4.2,
+       "size": [
+        0.15,
+        15
+       ],
+       "rot": 0
+      },
+      {
+       "type": "strip",
+       "pos": [
+        -7,
+        4.35,
+        0
+       ],
+       "color": "#FFF0DD",
+       "intensity": 3.6,
+       "size": [
+        0.1,
+        14
+       ],
+       "rot": 0
+      },
+      {
+       "type": "strip",
+       "pos": [
+        7,
+        4.35,
+        0
+       ],
+       "color": "#FFFFFF",
+       "intensity": 4,
+       "size": [
+        0.1,
+        14
+       ],
+       "rot": 0
+      },
+      {
+       "type": "area",
+       "pos": [
+        -7,
+        4.15,
+        5.5
+       ],
+       "color": "#FFF0DC",
+       "intensity": 5,
+       "size": [
+        5,
+        2
+       ],
+       "rot": 0
+      },
+      {
+       "type": "area",
+       "pos": [
+        7,
+        4.15,
+        5.5
+       ],
+       "color": "#FFFFFF",
+       "intensity": 5,
+       "size": [
+        5,
+        2
+       ],
+       "rot": 0
+      },
+      {
+       "type": "area",
+       "pos": [
+        -7,
+        4.15,
+        0
+       ],
+       "color": "#FFF4E8",
+       "intensity": 4.5,
+       "size": [
+        5,
+        2
+       ],
+       "rot": 0
+      },
+      {
+       "type": "area",
+       "pos": [
+        7,
+        4.15,
+        0
+       ],
+       "color": "#FFFFFF",
+       "intensity": 4.5,
+       "size": [
+        5,
+        2
+       ],
+       "rot": 0
+      },
+      {
+       "type": "pendant",
+       "pos": [
+        6,
+        3.4,
+        -4.7
+       ],
+       "color": "#FFE1B9",
+       "intensity": 3,
+       "size": [
+        1.3,
+        1.3
+       ],
+       "rot": 0
+      },
+      {
+       "type": "spot",
+       "pos": [
+        0,
+        4.2,
+        4
+       ],
+       "color": "#FFFFFF",
+       "intensity": 5,
+       "size": [
+        0.2,
+        0.2
+       ],
+       "rot": 0
+      },
+      {
+       "type": "strip",
+       "pos": [
+        0,
+        4.3,
+        -7.9
+       ],
+       "color": "#FFFFFF",
+       "intensity": 3.8,
+       "size": [
+        22,
+        0.1
+       ],
+       "rot": 0
+      }
+     ],
+     "fixtures": [
+      {
+       "id": "s2-fashion-wall",
+       "type": "wall_shelf",
+       "pos": [
+        -12.45,
+        0,
+        5.1
+       ],
+       "rot": 90,
+       "size": [
+        6,
+        3,
+        0.95
+       ],
+       "color": "#303033",
+       "material": "metal",
+       "label": {
+        "ko": "시즌 패션",
+        "en": "Seasonal Fashion",
+        "zh": "当季时尚",
+        "ja": "シーズンファッション",
+        "vi": "Thời trang theo mùa"
+       },
+       "text": "THE WINTER EDIT",
+       "products": [
+        "knit",
+        "puffer-vest",
+        "fleece-jacket",
+        "crossbody-bag"
+       ]
+      },
+      {
+       "id": "s2-fashion-island",
+       "type": "island_table",
+       "pos": [
+        -7,
+        0,
+        5.1
+       ],
+       "rot": 0,
+       "size": [
+        5,
+        1.05,
+        1.6
+       ],
+       "color": "#B99976",
+       "material": "wood",
+       "label": {
+        "ko": "겨울 스타일링",
+        "en": "Winter Styling",
+        "zh": "冬季穿搭",
+        "ja": "冬のスタイリング",
+        "vi": "Phong cách mùa đông"
+       },
+       "products": [
+        "knit",
+        "puffer-vest",
+        "fleece-jacket",
+        "crossbody-bag",
+        "keyring"
+       ]
+      },
+      {
+       "id": "s2-lifestyle-wall",
+       "type": "wall_shelf",
+       "pos": [
+        -12.45,
+        0,
+        -1.1
+       ],
+       "rot": 90,
+       "size": [
+        5.8,
+        3,
+        0.95
+       ],
+       "color": "#BDA78C",
+       "material": "wood",
+       "label": {
+        "ko": "일상 생활용품",
+        "en": "Everyday Living",
+        "zh": "日常生活用品",
+        "ja": "暮らしのアイテム",
+        "vi": "Đồ dùng hằng ngày"
+       },
+       "text": "EVERYDAY ESSENTIALS",
+       "products": [
+        "tumbler",
+        "humidifier",
+        "storage-box",
+        "organizer-tray",
+        "travel-pouch",
+        "hand-warmer"
+       ]
+      },
+      {
+       "id": "s2-home-island",
+       "type": "island_table",
+       "pos": [
+        -7,
+        0,
+        0.9
+       ],
+       "rot": 0,
+       "size": [
+        5,
+        1.05,
+        1.6
+       ],
+       "color": "#C8B397",
+       "material": "wood",
+       "label": {
+        "ko": "생활의 발견",
+        "en": "Living Finds",
+        "zh": "生活好物",
+        "ja": "暮らしの発見",
+        "vi": "Khám phá đồ gia dụng"
+       },
+       "products": [
+        "humidifier",
+        "tumbler",
+        "storage-box",
+        "organizer-tray",
+        "travel-pouch",
+        "hand-warmer"
+       ]
+      },
+      {
+       "id": "s2-gift-gondola",
+       "type": "gondola",
+       "pos": [
+        -7,
+        0,
+        -3.3
+       ],
+       "rot": 0,
+       "size": [
+        5,
+        1.5,
+        1.7
+       ],
+       "color": "#E9E7E1",
+       "material": "matte",
+       "label": {
+        "ko": "선물 추천",
+        "en": "Gift Picks",
+        "zh": "礼物推荐",
+        "ja": "ギフトセレクション",
+        "vi": "Gợi ý quà tặng"
+       },
+       "products": [
+        "keyring",
+        "tumbler",
+        "travel-pouch",
+        "crossbody-bag",
+        "hand-warmer",
+        "snack"
+       ]
+      },
+      {
+       "id": "s2-tech-wall",
+       "type": "wall_shelf",
+       "pos": [
+        12.45,
+        0,
+        5.1
+       ],
+       "rot": -90,
+       "size": [
+        6,
+        3,
+        0.95
+       ],
+       "color": "#E9EAEB",
+       "material": "metal",
+       "label": {
+        "ko": "테크 가젯",
+        "en": "Tech Gadgets",
+        "zh": "数码配件",
+        "ja": "テックガジェット",
+        "vi": "Thiết bị công nghệ"
+       },
+       "text": "TECH THAT TRENDS",
+       "products": [
+        "charger",
+        "earbuds",
+        "headphones",
+        "mag-powerbank",
+        "charging-hub",
+        "hair-styler",
+        "beauty-device",
+        "hand-warmer"
+       ]
+      },
+      {
+       "id": "s2-tech-test",
+       "type": "island_table",
+       "pos": [
+        7,
+        0,
+        5.1
+       ],
+       "rot": 0,
+       "size": [
+        5,
+        1.05,
+        1.6
+       ],
+       "color": "#F2F2F0",
+       "material": "matte",
+       "label": {
+        "ko": "테크 체험 테이블",
+        "en": "Hands-on Tech",
+        "zh": "数码体验台",
+        "ja": "テック体験テーブル",
+        "vi": "Bàn trải nghiệm công nghệ"
+       },
+       "products": [
+        "charger",
+        "earbuds",
+        "headphones",
+        "mag-powerbank",
+        "charging-hub",
+        "hand-warmer"
+       ]
+      },
+      {
+       "id": "s2-beauty-tech",
+       "type": "island_table",
+       "pos": [
+        7,
+        0,
+        0.9
+       ],
+       "rot": 0,
+       "size": [
+        5,
+        1.05,
+        1.6
+       ],
+       "color": "#CBCDD0",
+       "material": "metal",
+       "label": {
+        "ko": "시간 절약 뷰티",
+        "en": "Quick Beauty",
+        "zh": "高效美容",
+        "ja": "時短ビューティー",
+        "vi": "Làm đẹp nhanh"
+       },
+       "products": [
+        "hair-styler",
+        "beauty-device",
+        "hair-oil",
+        "scalp-brush",
+        "calcium-stick",
+        "makeup-kit"
+       ]
+      },
+      {
+       "id": "s2-food-wall",
+       "type": "wall_shelf",
+       "pos": [
+        12.45,
+        0,
+        -2
+       ],
+       "rot": -90,
+       "size": [
+        7.2,
+        3,
+        0.95
+       ],
+       "color": "#D5BE9F",
+       "material": "wood",
+       "label": {
+        "ko": "K-푸드 마켓",
+        "en": "K-Food Market",
+        "zh": "韩国食品集市",
+        "ja": "韓国フードマーケット",
+        "vi": "Chợ thực phẩm Hàn Quốc"
+       },
+       "text": "TASTE OF SEOUL",
+       "products": [
+        "snack",
+        "ramen-box",
+        "protein-snack",
+        "korean-tea",
+        "japanese-snack-box"
+       ]
+      },
+      {
+       "id": "s2-food-island",
+       "type": "gondola",
+       "pos": [
+        7,
+        0,
+        -3.3
+       ],
+       "rot": 0,
+       "size": [
+        5,
+        1.5,
+        1.7
+       ],
+       "color": "#D8C4AA",
+       "material": "wood",
+       "label": {
+        "ko": "인기 간식 묶음",
+        "en": "Snack Bundles",
+        "zh": "热门零食组合",
+        "ja": "人気お菓子セット",
+        "vi": "Combo đồ ăn vặt"
+       },
+       "products": [
+        "snack",
+        "ramen-box",
+        "protein-snack",
+        "korean-tea",
+        "japanese-snack-box"
+       ]
+      },
+      {
+       "id": "s2-season-podium",
+       "type": "podium",
+       "pos": [
+        0,
+        0,
+        4.5
+       ],
+       "rot": 0,
+       "size": [
+        2.5,
+        0.65,
+        1.5
+       ],
+       "color": "#272729",
+       "material": "matte",
+       "label": {
+        "ko": "시즌 추천 상품",
+        "en": "Seasonal Highlights",
+        "zh": "当季精选",
+        "ja": "シーズンおすすめ",
+        "vi": "Sản phẩm nổi bật theo mùa"
+       },
+       "products": [
+        "puffer-vest",
+        "hand-warmer",
+        "tumbler",
+        "fleece-jacket",
+        "ramen-box"
+       ]
+      },
+      {
+       "id": "s2-gadget-case",
+       "type": "display_case",
+       "pos": [
+        0,
+        0,
+        0.4
+       ],
+       "rot": 0,
+       "size": [
+        2.5,
+        1.2,
+        1.25
+       ],
+       "color": "#E4E5E6",
+       "material": "glass",
+       "label": {
+        "ko": "프리미엄 테크",
+        "en": "Premium Tech",
+        "zh": "高端数码",
+        "ja": "プレミアムテック",
+        "vi": "Công nghệ cao cấp"
+       },
+       "products": [
+        "headphones",
+        "earbuds",
+        "mag-powerbank",
+        "charging-hub",
+        "hair-styler"
+       ]
+      },
+      {
+       "id": "s2-editorial-led",
+       "type": "led_wall",
+       "pos": [
+        0,
+        0,
+        -8.75
+       ],
+       "rot": 0,
+       "size": [
+        7,
+        3.6,
+        0.3
+       ],
+       "color": "#101012",
+       "material": "gloss",
+       "label": {
+        "ko": "크리에이터 추천",
+        "en": "Creator Picks",
+        "zh": "达人推荐",
+        "ja": "クリエイターおすすめ",
+        "vi": "Gợi ý từ nhà sáng tạo"
+       },
+       "video": "creator",
+       "products": []
+      },
+      {
+       "id": "s2-checkout",
+       "type": "checkout",
+       "pos": [
+        7.2,
+        0,
+        -7.2
+       ],
+       "rot": 0,
+       "size": [
+        4.5,
+        1.15,
+        1.2
+       ],
+       "color": "#242426",
+       "material": "metal",
+       "label": {
+        "ko": "상품 결제",
+        "en": "Checkout",
+        "zh": "商品结账",
+        "ja": "お会計",
+        "vi": "Thanh toán"
+       },
+       "text": "SCAN & SHOP",
+       "products": []
+      },
+      {
+       "id": "s2-rest-bench",
+       "type": "bench",
+       "pos": [
+        0,
+        0,
+        -4.2
+       ],
+       "rot": 0,
+       "size": [
+        2.6,
+        0.48,
+        0.8
+       ],
+       "color": "#9C7958",
+       "material": "wood",
+       "label": {
+        "ko": "휴식 벤치",
+        "en": "Rest Bench",
+        "zh": "休息长椅",
+        "ja": "休憩ベンチ",
+        "vi": "Ghế nghỉ"
+       },
+       "products": []
+      },
+      {
+       "id": "s2-floor-kiosk",
+       "type": "kiosk",
+       "pos": [
+        -3.2,
+        0,
+        -7.8
+       ],
+       "rot": 0,
+       "size": [
+        0.75,
+        1.85,
+        0.5
+       ],
+       "color": "#202022",
+       "material": "metal",
+       "label": {
+        "ko": "상품 및 층별 안내",
+        "en": "Product & Floor Guide",
+        "zh": "商品与楼层指南",
+        "ja": "商品・フロア案内",
+        "vi": "Hướng dẫn sản phẩm và tầng"
+       },
+       "products": []
+      },
+      {
+       "id": "s2-plant",
+       "type": "plant",
+       "pos": [
+        11.9,
+        0,
+        8.1
+       ],
+       "rot": 0,
+       "size": [
+        0.8,
+        1.8,
+        0.8
+       ],
+       "color": "#486044",
+       "material": "matte",
+       "label": {
+        "ko": "실내 식재",
+        "en": "Indoor Plant",
+        "zh": "室内绿植",
+        "ja": "観葉植物",
+        "vi": "Cây nội thất"
+       },
+       "products": []
+      },
+      {
+       "id": "s2-stairs",
+       "type": "stairs",
+       "pos": [
+        -11.15,
+        0,
+        -7.65
+       ],
+       "rot": 90,
+       "size": [
+        2.3,
+        4.5,
+        3.5
+       ],
+       "color": "#333437",
+       "material": "metal",
+       "label": {
+        "ko": "1층·3층 계단",
+        "en": "Stairs to 1F & 3F",
+        "zh": "通往一层与三层",
+        "ja": "1階・3階への階段",
+        "vi": "Cầu thang tầng 1 và 3"
+       },
+       "products": []
+      },
+      {
+       "id": "s2-elevator",
+       "type": "elevator",
+       "pos": [
+        -6.75,
+        0,
+        -7.65
+       ],
+       "rot": 0,
+       "size": [
+        2.4,
+        3.1,
+        2.5
+       ],
+       "color": "#BFC2C5",
+       "material": "metal",
+       "label": {
+        "ko": "엘리베이터",
+        "en": "Elevator",
+        "zh": "电梯",
+        "ja": "エレベーター",
+        "vi": "Thang máy"
+       },
+       "text": "1 / 2 / 3",
+       "products": []
+      }
+     ],
+     "spawn": {
+      "pos": [
+       -6.75,
+       1.6,
+       -4.65
+      ],
+      "look": 180
+     }
+    },
+    {
+     "level": 3,
+     "title": {
+      "ko": "크리에이터 라이브 하우스",
+      "en": "Creator Live House",
+      "zh": "达人直播中心",
+      "ja": "クリエイターライブハウス",
+      "vi": "Trung tâm livestream nhà sáng tạo"
+     },
+     "theme": "실제 방송국 수준의 크리에이터 제작 공간. 좌측 2개와 우측 2개의 유리 방음 스튜디오, 중앙 관람 복도, 후면 크리에이터 라운지 및 메이크업 대기 공간. 스튜디오별 세트 디자인을 차별화하고 관람객은 유리 외부에서 방송을 시청한다.",
+     "size": [
+      26,
+      18
+     ],
+     "height": 4.5,
+     "floor_material": {
+      "pattern": "epoxy",
+      "color": "#77797C",
+      "roughness": 0.45,
+      "metalness": 0.05
+     },
+     "wall_material": {
+      "pattern": "black_metal",
+      "color": "#292A2D",
+      "roughness": 0.65
+     },
+     "ceiling": {
+      "type": "exposed_duct",
+      "color": "#171719"
+     },
+     "lights": [
+      {
+       "type": "strip",
+       "pos": [
+        0,
+        4.3,
+        1
+       ],
+       "color": "#FFFFFF",
+       "intensity": 3.8,
+       "size": [
+        0.18,
+        13
+       ],
+       "rot": 0
+      },
+      {
+       "type": "area",
+       "pos": [
+        -9,
+        4.05,
+        4.5
+       ],
+       "color": "#FFF5EB",
+       "intensity": 6,
+       "size": [
+        4.5,
+        3
+       ],
+       "rot": 0
+      },
+      {
+       "type": "area",
+       "pos": [
+        -9,
+        4.05,
+        -2.2
+       ],
+       "color": "#FFFFFF",
+       "intensity": 6,
+       "size": [
+        4.5,
+        3
+       ],
+       "rot": 0
+      },
+      {
+       "type": "area",
+       "pos": [
+        9,
+        4.05,
+        4.5
+       ],
+       "color": "#FFF1DD",
+       "intensity": 6,
+       "size": [
+        4.5,
+        3
+       ],
+       "rot": 0
+      },
+      {
+       "type": "area",
+       "pos": [
+        9,
+        4.05,
+        -2.2
+       ],
+       "color": "#FFFFFF",
+       "intensity": 6,
+       "size": [
+        4.5,
+        3
+       ],
+       "rot": 0
+      },
+      {
+       "type": "neon",
+       "pos": [
+        -5.8,
+        3.8,
+        4.5
+       ],
+       "color": "#FE2C55",
+       "intensity": 1.4,
+       "size": [
+        0.08,
+        2.5
+       ],
+       "rot": 90
+      },
+      {
+       "type": "neon",
+       "pos": [
+        5.8,
+        3.8,
+        4.5
+       ],
+       "color": "#25F4EE",
+       "intensity": 1.4,
+       "size": [
+        0.08,
+        2.5
+       ],
+       "rot": -90
+      },
+      {
+       "type": "area",
+       "pos": [
+        0,
+        4.1,
+        -6.6
+       ],
+       "color": "#FFE6CD",
+       "intensity": 3,
+       "size": [
+        5.5,
+        2
+       ],
+       "rot": 0
+      },
+      {
+       "type": "area",
+       "pos": [
+        9,
+        4.15,
+        -7.1
+       ],
+       "color": "#FFFFFF",
+       "intensity": 4,
+       "size": [
+        5,
+        2
+       ],
+       "rot": 0
+      },
+      {
+       "type": "spot",
+       "pos": [
+        0,
+        4.1,
+        5.9
+       ],
+       "color": "#FFFFFF",
+       "intensity": 4,
+       "size": [
+        0.18,
+        0.18
+       ],
+       "rot": 0
+      }
+     ],
+     "fixtures": [
+      {
+       "id": "s3-studio-beauty",
+       "type": "studio_booth",
+       "pos": [
+        -9.4,
+        0,
+        4.6
+       ],
+       "rot": 90,
+       "size": [
+        4.8,
+        3.8,
+        6.4
+       ],
+       "color": "#EADFD8",
+       "material": "glass",
+       "label": {
+        "ko": "스튜디오 A · 뷰티",
+        "en": "Studio A · Beauty",
+        "zh": "A直播间 · 美妆",
+        "ja": "スタジオA · ビューティー",
+        "vi": "Studio A · Làm đẹp"
+       },
+       "text": "STUDIO A / ON AIR",
+       "video": "studio",
+       "products": [
+        "serum",
+        "pdrn-balm",
+        "ampoule-duo",
+        "heartleaf-toner",
+        "calcium-stick",
+        "collagen-mask",
+        "cushion",
+        "tint"
+       ]
+      },
+      {
+       "id": "s3-studio-fashion",
+       "type": "studio_booth",
+       "pos": [
+        -9.4,
+        0,
+        -2.2
+       ],
+       "rot": 90,
+       "size": [
+        4.8,
+        3.8,
+        6.4
+       ],
+       "color": "#D0C0AC",
+       "material": "glass",
+       "label": {
+        "ko": "스튜디오 B · 패션",
+        "en": "Studio B · Fashion",
+        "zh": "B直播间 · 时尚",
+        "ja": "スタジオB · ファッション",
+        "vi": "Studio B · Thời trang"
+       },
+       "text": "STUDIO B / FASHION LIVE",
+       "video": "creator",
+       "products": [
+        "knit",
+        "puffer-vest",
+        "fleece-jacket",
+        "crossbody-bag",
+        "keyring",
+        "travel-pouch"
+       ]
+      },
+      {
+       "id": "s3-studio-food",
+       "type": "studio_booth",
+       "pos": [
+        9.4,
+        0,
+        4.6
+       ],
+       "rot": -90,
+       "size": [
+        4.8,
+        3.8,
+        6.4
+       ],
+       "color": "#B59C79",
+       "material": "glass",
+       "label": {
+        "ko": "스튜디오 C · 푸드",
+        "en": "Studio C · Food",
+        "zh": "C直播间 · 美食",
+        "ja": "スタジオC · フード",
+        "vi": "Studio C · Ẩm thực"
+       },
+       "text": "STUDIO C / FOOD LIVE",
+       "video": "studio",
+       "products": [
+        "snack",
+        "ramen-box",
+        "protein-snack",
+        "korean-tea",
+        "japanese-snack-box",
+        "tumbler"
+       ]
+      },
+      {
+       "id": "s3-studio-tech",
+       "type": "studio_booth",
+       "pos": [
+        9.4,
+        0,
+        -2.2
+       ],
+       "rot": -90,
+       "size": [
+        4.8,
+        3.8,
+        6.4
+       ],
+       "color": "#474B50",
+       "material": "glass",
+       "label": {
+        "ko": "스튜디오 D · 테크",
+        "en": "Studio D · Tech",
+        "zh": "D直播间 · 数码",
+        "ja": "スタジオD · テック",
+        "vi": "Studio D · Công nghệ"
+       },
+       "text": "STUDIO D / TECH LIVE",
+       "video": "studio",
+       "products": [
+        "headphones",
+        "earbuds",
+        "charger",
+        "mag-powerbank",
+        "charging-hub",
+        "beauty-device",
+        "hair-styler"
+       ]
+      },
+      {
+       "id": "s3-schedule-led",
+       "type": "led_wall",
+       "pos": [
+        0,
+        0,
+        8.7
+       ],
+       "rot": 180,
+       "size": [
+        7,
+        3.2,
+        0.3
+       ],
+       "color": "#111113",
+       "material": "gloss",
+       "label": {
+        "ko": "오늘의 방송 편성",
+        "en": "Live Schedule",
+        "zh": "今日直播安排",
+        "ja": "本日の配信スケジュール",
+        "vi": "Lịch livestream hôm nay"
+       },
+       "video": "hero",
+       "products": []
+      },
+      {
+       "id": "s3-creator-counter",
+       "type": "counter",
+       "pos": [
+        0,
+        0,
+        4.8
+       ],
+       "rot": 0,
+       "size": [
+        2.8,
+        1.15,
+        1.1
+       ],
+       "color": "#242426",
+       "material": "metal",
+       "label": {
+        "ko": "크리에이터 체크인",
+        "en": "Creator Check-in",
+        "zh": "达人签到",
+        "ja": "クリエイター受付",
+        "vi": "Quầy tiếp nhận nhà sáng tạo"
+       },
+       "text": "CREATOR CHECK-IN",
+       "products": []
+      },
+      {
+       "id": "s3-product-preparation",
+       "type": "island_table",
+       "pos": [
+        0,
+        0,
+        0.6
+       ],
+       "rot": 0,
+       "size": [
+        2.8,
+        1.05,
+        1.35
+       ],
+       "color": "#BFC1C3",
+       "material": "metal",
+       "label": {
+        "ko": "방송 상품 큐레이션",
+        "en": "Live Product Selection",
+        "zh": "直播商品精选",
+        "ja": "配信商品セレクション",
+        "vi": "Sản phẩm tuyển chọn livestream"
+       },
+       "products": [
+        "pdrn-balm",
+        "ampoule-duo",
+        "makeup-kit",
+        "mag-powerbank",
+        "hair-styler",
+        "snack",
+        "headphones",
+        "tumbler"
+       ]
+      },
+      {
+       "id": "s3-lounge-sofa",
+       "type": "sofa",
+       "pos": [
+        0,
+        0,
+        -7.7
+       ],
+       "rot": 0,
+       "size": [
+        4.6,
+        0.95,
+        1.05
+       ],
+       "color": "#8C7867",
+       "material": "fabric",
+       "label": {
+        "ko": "크리에이터 라운지",
+        "en": "Creator Lounge",
+        "zh": "达人休息区",
+        "ja": "クリエイターラウンジ",
+        "vi": "Phòng chờ nhà sáng tạo"
+       },
+       "products": []
+      },
+      {
+       "id": "s3-lounge-rug",
+       "type": "rug",
+       "pos": [
+        0,
+        0,
+        -6.25
+       ],
+       "rot": 0,
+       "size": [
+        5.2,
+        0.015,
+        1.4
+       ],
+       "color": "#A09C96",
+       "material": "fabric",
+       "label": {
+        "ko": "라운지 러그",
+        "en": "Lounge Rug",
+        "zh": "休息区地毯",
+        "ja": "ラウンジラグ",
+        "vi": "Thảm phòng chờ"
+       },
+       "products": []
+      },
+      {
+       "id": "s3-waiting-bench",
+       "type": "bench",
+       "pos": [
+        3.5,
+        0,
+        -5.6
+       ],
+       "rot": 90,
+       "size": [
+        2.4,
+        0.48,
+        0.75
+       ],
+       "color": "#47484B",
+       "material": "fabric",
+       "label": {
+        "ko": "촬영 대기석",
+        "en": "Filming Waiting Area",
+        "zh": "拍摄等候区",
+        "ja": "撮影待機席",
+        "vi": "Khu vực chờ quay"
+       },
+       "products": []
+      },
+      {
+       "id": "s3-makeup-vanity",
+       "type": "vanity_mirror",
+       "pos": [
+        9,
+        0,
+        -8.35
+       ],
+       "rot": 0,
+       "size": [
+        5.6,
+        2.5,
+        0.35
+       ],
+       "color": "#E4E4E2",
+       "material": "metal",
+       "label": {
+        "ko": "촬영 준비 메이크업 미러",
+        "en": "Makeup Preparation Mirror",
+        "zh": "拍摄准备化妆镜",
+        "ja": "撮影準備メイクミラー",
+        "vi": "Gương trang điểm trước khi quay"
+       },
+       "products": []
+      },
+      {
+       "id": "s3-makeup-counter",
+       "type": "counter",
+       "pos": [
+        9,
+        0,
+        -7.25
+       ],
+       "rot": 0,
+       "size": [
+        5.6,
+        0.9,
+        0.65
+       ],
+       "color": "#E6E5E1",
+       "material": "matte",
+       "label": {
+        "ko": "메이크업 준비대",
+        "en": "Makeup Preparation Counter",
+        "zh": "化妆准备台",
+        "ja": "メイク準備台",
+        "vi": "Bàn chuẩn bị trang điểm"
+       },
+       "products": [
+        "cushion",
+        "tint",
+        "lip-oil",
+        "blush-stick",
+        "hair-oil",
+        "makeup-kit"
+       ]
+      },
+      {
+       "id": "s3-demo-ringlight",
+       "type": "ring_light",
+       "pos": [
+        -3.3,
+        0,
+        0.6
+       ],
+       "rot": 0,
+       "size": [
+        0.65,
+        1.95,
+        0.65
+       ],
+       "color": "#F6F6F6",
+       "material": "metal",
+       "label": {
+        "ko": "촬영 장비 체험",
+        "en": "Lighting Demo",
+        "zh": "灯光设备体验",
+        "ja": "照明機材体験",
+        "vi": "Trải nghiệm thiết bị chiếu sáng"
+       },
+       "products": []
+      },
+      {
+       "id": "s3-demo-camera",
+       "type": "camera",
+       "pos": [
+        3.3,
+        0,
+        0.6
+       ],
+       "rot": 180,
+       "size": [
+        0.65,
+        1.65,
+        0.65
+       ],
+       "color": "#161618",
+       "material": "metal",
+       "label": {
+        "ko": "방송 카메라",
+        "en": "Broadcast Camera",
+        "zh": "直播摄像机",
+        "ja": "配信カメラ",
+        "vi": "Máy quay livestream"
+       },
+       "products": []
+      },
+      {
+       "id": "s3-creator-neon",
+       "type": "neon_sign",
+       "pos": [
+        0,
+        0,
+        -8.85
+       ],
+       "rot": 0,
+       "size": [
+        5,
+        3.5,
+        0.1
+       ],
+       "color": "#25F4EE",
+       "material": "gloss",
+       "label": {
+        "ko": "크리에이터 하우스",
+        "en": "Creator House",
+        "zh": "达人之家",
+        "ja": "クリエイターハウス",
+        "vi": "Nhà sáng tạo"
+       },
+       "text": "CREATE WHAT'S NEXT",
+       "products": []
+      },
+      {
+       "id": "s3-poster",
+       "type": "poster",
+       "pos": [
+        12.88,
+        0,
+        -6.5
+       ],
+       "rot": -90,
+       "size": [
+        2.5,
+        3.3,
+        0.06
+       ],
+       "color": "#FE2C55",
+       "material": "matte",
+       "label": {
+        "ko": "크리에이터 모집",
+        "en": "Become a Creator",
+        "zh": "招募内容达人",
+        "ja": "クリエイター募集",
+        "vi": "Tuyển nhà sáng tạo"
+       },
+       "text": "YOUR STORY. YOUR SHOP.",
+       "products": []
+      },
+      {
+       "id": "s3-stairs",
+       "type": "stairs",
+       "pos": [
+        -11.15,
+        0,
+        -7.65
+       ],
+       "rot": 90,
+       "size": [
+        2.3,
+        4.5,
+        3.5
+       ],
+       "color": "#333437",
+       "material": "metal",
+       "label": {
+        "ko": "2층으로 이동",
+        "en": "Stairs to 2F",
+        "zh": "前往二层",
+        "ja": "2階への階段",
+        "vi": "Cầu thang xuống tầng 2"
+       },
+       "products": []
+      },
+      {
+       "id": "s3-elevator",
+       "type": "elevator",
+       "pos": [
+        -6.75,
+        0,
+        -7.65
+       ],
+       "rot": 0,
+       "size": [
+        2.4,
+        3.1,
+        2.5
+       ],
+       "color": "#BFC2C5",
+       "material": "metal",
+       "label": {
+        "ko": "엘리베이터",
+        "en": "Elevator",
+        "zh": "电梯",
+        "ja": "エレベーター",
+        "vi": "Thang máy"
+       },
+       "text": "1 / 2 / 3",
+       "products": []
+      }
+     ],
+     "spawn": {
+      "pos": [
+       -6.75,
+       1.6,
+       -5.2
+      ],
+      "look": 90
+     }
+    }
+   ]
+  },
+  {
+   "id": "tokyo",
+   "name": {
+    "ko": "TikTok Shop 도쿄 쇼룸",
+    "en": "TikTok Shop Tokyo Showroom",
+    "zh": "TikTok Shop 东京体验店",
+    "ja": "TikTok Shop 東京ショールーム",
+    "vi": "TikTok Shop Showroom Tokyo"
+   },
+   "concept": "하라주쿠와 시부야의 감도 높은 뷰티 편집숍을 결합한 3층 쇼룸. 밝은 오크와 백색 미장, 반투명 유리, 정교한 알루미늄 선반을 사용한다. 서울점보다 밝고 정돈된 공간이며 일본식 상품 분류, 랭킹 진열, 소형 제품의 반복 배열, 선물 패키징에 집중한다. 모든 랭킹과 판매 데이터는 가상 쇼룸용 예시다. 실제 건축 설계 및 시공 도면이 아니므로 계단의 구조와 방재 설계는 별도 검토가 필요하다.",
+   "palette": {
+    "primary": "#FE2C55",
+    "accent": "#25F4EE",
+    "neutral": "#F5F2EB",
+    "dark": "#202022"
+   },
+   "floors": [
+    {
+     "level": 1,
+     "title": {
+      "ko": "바이럴 뷰티 & 랭킹",
+      "en": "Viral Beauty & Ranking",
+      "zh": "热门美妆与排行榜",
+      "ja": "バズり美容＆ランキング",
+      "vi": "Mỹ phẩm thịnh hành và xếp hạng"
+     },
+     "theme": "도쿄 뷰티 플래그십. 밝은 오크 바닥과 백색 천장, 정면 중앙의 시즌 상품 아일랜드, 좌측 K-뷰티, 우측 J-뷰티 및 체험 바. 후면의 대형 랭킹 월에서 인기 상품 10개를 순서대로 전시한다.",
+     "size": [
+      26,
+      18
+     ],
+     "height": 4.5,
+     "floor_material": {
+      "pattern": "light_oak",
+      "color": "#DECCAF",
+      "roughness": 0.48,
+      "metalness": 0
+     },
+     "wall_material": {
+      "pattern": "white_plaster",
+      "color": "#F6F5F0",
+      "roughness": 0.72
+     },
+     "ceiling": {
+      "type": "baffles",
+      "color": "#F7F7F4"
+     },
+     "lights": [
+      {
+       "type": "area",
+       "pos": [
+        0,
+        4.3,
+        6.6
+       ],
+       "color": "#FFFFFF",
+       "intensity": 5,
+       "size": [
+        10,
+        2.5
+       ],
+       "rot": 0
+      },
+      {
+       "type": "strip",
+       "pos": [
+        -5,
+        4.3,
+        0
+       ],
+       "color": "#FFF8EE",
+       "intensity": 3.8,
+       "size": [
+        0.15,
+        15
+       ],
+       "rot": 0
+      },
+      {
+       "type": "strip",
+       "pos": [
+        5,
+        4.3,
+        0
+       ],
+       "color": "#FFF8EE",
+       "intensity": 3.8,
+       "size": [
+        0.15,
+        15
+       ],
+       "rot": 0
+      },
+      {
+       "type": "area",
+       "pos": [
+        -7,
+        4.15,
+        5.1
+       ],
+       "color": "#FFFFFF",
+       "intensity": 5,
+       "size": [
+        5,
+        2
+       ],
+       "rot": 0
+      },
+      {
+       "type": "area",
+       "pos": [
+        7,
+        4.15,
+        5.1
+       ],
+       "color": "#FFFFFF",
+       "intensity": 5,
+       "size": [
+        5,
+        2
+       ],
+       "rot": 0
+      },
+      {
+       "type": "area",
+       "pos": [
+        -7,
+        4.15,
+        0.9
+       ],
+       "color": "#FFF5E9",
+       "intensity": 4.8,
+       "size": [
+        5,
+        2
+       ],
+       "rot": 0
+      },
+      {
+       "type": "area",
+       "pos": [
+        7,
+        4.15,
+        0.9
+       ],
+       "color": "#FFFFFF",
+       "intensity": 4.8,
+       "size": [
+        5,
+        2
+       ],
+       "rot": 0
+      },
+      {
+       "type": "strip",
+       "pos": [
+        0,
+        3.9,
+        -8.2
+       ],
+       "color": "#FFFFFF",
+       "intensity": 5,
+       "size": [
+        7.4,
+        0.12
+       ],
+       "rot": 0
+      },
+      {
+       "type": "strip",
+       "pos": [
+        -12.1,
+        3.6,
+        0
+       ],
+       "color": "#FFF5E8",
+       "intensity": 3,
+       "size": [
+        0.12,
+        14
+       ],
+       "rot": 0
+      },
+      {
+       "type": "strip",
+       "pos": [
+        12.1,
+        3.6,
+        0
+       ],
+       "color": "#FFF5E8",
+       "intensity": 3,
+       "size": [
+        0.12,
+        14
+       ],
+       "rot": 0
+      },
+      {
+       "type": "neon",
+       "pos": [
+        12.8,
+        3.4,
+        6.8
+       ],
+       "color": "#FE2C55",
+       "intensity": 1.2,
+       "size": [
+        0.08,
+        1.8
+       ],
+       "rot": -90
+      }
+     ],
+     "fixtures": [
+      {
+       "id": "t1-entrance-led",
+       "type": "led_wall",
+       "pos": [
+        -12.8,
+        0,
+        5.5
+       ],
+       "rot": 90,
+       "size": [
+        4.6,
+        3.6,
+        0.3
+       ],
+       "color": "#111113",
+       "material": "gloss",
+       "label": {
+        "ko": "도쿄 트렌드",
+        "en": "Tokyo Trends",
+        "zh": "东京潮流",
+        "ja": "東京トレンド",
+        "vi": "Xu hướng Tokyo"
+       },
+       "video": "host-jp",
+       "products": []
+      },
+      {
+       "id": "t1-ranking-wall",
+       "type": "ranking_wall",
+       "pos": [
+        0,
+        0,
+        -8.4
+       ],
+       "rot": 0,
+       "size": [
+        8.2,
+        3.45,
+        0.9
+       ],
+       "color": "#FDFCF9",
+       "material": "matte",
+       "label": {
+        "ko": "뷰티 인기 순위 1–10위",
+        "en": "Beauty Ranking Top 10",
+        "zh": "美妆人气前十",
+        "ja": "バズり美容ランキング TOP10",
+        "vi": "Top 10 mỹ phẩm thịnh hành"
+       },
+       "text": "TOKYO BEAUTY TOP 10",
+       "products": [
+        "pdrn-balm",
+        "heartleaf-toner",
+        "collagen-mask",
+        "ampoule-duo",
+        "calcium-stick",
+        "peel-lipliner",
+        "cushion",
+        "rice-toner",
+        "sunscreen",
+        "lip-oil"
+       ]
+      },
+      {
+       "id": "t1-kbeauty-wall",
+       "type": "wall_shelf",
+       "pos": [
+        -12.45,
+        0,
+        0
+       ],
+       "rot": 90,
+       "size": [
+        5.6,
+        3.1,
+        0.95
+       ],
+       "color": "#D8C1A1",
+       "material": "wood",
+       "label": {
+        "ko": "한국 수입 뷰티",
+        "en": "Korean Beauty Imports",
+        "zh": "韩国进口美妆",
+        "ja": "韓国コスメセレクション",
+        "vi": "Mỹ phẩm nhập khẩu Hàn Quốc"
+       },
+       "text": "韓国コスメ / K-BEAUTY",
+       "products": [
+        "serum",
+        "pdrn-balm",
+        "heartleaf-toner",
+        "ampoule-duo",
+        "calcium-stick",
+        "collagen-mask",
+        "cushion",
+        "tint"
+       ]
+      },
+      {
+       "id": "t1-jbeauty-wall",
+       "type": "wall_shelf",
+       "pos": [
+        12.45,
+        0,
+        4.8
+       ],
+       "rot": -90,
+       "size": [
+        6,
+        3.1,
+        0.95
+       ],
+       "color": "#E1CDB1",
+       "material": "wood",
+       "label": {
+        "ko": "일본 뷰티 셀렉션",
+        "en": "Japanese Beauty Selection",
+        "zh": "日本美妆精选",
+        "ja": "ジャパンビューティー",
+        "vi": "Mỹ phẩm tuyển chọn Nhật Bản"
+       },
+       "text": "J-BEAUTY EDIT",
+       "products": [
+        "rice-toner",
+        "cleansing-balm",
+        "sunscreen",
+        "hair-oil",
+        "lip-oil",
+        "scalp-brush"
+       ]
+      },
+      {
+       "id": "t1-new-island",
+       "type": "island_table",
+       "pos": [
+        0,
+        0,
+        5.3
+       ],
+       "rot": 0,
+       "size": [
+        3.1,
+        1.05,
+        1.6
+       ],
+       "color": "#FFFFFF",
+       "material": "gloss",
+       "label": {
+        "ko": "이번 주 화제의 신상품",
+        "en": "Trending New Arrivals",
+        "zh": "本周热门新品",
+        "ja": "今週の話題の新商品",
+        "vi": "Sản phẩm mới thịnh hành"
+       },
+       "text": "NEW & VIRAL",
+       "products": [
+        "peel-lipliner",
+        "lip-oil",
+        "blush-stick",
+        "calcium-stick",
+        "beauty-device",
+        "ampoule-duo"
+       ]
+      },
+      {
+       "id": "t1-skincare-island",
+       "type": "island_table",
+       "pos": [
+        -7,
+        0,
+        5.1
+       ],
+       "rot": 0,
+       "size": [
+        5,
+        1.05,
+        1.6
+       ],
+       "color": "#DCC6A6",
+       "material": "wood",
+       "label": {
+        "ko": "인기 한국 스킨케어",
+        "en": "Viral Korean Skincare",
+        "zh": "热门韩国护肤",
+        "ja": "話題の韓国スキンケア",
+        "vi": "Chăm sóc da Hàn Quốc thịnh hành"
+       },
+       "products": [
+        "pdrn-balm",
+        "serum",
+        "heartleaf-toner",
+        "ampoule-duo",
+        "collagen-mask",
+        "calcium-stick"
+       ]
+      },
+      {
+       "id": "t1-jbeauty-island",
+       "type": "island_table",
+       "pos": [
+        7,
+        0,
+        5.1
+       ],
+       "rot": 0,
+       "size": [
+        5,
+        1.05,
+        1.6
+       ],
+       "color": "#F5F4EF",
+       "material": "matte",
+       "label": {
+        "ko": "일본 데일리 뷰티",
+        "en": "Japanese Daily Beauty",
+        "zh": "日本日常美容",
+        "ja": "毎日のジャパンビューティー",
+        "vi": "Làm đẹp hằng ngày Nhật Bản"
+       },
+       "products": [
+        "rice-toner",
+        "cleansing-balm",
+        "sunscreen",
+        "hair-oil",
+        "mask",
+        "lip-oil"
+       ]
+      },
+      {
+       "id": "t1-kit-gondola",
+       "type": "gondola",
+       "pos": [
+        -7,
+        0,
+        0.9
+       ],
+       "rot": 0,
+       "size": [
+        5,
+        1.45,
+        1.6
+       ],
+       "color": "#E5D5BE",
+       "material": "wood",
+       "label": {
+        "ko": "뷰티 기획 세트",
+        "en": "Beauty Value Sets",
+        "zh": "美妆优惠套装",
+        "ja": "お得な美容セット",
+        "vi": "Bộ mỹ phẩm ưu đãi"
+       },
+       "text": "SET & KIT",
+       "products": [
+        "ampoule-duo",
+        "makeup-kit",
+        "collagen-mask",
+        "mask",
+        "pdrn-balm",
+        "serum"
+       ]
+      },
+      {
+       "id": "t1-tester-bar",
+       "type": "tester_bar",
+       "pos": [
+        7,
+        0,
+        0.9
+       ],
+       "rot": 0,
+       "size": [
+        5,
+        1.15,
+        1.6
+       ],
+       "color": "#FFFFFF",
+       "material": "gloss",
+       "label": {
+        "ko": "메이크업 체험 바",
+        "en": "Makeup Test Bar",
+        "zh": "彩妆试用吧",
+        "ja": "メイク体験バー",
+        "vi": "Quầy thử trang điểm"
+       },
+       "text": "TRY BEFORE YOU SHOP",
+       "products": [
+        "cushion",
+        "tint",
+        "lip-oil",
+        "peel-lipliner",
+        "blush-stick",
+        "makeup-kit"
+       ]
+      },
+      {
+       "id": "t1-tester-mirror",
+       "type": "vanity_mirror",
+       "pos": [
+        7,
+        0,
+        -0.1
+       ],
+       "rot": 0,
+       "size": [
+        4.8,
+        2.3,
+        0.1
+       ],
+       "color": "#D8DADB",
+       "material": "metal",
+       "label": {
+        "ko": "조명 메이크업 미러",
+        "en": "Illuminated Beauty Mirror",
+        "zh": "带灯化妆镜",
+        "ja": "照明付きメイクミラー",
+        "vi": "Gương trang điểm có đèn"
+       },
+       "products": []
+      },
+      {
+       "id": "t1-time-saving-wall",
+       "type": "wall_shelf",
+       "pos": [
+        12.45,
+        0,
+        -1.5
+       ],
+       "rot": -90,
+       "size": [
+        5.8,
+        3.1,
+        0.95
+       ],
+       "color": "#E5D1B4",
+       "material": "wood",
+       "label": {
+        "ko": "시간 절약 뷰티",
+        "en": "Quick Beauty Essentials",
+        "zh": "省时美容好物",
+        "ja": "時短美容アイテム",
+        "vi": "Mỹ phẩm tiết kiệm thời gian"
+       },
+       "text": "時短美容",
+       "products": [
+        "hair-styler",
+        "beauty-device",
+        "hair-oil",
+        "scalp-brush",
+        "calcium-stick",
+        "makeup-kit"
+       ]
+      },
+      {
+       "id": "t1-mask-gondola",
+       "type": "gondola",
+       "pos": [
+        -7,
+        0,
+        -3.2
+       ],
+       "rot": 0,
+       "size": [
+        5,
+        1.45,
+        1.6
+       ],
+       "color": "#F1EDE6",
+       "material": "matte",
+       "label": {
+        "ko": "데일리 마스크팩",
+        "en": "Daily Face Masks",
+        "zh": "日常面膜",
+        "ja": "デイリーマスク",
+        "vi": "Mặt nạ hằng ngày"
+       },
+       "products": [
+        "mask",
+        "collagen-mask",
+        "serum",
+        "heartleaf-toner",
+        "rice-toner"
+       ]
+      },
+      {
+       "id": "t1-beauty-tech",
+       "type": "island_table",
+       "pos": [
+        7,
+        0,
+        -3.2
+       ],
+       "rot": 0,
+       "size": [
+        5,
+        1.05,
+        1.6
+       ],
+       "color": "#F8F8F6",
+       "material": "matte",
+       "label": {
+        "ko": "뷰티 디바이스 체험",
+        "en": "Beauty Device Experience",
+        "zh": "美容仪体验",
+        "ja": "美容家電体験",
+        "vi": "Trải nghiệm thiết bị làm đẹp"
+       },
+       "products": [
+        "hair-styler",
+        "beauty-device",
+        "scalp-brush",
+        "hair-oil",
+        "calcium-stick"
+       ]
+      },
+      {
+       "id": "t1-trending-podium",
+       "type": "podium",
+       "pos": [
+        0,
+        0,
+        0.8
+       ],
+       "rot": 0,
+       "size": [
+        2.8,
+        0.7,
+        1.4
+       ],
+       "color": "#FE2C55",
+       "material": "matte",
+       "label": {
+        "ko": "오늘의 랭킹 추천",
+        "en": "Today's Top Picks",
+        "zh": "今日榜单推荐",
+        "ja": "本日のランキングおすすめ",
+        "vi": "Sản phẩm nổi bật hôm nay"
+       },
+       "products": [
+        "pdrn-balm",
+        "heartleaf-toner",
+        "collagen-mask",
+        "ampoule-duo"
+       ]
+      },
+      {
+       "id": "t1-ranking-kiosk",
+       "type": "kiosk",
+       "pos": [
+        3.7,
+        0,
+        -3.3
+       ],
+       "rot": 0,
+       "size": [
+        0.7,
+        1.8,
+        0.5
+       ],
+       "color": "#FFFFFF",
+       "material": "gloss",
+       "label": {
+        "ko": "실시간 상품 탐색",
+        "en": "Discover Products",
+        "zh": "实时商品探索",
+        "ja": "商品を探す",
+        "vi": "Khám phá sản phẩm"
+       },
+       "text": "SCAN & SHOP",
+       "products": []
+      },
+      {
+       "id": "t1-checkout",
+       "type": "checkout",
+       "pos": [
+        8.5,
+        0,
+        -7.1
+       ],
+       "rot": 0,
+       "size": [
+        5.5,
+        1.1,
+        1.3
+       ],
+       "color": "#D8BE99",
+       "material": "wood",
+       "label": {
+        "ko": "계산 및 면세 안내",
+        "en": "Checkout & Tax-free Information",
+        "zh": "结账与免税咨询",
+        "ja": "お会計・免税案内",
+        "vi": "Thanh toán và thông tin miễn thuế"
+       },
+       "text": "CHECKOUT",
+       "products": []
+      },
+      {
+       "id": "t1-live-neon",
+       "type": "neon_sign",
+       "pos": [
+        12.85,
+        0,
+        8.1
+       ],
+       "rot": -90,
+       "size": [
+        1.2,
+        3.3,
+        0.1
+       ],
+       "color": "#FE2C55",
+       "material": "gloss",
+       "label": {
+        "ko": "도쿄 쇼룸",
+        "en": "Tokyo Showroom",
+        "zh": "东京体验店",
+        "ja": "東京ショールーム",
+        "vi": "Showroom Tokyo"
+       },
+       "text": "TOKYO / LIVE & SHOP",
+       "products": []
+      },
+      {
+       "id": "t1-plant",
+       "type": "plant",
+       "pos": [
+        -11.9,
+        0,
+        8.1
+       ],
+       "rot": 0,
+       "size": [
+        0.7,
+        1.7,
+        0.7
+       ],
+       "color": "#66805D",
+       "material": "matte",
+       "label": {
+        "ko": "실내 식재",
+        "en": "Indoor Plant",
+        "zh": "室内绿植",
+        "ja": "観葉植物",
+        "vi": "Cây nội thất"
+       },
+       "products": []
+      },
+      {
+       "id": "t1-stairs",
+       "type": "stairs",
+       "pos": [
+        -11.15,
+        0,
+        -7.65
+       ],
+       "rot": 90,
+       "size": [
+        2.3,
+        4.5,
+        3.5
+       ],
+       "color": "#C7AA82",
+       "material": "wood",
+       "label": {
+        "ko": "2층으로 이동",
+        "en": "Stairs to 2F",
+        "zh": "前往二层",
+        "ja": "2階への階段",
+        "vi": "Cầu thang lên tầng 2"
+       },
+       "products": []
+      },
+      {
+       "id": "t1-elevator",
+       "type": "elevator",
+       "pos": [
+        -6.75,
+        0,
+        -7.65
+       ],
+       "rot": 0,
+       "size": [
+        2.4,
+        3.1,
+        2.5
+       ],
+       "color": "#D5D5D4",
+       "material": "metal",
+       "label": {
+        "ko": "엘리베이터",
+        "en": "Elevator",
+        "zh": "电梯",
+        "ja": "エレベーター",
+        "vi": "Thang máy"
+       },
+       "text": "1 / 2 / 3",
+       "products": []
+      }
+     ],
+     "spawn": {
+      "pos": [
+       0,
+       1.6,
+       8.1
+      ],
+      "look": 0
+     }
+    },
+    {
+     "level": 2,
+     "title": {
+      "ko": "가젯 & 라이프스타일 셀렉트",
+      "en": "Gadgets & Lifestyle Select",
+      "zh": "数码与生活精选",
+      "ja": "ガジェット＆ライフスタイルセレクト",
+      "vi": "Công nghệ và phong cách sống"
+     },
+     "theme": "일본의 정교한 생활용품 편집숍과 가젯 전문점. 백색 테라조 바닥, 밝은 오크 선반, 알루미늄 테크 테이블. 좌측은 테크 체험, 우측은 생활수납, 후면은 간식 선물 포장 존으로 구성한다.",
+     "size": [
+      26,
+      18
+     ],
+     "height": 4.5,
+     "floor_material": {
+      "pattern": "terrazzo",
+      "color": "#E5E3DC",
+      "roughness": 0.28,
+      "metalness": 0.02
+     },
+     "wall_material": {
+      "pattern": "white_plaster",
+      "color": "#F7F6F2",
+      "roughness": 0.8
+     },
+     "ceiling": {
+      "type": "flat",
+      "color": "#FFFFFF"
+     },
+     "lights": [
+      {
+       "type": "strip",
+       "pos": [
+        0,
+        4.35,
+        0
+       ],
+       "color": "#FFFFFF",
+       "intensity": 4,
+       "size": [
+        0.12,
+        15
+       ],
+       "rot": 0
+      },
+      {
+       "type": "strip",
+       "pos": [
+        -7,
+        4.35,
+        0
+       ],
+       "color": "#FFFFFF",
+       "intensity": 3.8,
+       "size": [
+        0.12,
+        14
+       ],
+       "rot": 0
+      },
+      {
+       "type": "strip",
+       "pos": [
+        7,
+        4.35,
+        0
+       ],
+       "color": "#FFF4E5",
+       "intensity": 3.8,
+       "size": [
+        0.12,
+        14
+       ],
+       "rot": 0
+      },
+      {
+       "type": "area",
+       "pos": [
+        -7,
+        4.2,
+        5.1
+       ],
+       "color": "#FFFFFF",
+       "intensity": 5,
+       "size": [
+        5,
+        2.2
+       ],
+       "rot": 0
+      },
+      {
+       "type": "area",
+       "pos": [
+        -7,
+        4.2,
+        0.9
+       ],
+       "color": "#FFFFFF",
+       "intensity": 5,
+       "size": [
+        5,
+        2.2
+       ],
+       "rot": 0
+      },
+      {
+       "type": "area",
+       "pos": [
+        7,
+        4.2,
+        5.1
+       ],
+       "color": "#FFF5E8",
+       "intensity": 4.6,
+       "size": [
+        5,
+        2.2
+       ],
+       "rot": 0
+      },
+      {
+       "type": "area",
+       "pos": [
+        7,
+        4.2,
+        0.9
+       ],
+       "color": "#FFF5E8",
+       "intensity": 4.6,
+       "size": [
+        5,
+        2.2
+       ],
+       "rot": 0
+      },
+      {
+       "type": "pendant",
+       "pos": [
+        7,
+        3.5,
+        -3.2
+       ],
+       "color": "#FFE7C9",
+       "intensity": 3,
+       "size": [
+        1.5,
+        1.5
+       ],
+       "rot": 0
+      },
+      {
+       "type": "spot",
+       "pos": [
+        0,
+        4.2,
+        4.5
+       ],
+       "color": "#FFFFFF",
+       "intensity": 5,
+       "size": [
+        0.18,
+        0.18
+       ],
+       "rot": 0
+      },
+      {
+       "type": "strip",
+       "pos": [
+        0,
+        4.3,
+        -7.8
+       ],
+       "color": "#FFFFFF",
+       "intensity": 4,
+       "size": [
+        22,
+        0.12
+       ],
+       "rot": 0
+      }
+     ],
+     "fixtures": [
+      {
+       "id": "t2-audio-wall",
+       "type": "wall_shelf",
+       "pos": [
+        -12.45,
+        0,
+        5.1
+       ],
+       "rot": 90,
+       "size": [
+        6,
+        3,
+        0.95
+       ],
+       "color": "#D7D9DA",
+       "material": "metal",
+       "label": {
+        "ko": "무선 오디오",
+        "en": "Wireless Audio",
+        "zh": "无线音频",
+        "ja": "ワイヤレスオーディオ",
+        "vi": "Âm thanh không dây"
+       },
+       "text": "SOUND WITHOUT LIMITS",
+       "products": [
+        "headphones",
+        "earbuds",
+        "charger",
+        "charging-hub"
+       ]
+      },
+      {
+       "id": "t2-audio-island",
+       "type": "island_table",
+       "pos": [
+        -7,
+        0,
+        5.1
+       ],
+       "rot": 0,
+       "size": [
+        5,
+        1.05,
+        1.6
+       ],
+       "color": "#F4F4F2",
+       "material": "matte",
+       "label": {
+        "ko": "오디오 체험 테이블",
+        "en": "Audio Experience Table",
+        "zh": "音频体验台",
+        "ja": "オーディオ試聴テーブル",
+        "vi": "Bàn trải nghiệm âm thanh"
+       },
+       "products": [
+        "headphones",
+        "earbuds",
+        "charger",
+        "mag-powerbank",
+        "charging-hub"
+       ]
+      },
+      {
+       "id": "t2-power-wall",
+       "type": "wall_shelf",
+       "pos": [
+        -12.45,
+        0,
+        -1.1
+       ],
+       "rot": 90,
+       "size": [
+        5.8,
+        3,
+        0.95
+       ],
+       "color": "#E3E5E6",
+       "material": "metal",
+       "label": {
+        "ko": "모바일 충전 솔루션",
+        "en": "Mobile Charging Solutions",
+        "zh": "移动充电方案",
+        "ja": "モバイル充電アイテム",
+        "vi": "Giải pháp sạc di động"
+       },
+       "text": "CHARGE ANYWHERE",
+       "products": [
+        "charger",
+        "mag-powerbank",
+        "charging-hub",
+        "hand-warmer",
+        "earbuds",
+        "headphones"
+       ]
+      },
+      {
+       "id": "t2-power-island",
+       "type": "island_table",
+       "pos": [
+        -7,
+        0,
+        0.9
+       ],
+       "rot": 0,
+       "size": [
+        5,
+        1.05,
+        1.6
+       ],
+       "color": "#D4D6D8",
+       "material": "metal",
+       "label": {
+        "ko": "충전기 및 보조배터리 체험",
+        "en": "Charging Experience",
+        "zh": "充电设备体验",
+        "ja": "充電機器体験",
+        "vi": "Trải nghiệm thiết bị sạc"
+       },
+       "products": [
+        "charger",
+        "mag-powerbank",
+        "charging-hub",
+        "hand-warmer",
+        "earbuds"
+       ]
+      },
+      {
+       "id": "t2-tech-ranking",
+       "type": "ranking_wall",
+       "pos": [
+        0,
+        0,
+        -8.4
+       ],
+       "rot": 0,
+       "size": [
+        7.6,
+        3.3,
+        0.9
+       ],
+       "color": "#FFFFFF",
+       "material": "matte",
+       "label": {
+        "ko": "인기 테크 랭킹",
+        "en": "Trending Tech Ranking",
+        "zh": "热门数码排行榜",
+        "ja": "人気ガジェットランキング",
+        "vi": "Bảng xếp hạng công nghệ"
+       },
+       "text": "GADGET RANKING TOP 10",
+       "products": [
+        "headphones",
+        "mag-powerbank",
+        "earbuds",
+        "charger",
+        "charging-hub",
+        "hair-styler",
+        "humidifier",
+        "hand-warmer",
+        "beauty-device",
+        "tumbler"
+       ]
+      },
+      {
+       "id": "t2-storage-wall",
+       "type": "wall_shelf",
+       "pos": [
+        12.45,
+        0,
+        5.1
+       ],
+       "rot": -90,
+       "size": [
+        6,
+        3,
+        0.95
+       ],
+       "color": "#D8C0A0",
+       "material": "wood",
+       "label": {
+        "ko": "생활수납 정리",
+        "en": "Home Organization",
+        "zh": "家居收纳",
+        "ja": "収納・整理整頓",
+        "vi": "Sắp xếp nhà cửa"
+       },
+       "text": "暮らしを整える",
+       "products": [
+        "storage-box",
+        "organizer-tray",
+        "travel-pouch",
+        "tumbler",
+        "humidifier",
+        "crossbody-bag"
+       ]
+      },
+      {
+       "id": "t2-storage-island",
+       "type": "island_table",
+       "pos": [
+        7,
+        0,
+        5.1
+       ],
+       "rot": 0,
+       "size": [
+        5,
+        1.05,
+        1.6
+       ],
+       "color": "#D9C1A2",
+       "material": "wood",
+       "label": {
+        "ko": "공간 정리 솔루션",
+        "en": "Smart Storage Solutions",
+        "zh": "智能收纳方案",
+        "ja": "スマート収納",
+        "vi": "Giải pháp lưu trữ thông minh"
+       },
+       "products": [
+        "storage-box",
+        "organizer-tray",
+        "travel-pouch",
+        "crossbody-bag",
+        "keyring"
+       ]
+      },
+      {
+       "id": "t2-daily-living",
+       "type": "island_table",
+       "pos": [
+        7,
+        0,
+        0.9
+       ],
+       "rot": 0,
+       "size": [
+        5,
+        1.05,
+        1.6
+       ],
+       "color": "#EBE4D8",
+       "material": "wood",
+       "label": {
+        "ko": "일상 속 작은 행복",
+        "en": "Everyday Comforts",
+        "zh": "日常生活小确幸",
+        "ja": "毎日を心地よく",
+        "vi": "Tiện nghi mỗi ngày"
+       },
+       "products": [
+        "tumbler",
+        "humidifier",
+        "hand-warmer",
+        "organizer-tray",
+        "korean-tea",
+        "travel-pouch"
+       ]
+      },
+      {
+       "id": "t2-gift-wall",
+       "type": "wall_shelf",
+       "pos": [
+        12.45,
+        0,
+        -1.5
+       ],
+       "rot": -90,
+       "size": [
+        5.8,
+        3,
+        0.95
+       ],
+       "color": "#D8C0A0",
+       "material": "wood",
+       "label": {
+        "ko": "기프트 셀렉션",
+        "en": "Gift Selection",
+        "zh": "礼品精选",
+        "ja": "ギフトセレクション",
+        "vi": "Quà tặng tuyển chọn"
+       },
+       "text": "GIFT FOR SOMEONE",
+       "products": [
+        "keyring",
+        "tumbler",
+        "travel-pouch",
+        "crossbody-bag",
+        "japanese-snack-box",
+        "korean-tea",
+        "makeup-kit",
+        "hand-warmer"
+       ]
+      },
+      {
+       "id": "t2-snack-island",
+       "type": "gondola",
+       "pos": [
+        7,
+        0,
+        -3.3
+       ],
+       "rot": 0,
+       "size": [
+        5,
+        1.45,
+        1.6
+       ],
+       "color": "#E0C9A9",
+       "material": "wood",
+       "label": {
+        "ko": "일본·한국 간식",
+        "en": "Japanese & Korean Snacks",
+        "zh": "日韩零食",
+        "ja": "日韓お菓子セレクト",
+        "vi": "Đồ ăn vặt Nhật và Hàn"
+       },
+       "products": [
+        "japanese-snack-box",
+        "snack",
+        "ramen-box",
+        "protein-snack",
+        "korean-tea"
+       ]
+      },
+      {
+       "id": "t2-seasonal-gondola",
+       "type": "gondola",
+       "pos": [
+        -7,
+        0,
+        -3.3
+       ],
+       "rot": 0,
+       "size": [
+        5,
+        1.45,
+        1.6
+       ],
+       "color": "#F1EAE0",
+       "material": "matte",
+       "label": {
+        "ko": "겨울 시즌 아이템",
+        "en": "Winter Essentials",
+        "zh": "冬季必备好物",
+        "ja": "冬のおすすめアイテム",
+        "vi": "Sản phẩm thiết yếu mùa đông"
+       },
+       "products": [
+        "puffer-vest",
+        "knit",
+        "fleece-jacket",
+        "hand-warmer",
+        "humidifier",
+        "tumbler"
+       ]
+      },
+      {
+       "id": "t2-gift-podium",
+       "type": "podium",
+       "pos": [
+        0,
+        0,
+        4.5
+       ],
+       "rot": 0,
+       "size": [
+        2.8,
+        0.65,
+        1.5
+       ],
+       "color": "#FE2C55",
+       "material": "matte",
+       "label": {
+        "ko": "시즌 한정 선물",
+        "en": "Seasonal Gift Picks",
+        "zh": "季节限定礼品",
+        "ja": "季節限定ギフト",
+        "vi": "Quà tặng giới hạn theo mùa"
+       },
+       "products": [
+        "japanese-snack-box",
+        "keyring",
+        "tumbler",
+        "hand-warmer",
+        "makeup-kit"
+       ]
+      },
+      {
+       "id": "t2-premium-case",
+       "type": "display_case",
+       "pos": [
+        0,
+        0,
+        0.4
+       ],
+       "rot": 0,
+       "size": [
+        2.6,
+        1.15,
+        1.25
+       ],
+       "color": "#E0E0E0",
+       "material": "glass",
+       "label": {
+        "ko": "프리미엄 가젯 셀렉션",
+        "en": "Premium Gadget Selection",
+        "zh": "高端数码精选",
+        "ja": "プレミアムガジェット",
+        "vi": "Thiết bị cao cấp tuyển chọn"
+       },
+       "products": [
+        "headphones",
+        "hair-styler",
+        "mag-powerbank",
+        "charging-hub",
+        "beauty-device"
+       ]
+      },
+      {
+       "id": "t2-wrapping-counter",
+       "type": "counter",
+       "pos": [
+        8.8,
+        0,
+        -7.2
+       ],
+       "rot": 0,
+       "size": [
+        5.5,
+        1.05,
+        1.2
+       ],
+       "color": "#C9AF8B",
+       "material": "wood",
+       "label": {
+        "ko": "선물 포장 서비스",
+        "en": "Gift Wrapping Service",
+        "zh": "礼品包装服务",
+        "ja": "ギフトラッピング",
+        "vi": "Dịch vụ gói quà"
+       },
+       "text": "GIFT WRAPPING",
+       "products": []
+      },
+      {
+       "id": "t2-shopping-kiosk",
+       "type": "kiosk",
+       "pos": [
+        3.7,
+        0,
+        -3.3
+       ],
+       "rot": 0,
+       "size": [
+        0.75,
+        1.8,
+        0.5
+       ],
+       "color": "#FFFFFF",
+       "material": "gloss",
+       "label": {
+        "ko": "상품 검색 및 온라인 결제",
+        "en": "Discover & Checkout",
+        "zh": "商品搜索与在线结账",
+        "ja": "商品検索・オンライン決済",
+        "vi": "Tìm kiếm và thanh toán"
+       },
+       "products": []
+      },
+      {
+       "id": "t2-rest-bench",
+       "type": "bench",
+       "pos": [
+        0,
+        0,
+        -4.1
+       ],
+       "rot": 0,
+       "size": [
+        2.7,
+        0.48,
+        0.8
+       ],
+       "color": "#CEB28C",
+       "material": "wood",
+       "label": {
+        "ko": "휴식 벤치",
+        "en": "Rest Bench",
+        "zh": "休息长椅",
+        "ja": "休憩ベンチ",
+        "vi": "Ghế nghỉ"
+       },
+       "products": []
+      },
+      {
+       "id": "t2-plant",
+       "type": "plant",
+       "pos": [
+        11.9,
+        0,
+        8.1
+       ],
+       "rot": 0,
+       "size": [
+        0.75,
+        1.8,
+        0.75
+       ],
+       "color": "#68845D",
+       "material": "matte",
+       "label": {
+        "ko": "실내 식재",
+        "en": "Indoor Plant",
+        "zh": "室内绿植",
+        "ja": "観葉植物",
+        "vi": "Cây nội thất"
+       },
+       "products": []
+      },
+      {
+       "id": "t2-stairs",
+       "type": "stairs",
+       "pos": [
+        -11.15,
+        0,
+        -7.65
+       ],
+       "rot": 90,
+       "size": [
+        2.3,
+        4.5,
+        3.5
+       ],
+       "color": "#C7AA82",
+       "material": "wood",
+       "label": {
+        "ko": "1층·3층 계단",
+        "en": "Stairs to 1F & 3F",
+        "zh": "通往一层与三层",
+        "ja": "1階・3階への階段",
+        "vi": "Cầu thang tầng 1 và 3"
+       },
+       "products": []
+      },
+      {
+       "id": "t2-elevator",
+       "type": "elevator",
+       "pos": [
+        -6.75,
+        0,
+        -7.65
+       ],
+       "rot": 0,
+       "size": [
+        2.4,
+        3.1,
+        2.5
+       ],
+       "color": "#D5D5D4",
+       "material": "metal",
+       "label": {
+        "ko": "엘리베이터",
+        "en": "Elevator",
+        "zh": "电梯",
+        "ja": "エレベーター",
+        "vi": "Thang máy"
+       },
+       "text": "1 / 2 / 3",
+       "products": []
+      }
+     ],
+     "spawn": {
+      "pos": [
+       -6.75,
+       1.6,
+       -4.65
+      ],
+      "look": 180
+     }
+    },
+    {
+     "level": 3,
+     "title": {
+      "ko": "도쿄 크리에이터 스튜디오",
+      "en": "Tokyo Creator Studios",
+      "zh": "东京达人直播中心",
+      "ja": "東京クリエイタースタジオ",
+      "vi": "Studio nhà sáng tạo Tokyo"
+     },
+     "theme": "일본 라이브커머스 제작 공간. 따뜻한 백색 미장과 오크 소재, 쇼지에서 영감을 받은 반투명 유리 패널, 컬러 조절이 가능한 촬영 조명. 3개의 라이브 스튜디오와 1개의 숏폼 촬영존, 크리에이터 라운지를 운영한다. studio_booth는 유리 외벽, 진행 테이블, 제품, 링라이트, 카메라, 모니터를 포함하는 복합 프리팹으로 구현하는 것을 전제로 한다.",
+     "size": [
+      26,
+      18
+     ],
+     "height": 4.5,
+     "floor_material": {
+      "pattern": "light_oak",
+      "color": "#D8C2A1",
+      "roughness": 0.45,
+      "metalness": 0
+     },
+     "wall_material": {
+      "pattern": "white_plaster",
+      "color": "#F4F1EB",
+      "roughness": 0.8
+     },
+     "ceiling": {
+      "type": "baffles",
+      "color": "#E7E5E1"
+     },
+     "lights": [
+      {
+       "type": "strip",
+       "pos": [
+        0,
+        4.3,
+        1
+       ],
+       "color": "#FFFFFF",
+       "intensity": 4,
+       "size": [
+        0.15,
+        13
+       ],
+       "rot": 0
+      },
+      {
+       "type": "area",
+       "pos": [
+        -9,
+        4.05,
+        4.6
+       ],
+       "color": "#FFF6EC",
+       "intensity": 6,
+       "size": [
+        4.5,
+        3
+       ],
+       "rot": 0
+      },
+      {
+       "type": "area",
+       "pos": [
+        -9,
+        4.05,
+        -2.2
+       ],
+       "color": "#FFFFFF",
+       "intensity": 6,
+       "size": [
+        4.5,
+        3
+       ],
+       "rot": 0
+      },
+      {
+       "type": "area",
+       "pos": [
+        9,
+        4.05,
+        4.6
+       ],
+       "color": "#FFF0DC",
+       "intensity": 6,
+       "size": [
+        4.5,
+        3
+       ],
+       "rot": 0
+      },
+      {
+       "type": "area",
+       "pos": [
+        9,
+        4.05,
+        -2.2
+       ],
+       "color": "#FFFFFF",
+       "intensity": 5,
+       "size": [
+        4.5,
+        3
+       ],
+       "rot": 0
+      },
+      {
+       "type": "neon",
+       "pos": [
+        -5.8,
+        3.75,
+        4.6
+       ],
+       "color": "#FE2C55",
+       "intensity": 1.5,
+       "size": [
+        0.08,
+        2.5
+       ],
+       "rot": 90
+      },
+      {
+       "type": "neon",
+       "pos": [
+        5.8,
+        3.75,
+        4.6
+       ],
+       "color": "#25F4EE",
+       "intensity": 1.5,
+       "size": [
+        0.08,
+        2.5
+       ],
+       "rot": -90
+      },
+      {
+       "type": "area",
+       "pos": [
+        0,
+        4.1,
+        -6.6
+       ],
+       "color": "#FFEAD1",
+       "intensity": 3.5,
+       "size": [
+        5.5,
+        2
+       ],
+       "rot": 0
+      },
+      {
+       "type": "area",
+       "pos": [
+        9,
+        4.15,
+        -7.1
+       ],
+       "color": "#FFFFFF",
+       "intensity": 4,
+       "size": [
+        5,
+        2
+       ],
+       "rot": 0
+      },
+      {
+       "type": "spot",
+       "pos": [
+        0,
+        4.1,
+        5.9
+       ],
+       "color": "#FFFFFF",
+       "intensity": 4,
+       "size": [
+        0.18,
+        0.18
+       ],
+       "rot": 0
+      }
+     ],
+     "fixtures": [
+      {
+       "id": "t3-beauty-studio",
+       "type": "studio_booth",
+       "pos": [
+        -9.4,
+        0,
+        4.6
+       ],
+       "rot": 90,
+       "size": [
+        4.8,
+        3.8,
+        6.4
+       ],
+       "color": "#EADAD2",
+       "material": "glass",
+       "label": {
+        "ko": "스튜디오 A · 한일 뷰티",
+        "en": "Studio A · K & J Beauty",
+        "zh": "A直播间 · 日韩美妆",
+        "ja": "スタジオA · 日韓美容",
+        "vi": "Studio A · Mỹ phẩm Hàn Nhật"
+       },
+       "text": "BEAUTY LIVE / 配信中",
+       "video": "host-jp",
+       "products": [
+        "pdrn-balm",
+        "heartleaf-toner",
+        "rice-toner",
+        "calcium-stick",
+        "ampoule-duo",
+        "cushion",
+        "peel-lipliner",
+        "lip-oil"
+       ]
+      },
+      {
+       "id": "t3-tech-studio",
+       "type": "studio_booth",
+       "pos": [
+        -9.4,
+        0,
+        -2.2
+       ],
+       "rot": 90,
+       "size": [
+        4.8,
+        3.8,
+        6.4
+       ],
+       "color": "#DDDFE0",
+       "material": "glass",
+       "label": {
+        "ko": "스튜디오 B · 가젯 리뷰",
+        "en": "Studio B · Gadget Review",
+        "zh": "B直播间 · 数码测评",
+        "ja": "スタジオB · ガジェットレビュー",
+        "vi": "Studio B · Đánh giá công nghệ"
+       },
+       "text": "GADGET LAB / LIVE",
+       "video": "host-jp",
+       "products": [
+        "headphones",
+        "earbuds",
+        "mag-powerbank",
+        "charger",
+        "charging-hub",
+        "hair-styler"
+       ]
+      },
+      {
+       "id": "t3-living-studio",
+       "type": "studio_booth",
+       "pos": [
+        9.4,
+        0,
+        4.6
+       ],
+       "rot": -90,
+       "size": [
+        4.8,
+        3.8,
+        6.4
+       ],
+       "color": "#CDB28D",
+       "material": "glass",
+       "label": {
+        "ko": "스튜디오 C · 생활용품",
+        "en": "Studio C · Lifestyle",
+        "zh": "C直播间 · 生活好物",
+        "ja": "スタジオC · 暮らし",
+        "vi": "Studio C · Phong cách sống"
+       },
+       "text": "暮らし LIVE",
+       "video": "host-jp",
+       "products": [
+        "storage-box",
+        "organizer-tray",
+        "travel-pouch",
+        "humidifier",
+        "tumbler",
+        "japanese-snack-box",
+        "korean-tea"
+       ]
+      },
+      {
+       "id": "t3-shortform-studio",
+       "type": "studio_booth",
+       "pos": [
+        9.4,
+        0,
+        -2.2
+       ],
+       "rot": -90,
+       "size": [
+        4.8,
+        3.8,
+        6.4
+       ],
+       "color": "#F1F0EB",
+       "material": "glass",
+       "label": {
+        "ko": "숏폼 크리에이터 촬영존",
+        "en": "Short-form Creator Studio",
+        "zh": "短视频达人拍摄区",
+        "ja": "ショート動画撮影スタジオ",
+        "vi": "Studio quay video ngắn"
+       },
+       "text": "SHORT VIDEO STUDIO",
+       "video": "creator",
+       "products": [
+        "makeup-kit",
+        "keyring",
+        "crossbody-bag",
+        "hair-styler",
+        "blush-stick",
+        "puffer-vest"
+       ]
+      },
+      {
+       "id": "t3-schedule-led",
+       "type": "led_wall",
+       "pos": [
+        0,
+        0,
+        8.7
+       ],
+       "rot": 180,
+       "size": [
+        7,
+        3.2,
+        0.3
+       ],
+       "color": "#111113",
+       "material": "gloss",
+       "label": {
+        "ko": "도쿄 라이브 편성표",
+        "en": "Tokyo Live Schedule",
+        "zh": "东京直播安排",
+        "ja": "東京ライブ配信スケジュール",
+        "vi": "Lịch livestream Tokyo"
+       },
+       "video": "host-jp",
+       "products": []
+      },
+      {
+       "id": "t3-checkin",
+       "type": "counter",
+       "pos": [
+        0,
+        0,
+        4.8
+       ],
+       "rot": 0,
+       "size": [
+        2.8,
+        1.1,
+        1.1
+       ],
+       "color": "#D4B994",
+       "material": "wood",
+       "label": {
+        "ko": "크리에이터 접수",
+        "en": "Creator Reception",
+        "zh": "达人接待台",
+        "ja": "クリエイター受付",
+        "vi": "Quầy tiếp nhận nhà sáng tạo"
+       },
+       "text": "CREATOR RECEPTION",
+       "products": []
+      },
+      {
+       "id": "t3-live-products",
+       "type": "island_table",
+       "pos": [
+        0,
+        0,
+        0.6
+       ],
+       "rot": 0,
+       "size": [
+        2.8,
+        1.05,
+        1.35
+       ],
+       "color": "#FFFFFF",
+       "material": "matte",
+       "label": {
+        "ko": "오늘 방송 상품",
+        "en": "Today's Live Products",
+        "zh": "今日直播商品",
+        "ja": "本日の配信商品",
+        "vi": "Sản phẩm livestream hôm nay"
+       },
+       "products": [
+        "headphones",
+        "pdrn-balm",
+        "mag-powerbank",
+        "japanese-snack-box",
+        "storage-box",
+        "makeup-kit",
+        "ampoule-duo",
+        "hair-styler"
+       ]
+      },
+      {
+       "id": "t3-lounge-sofa",
+       "type": "sofa",
+       "pos": [
+        0,
+        0,
+        -7.7
+       ],
+       "rot": 0,
+       "size": [
+        4.6,
+        0.95,
+        1.05
+       ],
+       "color": "#C6C3B9",
+       "material": "fabric",
+       "label": {
+        "ko": "크리에이터 라운지",
+        "en": "Creator Lounge",
+        "zh": "达人休息区",
+        "ja": "クリエイターラウンジ",
+        "vi": "Phòng chờ nhà sáng tạo"
+       },
+       "products": []
+      },
+      {
+       "id": "t3-lounge-rug",
+       "type": "rug",
+       "pos": [
+        0,
+        0,
+        -6.25
+       ],
+       "rot": 0,
+       "size": [
+        5.2,
+        0.015,
+        1.4
+       ],
+       "color": "#B6AD9F",
+       "material": "fabric",
+       "label": {
+        "ko": "라운지 러그",
+        "en": "Lounge Rug",
+        "zh": "休息区地毯",
+        "ja": "ラウンジラグ",
+        "vi": "Thảm phòng chờ"
+       },
+       "products": []
+      },
+      {
+       "id": "t3-waiting-bench",
+       "type": "bench",
+       "pos": [
+        3.5,
+        0,
+        -5.6
+       ],
+       "rot": 90,
+       "size": [
+        2.4,
+        0.48,
+        0.75
+       ],
+       "color": "#D5BB98",
+       "material": "wood",
+       "label": {
+        "ko": "촬영 대기석",
+        "en": "Filming Waiting Area",
+        "zh": "拍摄等候区",
+        "ja": "撮影待機席",
+        "vi": "Khu vực chờ quay"
+       },
+       "products": []
+      },
+      {
+       "id": "t3-vanity-mirror",
+       "type": "vanity_mirror",
+       "pos": [
+        9,
+        0,
+        -8.35
+       ],
+       "rot": 0,
+       "size": [
+        5.6,
+        2.5,
+        0.35
+       ],
+       "color": "#E0DFDC",
+       "material": "metal",
+       "label": {
+        "ko": "메이크업 준비 미러",
+        "en": "Makeup Preparation Mirror",
+        "zh": "化妆准备镜",
+        "ja": "メイク準備ミラー",
+        "vi": "Gương chuẩn bị trang điểm"
+       },
+       "products": []
+      },
+      {
+       "id": "t3-vanity-counter",
+       "type": "counter",
+       "pos": [
+        9,
+        0,
+        -7.25
+       ],
+       "rot": 0,
+       "size": [
+        5.6,
+        0.9,
+        0.65
+       ],
+       "color": "#E3CCAC",
+       "material": "wood",
+       "label": {
+        "ko": "메이크업 준비대",
+        "en": "Makeup Counter",
+        "zh": "化妆准备台",
+        "ja": "メイク準備台",
+        "vi": "Bàn chuẩn bị trang điểm"
+       },
+       "products": [
+        "cushion",
+        "tint",
+        "lip-oil",
+        "blush-stick",
+        "hair-oil",
+        "calcium-stick"
+       ]
+      },
+      {
+       "id": "t3-demo-ringlight",
+       "type": "ring_light",
+       "pos": [
+        -3.3,
+        0,
+        0.6
+       ],
+       "rot": 0,
+       "size": [
+        0.65,
+        1.95,
+        0.65
+       ],
+       "color": "#FFFFFF",
+       "material": "metal",
+       "label": {
+        "ko": "숏폼 조명 체험",
+        "en": "Short Video Lighting",
+        "zh": "短视频灯光体验",
+        "ja": "ショート動画照明体験",
+        "vi": "Trải nghiệm ánh sáng video ngắn"
+       },
+       "products": []
+      },
+      {
+       "id": "t3-demo-camera",
+       "type": "camera",
+       "pos": [
+        3.3,
+        0,
+        0.6
+       ],
+       "rot": 180,
+       "size": [
+        0.65,
+        1.65,
+        0.65
+       ],
+       "color": "#202023",
+       "material": "metal",
+       "label": {
+        "ko": "라이브 카메라",
+        "en": "Live Camera",
+        "zh": "直播摄像机",
+        "ja": "ライブ配信カメラ",
+        "vi": "Máy quay livestream"
+       },
+       "products": []
+      },
+      {
+       "id": "t3-creator-neon",
+       "type": "neon_sign",
+       "pos": [
+        0,
+        0,
+        -8.85
+       ],
+       "rot": 0,
+       "size": [
+        5.2,
+        3.5,
+        0.1
+       ],
+       "color": "#FE2C55",
+       "material": "gloss",
+       "label": {
+        "ko": "도쿄 크리에이터 클럽",
+        "en": "Tokyo Creator Club",
+        "zh": "东京达人俱乐部",
+        "ja": "東京クリエイタークラブ",
+        "vi": "Câu lạc bộ nhà sáng tạo Tokyo"
+       },
+       "text": "TOKYO CREATOR CLUB",
+       "products": []
+      },
+      {
+       "id": "t3-creator-poster",
+       "type": "poster",
+       "pos": [
+        12.88,
+        0,
+        -6.5
+       ],
+       "rot": -90,
+       "size": [
+        2.5,
+        3.3,
+        0.06
+       ],
+       "color": "#E5D4BD",
+       "material": "matte",
+       "label": {
+        "ko": "크리에이터 참가 신청",
+        "en": "Join as a Creator",
+        "zh": "申请成为达人",
+        "ja": "クリエイター参加募集",
+        "vi": "Đăng ký làm nhà sáng tạo"
+       },
+       "text": "好きなことを、仕事に。",
+       "products": []
+      },
+      {
+       "id": "t3-stairs",
+       "type": "stairs",
+       "pos": [
+        -11.15,
+        0,
+        -7.65
+       ],
+       "rot": 90,
+       "size": [
+        2.3,
+        4.5,
+        3.5
+       ],
+       "color": "#C7AA82",
+       "material": "wood",
+       "label": {
+        "ko": "2층으로 이동",
+        "en": "Stairs to 2F",
+        "zh": "前往二层",
+        "ja": "2階への階段",
+        "vi": "Cầu thang xuống tầng 2"
+       },
+       "products": []
+      },
+      {
+       "id": "t3-elevator",
+       "type": "elevator",
+       "pos": [
+        -6.75,
+        0,
+        -7.65
+       ],
+       "rot": 0,
+       "size": [
+        2.4,
+        3.1,
+        2.5
+       ],
+       "color": "#D5D5D4",
+       "material": "metal",
+       "label": {
+        "ko": "엘리베이터",
+        "en": "Elevator",
+        "zh": "电梯",
+        "ja": "エレベーター",
+        "vi": "Thang máy"
+       },
+       "text": "1 / 2 / 3",
+       "products": []
+      }
+     ],
+     "spawn": {
+      "pos": [
+       -6.75,
+       1.6,
+       -5.2
+      ],
+      "look": 90
+     }
+    }
+   ]
+  }
+ ],
+ "products": [
+  {
+   "id": "serum",
+   "store": "both",
+   "category": "skincare",
+   "name": {
+    "ko": "히알루론 수분 세럼",
+    "en": "Hyaluronic Hydrating Serum",
+    "zh": "玻尿酸保湿精华",
+    "ja": "ヒアルロン酸保湿セラム",
+    "vi": "Serum cấp ẩm Hyaluronic"
+   },
+   "brand": "Velnoru",
+   "price_krw": 18900,
+   "list_price_krw": 29000,
+   "price_jpy": 2180,
+   "list_price_jpy": 3300,
+   "rating": 4.8,
+   "sold": 28400,
+   "badge": "BEST",
+   "options": "용량: 30ml, 50ml",
+   "detail_ko": "가볍게 흡수되는 수분 세럼으로 건조한 피부에 촉촉한 사용감을 더합니다. 아침과 저녁 스킨케어 단계에서 사용할 수 있습니다.",
+   "image_prompt": "Premium Korean skincare serum in a clear frosted glass dropper bottle, pale aqua liquid, satin silver cap, minimal fictional Velnoru label, single product centered on seamless pure white background, professional cosmetic studio photography, soft contact shadow, square 1:1 composition."
+  },
+  {
+   "id": "cushion",
+   "store": "both",
+   "category": "makeup",
+   "name": {
+    "ko": "세미 글로우 쿠션 팩트",
+    "en": "Semi-glow Cushion Compact",
+    "zh": "柔光气垫粉底",
+    "ja": "セミグロウクッションファンデ",
+    "vi": "Phấn nước bóng nhẹ"
+   },
+   "brand": "Mirevyn",
+   "price_krw": 22900,
+   "list_price_krw": 34000,
+   "price_jpy": 2580,
+   "list_price_jpy": 3800,
+   "rating": 4.8,
+   "sold": 41600,
+   "badge": "BEST",
+   "options": "색상: 21호, 23호",
+   "detail_ko": "자연스러운 윤기와 균일한 피부 표현을 위한 쿠션 팩트입니다. 전용 퍼프로 얇게 여러 번 덧발라 커버력을 조절할 수 있습니다.",
+   "image_prompt": "Open round luxury Korean cushion compact with ivory shell, rose gold rim, visible beige foundation cushion and integrated mirror, isolated product on pure white seamless background, high end beauty photography, soft shadow, square composition."
+  },
+  {
+   "id": "tint",
+   "store": "both",
+   "category": "makeup",
+   "name": {
+    "ko": "워터 글로우 립 틴트",
+    "en": "Water Glow Lip Tint",
+    "zh": "水光唇釉",
+    "ja": "ウォーターグロウティント",
+    "vi": "Son tint bóng nước"
+   },
+   "brand": "Mirevyn",
+   "price_krw": 11900,
+   "list_price_krw": 18000,
+   "price_jpy": 1380,
+   "list_price_jpy": 2000,
+   "rating": 4.7,
+   "sold": 32700,
+   "badge": "LIVE",
+   "options": "색상: 로즈, 코랄, 체리레드",
+   "detail_ko": "맑은 발색과 촉촉한 광택이 특징인 데일리 립 틴트입니다. 단독으로 사용하거나 다른 립 제품과 레이어링하기 좋습니다.",
+   "image_prompt": "Three slim translucent lip tint tubes in dusty rose, coral and cherry red, one applicator visible, elegant fictional cosmetic packaging, grouped product photograph on pure white studio background, soft natural shadows, square composition."
+  },
+  {
+   "id": "sunscreen",
+   "store": "both",
+   "category": "skincare",
+   "name": {
+    "ko": "데일리 수분 선크림",
+    "en": "Daily Moisture Sunscreen",
+    "zh": "日常保湿防晒霜",
+    "ja": "デイリー保湿日焼け止め",
+    "vi": "Kem chống nắng dưỡng ẩm"
+   },
+   "brand": "Velnoru",
+   "price_krw": 14900,
+   "list_price_krw": 24000,
+   "price_jpy": 1680,
+   "list_price_jpy": 2700,
+   "rating": 4.8,
+   "sold": 29800,
+   "badge": "BEST",
+   "options": "용량: 50ml",
+   "detail_ko": "가볍고 촉촉한 사용감의 데일리 선크림입니다. 외출 전 얼굴과 목에 고르게 펴 바르기 편리한 튜브 형태입니다.",
+   "image_prompt": "Single clean white sunscreen squeeze tube with muted mint typography and matching cap, elegant minimal fictional skincare packaging, pure white background, softbox illumination, realistic cosmetic product photography, square 1:1."
+  },
+  {
+   "id": "mask",
+   "store": "both",
+   "category": "skincare",
+   "name": {
+    "ko": "데일리 수분 마스크팩 10매",
+    "en": "Daily Hydrating Sheet Masks 10 Pack",
+    "zh": "日常补水面膜10片装",
+    "ja": "デイリー保湿シートマスク10枚",
+    "vi": "Mặt nạ cấp ẩm 10 miếng"
+   },
+   "brand": "Velnoru",
+   "price_krw": 12900,
+   "list_price_krw": 22000,
+   "price_jpy": 1480,
+   "list_price_jpy": 2500,
+   "rating": 4.7,
+   "sold": 19400,
+   "badge": "DEAL",
+   "options": "구성: 10매, 20매",
+   "detail_ko": "매일 간편하게 사용하는 수분 시트 마스크입니다. 개별 포장되어 여행이나 외출 시에도 휴대하기 좋습니다.",
+   "image_prompt": "Ten pack hydrating sheet mask retail box with three pale blue and white flat sachets neatly arranged in front, minimal fictional label, pure white seamless background, soft studio shadows, photorealistic square product image."
+  },
+  {
+   "id": "snack",
+   "store": "both",
+   "category": "food",
+   "name": {
+    "ko": "K-스낵 인기 과자 모음",
+    "en": "Korean Snack Variety Box",
+    "zh": "韩国人气零食组合",
+    "ja": "韓国人気お菓子セット",
+    "vi": "Hộp đồ ăn vặt Hàn Quốc"
+   },
+   "brand": "Munchori",
+   "price_krw": 19900,
+   "list_price_krw": 29000,
+   "price_jpy": 2280,
+   "list_price_jpy": 3300,
+   "rating": 4.8,
+   "sold": 18300,
+   "badge": "DEAL",
+   "options": "구성: 8종, 12종",
+   "detail_ko": "한국식 달콤하고 짭짤한 과자를 한 상자에 구성한 간식 세트입니다. 친구들과 나누거나 가벼운 선물로 활용하기 좋습니다.",
+   "image_prompt": "Open kraft gift box filled with colorful fictional Korean snack packets, honey butter style chips, rice crackers, chocolate biscuits, neat premium packaging, isolated on seamless white background, professional food product photography, square composition."
+  },
+  {
+   "id": "knit",
+   "store": "both",
+   "category": "fashion",
+   "name": {
+    "ko": "소프트 라운드넥 니트",
+    "en": "Soft Crewneck Knit",
+    "zh": "柔软圆领针织衫",
+    "ja": "ソフトクルーネックニット",
+    "vi": "Áo len cổ tròn mềm mại"
+   },
+   "brand": "Nuvorim",
+   "price_krw": 29900,
+   "list_price_krw": 49000,
+   "price_jpy": 3480,
+   "list_price_jpy": 5600,
+   "rating": 4.7,
+   "sold": 8600,
+   "badge": "DEAL",
+   "options": "색상: 아이보리, 차콜, 오트밀 / 사이즈: S, M, L",
+   "detail_ko": "부드러운 촉감과 여유로운 실루엣이 특징인 라운드넥 니트입니다. 다양한 하의와 매치하기 쉬운 기본 디자인입니다.",
+   "image_prompt": "Premium oatmeal crewneck knitted sweater neatly folded with visible ribbed collar and detailed knit texture, no model, no hanger, pure white seamless studio background, soft realistic shadows, square ecommerce product photograph."
+  },
+  {
+   "id": "tumbler",
+   "store": "both",
+   "category": "home",
+   "name": {
+    "ko": "파스텔 진공 텀블러",
+    "en": "Pastel Vacuum Tumbler",
+    "zh": "马卡龙色真空保温杯",
+    "ja": "パステル真空タンブラー",
+    "vi": "Bình giữ nhiệt pastel"
+   },
+   "brand": "Loomavie",
+   "price_krw": 21900,
+   "list_price_krw": 32000,
+   "price_jpy": 2480,
+   "list_price_jpy": 3600,
+   "rating": 4.8,
+   "sold": 17400,
+   "badge": "BEST",
+   "options": "용량: 500ml, 750ml / 색상: 크림, 민트, 핑크",
+   "detail_ko": "이중벽 구조의 스테인리스 텀블러로 일상적인 음료 휴대에 적합합니다. 파스텔 컬러와 심플한 디자인을 적용했습니다.",
+   "image_prompt": "Single pastel mint stainless steel vacuum tumbler with cream lid and rounded ergonomic handle, elegant minimal silhouette, isolated on pure white background, premium household product studio photography, soft contact shadow, square 1:1."
+  },
+  {
+   "id": "humidifier",
+   "store": "both",
+   "category": "home",
+   "name": {
+    "ko": "미니 무드등 가습기",
+    "en": "Mini Ambient Humidifier",
+    "zh": "迷你氛围灯加湿器",
+    "ja": "ミニライト加湿器",
+    "vi": "Máy tạo ẩm mini có đèn"
+   },
+   "brand": "Loomavie",
+   "price_krw": 24900,
+   "list_price_krw": 39000,
+   "price_jpy": 2880,
+   "list_price_jpy": 4400,
+   "rating": 4.7,
+   "sold": 12900,
+   "badge": "LIVE",
+   "options": "색상: 화이트, 베이지",
+   "detail_ko": "책상과 침실에서 사용하기 좋은 소형 USB 가습기입니다. 은은한 무드 조명과 컴팩트한 외형으로 공간에 자연스럽게 어울립니다.",
+   "image_prompt": "Small cream cylindrical desktop humidifier with translucent upper light ring and delicate realistic mist plume, USB powered design, isolated on seamless pure white background, premium lifestyle electronics photography, soft shadow, square composition."
+  },
+  {
+   "id": "keyring",
+   "store": "both",
+   "category": "goods",
+   "name": {
+    "ko": "베어 아크릴 키링",
+    "en": "Bear Acrylic Keyring",
+    "zh": "小熊亚克力钥匙扣",
+    "ja": "ベアアクリルキーホルダー",
+    "vi": "Móc khóa acrylic hình gấu"
+   },
+   "brand": "Piporu",
+   "price_krw": 6900,
+   "list_price_krw": 9900,
+   "price_jpy": 790,
+   "list_price_jpy": 1100,
+   "rating": 4.9,
+   "sold": 21800,
+   "badge": "BEST",
+   "options": "디자인: 크림베어, 핑크베어, 브라운베어",
+   "detail_ko": "귀여운 곰 캐릭터를 투명 아크릴에 담은 키링입니다. 가방과 파우치, 열쇠 등에 포인트 액세서리로 사용할 수 있습니다.",
+   "image_prompt": "Three adorable original bear acrylic keychains in cream, pink and brown with polished silver metal clasps, no copyrighted characters, neatly arranged on pure white studio background, transparent acrylic reflections, soft shadows, square product photo."
+  },
+  {
+   "id": "charger",
+   "store": "both",
+   "category": "tech",
+   "name": {
+    "ko": "마그네틱 무선 충전 패드",
+    "en": "Magnetic Wireless Charging Pad",
+    "zh": "磁吸无线充电器",
+    "ja": "マグネット式ワイヤレス充電器",
+    "vi": "Đế sạc không dây từ tính"
+   },
+   "brand": "Nexovra",
+   "price_krw": 19900,
+   "list_price_krw": 32000,
+   "price_jpy": 2280,
+   "list_price_jpy": 3600,
+   "rating": 4.7,
+   "sold": 25200,
+   "badge": "BEST",
+   "options": "색상: 화이트, 블랙",
+   "detail_ko": "호환 스마트폰을 올려두고 사용하는 마그네틱 무선 충전 패드입니다. 실제 충전 속도와 자석 부착 여부는 기기 호환성에 따라 달라집니다.",
+   "image_prompt": "Minimal white circular magnetic wireless charging pad with integrated braided USB-C cable beside a generic unbranded smartphone, premium consumer electronics studio photography, isolated on pure white background, subtle soft shadow, square image."
+  },
+  {
+   "id": "earbuds",
+   "store": "both",
+   "category": "tech",
+   "name": {
+    "ko": "컴팩트 무선 이어버드",
+    "en": "Compact Wireless Earbuds",
+    "zh": "便携无线蓝牙耳机",
+    "ja": "コンパクトワイヤレスイヤホン",
+    "vi": "Tai nghe không dây nhỏ gọn"
+   },
+   "brand": "Nexovra",
+   "price_krw": 29900,
+   "list_price_krw": 49000,
+   "price_jpy": 3480,
+   "list_price_jpy": 5600,
+   "rating": 4.7,
+   "sold": 23700,
+   "badge": "LIVE",
+   "options": "색상: 화이트, 차콜",
+   "detail_ko": "휴대하기 편리한 충전 케이스를 갖춘 무선 이어버드입니다. 일상 음악 감상과 통화에 활용할 수 있는 컴팩트한 제품입니다.",
+   "image_prompt": "Pair of modern matte ivory true wireless earbuds inside an open compact charging case, original unbranded industrial design, isolated on seamless pure white background, precise softbox reflections, premium electronics ecommerce photography, square image."
+  },
+  {
+   "id": "pdrn-balm",
+   "store": "both",
+   "category": "skincare",
+   "name": {
+    "ko": "PDRN 모이스처 리페어 밤",
+    "en": "PDRN Moisture Repair Balm",
+    "zh": "PDRN保湿护理膏",
+    "ja": "PDRNモイスチャーケアバーム",
+    "vi": "Sáp dưỡng ẩm PDRN"
+   },
+   "brand": "Deraluvi",
+   "price_krw": 24900,
+   "list_price_krw": 39000,
+   "price_jpy": 2880,
+   "list_price_jpy": 4400,
+   "rating": 4.9,
+   "sold": 68200,
+   "badge": "BEST",
+   "options": "용량: 20g, 40g",
+   "detail_ko": "PDRN을 콘셉트로 구성한 촉촉한 밤 타입 스킨케어 제품입니다. 건조함이 느껴지는 부위에 얇게 펴 발라 보습막을 더하는 용도로 사용합니다.",
+   "image_prompt": "Premium Korean PDRN cosmetic moisturizing balm in a short frosted pale pink glass jar with brushed silver lid, subtle fictional Deraluvi typography, lid slightly open revealing smooth cream, isolated on white seamless studio background, soft shadows, square photo."
+  },
+  {
+   "id": "heartleaf-toner",
+   "store": "both",
+   "category": "skincare",
+   "name": {
+    "ko": "어성초 수분 토너",
+    "en": "Heartleaf Hydrating Toner",
+    "zh": "鱼腥草保湿爽肤水",
+    "ja": "ドクダミ保湿トナー",
+    "vi": "Nước cân bằng diếp cá"
+   },
+   "brand": "Deraluvi",
+   "price_krw": 18900,
+   "list_price_krw": 29000,
+   "price_jpy": 2180,
+   "list_price_jpy": 3300,
+   "rating": 4.9,
+   "sold": 59400,
+   "badge": "BEST",
+   "options": "용량: 250ml, 500ml",
+   "detail_ko": "어성초 추출물을 콘셉트로 한 산뜻한 워터 타입 토너입니다. 세안 후 화장솜이나 손으로 부드럽게 펴 바르기 좋습니다.",
+   "image_prompt": "Tall transparent cylindrical Korean skincare toner bottle filled with pale herbal green liquid, understated off-white label, matte white cap, original fictional brand, clean white seamless background, premium skincare photography, square image."
+  },
+  {
+   "id": "calcium-stick",
+   "store": "both",
+   "category": "skincare",
+   "name": {
+    "ko": "칼슘 멀티 보습 밤 스틱",
+    "en": "Calcium Multi Moisture Balm Stick",
+    "zh": "钙元素多效保湿棒",
+    "ja": "カルシウムマルチ保湿バーム",
+    "vi": "Thỏi dưỡng ẩm đa năng Calcium"
+   },
+   "brand": "Deraluvi",
+   "price_krw": 19900,
+   "list_price_krw": 32000,
+   "price_jpy": 2280,
+   "list_price_jpy": 3600,
+   "rating": 4.8,
+   "sold": 47300,
+   "badge": "LIVE",
+   "options": "용량: 9g, 9g×2개",
+   "detail_ko": "눈가와 입가 등 건조함이 느껴지는 부위에 간편하게 사용하는 보습 스틱입니다. 휴대하기 좋은 형태로 메이크업 전후에 활용할 수 있습니다.",
+   "image_prompt": "Luxury cylindrical pastel pink twist-up moisturizing balm stick with polished silver accents, cap beside tube and pale ivory balm exposed, isolated on pure white seamless studio background, elegant Korean cosmetic product photography, square image."
+  },
+  {
+   "id": "peel-lipliner",
+   "store": "both",
+   "category": "makeup",
+   "name": {
+    "ko": "필오프 립라이너 틴트",
+    "en": "Peel-off Lip Liner Tint",
+    "zh": "撕拉式唇线染色液",
+    "ja": "ピールオフリップライナー",
+    "vi": "Son viền môi dạng bóc"
+   },
+   "brand": "Mirevyn",
+   "price_krw": 14900,
+   "list_price_krw": 22000,
+   "price_jpy": 1680,
+   "list_price_jpy": 2500,
+   "rating": 4.7,
+   "sold": 42800,
+   "badge": "BEST",
+   "options": "색상: 누드로즈, 모브, 브릭",
+   "detail_ko": "입술 윤곽에 바른 후 마른 막을 벗겨내는 타입의 립라이너입니다. 사용 안내에 따라 입술 라인에 얇게 바르고 원하는 립 메이크업을 완성할 수 있습니다.",
+   "image_prompt": "Slim sophisticated peel-off lip liner tint tube in muted mauve with precision brush applicator exposed, matching minimal carton box, pure white seamless studio background, photorealistic beauty product photography, square composition."
+  },
+  {
+   "id": "ampoule-duo",
+   "store": "both",
+   "category": "skincare",
+   "name": {
+    "ko": "수분·윤기 앰플 듀오 세트",
+    "en": "Hydration & Glow Ampoule Duo",
+    "zh": "补水焕亮双精华套装",
+    "ja": "保湿＆ツヤアンプルデュオ",
+    "vi": "Bộ đôi tinh chất cấp ẩm và rạng rỡ"
+   },
+   "brand": "Deraluvi",
+   "price_krw": 32900,
+   "list_price_krw": 58000,
+   "price_jpy": 3780,
+   "list_price_jpy": 6600,
+   "rating": 4.9,
+   "sold": 52300,
+   "badge": "DEAL",
+   "options": "구성: 30ml×2개",
+   "detail_ko": "수분 앰플과 윤기 케어 앰플을 함께 구성한 스킨케어 세트입니다. 피부 상태와 사용감에 따라 두 제품을 번갈아 사용할 수 있습니다.",
+   "image_prompt": "Two premium Korean cosmetic glass ampoule dropper bottles, one clear pale aqua and one translucent amber, elegant matching cream gift box, brushed metallic caps, isolated on white studio background, high-end cosmetic set photography, square 1:1."
+  },
+  {
+   "id": "collagen-mask",
+   "store": "both",
+   "category": "skincare",
+   "name": {
+    "ko": "콜라겐 하이드로겔 젤리 마스크",
+    "en": "Collagen Hydrogel Jelly Mask",
+    "zh": "胶原蛋白水凝胶面膜",
+    "ja": "コラーゲンハイドロゲルマスク",
+    "vi": "Mặt nạ thạch hydrogel collagen"
+   },
+   "brand": "Deraluvi",
+   "price_krw": 19900,
+   "list_price_krw": 32000,
+   "price_jpy": 2280,
+   "list_price_jpy": 3600,
+   "rating": 4.8,
+   "sold": 61700,
+   "badge": "BEST",
+   "options": "구성: 4매, 8매",
+   "detail_ko": "젤리처럼 부드러운 하이드로겔 소재를 사용한 보습 마스크입니다. 얼굴에 밀착시키고 제품별 권장 사용 시간에 맞춰 제거합니다.",
+   "image_prompt": "Premium collagen hydrogel face mask box in soft blush pink with four matching flat foil sachets, glossy jelly-inspired packaging aesthetic, fictional Korean beauty brand, isolated on white background, professional studio beauty photography, square image."
+  },
+  {
+   "id": "hair-styler",
+   "store": "both",
+   "category": "haircare",
+   "name": {
+    "ko": "5in1 멀티 에어 헤어 스타일러",
+    "en": "5-in-1 Multi Air Hair Styler",
+    "zh": "五合一多功能美发造型器",
+    "ja": "5in1マルチエアスタイラー",
+    "vi": "Máy tạo kiểu tóc đa năng 5 trong 1"
+   },
+   "brand": "Aerovyn",
+   "price_krw": 89900,
+   "list_price_krw": 139000,
+   "price_jpy": 9980,
+   "list_price_jpy": 15800,
+   "rating": 4.7,
+   "sold": 14700,
+   "badge": "LIVE",
+   "options": "색상: 샴페인, 차콜",
+   "detail_ko": "건조와 여러 가지 헤어 스타일링에 활용하는 교체형 헤드 구성의 헤어 스타일러입니다. 모발 상태와 원하는 스타일에 맞춰 부속품을 선택할 수 있습니다.",
+   "image_prompt": "Original premium champagne metallic multi air hair styling device with five interchangeable styling heads arranged in a tidy horizontal product lineup, no existing brand resemblance, pure white seamless background, realistic precision electronics photography, square 1:1."
+  },
+  {
+   "id": "headphones",
+   "store": "both",
+   "category": "tech",
+   "name": {
+    "ko": "오버이어 무선 헤드폰",
+    "en": "Over-ear Wireless Headphones",
+    "zh": "头戴式无线耳机",
+    "ja": "オーバーイヤーワイヤレスヘッドホン",
+    "vi": "Tai nghe chụp tai không dây"
+   },
+   "brand": "Nexovra",
+   "price_krw": 59900,
+   "list_price_krw": 89000,
+   "price_jpy": 6980,
+   "list_price_jpy": 9980,
+   "rating": 4.8,
+   "sold": 38700,
+   "badge": "BEST",
+   "options": "색상: 실버, 크림, 블랙",
+   "detail_ko": "부드러운 이어쿠션과 조절 가능한 헤드밴드를 적용한 무선 헤드폰입니다. 음악 감상과 영상 시청, 이동 중 사용에 적합합니다.",
+   "image_prompt": "Premium original over-ear wireless headphones, matte warm ivory earcups, brushed aluminum headband hinges, soft padded cushions, three quarter angle, isolated on pure white seamless studio background, refined electronics product photography, square composition."
+  },
+  {
+   "id": "mag-powerbank",
+   "store": "both",
+   "category": "tech",
+   "name": {
+    "ko": "마그네틱 슬림 보조배터리",
+    "en": "Magnetic Slim Power Bank",
+    "zh": "超薄磁吸充电宝",
+    "ja": "マグネット式スリムモバイルバッテリー",
+    "vi": "Pin dự phòng từ tính siêu mỏng"
+   },
+   "brand": "Nexovra",
+   "price_krw": 32900,
+   "list_price_krw": 49000,
+   "price_jpy": 3780,
+   "list_price_jpy": 5600,
+   "rating": 4.8,
+   "sold": 34600,
+   "badge": "BEST",
+   "options": "용량: 5000mAh, 10000mAh / 색상: 실버, 블랙",
+   "detail_ko": "호환 스마트폰 뒷면에 부착해 사용할 수 있는 슬림형 보조배터리입니다. 무선 충전과 유선 충전의 사용 조건은 연결 기기에 따라 달라질 수 있습니다.",
+   "image_prompt": "Ultra slim rectangular magnetic smartphone power bank in matte silver aluminum with rounded edges, subtle magnetic alignment ring, shown beside a generic smartphone, pure white seamless studio background, premium technology product photograph, square image."
+  },
+  {
+   "id": "storage-box",
+   "store": "both",
+   "category": "home",
+   "name": {
+    "ko": "모듈형 투명 수납 정리함",
+    "en": "Modular Clear Storage Box",
+    "zh": "模块化透明收纳盒",
+    "ja": "モジュール式クリア収納ボックス",
+    "vi": "Hộp lưu trữ trong suốt mô-đun"
+   },
+   "brand": "Loomavie",
+   "price_krw": 19900,
+   "list_price_krw": 29000,
+   "price_jpy": 2280,
+   "list_price_jpy": 3300,
+   "rating": 4.8,
+   "sold": 31500,
+   "badge": "BEST",
+   "options": "구성: 3개 세트, 6개 세트",
+   "detail_ko": "내용물을 쉽게 확인할 수 있는 투명 모듈형 수납함입니다. 화장품과 문구류, 생활 소품 등을 용도에 따라 나누어 정리할 수 있습니다.",
+   "image_prompt": "Three stackable transparent modular storage boxes with translucent cream lids, clean Japanese minimalist household design, neatly stacked and arranged, isolated on pure white background, realistic transparent plastic reflections, square ecommerce photo."
+  },
+  {
+   "id": "japanese-snack-box",
+   "store": "both",
+   "category": "food",
+   "name": {
+    "ko": "일본 인기 간식 기프트 박스",
+    "en": "Japanese Snack Gift Box",
+    "zh": "日本人气零食礼盒",
+    "ja": "人気お菓子ギフトボックス",
+    "vi": "Hộp quà đồ ăn vặt Nhật Bản"
+   },
+   "brand": "Komorepi",
+   "price_krw": 24900,
+   "list_price_krw": 36000,
+   "price_jpy": 2480,
+   "list_price_jpy": 3600,
+   "rating": 4.9,
+   "sold": 22400,
+   "badge": "BEST",
+   "options": "구성: 10종, 16종",
+   "detail_ko": "일본식 쌀과자와 녹차 풍미 간식, 쿠키 등을 구성한 선물용 간식 상자입니다. 여러 가지 맛을 한 번에 즐길 수 있도록 개별 포장 제품을 담았습니다.",
+   "image_prompt": "Premium Japanese snack assortment gift box, neatly partitioned matcha cookies, rice crackers and colorful fictional Japanese snack wrappers, cream gift packaging, isolated on pure white seamless background, elegant food ecommerce photography, square image."
+  },
+  {
+   "id": "puffer-vest",
+   "store": "both",
+   "category": "fashion",
+   "name": {
+    "ko": "경량 퀼팅 패딩 조끼",
+    "en": "Lightweight Quilted Puffer Vest",
+    "zh": "轻便绗缝保暖马甲",
+    "ja": "軽量キルティング中綿ベスト",
+    "vi": "Áo gile chần bông nhẹ"
+   },
+   "brand": "Nuvorim",
+   "price_krw": 39900,
+   "list_price_krw": 65000,
+   "price_jpy": 4580,
+   "list_price_jpy": 7400,
+   "rating": 4.7,
+   "sold": 11300,
+   "badge": "DEAL",
+   "options": "색상: 블랙, 크림, 올리브 / 사이즈: S, M, L, XL",
+   "detail_ko": "가벼운 착용감을 고려한 퀼팅 패딩 조끼입니다. 니트나 후드 위에 겹쳐 입기 편리한 겨울 레이어링 아이템입니다.",
+   "image_prompt": "Premium lightweight black quilted puffer vest displayed upright in invisible mannequin style, full front zipper, clean minimalist fashion design, no human model, isolated on pure white seamless studio background, realistic textile texture, square image."
+  },
+  {
+   "id": "lip-oil",
+   "store": "both",
+   "category": "makeup",
+   "name": {
+    "ko": "글래스 샤인 립 오일",
+    "en": "Glass Shine Lip Oil",
+    "zh": "玻璃光泽护唇油",
+    "ja": "グラスシャインリップオイル",
+    "vi": "Dầu dưỡng môi bóng gương"
+   },
+   "brand": "Mirevyn",
+   "price_krw": 12900,
+   "list_price_krw": 19000,
+   "price_jpy": 1480,
+   "list_price_jpy": 2200,
+   "rating": 4.8,
+   "sold": 28600,
+   "badge": "NEW",
+   "options": "색상: 클리어, 허니핑크, 베리",
+   "detail_ko": "맑고 반짝이는 입술 표현을 위한 립 오일입니다. 단독으로 바르거나 립 컬러 위에 덧발라 촉촉한 광택을 연출할 수 있습니다.",
+   "image_prompt": "Elegant transparent square lip oil tube filled with honey pink translucent gloss, rounded pale pink cap, oversized soft doe-foot applicator beside bottle, pure white seamless background, premium macro beauty photography, soft shadows, square image."
+  },
+  {
+   "id": "blush-stick",
+   "store": "both",
+   "category": "makeup",
+   "name": {
+    "ko": "크림 멀티 블러셔 스틱",
+    "en": "Cream Multi Blush Stick",
+    "zh": "多用途奶油腮红棒",
+    "ja": "クリームマルチチークスティック",
+    "vi": "Má hồng kem dạng thỏi"
+   },
+   "brand": "Mirevyn",
+   "price_krw": 15900,
+   "list_price_krw": 24000,
+   "price_jpy": 1780,
+   "list_price_jpy": 2700,
+   "rating": 4.7,
+   "sold": 16300,
+   "badge": "NEW",
+   "options": "색상: 피치, 로즈, 모브",
+   "detail_ko": "손가락으로 간편하게 블렌딩할 수 있는 크림 타입 블러셔입니다. 부드러운 발색으로 자연스러운 데일리 메이크업을 연출하기 좋습니다.",
+   "image_prompt": "Minimal cylindrical cream blush stick in warm peach packaging, cap removed showing softly rounded coral cream product, matching cap beside it, isolated on white studio background, realistic high-end cosmetic photography, square composition."
+  },
+  {
+   "id": "makeup-kit",
+   "store": "both",
+   "category": "makeup",
+   "name": {
+    "ko": "5분 데일리 메이크업 키트",
+    "en": "Five-minute Daily Makeup Kit",
+    "zh": "五分钟日常彩妆套装",
+    "ja": "5分デイリーメイクキット",
+    "vi": "Bộ trang điểm hằng ngày 5 phút"
+   },
+   "brand": "Mirevyn",
+   "price_krw": 34900,
+   "list_price_krw": 59000,
+   "price_jpy": 3980,
+   "list_price_jpy": 6700,
+   "rating": 4.8,
+   "sold": 23100,
+   "badge": "DEAL",
+   "options": "구성: 쿠션, 립 틴트, 블러셔, 미니 파우치",
+   "detail_ko": "빠른 데일리 메이크업에 필요한 기본 제품을 하나로 구성한 키트입니다. 미니 파우치가 포함되어 출근이나 여행 시에도 휴대하기 편리합니다.",
+   "image_prompt": "Premium everyday makeup gift set containing ivory cushion compact, rose lip tint, peach cream blush stick and small cream cosmetic pouch, beautifully arranged inside an open minimalist gift box, pure white background, professional studio photography, square image."
+  },
+  {
+   "id": "rice-toner",
+   "store": "both",
+   "category": "skincare",
+   "name": {
+    "ko": "라이스 밀크 보습 토너",
+    "en": "Rice Milk Moisturizing Toner",
+    "zh": "米乳保湿爽肤水",
+    "ja": "ライスミルク保湿化粧水",
+    "vi": "Nước cân bằng dưỡng ẩm sữa gạo"
+   },
+   "brand": "Shiravune",
+   "price_krw": 19900,
+   "list_price_krw": 28000,
+   "price_jpy": 1980,
+   "list_price_jpy": 2800,
+   "rating": 4.8,
+   "sold": 24800,
+   "badge": "BEST",
+   "options": "용량: 200ml, 400ml",
+   "detail_ko": "쌀 유래 성분을 콘셉트로 한 밀키 타입 보습 토너입니다. 세안 후 피부에 부드럽고 촉촉한 사용감을 더합니다.",
+   "image_prompt": "Japanese minimalist frosted cylindrical skincare bottle containing milky ivory rice toner, understated beige typography, natural cream screw cap, elegant fictional Shiravune label, pure white seamless studio background, soft diffuse light, square image."
+  },
+  {
+   "id": "cleansing-balm",
+   "store": "both",
+   "category": "skincare",
+   "name": {
+    "ko": "소프트 멜팅 클렌징 밤",
+    "en": "Soft Melting Cleansing Balm",
+    "zh": "柔融卸妆膏",
+    "ja": "ソフトメルティングクレンジングバーム",
+    "vi": "Sáp tẩy trang mềm tan"
+   },
+   "brand": "Shiravune",
+   "price_krw": 18900,
+   "list_price_krw": 28000,
+   "price_jpy": 1980,
+   "list_price_jpy": 2800,
+   "rating": 4.8,
+   "sold": 20700,
+   "badge": "BEST",
+   "options": "용량: 90g, 120g",
+   "detail_ko": "부드럽게 녹는 밤 타입의 메이크업 클렌저입니다. 마른 피부에 마사지하듯 사용한 뒤 물로 유화하여 씻어낼 수 있습니다.",
+   "image_prompt": "Low round ivory Japanese cleansing balm jar with minimal taupe fictional label, lid removed and smooth white balm visible with small cosmetic spatula, isolated on seamless pure white background, premium beauty studio photography, square image."
+  },
+  {
+   "id": "beauty-device",
+   "store": "both",
+   "category": "skincare",
+   "name": {
+    "ko": "휴대용 온열 페이셜 마사지기",
+    "en": "Portable Warming Facial Massager",
+    "zh": "便携温热面部按摩仪",
+    "ja": "携帯用温感フェイスマッサージャー",
+    "vi": "Máy massage mặt làm ấm cầm tay"
+   },
+   "brand": "Aerovyn",
+   "price_krw": 45900,
+   "list_price_krw": 69000,
+   "price_jpy": 5280,
+   "list_price_jpy": 7800,
+   "rating": 4.6,
+   "sold": 9800,
+   "badge": "NEW",
+   "options": "색상: 아이보리, 로즈골드",
+   "detail_ko": "온열 기능과 부드러운 마사지 헤드를 갖춘 가정용 뷰티 디바이스입니다. 사용 설명서에 따라 피부 관리 루틴에 활용하는 일반 미용 제품입니다.",
+   "image_prompt": "Original handheld facial massage beauty device with elegant ivory curved body and smooth rounded metallic massage head, compact USB charging base, isolated on white seamless background, photorealistic luxury personal care electronics photograph, square image."
+  },
+  {
+   "id": "hair-oil",
+   "store": "both",
+   "category": "haircare",
+   "name": {
+    "ko": "실키 글로우 헤어 오일",
+    "en": "Silky Glow Hair Oil",
+    "zh": "丝滑亮泽护发精油",
+    "ja": "シルキーグロウヘアオイル",
+    "vi": "Dầu dưỡng tóc bóng mượt"
+   },
+   "brand": "Shiravune",
+   "price_krw": 16900,
+   "list_price_krw": 25000,
+   "price_jpy": 1780,
+   "list_price_jpy": 2600,
+   "rating": 4.8,
+   "sold": 19200,
+   "badge": "BEST",
+   "options": "용량: 80ml, 120ml",
+   "detail_ko": "모발 끝에 부드러운 윤기와 정돈된 사용감을 더하는 헤어 오일입니다. 드라이 전후에 모발 길이와 상태에 맞춰 소량 사용합니다.",
+   "image_prompt": "Clear rounded glass pump bottle filled with golden amber hair oil, minimalist Japanese-inspired cream label and black pump, single elegant product on pure white seamless background, high end haircare photography, realistic reflections, square image."
+  },
+  {
+   "id": "scalp-brush",
+   "store": "both",
+   "category": "haircare",
+   "name": {
+    "ko": "실리콘 두피 샴푸 브러시",
+    "en": "Silicone Scalp Shampoo Brush",
+    "zh": "硅胶头皮洗发按摩刷",
+    "ja": "シリコンスカルプブラシ",
+    "vi": "Bàn chải gội đầu silicone"
+   },
+   "brand": "Shiravune",
+   "price_krw": 9900,
+   "list_price_krw": 15000,
+   "price_jpy": 1080,
+   "list_price_jpy": 1600,
+   "rating": 4.8,
+   "sold": 15400,
+   "badge": "DEAL",
+   "options": "색상: 세이지, 크림, 라벤더",
+   "detail_ko": "부드러운 실리콘 돌기를 적용한 두피 세정용 브러시입니다. 샴푸할 때 가볍게 마사지하듯 사용하고 물로 씻어 관리할 수 있습니다.",
+   "image_prompt": "Ergonomic sage green silicone scalp shampoo brush with rounded grip handle and soft silicone bristles, three-quarter view with bristle detail, isolated on pure white seamless studio background, soft contact shadow, realistic household beauty accessory photography, square image."
+  },
+  {
+   "id": "charging-hub",
+   "store": "both",
+   "category": "tech",
+   "name": {
+    "ko": "3in1 접이식 충전 스테이션",
+    "en": "3-in-1 Foldable Charging Station",
+    "zh": "三合一折叠充电站",
+    "ja": "3in1折りたたみ充電ステーション",
+    "vi": "Trạm sạc gập 3 trong 1"
+   },
+   "brand": "Nexovra",
+   "price_krw": 39900,
+   "list_price_krw": 59000,
+   "price_jpy": 4580,
+   "list_price_jpy": 6700,
+   "rating": 4.7,
+   "sold": 21800,
+   "badge": "LIVE",
+   "options": "색상: 화이트, 블랙",
+   "detail_ko": "호환 스마트폰과 웨어러블 기기, 이어버드를 한곳에서 충전하도록 설계한 접이식 스테이션입니다. 사용 전 각 기기의 충전 규격과 호환 여부를 확인해야 합니다.",
+   "image_prompt": "Minimal white foldable three-in-one wireless charging station holding a generic smartphone, generic smartwatch and wireless earbuds case, original product design, isolated on pure white seamless studio background, realistic premium electronics product photography, square composition."
+  },
+  {
+   "id": "organizer-tray",
+   "store": "both",
+   "category": "home",
+   "name": {
+    "ko": "서랍 모듈 정리 트레이 세트",
+    "en": "Modular Drawer Organizer Tray Set",
+    "zh": "抽屉模块收纳托盘套装",
+    "ja": "引き出し整理トレーセット",
+    "vi": "Bộ khay sắp xếp ngăn kéo"
+   },
+   "brand": "Loomavie",
+   "price_krw": 14900,
+   "list_price_krw": 22000,
+   "price_jpy": 1680,
+   "list_price_jpy": 2500,
+   "rating": 4.8,
+   "sold": 24600,
+   "badge": "BEST",
+   "options": "구성: 6개 세트, 12개 세트",
+   "detail_ko": "서랍 크기에 맞춰 조합할 수 있는 모듈형 정리 트레이입니다. 화장품과 액세서리, 문구 등을 깔끔하게 분리해 보관할 수 있습니다.",
+   "image_prompt": "Six modular rectangular drawer organizer trays in warm ivory plastic, different practical sizes arranged neatly in an organized geometric layout, Japanese minimalist household design, pure white seamless studio background, soft realistic shadows, square photograph."
+  },
+  {
+   "id": "travel-pouch",
+   "store": "both",
+   "category": "goods",
+   "name": {
+    "ko": "멀티 여행 정리 파우치 세트",
+    "en": "Multi Travel Organizer Pouch Set",
+    "zh": "多功能旅行收纳包套装",
+    "ja": "マルチトラベル収納ポーチセット",
+    "vi": "Bộ túi sắp xếp đồ du lịch"
+   },
+   "brand": "Loomavie",
+   "price_krw": 17900,
+   "list_price_krw": 27000,
+   "price_jpy": 1980,
+   "list_price_jpy": 3000,
+   "rating": 4.7,
+   "sold": 18700,
+   "badge": "DEAL",
+   "options": "색상: 베이지, 차콜, 세이지 / 구성: 5종",
+   "detail_ko": "의류와 소형 여행용품을 분류하여 보관하는 다섯 종류의 파우치 세트입니다. 가볍고 접어서 보관하기 편리한 소재를 사용했습니다.",
+   "image_prompt": "Five coordinated beige travel organizer pouches in different sizes, breathable mesh panels and neat fabric zipper details, carefully arranged on seamless pure white studio background, premium travel accessory photography, square image."
+  },
+  {
+   "id": "hand-warmer",
+   "store": "both",
+   "category": "tech",
+   "name": {
+    "ko": "충전식 포켓 손난로",
+    "en": "Rechargeable Pocket Hand Warmer",
+    "zh": "充电式便携暖手宝",
+    "ja": "充電式ポケットカイロ",
+    "vi": "Máy sưởi tay bỏ túi sạc lại"
+   },
+   "brand": "Nexovra",
+   "price_krw": 22900,
+   "list_price_krw": 35000,
+   "price_jpy": 2580,
+   "list_price_jpy": 3900,
+   "rating": 4.8,
+   "sold": 27600,
+   "badge": "BEST",
+   "options": "색상: 크림, 핑크, 세이지",
+   "detail_ko": "겨울철 외출 시 휴대하기 좋은 충전식 손난로입니다. 사용 설명서에 따라 온도를 조절하고 피부에 장시간 직접 접촉하지 않도록 사용합니다.",
+   "image_prompt": "Compact smooth pebble-shaped rechargeable hand warmer in pastel cream and sage green variants, small subtle temperature indicator and USB-C port, isolated on pure white background, premium consumer gadget studio photography, square image."
+  },
+  {
+   "id": "fleece-jacket",
+   "store": "both",
+   "category": "fashion",
+   "name": {
+    "ko": "데일리 소프트 플리스 재킷",
+    "en": "Daily Soft Fleece Jacket",
+    "zh": "日常柔软抓绒外套",
+    "ja": "デイリーソフトフリースジャケット",
+    "vi": "Áo khoác fleece mềm hằng ngày"
+   },
+   "brand": "Nuvorim",
+   "price_krw": 35900,
+   "list_price_krw": 59000,
+   "price_jpy": 3980,
+   "list_price_jpy": 6700,
+   "rating": 4.7,
+   "sold": 9300,
+   "badge": "DEAL",
+   "options": "색상: 아이보리, 브라운, 블랙 / 사이즈: S, M, L, XL",
+   "detail_ko": "포근한 촉감의 플리스 소재로 만든 데일리 재킷입니다. 간편한 지퍼 여밈과 여유로운 핏으로 계절에 맞춰 겹쳐 입을 수 있습니다.",
+   "image_prompt": "Premium cream soft fleece zip-up jacket with minimal stand collar, visible cozy fleece fabric texture, invisible mannequin product presentation, no human model, pure white seamless studio background, realistic fashion ecommerce photography, square composition."
+  },
+  {
+   "id": "crossbody-bag",
+   "store": "both",
+   "category": "fashion",
+   "name": {
+    "ko": "라이트 미니 크로스백",
+    "en": "Light Mini Crossbody Bag",
+    "zh": "轻便迷你斜挎包",
+    "ja": "ライトミニクロスボディバッグ",
+    "vi": "Túi đeo chéo mini nhẹ"
+   },
+   "brand": "Nuvorim",
+   "price_krw": 24900,
+   "list_price_krw": 39000,
+   "price_jpy": 2880,
+   "list_price_jpy": 4400,
+   "rating": 4.8,
+   "sold": 14300,
+   "badge": "NEW",
+   "options": "색상: 블랙, 샌드, 올리브",
+   "detail_ko": "스마트폰과 지갑 등 기본 소지품을 담기 좋은 미니 크로스백입니다. 길이 조절이 가능한 스트랩으로 다양한 스타일에 맞춰 착용할 수 있습니다.",
+   "image_prompt": "Minimal sand beige lightweight nylon mini crossbody bag with adjustable matching strap, premium zipper details and clean compact silhouette, original fashion accessory design, isolated on pure white seamless studio background, soft shadow, square product photograph."
+  },
+  {
+   "id": "ramen-box",
+   "store": "both",
+   "category": "food",
+   "name": {
+    "ko": "K-라면 인기 맛 체험 세트",
+    "en": "Korean Ramen Variety Set",
+    "zh": "韩国人气拉面组合",
+    "ja": "韓国人気ラーメン食べ比べセット",
+    "vi": "Bộ mì ramen Hàn Quốc nhiều vị"
+   },
+   "brand": "Munchori",
+   "price_krw": 19900,
+   "list_price_krw": 29000,
+   "price_jpy": 2380,
+   "list_price_jpy": 3400,
+   "rating": 4.8,
+   "sold": 26700,
+   "badge": "BEST",
+   "options": "구성: 8봉, 12봉",
+   "detail_ko": "매운맛과 순한맛 등 다양한 한국식 라면을 함께 구성한 세트입니다. 제품별 조리 방법과 알레르기 유발 성분은 각 포장에서 확인할 수 있습니다.",
+   "image_prompt": "Eight colorful Korean instant ramen packets with original fictional packaging designs, spicy red, creamy yellow and mild green variants, neatly arranged inside an open kraft retail box, isolated on seamless pure white background, professional food product photography, square image."
+  },
+  {
+   "id": "protein-snack",
+   "store": "both",
+   "category": "food",
+   "name": {
+    "ko": "프로틴 크런치 스낵 10팩",
+    "en": "Protein Crunch Snack 10 Pack",
+    "zh": "蛋白质脆脆零食10包装",
+    "ja": "プロテインクランチスナック10袋",
+    "vi": "Snack giòn protein 10 gói"
+   },
+   "brand": "Munchori",
+   "price_krw": 18900,
+   "list_price_krw": 28000,
+   "price_jpy": 2180,
+   "list_price_jpy": 3200,
+   "rating": 4.7,
+   "sold": 13600,
+   "badge": "NEW",
+   "options": "맛: 초콜릿, 솔티카라멜, 혼합 / 구성: 10팩",
+   "detail_ko": "바삭한 식감의 간편한 프로틴 콘셉트 스낵입니다. 개별 포장으로 사무실이나 이동 중 간식으로 휴대하기 좋습니다.",
+   "image_prompt": "Ten pack protein crunch snack retail carton with individual minimalist chocolate brown and salted caramel beige snack wrappers, small portion of crunchy cereal clusters visible beside package, fictional brand design, pure white studio background, realistic food photography, square image."
+  },
+  {
+   "id": "korean-tea",
+   "store": "both",
+   "category": "food",
+   "name": {
+    "ko": "한국 전통차 티백 기프트 세트",
+    "en": "Korean Traditional Tea Gift Set",
+    "zh": "韩国传统茶包礼盒",
+    "ja": "韓国伝統茶ティーバッグギフト",
+    "vi": "Bộ quà trà truyền thống Hàn Quốc"
+   },
+   "brand": "Munchori",
+   "price_krw": 16900,
+   "list_price_krw": 25000,
+   "price_jpy": 1980,
+   "list_price_jpy": 2800,
+   "rating": 4.9,
+   "sold": 11700,
+   "badge": "DEAL",
+   "options": "구성: 유자차, 생강차, 보리차 / 24개입",
+   "detail_ko": "한국에서 즐기는 다양한 전통차 풍미를 간편하게 경험할 수 있는 차 세트입니다. 개별 포장되어 따뜻한 음료가 필요한 계절에 선물하기 좋습니다.",
+   "image_prompt": "Elegant Korean traditional tea gift set with three coordinated cream, golden yellow and muted sage tea cartons, individually wrapped tea bags arranged in an open premium gift box, isolated on pure white seamless studio background, refined food and beverage photography, square composition."
+  }
+ ]
+}
