@@ -743,7 +743,7 @@ figure {
   background: #202020;
 }
 
-.hero-visual figure > img {
+.hero-visual figure > img, .hero-visual figure > video {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -754,7 +754,7 @@ figure {
   grid-column: 1;
 }
 
-.hero-main-photo > img {
+.hero-main-photo > img, .hero-main-photo > video {
   object-position: 54% center;
 }
 
@@ -763,7 +763,7 @@ figure {
   grid-row: 1;
 }
 
-.hero-secondary-photo > img {
+.hero-secondary-photo > img, .hero-secondary-photo > video {
   object-position: center 35%;
 }
 
@@ -1258,7 +1258,7 @@ figure {
   overflow: hidden;
 }
 
-.studio-cover > img {
+.studio-cover > img, .studio-cover > video {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -1336,7 +1336,7 @@ figure {
   aspect-ratio: auto;
 }
 
-.studio-gallery img {
+.studio-gallery img, .studio-gallery video {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -4685,6 +4685,8 @@ dl.kv > dd {
 .admrow{display:flex;align-items:center;gap:10px;justify-content:space-between;padding:10px 0}
 img.brandlogo{height:32px;width:auto;border-radius:6px}
 .btn.rs,.btn.rs:hover{color:#fff!important}
+video.kjv{width:100%;height:100%;object-fit:cover;display:block;background:#0b0b10}
+@media(prefers-reduced-motion:reduce){video.kjv{display:none}video.kjv+img.kjposter{display:block!important}}
 .nav-mall{color:#fe2c55!important;font-weight:800!important}
 .hero-mall{border-color:#25f4ee!important;color:#25f4ee!important}
 .chk{display:flex;align-items:center;gap:10px;min-height:44px;font-weight:600}.chk input{width:20px;height:20px;accent-color:#fe2c55}
@@ -4806,17 +4808,14 @@ img.brandlogo{height:32px;width:auto;border-radius:6px}
         <div class="hero-visual">
 
           <figure class="hero-main-photo">
-            <img src="img/hero.jpg"
-                 alt="Live commerce studio"
-                 fetchpriority="high">
+            <video class="kjv" src="video/hero.mp4" poster="img/hero.jpg" autoplay muted loop playsinline preload="metadata" aria-hidden="true"></video>
             <div class="live-label">
               <span class="live-dot"></span> LIVE
             </div>
           </figure>
 
           <figure class="hero-secondary-photo">
-            <img src="img/host-jp.jpg"
-                 alt="Japan live shopping host">
+            <video class="kjv" src="video/host-jp.mp4" poster="img/host-jp.jpg" autoplay muted loop playsinline preload="metadata" aria-hidden="true"></video>
             <span class="photo-index">01 / JP</span>
           </figure>
 
@@ -4991,9 +4990,7 @@ img.brandlogo{height:32px;width:auto;border-radius:6px}
     <section class="studio-section" id="studio">
 
       <div class="studio-cover">
-        <img src="img/studio-wide.jpg"
-             alt="In-store live commerce studio"
-             loading="lazy">
+        <video class="kjv" src="video/studio.mp4" poster="img/studio-wide.jpg" autoplay muted loop playsinline preload="metadata" aria-hidden="true"></video>
 
         <div class="studio-cover-shade"></div>
 
@@ -5035,9 +5032,7 @@ img.brandlogo{height:32px;width:auto;border-radius:6px}
             </figure>
 
             <figure>
-              <img src="img/creator2.jpg"
-                   alt="Content creator"
-                   loading="lazy">
+              <video class="kjv" src="video/creator.mp4" poster="img/creator2.jpg" autoplay muted loop playsinline preload="metadata" aria-hidden="true"></video>
               <figcaption>03 / CREATOR</figcaption>
             </figure>
           </div>
