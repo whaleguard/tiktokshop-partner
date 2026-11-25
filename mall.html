@@ -3148,6 +3148,8 @@ body:has(.mobile-buybar) .m-toast {
 .inp.bad,input.bad,select.bad,textarea.bad{border-color:#fe2c55!important;box-shadow:0 0 0 3px rgba(254,44,85,.15)}
 button[disabled]{opacity:.55;cursor:not-allowed}
 @media(max-width:480px){#langSel{max-width:84px}#curSel{max-width:72px}.m-header-tools{gap:6px}}
+@media(max-width:430px){.m-logo{flex-shrink:0;min-width:max-content}.m-region{display:none}.m-header-inner{gap:6px}.m-header-tools{gap:4px;flex-shrink:1;min-width:0;margin-left:auto}.m-header-tools select{font-size:12px!important;padding:0 14px 0 4px!important;height:34px;max-width:none!important;text-overflow:ellipsis}#curSel{width:52px!important}#langSel{width:74px!important}.m-cart-button{width:38px!important;flex-shrink:0}}
+@media(max-width:345px){.m-logo{font-size:15px!important}.m-logo .ttg{width:19px;height:19px}#curSel{width:48px!important}#langSel{width:70px!important}}
 
 </style>
 </head>
@@ -6161,6 +6163,9 @@ applyStatic();renderCart();route();
 })();
 
 }
+
+(function(){const mq=matchMedia('(max-width:430px)');const full={KRW:'KRW ₩',JPY:'JPY ¥',ko:'한국어',en:'English',zh:'简体中文',ja:'日本語',vi:'Tiếng Việt'},short={KRW:'₩',JPY:'¥',ko:'한국어',en:'EN',zh:'中文',ja:'日本語',vi:'VI'};
+const f=()=>{const m=mq.matches?short:full;document.querySelectorAll('#curSel option,#langSel option').forEach(o=>{if(m[o.value])o.textContent=m[o.value]})};f();mq.addEventListener('change',f)})();
 </script>
 </body>
 </html>

@@ -4691,8 +4691,12 @@ video.kjv{width:100%;height:100%;object-fit:cover;display:block;background:#0b0b
 .hero-mall{border-color:#25f4ee!important;color:#25f4ee!important}
 .chk{display:flex;align-items:center;gap:10px;min-height:44px;font-weight:600}.chk input{width:20px;height:20px;accent-color:#fe2c55}
 .fact-value{white-space:nowrap;font-size:clamp(28px,3.2vw,46px)!important}
+@media(max-width:900px){.fact-value{font-size:28px!important}}
+@media(max-width:600px){.fact-value{font-size:clamp(19px,6.2vw,30px)!important}}
 .mono{font-family:ui-monospace,Menlo,monospace;white-space:nowrap}
 
+
+@media(max-width:400px){#langSel{font-size:13px!important;padding-left:8px!important;padding-right:24px!important;max-width:none!important;width:auto!important}}
 </style>
 <script>new MutationObserver(()=>{for(const c of document.querySelectorAll('.stack td:not([data-label])')){let i=0,p=c;while(p=p.previousElementSibling)i+=p.colSpan;c.dataset.label=c.closest('table').rows[0].cells[i]?.textContent||''}}).observe(document,{childList:true,subtree:true})</script>
 </head>
