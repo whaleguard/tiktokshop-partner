@@ -4685,6 +4685,9 @@ dl.kv > dd {
 .admrow{display:flex;align-items:center;gap:10px;justify-content:space-between;padding:10px 0}
 img.brandlogo{height:32px;width:auto;border-radius:6px}
 .btn.rs,.btn.rs:hover{color:#fff!important}
+.nav-mall{color:#fe2c55!important;font-weight:800!important}
+.hero-mall{border-color:#25f4ee!important;color:#25f4ee!important}
+.chk{display:flex;align-items:center;gap:10px;min-height:44px;font-weight:600}.chk input{width:20px;height:20px;accent-color:#fe2c55}
 .fact-value{white-space:nowrap;font-size:clamp(28px,3.2vw,46px)!important}
 .mono{font-family:ui-monospace,Menlo,monospace;white-space:nowrap}
 
@@ -4726,6 +4729,7 @@ img.brandlogo{height:32px;width:auto;border-radius:6px}
         <a href="#process" data-i="nav_process">이용 절차</a>
         <a href="#faq" data-i="nav_faq">FAQ</a>
         <a href="#my" data-i="nav_my">신청 조회</a>
+        <a href="mall.html" class="nav-mall" data-i="nav_mall">TikTok Shop 몰</a>
         <a href="#admin" id="adminLink"
            data-i="nav_admin" hidden>관리자</a>
         <a class="btn rs" href="#apply"
@@ -4792,6 +4796,9 @@ img.brandlogo{height:32px;width:auto;border-radius:6px}
             <a href="#apply" class="btn hero-outline"
                data-tab="creator" data-i="cta_creator">
               크리에이터 신청
+            </a>
+            <a href="mall.html" class="btn hero-outline hero-mall" data-i="cta_mall">
+              TikTok Shop 몰 가기 →
             </a>
           </div>
         </div>
@@ -5238,6 +5245,7 @@ img.brandlogo{height:32px;width:auto;border-radius:6px}
           <a href="#process" data-i="nav_process">이용 절차</a>
           <a href="#apply" data-i="nav_apply">신청하기</a>
           <a href="#my" data-i="nav_my">신청 조회</a>
+          <a href="mall.html" data-i="nav_mall">TikTok Shop 몰</a>
           <a href="#faq" data-i="nav_faq">FAQ</a>
         </div>
 
@@ -5256,6 +5264,7 @@ img.brandlogo{height:32px;width:auto;border-radius:6px}
    <a href="#admin" data-v="dash" data-i="ad_dash">대시보드</a>
    <a href="#admin-requests" data-v="req" data-i="ad_req">신청 관리</a>
    <a href="#admin-catalog" data-v="cat" data-i="ad_cat">상품 관리</a>
+   <a href="#admin-orders" data-v="ord" data-i="ad_ord">주문 관리</a>
    <a href="#admin-site" data-v="set" data-i="ad_set">사이트 설정</a>
    <span class="sp"></span>
    <a href="#top" data-i="ad_back">사이트로 돌아가기</a>
@@ -5491,6 +5500,52 @@ ad_admins:["관리자 계정","Admin accounts","管理员账号","管理者ア�
 ad_admins_h:["여기 등록된 이메일로 가입·로그인한 사람만 관리자 화면을 쓸 수 있습니다.","Only people who sign in with an email listed here can use the admin.","只有使用此处登记邮箱登录的人才能使用后台。","ここに登録されたメールでログインした人だけが管理画面を使えます。","Chỉ người đăng nhập bằng email trong danh sách này mới dùng được trang quản trị."],
 ad_addadm:["관리자 추가","Add admin","添加管理员","管理者を追加","Thêm quản trị"],ad_me:["나","You","我","自分","Bạn"],
 ad_refresh:["새로고침","Refresh","刷新","更新","Làm mới"],
+nav_mall:["TikTok Shop 몰", "TikTok Shop mall", "TikTok Shop 商城", "TikTok Shop モール", "TikTok Shop Mall"],
+cta_mall:["TikTok Shop 몰 가기 →", "Go to TikTok Shop mall →", "进入 TikTok Shop 商城 →", "TikTok Shop モールへ →", "Vào TikTok Shop Mall →"],
+ad_ord:["주문 관리", "Orders", "订单管理", "注文管理", "Đơn hàng"],
+ad_openmall:["몰 열기", "Open mall", "打开商城", "モールを開く", "Mở mall"],
+ad_mallclosed:["몰이 미리보기 상태라 주문이 막혀 있습니다. 사이트 설정 → 몰 설정에서 「주문 받기」를 켜세요.", "The mall is in preview, so orders are blocked. Turn on Accept orders in Site settings → Mall.", "商城处于预览状态，订单已关闭。请在网站设置 → 商城设置中开启「接受订单」。", "モールはプレビュー中のため注文できません。サイト設定 → モール設定で「注文を受け付ける」をオンにしてください。", "Mall đang ở chế độ xem trước nên chưa nhận đơn. Bật Nhận đơn trong Cài đặt → Mall."],
+ad_noord:["아직 주문이 없습니다.", "No orders yet.", "暂无订单。", "まだ注文はありません。", "Chưa có đơn hàng."],
+ad_osearch:["주문번호·이름·이메일·연락처 검색", "Search order no., name, email, phone", "搜索订单号、姓名、邮箱、电话", "注文番号・氏名・メール・電話で検索", "Tìm mã đơn, tên, email, SĐT"],
+os_new:["주문접수", "New", "新订单", "新規", "Mới"],
+os_paid:["입금확인", "Paid", "已付款", "入金確認", "Đã thanh toán"],
+os_preparing:["배송준비", "Preparing", "备货中", "発送準備", "Đang chuẩn bị"],
+os_shipping:["배송중", "Shipping", "运输中", "配送中", "Đang giao"],
+os_delivered:["배송완료", "Delivered", "已送达", "配達完了", "Đã giao"],
+os_cancelled:["취소", "Cancelled", "已取消", "キャンセル", "Đã hủy"],
+od_no:["주문번호", "Order no.", "订单号", "注文番号", "Mã đơn"],
+od_who:["주문자", "Customer", "下单人", "注文者", "Khách hàng"],
+od_items:["상품", "Items", "商品", "商品", "Sản phẩm"],
+od_total:["결제금액", "Total", "总额", "合計", "Tổng"],
+od_sub:["상품금액", "Items total", "商品金额", "商品金額", "Tiền hàng"],
+od_ship:["배송비", "Shipping", "运费", "送料", "Phí ship"],
+od_addr:["배송지", "Address", "地址", "住所", "Địa chỉ"],
+od_note:["요청사항", "Note", "备注", "メモ", "Ghi chú"],
+od_tracking:["송장번호", "Tracking no.", "运单号", "追跡番号", "Mã vận đơn"],
+pf_lkrw:["정가 (원) — 할인율 표시용", "List price (KRW) — for discount", "原价（韩元）— 显示折扣", "定価(ウォン)— 割引表示用", "Giá gốc (KRW)"],
+pf_ljpy:["정가 (엔)", "List price (JPY)", "原价（日元）", "定価(円)", "Giá gốc (JPY)"],
+pf_stock:["재고", "Stock", "库存", "在庫", "Tồn kho"],
+pf_sold:["판매수 표시", "Sold count", "已售数量", "販売数", "Đã bán"],
+pf_rating:["별점 (0~5)", "Rating (0–5)", "评分（0~5）", "評価(0〜5)", "Đánh giá (0–5)"],
+pf_section:["진열", "Placement", "陈列", "陳列", "Vị trí"],
+pf_sec_deal:["타임딜", "Flash deal", "限时特价", "タイムセール", "Flash sale"],
+pf_tts:["TikTok Shop 상품 링크", "TikTok Shop product link", "TikTok Shop 商品链接", "TikTok Shop商品リンク", "Link sản phẩm TikTok Shop"],
+pf_options:["옵션", "Options", "选项", "オプション", "Tùy chọn"],
+pf_options_h:["형식: 옵션명: 값1, 값2 | 옵션명: 값1, 값2", "Format: Name: value1, value2 | Name: value1, value2", "格式：选项名: 值1, 值2 | 选项名: 值1, 值2", "形式: 名前: 値1, 値2 | 名前: 値1, 値2", "Định dạng: Tên: giá trị1, giá trị2 | ..."],
+pf_detail:["상세 설명 (몰)", "Detail description (mall)", "详细说明（商城）", "詳細説明(モール)", "Mô tả chi tiết (mall)"],
+pf_mall:["몰에 판매", "Sell in mall", "在商城销售", "モールで販売", "Bán trong mall"],
+pf_free:["무료배송", "Free shipping", "包邮", "送料無料", "Miễn phí ship"],
+sf_mall:["몰 설정", "Mall", "商城设置", "モール設定", "Cài đặt mall"],
+sf_mallopen:["주문 받기 (몰 정식 오픈)", "Accept orders (mall launch)", "接受订单（商城正式上线）", "注文を受け付ける(モール正式オープン)", "Nhận đơn (mở mall chính thức)"],
+sf_mallopen_h:["끄면 몰은 미리보기로만 보이고 주문 버튼이 막힙니다. 서버에서도 주문을 거부합니다.", "When off, the mall is preview-only and ordering is blocked, also on the server.", "关闭时商城仅可预览，下单按钮不可用，服务器也会拒绝订单。", "オフの間はプレビューのみで注文できません。サーバー側でも拒否します。", "Khi tắt, mall chỉ xem trước và không đặt hàng được (máy chủ cũng chặn)."],
+sf_bankname:["입금 은행", "Bank", "汇款银行", "振込先銀行", "Ngân hàng"],
+sf_bankacc:["계좌번호", "Account number", "账号", "口座番号", "Số tài khoản"],
+sf_bankholder:["예금주", "Account holder", "户名", "口座名義", "Chủ tài khoản"],
+sf_bankdead:["입금 기한 안내", "Transfer deadline text", "汇款期限说明", "振込期限の案内", "Hạn chuyển khoản"],
+sf_shipkrw:["배송비 (원)", "Shipping (KRW)", "运费（韩元）", "送料(ウォン)", "Phí ship (KRW)"],
+sf_freekrw:["무료배송 기준 (원)", "Free shipping over (KRW)", "满额包邮（韩元）", "送料無料の条件(ウォン)", "Miễn phí ship từ (KRW)"],
+sf_shipjpy:["배송비 (엔)", "Shipping (JPY)", "运费（日元）", "送料(円)", "Phí ship (JPY)"],
+sf_freejpy:["무료배송 기준 (엔)", "Free shipping over (JPY)", "满额包邮（日元）", "送料無料の条件(円)", "Miễn phí ship từ (JPY)"],
 demo_tag:["예시 상품","Sample listing","示例商品","サンプル掲載","Sản phẩm mẫu"],
 nodb:["지금은 서버에 연결할 수 없습니다.","The server can't be reached right now.","暂时无法连接服务器。","現在サーバーに接続できません。","Hiện không kết nối được máy chủ."],
 };
@@ -5550,7 +5605,7 @@ const brand=()=>cfg.brand||'KJ SHOPLINK';
 const myKey='kj_my_requests';
 const loadMine=()=>{try{const a=JSON.parse(localStorage.getItem(myKey)||'[]');return Array.isArray(a)?a.filter(x=>x&&x.id&&x.email):[]}catch(e){return[]}};
 const saveMine=a=>{try{localStorage.setItem(myKey,JSON.stringify(a.slice(-50)))}catch(e){}};
-const normProd=r=>({id:r.id,name:r.name,brand:r.brand,category:r.category,order:r.sort,priceKRW:r.price_krw,priceJPY:r.price_jpy,commission:r.commission,moq:r.moq,desc:r.descr,imgUrl:r.img_url,sample:r.sample,active:r.active});
+const normProd=r=>({raw:r,id:r.id,name:r.name,brand:r.brand,category:r.category,order:r.sort,priceKRW:r.price_krw,priceJPY:r.price_jpy,commission:r.commission,moq:r.moq,desc:r.descr,imgUrl:r.img_url,sample:r.sample,active:r.active});
 const normReq=r=>({id:r.id,type:r.type,status:r.status,lang:r.lang,market:r.market,name:r.name,company:r.company,email:r.email,phone:r.phone,messenger:r.messenger,country:r.country,fields:r.fields||{},memo:r.memo||'',createdAt:Date.parse(r.created_at),updatedAt:Date.parse(r.updated_at)});
 const imgOk=u=>okUrl(u)?u:'';
 
@@ -5744,6 +5799,7 @@ function renderAdmin(){
  if(adView==='req')return reqView(M);
  if(adView==='cat')return catView(M);
  if(adView==='set')return setView(M);
+ if(adView==='ord')return ordView(M);
 }
 function dash(M){
  const r=flatReqs();const wk=Date.now()-7*864e5;
@@ -5805,7 +5861,7 @@ function catView(M){
 }
 function editProd(id){
  const p=id?catalog.find(x=>x.id===id):{active:true,sample:true,order:catalog.length+1};if(!p)return;
- let imgUrl=p.imgUrl||'';
+ let imgUrl=p.imgUrl||'';const R=p.raw||{};
  const fld=(k,l,type,v,extra='')=>`<div class="fld"><label for="p-${k}">${esc(t(l))}</label><input class="inp" id="p-${k}" type="${type}" value="${esc(v??'')}" ${extra}></div>`;
  $('#drawerPn').innerHTML=`<div class="hd"><h3>${esc(id?t('ad_edit'):t('ad_add'))}</h3><button class="x" data-close aria-label="${esc(t('ad_close'))}">×</button></div>
  <div class="grid2" style="margin-top:0">${fld('name','pf_name','text',p.name)}${fld('brand','pf_brand','text',p.brand)}
@@ -5813,6 +5869,12 @@ function editProd(id){
  ${fld('krw','pf_krw','number',p.priceKRW,'min="0"')}${fld('jpy','pf_jpy','number',p.priceJPY,'min="0"')}${fld('comm','pf_comm','number',p.commission,'min="0" max="80" step="0.5"')}${fld('moq','pf_moq','number',p.moq,'min="0"')}
  <div class="fld full"><label for="p-desc">${esc(t('pf_desc'))}</label><textarea class="inp" id="p-desc">${esc(p.desc||'')}</textarea></div>
  <div class="fld full"><span class="lb">${esc(t('pf_img'))}</span><div class="imgprev"><span class="th" id="p-prev">${imgOk(imgUrl)?`<img src="${esc(imgUrl)}" alt="">`:''}</span><label class="btn gh sm" style="cursor:pointer">${esc(t('pf_upload'))}<input type="file" id="p-file" accept="image/*" hidden></label><button class="btn gh sm" type="button" id="p-rm">${esc(t('sf_remove'))}</button></div></div>
+ ${fld('lkrw','pf_lkrw','number',R.list_price_krw,'min="0"')}${fld('ljpy','pf_ljpy','number',R.list_price_jpy,'min="0"')}${fld('stock','pf_stock','number',R.stock,'min="0"')}${fld('sold','pf_sold','number',R.sold,'min="0"')}${fld('rating','pf_rating','number',R.rating,'min="0" max="5" step="0.1"')}
+ <div class="fld"><label for="p-section">${esc(t('pf_section'))}</label><select class="inp" id="p-section"><option value="">-</option><option value="deal" ${R.section==='deal'?'selected':''}>${esc(t('pf_sec_deal'))}</option></select></div>
+ <div class="fld full"><label for="p-tts">${esc(t('pf_tts'))}</label><input class="inp" id="p-tts" type="url" placeholder="https://" value="${esc(R.tts_url||'')}"></div>
+ <div class="fld full"><label for="p-options">${esc(t('pf_options'))}</label><input class="inp" id="p-options" placeholder="색상: 로즈, 코랄 | 사이즈: S, M" value="${esc(R.options||'')}"><span class="note">${esc(t('pf_options_h'))}</span></div>
+ <div class="fld full"><label for="p-detail">${esc(t('pf_detail'))}</label><textarea class="inp" id="p-detail" rows="6">${esc(R.detail||'')}</textarea></div>
+ <div class="fld full checks"><label><input type="checkbox" id="p-mall" ${R.mall!==false?'checked':''}>${esc(t('pf_mall'))}</label><label><input type="checkbox" id="p-live" ${R.live?'checked':''}>LIVE</label><label><input type="checkbox" id="p-free" ${R.free_ship?'checked':''}>${esc(t('pf_free'))}</label></div>
  <div class="fld full checks"><label><input type="checkbox" id="p-sample" ${p.sample?'checked':''}>${esc(t('pf_sample'))}</label><label><input type="checkbox" id="p-active" ${p.active!==false?'checked':''}>${esc(t('pf_active'))}</label></div></div>
  <div class="fbar"><button class="btn rs" id="p-save">${esc(t('ad_save'))}</button></div>`;
  $('#p-cat').value=p.category||'';
@@ -5822,7 +5884,7 @@ function editProd(id){
  $('#p-save').onclick=async()=>{
   const name=$('#p-name').value.trim();if(!name){$('#p-name').classList.add('bad');$('#p-name').focus();return}
   const n=v=>{const x=parseFloat(v);return isFinite(x)?x:null};
-  const body={name,brand:$('#p-brand').value.trim(),category:$('#p-cat').value||null,sort:Math.round(n($('#p-order').value)||0),price_krw:n($('#p-krw').value),price_jpy:n($('#p-jpy').value),commission:n($('#p-comm').value),moq:n($('#p-moq').value),descr:$('#p-desc').value.trim(),img_url:imgUrl||null,sample:$('#p-sample').checked,active:$('#p-active').checked,updated_at:new Date().toISOString()};
+  const body={name,brand:$('#p-brand').value.trim(),category:$('#p-cat').value||null,sort:Math.round(n($('#p-order').value)||0),price_krw:n($('#p-krw').value),price_jpy:n($('#p-jpy').value),commission:n($('#p-comm').value),moq:n($('#p-moq').value),descr:$('#p-desc').value.trim(),img_url:imgUrl||null,sample:$('#p-sample').checked,active:$('#p-active').checked,updated_at:new Date().toISOString(),list_price_krw:n($('#p-lkrw').value),list_price_jpy:n($('#p-ljpy').value),stock:n($('#p-stock').value)==null?null:Math.round(n($('#p-stock').value)),sold:Math.round(n($('#p-sold').value)||0),rating:n($('#p-rating').value),section:$('#p-section').value||null,tts_url:/^https:\/\//.test($('#p-tts').value.trim())?$('#p-tts').value.trim():null,options:$('#p-options').value.trim()||null,detail:$('#p-detail').value.trim()||null,mall:$('#p-mall').checked,live:$('#p-live').checked,free_ship:$('#p-free').checked};
   try{const q=id?sb.from('tts_catalog').update(body).eq('id',id):sb.from('tts_catalog').insert(body);const {error}=await q;if(error)throw error;toast(t('ad_saved'));closeDrawer();await loadCatalog()}catch(e){toast(t('ad_fail'))}
  };
 }
@@ -5835,14 +5897,49 @@ function setView(M){
  const me=(session&&session.user&&session.user.email||'').toLowerCase();
  M.innerHTML=`<h2>${esc(t('ad_set'))}</h2><div class="pan"><div class="grid2" style="margin-top:0">${keys.map(([k,l])=>`<div class="fld${k==='partnerLine'?' full':''}"><label for="s-${k}">${esc(t(l))}</label><input class="inp" id="s-${k}" value="${esc(c[k]||'')}" ${k==='partnerLine'?`placeholder="${esc(t('partner_def'))}"`:''}></div>`).join('')}
  <div class="fld full"><label for="s-company">${esc(t('sf_company'))}</label><textarea class="inp" id="s-company">${esc(c.company||'')}</textarea></div>
- ${up('logoUrl','sf_logo')}${up('badgeUrl','sf_badge','sf_badge_h')}</div><div class="fbar"><button class="btn rs" id="s-save">${esc(t('ad_save'))}</button></div></div>
+ ${up('logoUrl','sf_logo')}${up('badgeUrl','sf_badge','sf_badge_h')}</div><h3 style="margin:26px 0 10px">${esc(t('sf_mall'))}</h3><label class="chk"><input type="checkbox" id="s-mallOpen" ${c.mallOpen?'checked':''}>${esc(t('sf_mallopen'))}</label><p class="note">${esc(t('sf_mallopen_h'))}</p><div class="grid2">${MKEYS.map(([k,l,ty])=>`<div class="fld"><label for="s-${k}">${esc(t(l))}</label><input class="inp" id="s-${k}" ${ty==='n'?'type="number" min="0"':''} value="${esc(c[k]??'')}"></div>`).join('')}</div><div class="fbar"><button class="btn rs" id="s-save">${esc(t('ad_save'))}</button></div></div>
  <div class="pan"><h3>${esc(t('ad_admins'))}</h3><p class="note">${esc(t('ad_admins_h'))}</p><div id="admList" style="margin-top:10px">${admins.map(a=>`<div class="admrow"><span>${esc(a.email)}${a.email===me?` <span class="note">(${esc(t('ad_me'))})</span>`:''}</span>${a.email!==me?`<button class="btn gh sm" data-rmadm="${esc(a.email)}">${esc(t('ad_del'))}</button>`:''}</div>`).join('')}</div>
  <form class="tools" id="admForm"><input class="inp" id="admEmail" type="email" placeholder="name@company.com" autocomplete="off"><button class="btn gh sm" type="submit">${esc(t('ad_addadm'))}</button></form></div>`;
  M.querySelectorAll('[data-up]').forEach(inp=>inp.onchange=async e=>{const f=e.target.files[0];if(!f)return;const k=inp.dataset.up;try{img[k]=await uploadImg(f);$('#prev-'+k).innerHTML=`<img src="${esc(img[k])}" alt="">`}catch(err){toast(t('ad_fail'))}});
  M.querySelectorAll('[data-rm]').forEach(b=>b.onclick=()=>{img[b.dataset.rm]='';$('#prev-'+b.dataset.rm).innerHTML=''});
- $('#s-save').onclick=async()=>{const data={company:$('#s-company').value.trim(),...img};keys.forEach(([k])=>data[k]=$('#s-'+k).value.trim());try{const {error}=await sb.from('tts_config').upsert({id:1,data,updated_at:new Date().toISOString()});if(error)throw error;cfg=data;renderBrand();applyStatic();toast(t('ad_saved'))}catch(e){toast(t('ad_fail'))}};
+ $('#s-save').onclick=async()=>{const data={...cfg,company:$('#s-company').value.trim(),...img,mallOpen:$('#s-mallOpen').checked};keys.forEach(([k])=>data[k]=$('#s-'+k).value.trim());MKEYS.forEach(([k,,ty])=>{const v=$('#s-'+k).value.trim();data[k]=ty==='n'?(v===''?null:+v):v});try{const {error}=await sb.from('tts_config').upsert({id:1,data,updated_at:new Date().toISOString()});if(error)throw error;cfg=data;renderBrand();applyStatic();toast(t('ad_saved'))}catch(e){toast(t('ad_fail'))}};
  $('#admForm').onsubmit=async e=>{e.preventDefault();const em=$('#admEmail').value.trim().toLowerCase();if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em)){$('#admEmail').classList.add('bad');return}try{const {error}=await sb.from('tts_admins').insert({email:em});if(error)throw error;await loadAdmins();toast(t('ad_saved'));renderAdmin()}catch(err){toast(t('ad_fail'))}};
  M.querySelectorAll('[data-rmadm]').forEach(b=>b.onclick=async()=>{try{const {error}=await sb.from('tts_admins').delete().eq('email',b.dataset.rmadm);if(error)throw error;await loadAdmins();renderAdmin()}catch(err){toast(t('ad_fail'))}});
+}
+
+const MKEYS=[['bankName','sf_bankname'],['bankAccount','sf_bankacc'],['bankHolder','sf_bankholder'],['bankDeadline','sf_bankdead'],['shipKRW','sf_shipkrw','n'],['freeOverKRW','sf_freekrw','n'],['shipJPY','sf_shipjpy','n'],['freeOverJPY','sf_freejpy','n']];
+let orders=[],ordState='idle',ordFilter={q:'',status:'all'};
+const OST=['new','paid','preparing','shipping','delivered','cancelled'];
+const omoney=(v,c)=>{try{return new Intl.NumberFormat(c==='JPY'?'ja-JP':'ko-KR',{style:'currency',currency:c||'KRW',maximumFractionDigits:0}).format(+v||0)}catch(e){return String(v)}};
+const ostBadge=s=>`<span class="st-b s-${{new:'new',paid:'review',preparing:'review',shipping:'progress',delivered:'done',cancelled:'rejected'}[s]||'new'}">${esc(t('os_'+s))}</span>`;
+async function loadOrders(){if(!sb||!canEdit)return;ordState='loading';try{const {data,error}=await sb.from('tts_orders').select('*').order('created_at',{ascending:false}).limit(2000);if(error)throw error;orders=data||[];ordState='ready'}catch(e){ordState='error'}if(isAdm()&&adView==='ord')renderAdmin()}
+function ordFiltered(){const q=ordFilter.q.toLowerCase();return orders.filter(o=>(ordFilter.status==='all'||o.status===ordFilter.status)&&(!q||[o.id,o.name,o.email,o.phone].join(' ').toLowerCase().includes(q)))}
+function ordTable(rows){if(!rows.length)return `<p class="note" style="padding:12px">${esc(t('ad_noord'))}</p>`;return `<table class="stack"><thead><tr><th>${esc(t('od_no'))}</th><th>${esc(t('od_who'))}</th><th>${esc(t('od_items'))}</th><th>${esc(t('od_total'))}</th><th>${esc(t('col_date'))}</th><th>${esc(t('col_status'))}</th></tr></thead><tbody>${rows.map(o=>`<tr class="rw" tabindex="0" data-oopen="${esc(o.id)}"><td class="mono">${esc(o.id)}</td><td>${esc(o.name)}<span class="s2">${esc(o.email)}</span></td><td>${esc((o.items||[]).map(i=>i.name+' ×'+i.qty).join(', ').slice(0,80))}</td><td>${esc(omoney(o.total,o.currency))}</td><td>${esc(fmtDate(Date.parse(o.created_at)))}</td><td>${ostBadge(o.status)}</td></tr>`).join('')}</tbody></table>`}
+function ordView(M){
+ const wait=orders.filter(o=>o.status==='new').length;
+ M.innerHTML=`<div class="tools" style="margin-top:0;justify-content:space-between"><h2>${esc(t('ad_ord'))}</h2><span><a class="btn gh sm" href="mall.html" target="_blank" rel="noopener">${esc(t('ad_openmall'))}</a> <button class="btn gh sm" data-refresh>${esc(t('ad_refresh'))}</button></span></div>
+ ${cfg.mallOpen?'':`<p class="msg er on">${esc(t('ad_mallclosed'))}</p>`}
+ <div class="kpis"><div class="kpi"><span>${esc(t('ad_total'))}</span><strong>${orders.length}</strong></div><div class="kpi"><span>${esc(t('os_new'))}</span><strong>${wait}</strong></div><div class="kpi"><span>${esc(t('os_shipping'))}</span><strong>${orders.filter(o=>o.status==='shipping').length}</strong></div><div class="kpi"><span>${esc(t('os_delivered'))}</span><strong>${orders.filter(o=>o.status==='delivered').length}</strong></div></div>
+ <div class="tools"><input class="inp" id="oq" type="search" placeholder="${esc(t('ad_osearch'))}" value="${esc(ordFilter.q)}"><select class="inp" id="os"><option value="all">${esc(t('col_status'))}: ${esc(t('all'))}</option>${OST.map(k=>`<option value="${k}" ${ordFilter.status===k?'selected':''}>${esc(t('os_'+k))}</option>`).join('')}</select><button class="btn rs sm" id="oDl">${esc(t('ad_export'))}</button></div>
+ ${ordState==='loading'?`<p class="note">${esc(t('loading'))}</p>`:''}${ordState==='error'?`<p class="msg er on">${esc(t('ad_unreach'))}</p>`:''}
+ <div class="tbl" id="otbl">${ordTable(ordFiltered())}</div>`;
+ const upd=()=>{$('#otbl').innerHTML=ordTable(ordFiltered())};
+ $('#oq').oninput=e=>{ordFilter.q=e.target.value;upd()};
+ $('#os').onchange=e=>{ordFilter.status=e.target.value;upd()};
+ $('#oDl').onclick=()=>{const q=v=>{v=String(v??'');if(/^[=+\-@\t\r]/.test(v))v="'"+v;return '"'+v.replace(/"/g,'""')+'"'};const head=[t('od_no'),t('col_status'),t('od_who'),t('f_email'),t('f_phone'),t('f_country'),'ZIP',t('od_addr'),t('od_items'),t('od_total'),'Currency',t('od_tracking'),t('ad_memo'),t('col_date')];const body=ordFiltered().map(o=>[o.id,t('os_'+o.status),o.name,o.email,o.phone,o.country,o.zip,[o.addr1,o.addr2].filter(Boolean).join(' '),(o.items||[]).map(i=>i.name+(i.option?' ('+i.option+')':'')+' x'+i.qty).join(' / '),o.total,o.currency,o.tracking,o.memo,fmtDate(Date.parse(o.created_at))].map(q).join(','));const blob=new Blob(['﻿'+[head.map(q).join(',')].concat(body).join('\r\n')],{type:'text/csv;charset=utf-8'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='orders-'+new Date().toISOString().slice(0,10)+'.csv';document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},500)};
+}
+function openOrder(id){
+ const o=orders.find(x=>x.id===id);if(!o)return;
+ $('#drawerPn').innerHTML=`<div class="hd"><h3 class="mono" style="font-size:18px">${esc(o.id)}</h3>${ostBadge(o.status)}<button class="x" data-close aria-label="${esc(t('ad_close'))}">×</button></div>
+ <dl class="kv"><dt>${esc(t('col_date'))}</dt><dd>${esc(fmtDate(Date.parse(o.created_at)))}</dd><dt>${esc(t('od_who'))}</dt><dd>${esc(o.name)}</dd><dt>${esc(t('f_email'))}</dt><dd>${esc(o.email)}</dd><dt>${esc(t('f_phone'))}</dt><dd>${esc(o.phone||'')}</dd><dt>${esc(t('od_addr'))}</dt><dd>${esc([o.country,o.zip,o.addr1,o.addr2].filter(Boolean).join(' '))}</dd>${o.note?`<dt>${esc(t('od_note'))}</dt><dd>${esc(o.note)}</dd>`:''}
+ <dt>${esc(t('od_items'))}</dt><dd>${(o.items||[]).map(i=>`${esc(i.name)}${i.option?' ('+esc(i.option)+')':''} × ${esc(i.qty)} — ${esc(omoney(i.price*i.qty,o.currency))}`).join('<br>')}</dd>
+ <dt>${esc(t('od_sub'))}</dt><dd>${esc(omoney(o.subtotal,o.currency))}</dd><dt>${esc(t('od_ship'))}</dt><dd>${esc(omoney(o.shipping,o.currency))}</dd><dt>${esc(t('od_total'))}</dt><dd><strong>${esc(omoney(o.total,o.currency))}</strong></dd></dl>
+ <div class="pan"><div class="fld"><label for="oSt">${esc(t('col_status'))}</label><select class="inp" id="oSt">${OST.map(s=>`<option value="${s}" ${o.status===s?'selected':''}>${esc(t('os_'+s))}</option>`).join('')}</select></div>
+ <div class="fld" style="margin-top:14px"><label for="oTr">${esc(t('od_tracking'))}</label><input class="inp" id="oTr" value="${esc(o.tracking||'')}"></div>
+ <div class="fld" style="margin-top:14px"><label for="oMemo">${esc(t('ad_memo'))}</label><textarea class="inp" id="oMemo">${esc(o.memo||'')}</textarea></div>
+ <div class="fbar"><button class="btn rs sm" id="oSave">${esc(t('ad_save'))}</button></div></div>`;
+ $('#drawer').classList.add('on');
+ $('#oSave').onclick=async()=>{const body={status:$('#oSt').value,tracking:$('#oTr').value.trim(),memo:$('#oMemo').value,updated_at:new Date().toISOString()};try{const {error}=await sb.from('tts_orders').update(body).eq('id',id);if(error)throw error;Object.assign(o,body);toast(t('ad_saved'));closeDrawer();renderAdmin()}catch(e){toast(t('ad_fail'))}};
 }
 
 /* ---------- data ---------- */
@@ -5854,7 +5951,7 @@ async function checkAdmin(){
  adminChecked=false;canEdit=false;
  if(sb&&session){try{const {data}=await sb.rpc('tts_claim_admin');canEdit=data===true}catch(e){canEdit=false}}
  adminChecked=true;$('#adminLink').hidden=!canEdit;
- if(canEdit){await Promise.all([loadReqs(),loadAdmins(),loadCatalog()])}
+ if(canEdit){await Promise.all([loadReqs(),loadAdmins(),loadCatalog(),loadOrders()])}
  if(isAdm())renderAdmin();
 }
 const isAdm=()=>document.body.classList.contains('adm');
@@ -5863,7 +5960,7 @@ function rerender(){if(isAdm())renderAdmin();else{renderBrand();renderCatalog();
 /* ---------- routing ---------- */
 function route(){
  const h=location.hash.slice(1);
- if(h.startsWith('admin')){document.body.classList.add('adm');adView={'admin':'dash','admin-requests':'req','admin-catalog':'cat','admin-site':'set'}[h]||'dash';renderAdmin();window.scrollTo(0,0)}
+ if(h.startsWith('admin')){document.body.classList.add('adm');adView={'admin':'dash','admin-requests':'req','admin-catalog':'cat','admin-site':'set','admin-orders':'ord'}[h]||'dash';renderAdmin();window.scrollTo(0,0)}
  else{const was=isAdm();document.body.classList.remove('adm');if(was){renderSite();if(h){const el=document.getElementById(h);if(el)el.scrollIntoView()}}}
 }
 
@@ -5881,7 +5978,8 @@ document.addEventListener('click',e=>{
  const cf=e.target.closest('[data-cf]');if(cf){catFilter=cf.dataset.cf;renderCatalog()}
  const pk=e.target.closest('[data-pick]');if(pk){setTab(pk.dataset.pick,true);const s=$('#f-product'),pid=pk.dataset.pid;if(s){if(pid.startsWith('sample-')){s.value='other';const sp=SAMPLE_PRODS.find(x=>x.id===pid),pf=$('#f-productfree');if(pf&&sp)pf.value=sp.brand+' · '+sp.name}else s.value=pid}}
  if(e.target.closest('[data-close]'))closeDrawer();
- if(e.target.closest('[data-refresh]'))loadReqs();
+ if(e.target.closest('[data-refresh]')){loadReqs();loadOrders()}
+ const oo=e.target.closest('[data-oopen]');if(oo)openOrder(oo.dataset.oopen);
  const op=e.target.closest('[data-open]');if(op)openReq(op.dataset.open);
  const ep=e.target.closest('[data-ep]');if(ep)editProd(ep.dataset.ep);
  const dp=e.target.closest('[data-dp]');if(dp)askDel(dp.dataset.dp);

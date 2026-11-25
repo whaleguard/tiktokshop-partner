@@ -60,6 +60,7 @@ begin
     ship := coalesce((cfg->>'shipKRW')::numeric, 0); free_over := (cfg->>'freeOverKRW')::numeric;
   end if;
   if free_over is not null and sub >= free_over then ship := 0; end if;
+  if coalesce(cfg->>'mallOpen','false') <> 'true' then raise exception 'mall closed'; end if;
   new.items := out; new.subtotal := sub; new.shipping := ship; new.total := sub + ship;
   new.status := 'new'; new.tracking := ''; new.memo := ''; new.pay_method := 'bank';
   new.created_at := now(); new.updated_at := now();

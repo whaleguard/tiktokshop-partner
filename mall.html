@@ -1,0 +1,6164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TikTok Shop KR·JP</title>
+<meta name="description" content="TikTok Shop KR·JP 몰 — 매장 라이브 스튜디오에서 소개하는 K-뷰티·리빙 상품">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-3 -3 30 30'><rect x='-3' y='-3' width='30' height='30' rx='7' fill='%230b0b10'/><path d='M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z' fill='%2325F4EE' transform='translate(-.85 -.6)'/><path d='M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z' fill='%23FE2C55' transform='translate(.85 .6)'/><path d='M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z' fill='%23fff'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;600;700;800;900&display=swap');
+
+/* ==================================================
+   01. DESIGN TOKENS
+================================================== */
+
+:root {
+  --pink: #FE2C55;
+  --pink-dark: #DE1743;
+  --pink-soft: #FFF0F3;
+  --cyan: #25F4EE;
+
+  --black: #121212;
+  --white: #FFFFFF;
+  --text: #161616;
+  --sub: #626262;
+  --muted: #858585;
+
+  --bg: #FFFFFF;
+  --surface: #F6F6F6;
+  --surface-dark: #EDEDED;
+  --line: #E8E8E8;
+  --line-dark: #D3D3D3;
+
+  --green: #087E55;
+  --green-soft: #EDF8F2;
+  --yellow: #E69A12;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+
+  --page-max: 1520px;
+  --page-pad: 14px;
+  --grid-gap: 12px;
+
+  --header-height: 112px;
+  --buybar-height: 76px;
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+
+  --font: 'Inter', 'Noto Sans KR', 'Noto Sans JP',
+          'Noto Sans SC', sans-serif;
+}
+
+
+/* ==================================================
+   02. RESET / BASE
+================================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: 100%;
+  scroll-padding-top: 170px;
+}
+
+body {
+  margin: 0;
+  min-width: 0;
+  color: var(--text);
+  background: var(--bg);
+  font-family: var(--font);
+  font-size: 15px;
+  line-height: 1.55;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+  -webkit-font-smoothing: antialiased;
+}
+
+html[lang="ja"] body {
+  font-family: 'Inter', 'Noto Sans JP', sans-serif;
+}
+
+html[lang="zh"] body {
+  font-family: 'Inter', 'Noto Sans SC', sans-serif;
+}
+
+body.cart-open {
+  overflow: hidden;
+}
+
+h1, h2, h3, h4, p, ul, ol, figure, dl, dd {
+  margin: 0;
+}
+
+ul, ol {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button,
+select {
+  cursor: pointer;
+}
+
+button {
+  appearance: none;
+  border: 0;
+  background: none;
+  padding: 0;
+  min-height: 44px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+input,
+select,
+textarea {
+  min-width: 0;
+  font-size: 16px;
+}
+
+input,
+textarea {
+  border-radius: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+svg {
+  display: block;
+}
+
+button:disabled,
+input:disabled,
+select:disabled {
+  cursor: not-allowed;
+  opacity: .45;
+}
+
+:focus-visible {
+  outline: 2px solid var(--pink);
+  outline-offset: 3px;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+.svg-library {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.ico {
+  flex-shrink: 0;
+  width: 23px;
+  height: 23px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+}
+
+
+/* ==================================================
+   03. COMMON LAYOUT
+================================================== */
+
+.m-view {
+  width: 100%;
+  max-width: var(--page-max);
+  min-height: 55vh;
+  padding: 18px var(--page-pad) 56px;
+  margin: 0 auto;
+}
+
+.m-view > *,
+.product-grid > *,
+.detail-layout > *,
+.checkout-layout > * {
+  min-width: 0;
+}
+
+.m-section {
+  margin-top: 32px;
+}
+
+.section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.section-title {
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1.3;
+  letter-spacing: -.055em;
+}
+
+.section-subtitle {
+  margin-top: 5px;
+  color: var(--sub);
+  font-size: 13px;
+}
+
+.section-more {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: 44px;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.section-more::after {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-top: 1.5px solid currentColor;
+  border-right: 1.5px solid currentColor;
+  transform: rotate(45deg);
+}
+
+.page-title {
+  font-size: clamp(27px, 4vw, 44px);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -.055em;
+}
+
+.eyebrow {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.m-muted {
+  color: var(--muted);
+}
+
+.m-pink {
+  color: var(--pink);
+}
+
+.m-green {
+  color: var(--green);
+}
+
+.m-divider {
+  border: 0;
+  height: 1px;
+  background: var(--line);
+  margin: 22px 0;
+}
+
+.m-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  color: var(--sub);
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+
+/* ==================================================
+   04. BUTTONS
+================================================== */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 48px;
+  padding: 12px 18px;
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.35;
+  text-align: center;
+  transition: background .16s, border-color .16s;
+}
+
+.btn-primary {
+  color: var(--white);
+  background: var(--pink);
+  border-color: var(--pink);
+}
+
+.btn-primary:hover {
+  background: var(--pink-dark);
+  border-color: var(--pink-dark);
+}
+
+.btn-black {
+  background: var(--black);
+  color: var(--white);
+  border-color: var(--black);
+}
+
+.btn-white {
+  background: var(--white);
+  color: var(--black);
+  border-color: var(--white);
+}
+
+.btn-outline {
+  background: var(--white);
+  border-color: var(--line-dark);
+  color: var(--black);
+}
+
+.btn-outline:hover {
+  background: var(--surface);
+}
+
+.btn-pink-outline {
+  border-color: var(--pink);
+  color: var(--pink);
+  background: var(--white);
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.btn-lg {
+  min-height: 56px;
+  font-size: 16px;
+}
+
+.btn-text {
+  min-height: 44px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  font-size: 13px;
+  color: var(--sub);
+}
+
+
+/* ==================================================
+   05. HEADER
+================================================== */
+
+.m-header {
+  position: sticky;
+  z-index: 40;
+  top: 0;
+  background: var(--white);
+  border-bottom: 1px solid var(--line);
+}
+
+.m-header-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  max-width: var(--page-max);
+  margin: 0 auto;
+  padding: 10px var(--page-pad) 8px;
+}
+
+.m-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+  width: fit-content;
+  max-width: 100%;
+  font-size: 19px;
+  font-weight: 900;
+  letter-spacing: -.075em;
+  line-height: 1;
+}
+
+.ttg {
+  flex-shrink: 0;
+  width: 25px;
+  height: 25px;
+}
+
+.m-region {
+  align-self: center;
+  flex-shrink: 0;
+  padding: 3px 5px;
+  border: 1px solid var(--line-dark);
+  border-radius: 3px;
+  color: var(--sub);
+  font-size: 9px;
+  letter-spacing: -.02em;
+  font-weight: 700;
+}
+
+.m-search-box {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  gap: 10px;
+  height: 46px;
+  padding-left: 13px;
+  background: var(--surface);
+  border: 1px solid transparent;
+  border-radius: 6px;
+}
+
+.m-search-box:focus-within {
+  border-color: var(--black);
+  background: var(--white);
+}
+
+.m-search-box > .ico {
+  width: 19px;
+  height: 19px;
+  color: var(--sub);
+}
+
+#mSearch {
+  flex: 1;
+  min-width: 0;
+  width: 100%;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  outline: none;
+  font-size: 16px;
+}
+
+#mSearch::placeholder {
+  color: #888;
+  font-size: 13px;
+}
+
+#mSearch:focus-visible {
+  outline: none;
+}
+
+.m-search-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 48px;
+  height: 44px;
+  background: var(--black);
+  color: var(--white);
+  border-radius: 0 5px 5px 0;
+}
+
+.m-search-submit .ico {
+  width: 19px;
+  height: 19px;
+}
+
+.m-header-tools {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 3px;
+  min-width: 0;
+}
+
+.m-header-tools select {
+  height: 44px;
+  border: none;
+  padding: 0 2px;
+  max-width: 68px;
+  background: transparent;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -.04em;
+}
+
+#langSel {
+  max-width: 64px;
+}
+
+.m-cart-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+}
+
+#cartCount {
+  position: absolute;
+  top: 3px;
+  right: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 17px;
+  height: 17px;
+  padding: 0 4px;
+  border: 1.5px solid var(--white);
+  border-radius: 20px;
+  color: var(--white);
+  background: var(--pink);
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.m-partner-link {
+  display: none;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 0 0 14px;
+  border-left: 1px solid var(--line);
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+
+/* ==================================================
+   06. CATEGORY NAVIGATION
+================================================== */
+
+.m-nav-wrap {
+  width: 100%;
+  min-width: 0;
+}
+
+.m-categories {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  max-width: var(--page-max);
+  margin: 0 auto;
+  padding: 0 var(--page-pad) 8px;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scrollbar-width: none;
+}
+
+.m-categories::-webkit-scrollbar {
+  display: none;
+}
+
+.cat-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  min-height: 44px;
+  padding: 0 17px;
+  border-radius: 4px;
+  background: var(--surface);
+  color: var(--sub);
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.cat-chip:hover {
+  color: var(--black);
+  background: var(--surface-dark);
+}
+
+.cat-chip.active,
+.cat-chip.on,
+.cat-chip[aria-pressed="true"] {
+  color: var(--white);
+  background: var(--black);
+}
+
+
+/* ==================================================
+   07. HERO BANNER / SCROLL SNAP
+================================================== */
+
+.hero-slider {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  overscroll-behavior-inline: contain;
+  scrollbar-width: none;
+  border-radius: var(--radius-md);
+}
+
+.hero-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.hero-slide {
+  position: relative;
+  flex: 0 0 100%;
+  min-width: 0;
+  min-height: 300px;
+  aspect-ratio: 1.2 / 1;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  isolation: isolate;
+  scroll-snap-align: start;
+  background: #161616;
+  color: var(--white);
+  border-radius: var(--radius-md);
+}
+
+.hero-photo {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -2;
+}
+
+.hero-slide::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    0deg,
+    rgba(0,0,0,.87) 0%,
+    rgba(0,0,0,.42) 43%,
+    rgba(0,0,0,.04) 80%
+  );
+}
+
+.hero-content {
+  position: relative;
+  width: 100%;
+  padding: 25px 22px;
+}
+
+.hero-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 12px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .12em;
+}
+
+.hero-kicker::before {
+  content: '';
+  width: 19px;
+  height: 3px;
+  background: var(--cyan);
+}
+
+.hero-title {
+  max-width: 760px;
+  font-size: clamp(30px, 7vw, 70px);
+  line-height: 1.12;
+  font-weight: 900;
+  letter-spacing: -.065em;
+}
+
+.hero-title em {
+  font-style: normal;
+  color: var(--cyan);
+}
+
+.hero-desc {
+  max-width: 480px;
+  margin-top: 12px;
+  font-size: 13px;
+  color: rgba(255,255,255,.87);
+}
+
+.hero-content .btn {
+  margin-top: 20px;
+  min-width: 124px;
+}
+
+.hero-02 .hero-photo {
+  object-position: 65% center;
+}
+
+.hero-03 .hero-photo {
+  object-position: center 45%;
+}
+
+.hero-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  margin-top: 2px;
+}
+
+.hero-dot {
+  display: grid;
+  place-items: center;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.hero-dot::after {
+  content: '';
+  display: block;
+  width: 7px;
+  height: 7px;
+  border-radius: 8px;
+  background: #CDCDCD;
+  transition: width .2s, background .2s;
+}
+
+.hero-dot.active::after,
+.hero-dot[aria-current="true"]::after {
+  width: 24px;
+  background: var(--black);
+}
+
+
+/* ==================================================
+   08. PROMOTION STRIP
+================================================== */
+
+.promo-strip {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  background: var(--pink-soft);
+  border-radius: var(--radius-sm);
+}
+
+.promo-strip strong {
+  display: block;
+  font-size: 17px;
+  font-weight: 800;
+  letter-spacing: -.04em;
+}
+
+.promo-strip p {
+  margin-top: 3px;
+  color: #914451;
+  font-size: 12px;
+}
+
+.promo-strip .btn {
+  padding: 10px 14px;
+  min-height: 44px;
+  font-size: 12px;
+}
+
+
+/* ==================================================
+   09. LIVE SHOPPING
+================================================== */
+
+.live-section {
+  margin-top: 22px;
+}
+
+.live-heading {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.live-heading-mark {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 7px;
+  color: var(--white);
+  background: var(--pink);
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .04em;
+}
+
+.live-heading-mark::before,
+.live-badge::before {
+  content: '';
+  flex-shrink: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.live-strip {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 42%;
+  gap: 10px;
+  min-width: 0;
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  overscroll-behavior-inline: contain;
+  scrollbar-width: none;
+}
+
+.live-strip::-webkit-scrollbar {
+  display: none;
+}
+
+.live-card {
+  position: relative;
+  display: block;
+  min-width: 0;
+  aspect-ratio: 4 / 5.5;
+  overflow: hidden;
+  isolation: isolate;
+  border-radius: var(--radius-md);
+  background: #242424;
+  color: var(--white);
+  scroll-snap-align: start;
+}
+
+.live-card img {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.live-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    180deg,
+    rgba(0,0,0,.25),
+    transparent 25%,
+    transparent 40%,
+    rgba(0,0,0,.85)
+  );
+}
+
+.live-top {
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  right: 9px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.live-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--pink);
+  color: var(--white);
+  padding: 4px 6px;
+  border-radius: 3px;
+  font-size: 10px;
+  line-height: 1;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.live-viewers {
+  padding: 3px 6px;
+  background: rgba(0,0,0,.58);
+  border-radius: 3px;
+  font-size: 10px;
+  line-height: 1.35;
+  font-weight: 600;
+}
+
+.live-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 12px;
+}
+
+.live-host {
+  font-size: 11px;
+  color: rgba(255,255,255,.8);
+}
+
+.live-title {
+  margin-top: 4px;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 700;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+
+/* ==================================================
+   10. PRODUCT SECTIONS / GRID
+================================================== */
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: var(--grid-gap);
+  row-gap: 26px;
+}
+
+.deal-heading {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.deal-heading .section-title {
+  color: var(--pink);
+}
+
+.deal-label {
+  font-size: 10px;
+  color: var(--pink);
+  font-weight: 800;
+  letter-spacing: .08em;
+}
+
+.deal-clock {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-weight: 700;
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+
+.deal-clock span {
+  min-width: 25px;
+  padding: 3px 4px;
+  text-align: center;
+  border-radius: 3px;
+  background: var(--black);
+  color: var(--white);
+}
+
+.product-card {
+  display: block;
+  min-width: 0;
+  position: relative;
+  background: var(--white);
+}
+
+.product-media {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  background: #F4F4F4;
+  overflow: hidden;
+  border-radius: 5px;
+  isolation: isolate;
+}
+
+.product-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .25s ease;
+}
+
+.product-media .live-badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+
+.product-rank {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 30px;
+  padding: 6px 8px;
+  font-weight: 900;
+  font-size: 13px;
+  color: var(--white);
+  background: var(--black);
+  border-radius: 5px 0 5px 0;
+}
+
+.product-info {
+  padding: 10px 1px 0;
+}
+
+.product-price-row {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 2px 6px;
+  line-height: 1.25;
+  font-variant-numeric: tabular-nums;
+}
+
+.product-discount {
+  color: var(--pink);
+  font-size: 17px;
+  font-weight: 900;
+  letter-spacing: -.065em;
+}
+
+.product-price {
+  font-size: 19px;
+  font-weight: 800;
+  color: var(--black);
+  letter-spacing: -.065em;
+  overflow-wrap: anywhere;
+}
+
+.product-original {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 400;
+  text-decoration: line-through;
+}
+
+.product-name {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  min-height: 2.8em;
+  margin-top: 6px;
+  font-size: 13px;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.product-brand {
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: 11px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.product-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3px 6px;
+  margin-top: 5px;
+  color: var(--sub);
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.product-rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  color: var(--black);
+  font-weight: 600;
+}
+
+.rating-star {
+  color: var(--yellow);
+  font-size: 12px;
+}
+
+.meta-separator {
+  display: inline-block;
+  width: 1px;
+  height: 10px;
+  background: #D7D7D7;
+}
+
+.product-chips {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 8px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px 5px;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1.2;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  background: var(--white);
+  color: var(--sub);
+}
+
+.chip-free {
+  background: var(--green-soft);
+  border-color: #C9E7D8;
+  color: var(--green);
+}
+
+.chip-sample {
+  color: var(--sub);
+  background: var(--surface);
+}
+
+.chip-live,
+.chip-coupon {
+  color: var(--pink);
+  background: var(--pink-soft);
+  border-color: #FFD0DA;
+}
+
+@media (hover: hover) {
+  .product-card:hover .product-media img {
+    transform: scale(1.035);
+  }
+
+  .product-card:hover .product-name {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}
+
+
+/* ==================================================
+   11. CATEGORY / SEARCH RESULTS
+================================================== */
+
+.catalog-page {
+  padding-top: 10px;
+}
+
+.catalog-head {
+  margin-bottom: 22px;
+}
+
+.catalog-desc {
+  font-size: 14px;
+  color: var(--sub);
+  margin-top: 8px;
+}
+
+.catalog-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 20px;
+}
+
+.result-count {
+  color: var(--sub);
+  font-size: 13px;
+}
+
+.result-count strong {
+  color: var(--black);
+}
+
+.sort-select {
+  max-width: 60%;
+  min-height: 44px;
+  padding: 8px 10px;
+  font-size: 16px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+}
+
+
+/* ==================================================
+   12. EMPTY STATES
+================================================== */
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  text-align: center;
+  padding: 48px 20px;
+}
+
+.empty-state h2,
+.empty-state h3 {
+  font-size: 21px;
+  letter-spacing: -.05em;
+  font-weight: 800;
+}
+
+.empty-state p {
+  color: var(--sub);
+  max-width: 350px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.empty-state .btn {
+  min-width: 150px;
+  margin-top: 24px;
+}
+
+.empty-state .ico {
+  width: 46px;
+  height: 46px;
+  stroke-width: 1.2;
+  color: #A2A2A2;
+  margin-bottom: 20px;
+}
+
+
+/* ==================================================
+   13. PRODUCT DETAIL
+================================================== */
+
+.detail-page {
+  padding-bottom: 8px;
+}
+
+.detail-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 24px;
+}
+
+.detail-gallery {
+  min-width: 0;
+}
+
+.detail-main-image {
+  position: relative;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  background: var(--surface);
+}
+
+.detail-main-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.gallery-counter {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  padding: 4px 10px;
+  background: rgba(0,0,0,.65);
+  color: var(--white);
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.detail-thumbs {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.detail-thumbs::-webkit-scrollbar {
+  display: none;
+}
+
+.detail-thumb {
+  flex: 0 0 64px;
+  width: 64px;
+  height: 64px;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  background: var(--surface);
+  overflow: hidden;
+}
+
+.detail-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.detail-thumb.active,
+.detail-thumb[aria-pressed="true"] {
+  border-color: var(--black);
+}
+
+.detail-summary {
+  min-width: 0;
+}
+
+.detail-brand {
+  font-size: 14px;
+  color: var(--sub);
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.detail-name {
+  font-size: clamp(23px, 4vw, 34px);
+  line-height: 1.35;
+  font-weight: 700;
+  letter-spacing: -.045em;
+}
+
+.detail-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7px 10px;
+  margin-top: 12px;
+  color: var(--sub);
+  font-size: 13px;
+}
+
+.detail-meta .rating-star {
+  font-size: 15px;
+}
+
+.detail-price-block {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 5px 10px;
+  padding: 18px 0;
+  margin-top: 5px;
+}
+
+.detail-discount {
+  font-size: clamp(28px, 5vw, 42px);
+  line-height: 1.2;
+  color: var(--pink);
+  font-weight: 900;
+  letter-spacing: -.06em;
+}
+
+.detail-price {
+  font-size: clamp(30px, 5vw, 43px);
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: -.06em;
+  font-variant-numeric: tabular-nums;
+}
+
+.detail-original {
+  color: var(--muted);
+  font-size: 15px;
+  text-decoration: line-through;
+}
+
+.detail-coupon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 14px;
+  background: var(--pink-soft);
+  border-radius: 4px;
+  color: var(--pink);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.detail-coupon button {
+  flex-shrink: 0;
+  padding: 0 11px;
+  border: 1px solid var(--pink);
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.detail-benefits {
+  border-top: 1px solid var(--line);
+  margin-top: 16px;
+}
+
+.detail-benefit-row {
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr);
+  align-items: start;
+  gap: 10px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 13px;
+}
+
+.detail-benefit-label {
+  color: var(--sub);
+}
+
+.detail-benefit-value {
+  font-weight: 600;
+}
+
+.detail-benefit-value small {
+  display: block;
+  color: var(--sub);
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 3px;
+}
+
+.detail-options {
+  margin-top: 20px;
+}
+
+.option-group {
+  display: grid;
+  gap: 9px;
+  margin-bottom: 18px;
+}
+
+.option-group label {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.detail-quantity {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 5px 0 12px;
+}
+
+.detail-quantity > span {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+
+/* ==================================================
+   14. QUANTITY STEPPER
+================================================== */
+
+.qty-stepper {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  height: 46px;
+  border: 1px solid var(--line-dark);
+  border-radius: 4px;
+  overflow: hidden;
+  background: var(--white);
+}
+
+.qty-stepper button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  color: var(--black);
+  font-size: 22px;
+  line-height: 1;
+}
+
+.qty-stepper button:hover {
+  background: var(--surface);
+}
+
+.qty-value {
+  display: grid;
+  place-items: center;
+  min-width: 36px;
+  padding: 0 4px;
+  height: 44px;
+  border-left: 1px solid var(--line);
+  border-right: 1px solid var(--line);
+  font-size: 15px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.qty-stepper input.qty-value {
+  width: 44px;
+  padding: 0;
+  text-align: center;
+  border-top: 0;
+  border-bottom: 0;
+  appearance: textfield;
+  font-size: 16px;
+}
+
+.qty-stepper input::-webkit-inner-spin-button,
+.qty-stepper input::-webkit-outer-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+
+/* ==================================================
+   15. PURCHASE BUTTONS / MOBILE BUY BAR
+================================================== */
+
+.detail-actions {
+  display: none;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.detail-external {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  gap: 8px;
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px;
+  border: 1px solid var(--line-dark);
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.detail-external .ttg {
+  width: 20px;
+  height: 20px;
+}
+
+.detail-external:hover {
+  background: var(--surface);
+}
+
+.mobile-buybar {
+  position: fixed;
+  z-index: 50;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+  gap: 8px;
+  padding: 12px var(--page-pad)
+    calc(12px + var(--safe-bottom));
+  background: var(--white);
+  border-top: 1px solid var(--line);
+  box-shadow: 0 -5px 20px rgba(0,0,0,.05);
+}
+
+.mobile-buybar .btn {
+  min-height: 52px;
+  padding: 12px 8px;
+  font-size: 14px;
+}
+
+body:has(.mobile-buybar) {
+  padding-bottom: calc(
+    var(--buybar-height) + var(--safe-bottom)
+  );
+}
+
+
+/* ==================================================
+   16. PRODUCT DESCRIPTION
+================================================== */
+
+.detail-description {
+  margin-top: 40px;
+  border-top: 1px solid var(--line);
+}
+
+.detail-tabs {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  border-bottom: 1px solid var(--line);
+}
+
+.detail-tab {
+  flex-shrink: 0;
+  min-height: 54px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--sub);
+  border-bottom: 2px solid transparent;
+}
+
+.detail-tab.active,
+.detail-tab[aria-selected="true"] {
+  color: var(--black);
+  border-color: var(--black);
+  font-weight: 800;
+}
+
+.description-content {
+  padding: 25px 0 32px;
+  max-width: 940px;
+  margin: 0 auto;
+  font-size: 15px;
+  line-height: 1.85;
+  color: #383838;
+}
+
+.description-content h2 {
+  color: var(--black);
+  font-size: 23px;
+  margin-bottom: 16px;
+}
+
+.description-content h3 {
+  color: var(--black);
+  font-size: 18px;
+  margin: 20px 0 10px;
+}
+
+.description-content p + p {
+  margin-top: 12px;
+}
+
+.description-content img {
+  height: auto;
+  margin: 14px auto;
+}
+
+.description-content ul {
+  list-style: disc;
+  padding-left: 22px;
+}
+
+.description-content table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.description-content td,
+.description-content th {
+  padding: 12px;
+  border: 1px solid var(--line);
+  overflow-wrap: anywhere;
+}
+
+
+/* ==================================================
+   17. CART DRAWER
+================================================== */
+
+.cart-shade {
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  background: rgba(0,0,0,.48);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity .2s, visibility .2s;
+}
+
+.cart-shade.on {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.cart-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 91;
+  width: min(100%, 460px);
+  height: 100%;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+  transform: translateX(100%);
+  visibility: hidden;
+  transition: transform .25s ease, visibility .25s;
+}
+
+.cart-drawer.on {
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.cart-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  gap: 12px;
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--line);
+}
+
+.cart-header h2 {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -.05em;
+}
+
+.cart-body {
+  flex: 1;
+  min-height: 0;
+  padding: 0 18px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.cart-foot {
+  flex-shrink: 0;
+  padding: 18px 18px
+    calc(18px + var(--safe-bottom));
+  border-top: 1px solid var(--line);
+  background: var(--white);
+}
+
+.cart-item {
+  display: grid;
+  grid-template-columns: 84px minmax(0, 1fr);
+  gap: 12px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.cart-item-photo {
+  align-self: start;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 5px;
+  background: var(--surface);
+}
+
+.cart-item-photo img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.cart-item-info {
+  min-width: 0;
+}
+
+.cart-item-name {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.45;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.cart-item-option {
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.cart-item-price {
+  margin-top: 7px;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: -.04em;
+}
+
+.cart-item-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 10px;
+}
+
+.cart-remove {
+  padding: 0 7px;
+  min-height: 44px;
+  color: var(--sub);
+  font-size: 12px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.cart-total strong {
+  font-size: 27px;
+  letter-spacing: -.055em;
+}
+
+.cart-foot-note {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+
+/* ==================================================
+   18. CHECKOUT / FORM ELEMENTS
+================================================== */
+
+.checkout-page {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.checkout-head {
+  padding-bottom: 23px;
+  border-bottom: 1px solid var(--black);
+  margin-bottom: 24px;
+}
+
+.checkout-steps {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 15px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.checkout-steps .active {
+  color: var(--black);
+  font-weight: 800;
+}
+
+.checkout-steps .current {
+  color: var(--pink);
+  font-weight: 800;
+}
+
+.checkout-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 28px;
+  align-items: start;
+}
+
+.checkout-main {
+  min-width: 0;
+}
+
+.checkout-block {
+  padding-bottom: 26px;
+  margin-bottom: 26px;
+  border-bottom: 1px solid var(--line);
+}
+
+.checkout-block:last-child {
+  margin-bottom: 0;
+}
+
+.block-title {
+  font-size: 20px;
+  letter-spacing: -.04em;
+  font-weight: 800;
+  margin-bottom: 17px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 16px;
+}
+
+.form-field {
+  display: grid;
+  gap: 7px;
+  min-width: 0;
+}
+
+.form-field > label,
+.field-label {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.required-mark {
+  color: var(--pink);
+}
+
+.inp {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  min-height: 48px;
+  padding: 11px 12px;
+  border: 1px solid var(--line-dark);
+  border-radius: 4px;
+  outline: none;
+  background: var(--white);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.inp::placeholder {
+  color: #999;
+  font-size: 13px;
+}
+
+.inp:focus {
+  border-color: var(--black);
+  outline: 1px solid var(--black);
+  outline-offset: 0;
+}
+
+.inp[aria-invalid="true"] {
+  border-color: var(--pink);
+}
+
+textarea.inp {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.field-help {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--sub);
+}
+
+.field-error {
+  font-size: 12px;
+  color: var(--pink-dark);
+}
+
+.form-span {
+  grid-column: 1 / -1;
+}
+
+.postal-row {
+  display: flex;
+  align-items: stretch;
+  gap: 8px;
+}
+
+.postal-row .inp {
+  flex: 1;
+  width: 0;
+}
+
+.postal-row .btn {
+  flex-shrink: 0;
+  padding-inline: 12px;
+}
+
+
+/* ==================================================
+   19. ORDER ITEM SUMMARY
+================================================== */
+
+.order-item {
+  display: grid;
+  grid-template-columns: 68px minmax(0, 1fr);
+  align-items: center;
+  gap: 12px;
+  padding: 15px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.order-item:first-child {
+  padding-top: 0;
+}
+
+.order-item:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.order-item-image {
+  aspect-ratio: 1;
+  background: var(--surface);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.order-item-image img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.order-item-info {
+  min-width: 0;
+}
+
+.order-item-name {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.order-item-option {
+  font-size: 12px;
+  color: var(--sub);
+  margin-top: 4px;
+}
+
+.order-item-price {
+  font-size: 16px;
+  font-weight: 800;
+  margin-top: 6px;
+}
+
+
+/* ==================================================
+   20. PAYMENT OPTIONS
+================================================== */
+
+.payment-options {
+  display: grid;
+  gap: 9px;
+}
+
+.payment-choice {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 64px;
+  padding: 14px;
+  border: 1px solid var(--line-dark);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.payment-choice:has(input:checked) {
+  border-color: var(--black);
+  box-shadow: inset 0 0 0 1px var(--black);
+}
+
+.payment-choice input[type="radio"],
+.agree-row input[type="checkbox"] {
+  accent-color: var(--black);
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+}
+
+.payment-choice strong {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.payment-choice small {
+  display: block;
+  color: var(--sub);
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+.payment-choice.disabled {
+  background: var(--surface);
+  color: var(--muted);
+  cursor: not-allowed;
+}
+
+.coming-soon {
+  margin-left: auto;
+  flex-shrink: 0;
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+
+/* ==================================================
+   21. PAYMENT SUMMARY
+================================================== */
+
+.checkout-aside {
+  padding: 20px;
+  border: 1px solid var(--line-dark);
+  border-radius: var(--radius-md);
+}
+
+.money-list {
+  display: grid;
+  gap: 12px;
+}
+
+.money-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 15px;
+  font-size: 14px;
+}
+
+.money-row dt {
+  color: var(--sub);
+}
+
+.money-row dd {
+  text-align: right;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.money-row.total {
+  padding-top: 17px;
+  border-top: 1px solid var(--black);
+  margin-top: 5px;
+}
+
+.money-row.total dt {
+  color: var(--black);
+  font-weight: 800;
+}
+
+.money-row.total dd {
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: -.05em;
+  color: var(--pink);
+}
+
+.agree-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  margin-top: 18px;
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.privacy-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  text-decoration: underline;
+  font-size: 12px;
+  color: var(--sub);
+}
+
+.checkout-aside .btn-block {
+  margin-top: 8px;
+}
+
+.checkout-notice {
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.65;
+  margin-top: 12px;
+}
+
+
+/* ==================================================
+   22. ORDER COMPLETE
+================================================== */
+
+.complete-page {
+  max-width: 740px;
+  margin: 0 auto;
+  padding: 18px 0 20px;
+}
+
+.complete-heading {
+  text-align: center;
+  padding: 28px 0 32px;
+}
+
+.complete-kicker {
+  color: var(--pink);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .13em;
+  margin-bottom: 12px;
+}
+
+.complete-heading h1 {
+  font-size: clamp(28px, 5vw, 42px);
+  font-weight: 900;
+  letter-spacing: -.06em;
+  line-height: 1.3;
+}
+
+.complete-heading > p {
+  color: var(--sub);
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.order-number-box {
+  background: var(--surface);
+  padding: 21px 14px;
+  margin-top: 26px;
+  border-radius: 5px;
+}
+
+.order-number-label {
+  font-size: 12px;
+  color: var(--sub);
+}
+
+.order-number {
+  display: block;
+  font-size: clamp(20px, 5vw, 30px);
+  font-weight: 800;
+  letter-spacing: -.045em;
+  font-variant-numeric: tabular-nums;
+  margin-top: 6px;
+}
+
+.bank-box {
+  padding: 20px;
+  background: #FFF7F8;
+  border: 1px solid #FFD9E0;
+  border-radius: 5px;
+}
+
+.bank-box h2 {
+  font-size: 19px;
+  font-weight: 800;
+  color: var(--pink);
+  margin-bottom: 16px;
+}
+
+.info-list {
+  display: grid;
+  gap: 10px;
+}
+
+.info-row {
+  display: grid;
+  grid-template-columns: 84px minmax(0, 1fr);
+  gap: 10px;
+  align-items: baseline;
+  font-size: 14px;
+}
+
+.info-row dt {
+  color: var(--sub);
+}
+
+.info-row dd {
+  font-weight: 700;
+  min-width: 0;
+}
+
+.bank-account {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px 12px;
+}
+
+.copy-button {
+  min-height: 44px;
+  padding: 0 10px;
+  border: 1px solid var(--line-dark);
+  border-radius: 4px;
+  background: var(--white);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.bank-notice {
+  font-size: 12px;
+  color: #80535B;
+  line-height: 1.7;
+  border-top: 1px solid #FFD9E0;
+  padding-top: 14px;
+  margin-top: 14px;
+}
+
+.complete-order {
+  padding: 24px 0;
+  margin-top: 15px;
+}
+
+.complete-order .money-list {
+  border-top: 1px solid var(--line);
+  padding-top: 18px;
+  margin-top: 18px;
+}
+
+.complete-actions {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+
+/* ==================================================
+   23. ORDER LOOKUP
+================================================== */
+
+.lookup-page {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.lookup-head {
+  text-align: center;
+  padding: 20px 0 30px;
+}
+
+.lookup-head p {
+  font-size: 14px;
+  margin-top: 12px;
+  color: var(--sub);
+}
+
+.lookup-form {
+  max-width: 480px;
+  margin: 0 auto;
+  display: grid;
+  gap: 17px;
+  padding: 22px;
+  border: 1px solid var(--line-dark);
+  border-radius: var(--radius-md);
+}
+
+.lookup-form .btn {
+  margin-top: 4px;
+}
+
+.lookup-result {
+  margin-top: 35px;
+  padding: 20px;
+  border: 1px solid var(--line-dark);
+  border-radius: var(--radius-md);
+}
+
+.lookup-result-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.lookup-result-head strong {
+  font-size: 17px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+.lookup-order-date {
+  font-size: 12px;
+  color: var(--sub);
+}
+
+.lookup-status-text {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -.04em;
+  margin-top: 22px;
+}
+
+.order-status {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  margin: 25px 0;
+}
+
+.status-step {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 9px;
+  text-align: center;
+  min-width: 0;
+}
+
+.status-step::after {
+  content: '';
+  position: absolute;
+  left: calc(50% + 12px);
+  right: calc(-50% + 12px);
+  top: 11px;
+  height: 2px;
+  background: var(--line);
+}
+
+.status-step:last-child::after {
+  display: none;
+}
+
+.status-dot {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 1px solid var(--line-dark);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.status-label {
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+.status-step.done .status-dot {
+  color: var(--white);
+  background: var(--black);
+  border-color: var(--black);
+}
+
+.status-step.done::after {
+  background: var(--black);
+}
+
+.status-step.done .status-label {
+  color: var(--black);
+}
+
+.status-step.current .status-dot {
+  background: var(--pink);
+  border-color: var(--pink);
+  color: var(--white);
+}
+
+.status-step.current .status-label {
+  color: var(--pink);
+  font-weight: 800;
+}
+
+.tracking-box {
+  padding: 15px;
+  background: var(--surface);
+  border-radius: 4px;
+  margin-bottom: 22px;
+}
+
+.lookup-error {
+  padding: 14px;
+  background: var(--pink-soft);
+  color: var(--pink-dark);
+  font-size: 13px;
+  border-radius: 4px;
+}
+
+
+/* ==================================================
+   24. FOOTER
+================================================== */
+
+.m-footer {
+  background: #F7F7F7;
+  border-top: 1px solid var(--line);
+}
+
+.m-footer-inner {
+  max-width: var(--page-max);
+  padding: 30px var(--page-pad) 36px;
+  margin: 0 auto;
+}
+
+.m-footer-top {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid var(--line-dark);
+}
+
+.m-footer-brand p {
+  font-size: 12px;
+  color: var(--sub);
+  margin-top: 12px;
+}
+
+.m-footer-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px 20px;
+}
+
+.m-footer-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.m-footer-info {
+  margin-top: 20px;
+  color: var(--sub);
+  font-size: 12px;
+  line-height: 1.85;
+}
+
+.m-disclaimer {
+  max-width: 1100px;
+  font-size: 11px;
+  line-height: 1.8;
+  color: var(--muted);
+  margin-top: 16px;
+}
+
+
+/* ==================================================
+   25. TOAST
+================================================== */
+
+.m-toast {
+  position: fixed;
+  z-index: 110;
+  left: 50%;
+  bottom: calc(25px + var(--safe-bottom));
+  transform: translate(-50%, 12px);
+  width: max-content;
+  max-width: calc(100% - 28px);
+  padding: 14px 20px;
+  background: var(--black);
+  color: var(--white);
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity .2s, transform .2s, visibility .2s;
+}
+
+.m-toast.on {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, 0);
+}
+
+body:has(.mobile-buybar) .m-toast {
+  bottom: calc(92px + var(--safe-bottom));
+}
+
+
+/* ==================================================
+   26. COMPACT MOBILE / 360PX
+================================================== */
+
+@media (max-width: 399px) {
+  :root {
+    --page-pad: 12px;
+    --grid-gap: 10px;
+  }
+
+  .m-header-inner {
+    gap: 6px;
+  }
+
+  .m-logo {
+    font-size: 17px;
+    gap: 4px;
+  }
+
+  .m-logo .ttg {
+    width: 21px;
+    height: 21px;
+  }
+
+  .m-region {
+    padding: 2px 3px;
+    font-size: 8px;
+  }
+
+  .m-header-tools {
+    gap: 0;
+  }
+
+  .m-header-tools select {
+    max-width: 60px;
+    padding: 0;
+  }
+
+  #langSel {
+    max-width: 56px;
+  }
+
+  .m-cart-button {
+    width: 44px;
+  }
+
+  .hero-slide {
+    min-height: 285px;
+  }
+
+  .hero-content {
+    padding: 22px 18px;
+  }
+
+  .hero-title {
+    font-size: 29px;
+  }
+
+  .product-discount {
+    font-size: 16px;
+  }
+
+  .product-price {
+    font-size: 18px;
+  }
+
+  .product-name {
+    font-size: 12px;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+
+  .live-strip {
+    grid-auto-columns: 44%;
+  }
+
+  .cart-item {
+    grid-template-columns: 72px minmax(0, 1fr);
+  }
+
+  .checkout-aside,
+  .lookup-form,
+  .lookup-result {
+    padding: 16px;
+  }
+
+  .bank-box {
+    padding: 16px;
+  }
+}
+
+
+/* ==================================================
+   27. TABLET / 600PX
+================================================== */
+
+@media (min-width: 600px) {
+  :root {
+    --page-pad: 24px;
+    --grid-gap: 18px;
+  }
+
+  .m-view {
+    padding-top: 24px;
+  }
+
+  .m-header-inner {
+    padding-top: 14px;
+    padding-bottom: 12px;
+  }
+
+  .m-logo {
+    font-size: 23px;
+  }
+
+  .m-logo .ttg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .m-region {
+    font-size: 10px;
+    padding: 4px 6px;
+  }
+
+  .m-header-tools {
+    gap: 10px;
+  }
+
+  .m-header-tools select,
+  #langSel {
+    max-width: 110px;
+  }
+
+  .m-partner-link {
+    display: inline-flex;
+  }
+
+  .hero-slide {
+    min-height: 340px;
+    aspect-ratio: 2 / 1;
+    align-items: center;
+  }
+
+  .hero-slide::before {
+    background: linear-gradient(
+      90deg,
+      rgba(0,0,0,.85) 0%,
+      rgba(0,0,0,.57) 40%,
+      rgba(0,0,0,.06) 85%
+    );
+  }
+
+  .hero-content {
+    padding: 32px;
+    max-width: 80%;
+  }
+
+  .hero-title {
+    font-size: clamp(38px, 6vw, 54px);
+  }
+
+  .hero-desc {
+    font-size: 15px;
+  }
+
+  .m-section {
+    margin-top: 42px;
+  }
+
+  .section-title {
+    font-size: 26px;
+  }
+
+  .live-strip {
+    grid-auto-columns: 27%;
+    gap: 14px;
+  }
+
+  .live-title {
+    font-size: 16px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    row-gap: 32px;
+  }
+
+  .product-price {
+    font-size: 23px;
+  }
+
+  .product-discount {
+    font-size: 20px;
+  }
+
+  .product-name {
+    font-size: 14px;
+  }
+
+  .product-meta,
+  .product-brand {
+    font-size: 12px;
+  }
+
+  .chip {
+    font-size: 11px;
+  }
+
+  .form-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .order-item {
+    grid-template-columns: 76px minmax(0, 1fr) auto;
+  }
+
+  .order-item-price {
+    text-align: right;
+    margin-top: 0;
+  }
+
+  .status-label {
+    font-size: 12px;
+  }
+
+  .m-footer-top {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+
+/* ==================================================
+   28. DESKTOP / 900PX
+================================================== */
+
+@media (min-width: 900px) {
+  :root {
+    --page-pad: 32px;
+    --grid-gap: 20px;
+  }
+
+  .m-header-inner {
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    gap: 24px;
+    min-height: 78px;
+  }
+
+  .m-search-box {
+    grid-column: auto;
+    grid-row: auto;
+    max-width: 660px;
+    width: 100%;
+    justify-self: center;
+  }
+
+  .m-header-tools {
+    gap: 8px;
+  }
+
+  .m-header-tools select {
+    font-size: 16px;
+  }
+
+  .m-categories {
+    padding-bottom: 12px;
+    gap: 7px;
+  }
+
+  .cat-chip {
+    font-size: 14px;
+    padding-inline: 19px;
+  }
+
+  .m-view {
+    padding-top: 24px;
+    padding-bottom: 76px;
+  }
+
+  .hero-slide {
+    aspect-ratio: 3.1 / 1;
+    min-height: 340px;
+  }
+
+  .hero-content {
+    max-width: 68%;
+    padding: 40px;
+  }
+
+  .hero-title {
+    font-size: 53px;
+  }
+
+  .hero-desc {
+    margin-top: 17px;
+  }
+
+  .hero-content .btn {
+    min-height: 52px;
+    min-width: 145px;
+    margin-top: 25px;
+  }
+
+  .promo-strip {
+    padding: 19px 24px;
+  }
+
+  .promo-strip strong {
+    font-size: 20px;
+  }
+
+  .live-strip {
+    grid-auto-columns: calc((100% - 56px) / 5);
+    gap: 14px;
+  }
+
+  .live-card {
+    aspect-ratio: 4 / 5;
+  }
+
+  .live-bottom {
+    padding: 15px;
+  }
+
+  .section-title {
+    font-size: 29px;
+  }
+
+  .section-more {
+    font-size: 14px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .product-info {
+    padding-top: 12px;
+  }
+
+  .product-price {
+    font-size: 24px;
+  }
+
+  .product-original {
+    font-size: 12px;
+  }
+
+  .product-name {
+    font-size: 15px;
+  }
+
+  .detail-layout {
+    grid-template-columns:
+      minmax(0, 1.05fr)
+      minmax(0, 1fr);
+    gap: 42px;
+    align-items: start;
+  }
+
+  .detail-gallery {
+    position: sticky;
+    top: 155px;
+  }
+
+  .detail-thumb {
+    flex-basis: 76px;
+    width: 76px;
+    height: 76px;
+  }
+
+  .detail-actions {
+    display: grid;
+  }
+
+  .mobile-buybar {
+    display: none;
+  }
+
+  body:has(.mobile-buybar) {
+    padding-bottom: 0;
+  }
+
+  body:has(.mobile-buybar) .m-toast {
+    bottom: 25px;
+  }
+
+  .detail-benefit-row {
+    grid-template-columns: 90px minmax(0, 1fr);
+  }
+
+  .checkout-layout {
+    grid-template-columns: minmax(0, 1fr) 320px;
+    gap: 30px;
+  }
+
+  .checkout-aside {
+    position: sticky;
+    top: 155px;
+  }
+
+  .checkout-block {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+
+  .m-footer-inner {
+    padding-top: 40px;
+    padding-bottom: 44px;
+  }
+}
+
+
+/* ==================================================
+   29. WIDE DESKTOP / 1200PX
+================================================== */
+
+@media (min-width: 1200px) {
+  :root {
+    --page-pad: 40px;
+    --grid-gap: 24px;
+  }
+
+  .m-header-inner {
+    gap: 36px;
+  }
+
+  .m-logo {
+    font-size: 26px;
+    gap: 8px;
+  }
+
+  .m-logo .ttg {
+    width: 31px;
+    height: 31px;
+  }
+
+  .m-header-tools {
+    gap: 14px;
+  }
+
+  .m-partner-link {
+    padding-left: 19px;
+    font-size: 13px;
+  }
+
+  .hero-slide {
+    aspect-ratio: 3.1 / 1;
+    min-height: 390px;
+  }
+
+  .hero-content {
+    padding: 54px;
+    max-width: 65%;
+  }
+
+  .hero-title {
+    font-size: clamp(55px, 4.6vw, 74px);
+  }
+
+  .hero-desc {
+    font-size: 16px;
+  }
+
+  .m-section {
+    margin-top: 54px;
+  }
+
+  .live-section {
+    margin-top: 24px;
+  }
+
+  .live-strip {
+    grid-auto-columns: calc((100% - 90px) / 6);
+    gap: 18px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    row-gap: 38px;
+  }
+
+  .product-price {
+    font-size: 25px;
+  }
+
+  .product-discount {
+    font-size: 21px;
+  }
+
+  .detail-layout {
+    gap: 64px;
+    max-width: 1320px;
+    margin: 0 auto;
+  }
+
+  .detail-name {
+    font-size: 35px;
+  }
+
+  .detail-price-block {
+    padding-top: 22px;
+    padding-bottom: 24px;
+  }
+
+  .checkout-layout {
+    grid-template-columns: minmax(0, 1fr) 370px;
+    gap: 45px;
+  }
+
+  .checkout-aside {
+    padding: 25px;
+  }
+}
+
+
+/* ==================================================
+   30. REDUCED MOTION / ACCESSIBILITY
+================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}
+
+.m-preview{margin:12px auto 0;max-width:1200px;padding:12px 16px;border-radius:12px;background:#fff0f3;color:#b0183a;font-weight:600;font-size:14px;text-align:center;word-break:keep-all}
+.inp.bad,input.bad,select.bad,textarea.bad{border-color:#fe2c55!important;box-shadow:0 0 0 3px rgba(254,44,85,.15)}
+button[disabled]{opacity:.55;cursor:not-allowed}
+@media(max-width:480px){#langSel{max-width:84px}#curSel{max-width:72px}.m-header-tools{gap:6px}}
+
+</style>
+</head>
+<body>
+<!-- SVG SYMBOLS -->
+<svg class="svg-library"
+     xmlns="http://www.w3.org/2000/svg"
+     aria-hidden="true">
+  <defs>
+    <path id="ttp" d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+
+    <symbol id="ic-search" viewBox="0 0 24 24">
+      <circle cx="10.8" cy="10.8" r="6.8"/>
+      <path d="m16 16 4.5 4.5"/>
+    </symbol>
+
+    <symbol id="ic-cart" viewBox="0 0 24 24">
+      <path d="M2 3h3l3.1 12h11.4l2-9H6"/>
+      <circle cx="9" cy="20" r="1.2"/>
+      <circle cx="18" cy="20" r="1.2"/>
+    </symbol>
+
+    <symbol id="ic-back" viewBox="0 0 24 24">
+      <path d="m14 5-7 7 7 7"/>
+      <path d="M7 12h14"/>
+    </symbol>
+
+    <symbol id="ic-close" viewBox="0 0 24 24">
+      <path d="m6 6 12 12M18 6 6 18"/>
+    </symbol>
+  </defs>
+</svg>
+
+
+<!-- HEADER -->
+<header class="m-header">
+
+  <div class="m-header-inner">
+
+    <a class="m-logo" href="#home" aria-label="TikTok Shop">
+      <svg class="ttg" viewBox="-1.5 -1.5 27 27">
+        <use href="#ttp" fill="#25F4EE" x="-.85" y="-.6"/>
+        <use href="#ttp" fill="#FE2C55" x=".85" y=".6"/>
+        <use href="#ttp" fill="currentColor"/>
+      </svg>
+
+      <span class="m-logo-text">TikTok Shop</span>
+      <span class="m-region">KR·JP</span>
+    </a>
+
+    <div class="m-search-box">
+      <svg class="ico" aria-hidden="true">
+        <use href="#ic-search"/>
+      </svg>
+
+      <input id="mSearch"
+             type="search"
+             placeholder="어떤 상품을 찾으세요?"
+             data-i-placeholder="m_search_placeholder"
+             aria-label="상품 검색"
+             autocomplete="off"
+             enterkeyhint="search">
+
+      <button type="button"
+              class="m-search-submit"
+              data-action="search"
+              aria-label="검색">
+        <svg class="ico">
+          <use href="#ic-search"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="m-header-tools">
+
+      <select id="curSel" aria-label="통화 선택">
+        <option value="KRW">KRW ₩</option>
+        <option value="JPY">JPY ¥</option>
+      </select>
+
+      <select id="langSel" aria-label="언어 선택">
+        <option value="ko">한국어</option>
+        <option value="en">English</option>
+        <option value="zh">简体中文</option>
+        <option value="ja">日本語</option>
+        <option value="vi">Tiếng Việt</option>
+      </select>
+
+      <button id="cartBtn"
+              class="m-cart-button"
+              type="button"
+              aria-label="장바구니"
+              aria-controls="cartDrawer"
+              aria-expanded="false">
+
+        <svg class="ico">
+          <use href="#ic-cart"/>
+        </svg>
+
+        <span id="cartCount">0</span>
+      </button>
+
+      <a class="m-partner-link"
+         href="index.html"
+         data-i="m_partner">
+        파트너 사이트
+      </a>
+
+    </div>
+  </div>
+
+  <!-- CATEGORY NAVIGATION -->
+  <div class="m-nav-wrap">
+    <nav id="mCats"
+         class="m-categories"
+         aria-label="상품 카테고리">
+      <!-- JS: category buttons -->
+    </nav>
+  </div>
+
+</header>
+
+
+<!-- MAIN VIEW -->
+<main id="mView"
+      class="m-view"
+      tabindex="-1">
+  <!--
+    JS renders:
+    home
+    category
+    search
+    product detail
+    checkout
+    order complete
+    order lookup
+  -->
+</main>
+
+
+<!-- CART OVERLAY -->
+<div id="cartShade"
+     class="cart-shade"
+     aria-hidden="true"></div>
+
+
+<!-- CART DRAWER -->
+<aside id="cartDrawer"
+       class="cart-drawer"
+       role="dialog"
+       aria-modal="true"
+       aria-labelledby="cartTitle"
+       aria-hidden="true"
+       inert>
+
+  <div class="cart-header">
+    <h2 id="cartTitle" data-i="m_cart">장바구니</h2>
+
+    <button class="icon-button"
+            type="button"
+            data-action="cart-close"
+            aria-label="장바구니 닫기">
+      <svg class="ico">
+        <use href="#ic-close"/>
+      </svg>
+    </button>
+  </div>
+
+  <div id="cartBody" class="cart-body">
+    <!-- JS: cart items / empty state -->
+  </div>
+
+  <div id="cartFoot" class="cart-foot">
+    <!-- JS: subtotal / checkout button -->
+  </div>
+
+</aside>
+
+
+<!-- FOOTER -->
+<footer class="m-footer">
+
+  <div class="m-footer-inner">
+
+    <div class="m-footer-top">
+
+      <div class="m-footer-brand">
+        <a class="m-logo" href="#home">
+          <svg class="ttg" viewBox="-1.5 -1.5 27 27">
+            <use href="#ttp" fill="#25F4EE" x="-.85" y="-.6"/>
+            <use href="#ttp" fill="#FE2C55" x=".85" y=".6"/>
+            <use href="#ttp" fill="currentColor"/>
+          </svg>
+          <span>TikTok Shop</span>
+          <span class="m-region">KR·JP</span>
+        </a>
+
+        <p data-i="m_footer_desc">
+          한국과 일본을 연결하는 새로운 쇼핑 경험
+        </p>
+      </div>
+
+      <div class="m-footer-links">
+        <a href="index.html" data-i="m_partner">
+          파트너 사이트
+        </a>
+        <a href="index.html#apply" data-i="m_seller">
+          입점 문의
+        </a>
+        <a href="#orders" data-i="m_orders">
+          주문조회
+        </a>
+      </div>
+
+    </div>
+
+    <div id="mFootInfo" class="m-footer-info">
+      <!-- JS: operator / business registration / contact -->
+    </div>
+
+    <p id="mDisc" class="m-disclaimer"
+       data-i="m_disclaimer">
+      TikTok 및 TikTok Shop 관련 상표는 해당 권리자에게
+      귀속됩니다. 본 쇼핑몰의 운영 및 판매 주체는
+      사업자 정보를 통해 확인하실 수 있습니다.
+    </p>
+
+  </div>
+
+</footer>
+
+
+<!-- TOAST -->
+<div id="toast"
+     class="m-toast"
+     role="status"
+     aria-live="polite"
+     aria-atomic="true"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.119.0/dist/umd/supabase.js"></script>
+<script>
+{
+const I18N={"m_account_holder": ["예금주", "Account holder", "户名", "口座名義", "Chủ tài khoản"], "m_add_to_cart": ["장바구니 담기", "Add to cart", "加入购物车", "カートに入れる", "Thêm vào giỏ"], "m_address": ["주소", "Address", "地址", "住所", "Địa chỉ"], "m_address_detail": ["상세주소", "Address line 2", "详细地址", "番地・建物名", "Địa chỉ chi tiết"], "m_address_detail_placeholder": ["동·호수 등", "Apt, suite, unit", "门牌号、楼层等", "建物名・部屋番号", "Số nhà, căn hộ"], "m_address_placeholder": ["도로명 주소", "Street address", "街道地址", "都道府県・市区町村・町名", "Địa chỉ đường"], "m_back": ["뒤로", "Back", "返回", "戻る", "Quay lại"], "m_back_to_cart": ["장바구니로", "Back to cart", "返回购物车", "カートに戻る", "Về giỏ hàng"], "m_bank_account": ["계좌번호", "Account number", "账号", "口座番号", "Số tài khoản"], "m_bank_info": ["입금 계좌 안내", "Bank transfer details", "汇款账户信息", "お振込先", "Thông tin chuyển khoản"], "m_bank_name": ["은행", "Bank", "银行", "銀行", "Ngân hàng"], "m_bank_transfer": ["무통장입금", "Bank transfer", "银行转账", "銀行振込", "Chuyển khoản"], "m_bank_transfer_desc": ["주문 후 안내된 계좌로 입금하면 확인 후 발송됩니다.", "Transfer to the account shown after ordering; we ship once payment is confirmed.", "下单后汇款至指定账户，确认到账后发货。", "ご注文後、案内の口座へお振込ください。入金確認後に発送します。", "Chuyển khoản vào tài khoản được hiển thị sau khi đặt hàng; giao hàng khi xác nhận thanh toán."], "m_bank_transfer_notice": ["주문자명과 입금자명이 같아야 빠르게 확인됩니다.", "Use the same name as the order so we can match your payment quickly.", "汇款人姓名与下单人一致可更快确认。", "ご注文者名と振込名義を同じにしていただくと確認が早くなります。", "Dùng cùng tên với đơn hàng để xác nhận nhanh hơn."], "m_banner": ["배너", "Banner", "横幅", "バナー", "Banner"], "m_banner_controls": ["배너 넘기기", "Banner controls", "横幅切换", "バナー切替", "Điều khiển banner"], "m_browse_all": ["전체 상품 보기", "Browse all products", "浏览全部商品", "すべての商品を見る", "Xem tất cả sản phẩm"], "m_buy_now": ["바로 구매", "Buy now", "立即购买", "今すぐ購入", "Mua ngay"], "m_card_payment": ["카드 결제", "Card payment", "刷卡支付", "カード決済", "Thanh toán thẻ"], "m_carrier": ["택배사", "Carrier", "快递公司", "配送業者", "Đơn vị vận chuyển"], "m_cart": ["장바구니", "Cart", "购物车", "カート", "Giỏ hàng"], "m_cart_empty": ["장바구니가 비어 있습니다", "Your cart is empty", "购物车是空的", "カートは空です", "Giỏ hàng trống"], "m_cart_empty_desc": ["마음에 드는 상품을 담아보세요.", "Add something you like.", "去挑选喜欢的商品吧。", "気になる商品を追加してください。", "Hãy thêm sản phẩm bạn thích."], "m_checkout": ["주문하기", "Checkout", "去结算", "購入手続きへ", "Thanh toán"], "m_coming_soon": ["준비중", "Coming soon", "即将开放", "準備中", "Sắp có"], "m_contact_returns": ["교환·반품은 고객센터로 문의해 주세요.", "For exchanges and returns, contact customer service.", "换货、退货请联系客服。", "交換・返品はカスタマーサービスへお問い合わせください。", "Đổi trả vui lòng liên hệ CSKH."], "m_contact_shipping": ["배송 문의는 고객센터로 연락해 주세요.", "For delivery questions, contact customer service.", "配送问题请联系客服。", "配送のお問い合わせはカスタマーサービスへ。", "Thắc mắc giao hàng vui lòng liên hệ CSKH."], "m_continue_shopping": ["쇼핑 계속하기", "Continue shopping", "继续购物", "買い物を続ける", "Tiếp tục mua sắm"], "m_copy": ["복사", "Copy", "复制", "コピー", "Sao chép"], "m_country": ["국가", "Country", "国家/地区", "国・地域", "Quốc gia"], "m_coupon": ["쿠폰", "Coupon", "优惠券", "クーポン", "Mã giảm giá"], "m_customer_info": ["주문자 정보", "Customer information", "下单人信息", "ご注文者情報", "Thông tin khách hàng"], "m_delivery": ["배송", "Delivery", "配送", "配送", "Giao hàng"], "m_delivery_note": ["배송 요청사항", "Delivery note", "配送备注", "配送メモ", "Ghi chú giao hàng"], "m_delivery_note_placeholder": ["예: 문 앞에 놓아주세요", "e.g. Leave at the door", "例：请放在门口", "例：玄関前に置いてください", "VD: Để trước cửa"], "m_deposit_amount": ["입금 금액", "Amount to transfer", "汇款金额", "お振込金額", "Số tiền chuyển"], "m_deposit_deadline": ["입금 기한", "Transfer deadline", "汇款期限", "お振込期限", "Hạn chuyển khoản"], "m_disclaimer": ["TikTok, TikTok Shop 명칭과 로고는 TikTok의 상표입니다. 이 몰은 TikTok Shop 한국·일본 운영 파트너가 운영합니다.", "TikTok and TikTok Shop names and logos are trademarks of TikTok. This store is operated by the TikTok Shop operating partner for Korea and Japan.", "TikTok、TikTok Shop 名称与标志为 TikTok 的商标。本商城由 TikTok Shop 韩国·日本运营合作伙伴运营。", "TikTok、TikTok Shopの名称およびロゴはTikTokの商標です。本ストアはTikTok Shop韓国・日本運営パートナーが運営しています。", "Tên và logo TikTok, TikTok Shop là nhãn hiệu của TikTok. Cửa hàng do đối tác vận hành TikTok Shop Hàn Quốc & Nhật Bản vận hành."], "m_discount_amount": ["할인", "Discount", "优惠", "割引", "Giảm giá"], "m_email": ["이메일", "Email", "邮箱", "メールアドレス", "Email"], "m_email_order_notice": ["주문 조회에 쓰이니 정확히 입력해 주세요.", "Used to look up your order, so please enter it correctly.", "用于查询订单，请准确填写。", "注文照会に使いますので正確にご入力ください。", "Dùng để tra cứu đơn hàng, vui lòng nhập chính xác."], "m_explore_trending": ["인기 상품 보기", "Explore trending", "查看热门", "人気商品を見る", "Xem xu hướng"], "m_find_address": ["주소 찾기", "Find address", "查找地址", "住所検索", "Tìm địa chỉ"], "m_find_order": ["주문 조회", "Find order", "查询订单", "注文を照会", "Tra cứu đơn"], "m_flash_deals": ["타임딜", "Flash deals", "限时特价", "タイムセール", "Flash sale"], "m_flash_deals_desc": ["오늘만 이 가격", "Today only", "仅限今日", "本日限り", "Chỉ hôm nay"], "m_footer_desc": ["한국과 일본을 잇는 라이브 커머스 쇼핑", "Live commerce shopping connecting Korea and Japan", "连接韩国与日本的直播购物", "韓国と日本をつなぐライブコマース", "Mua sắm livestream kết nối Hàn Quốc và Nhật Bản"], "m_free": ["무료", "Free", "免费", "無料", "Miễn phí"], "m_free_shipping": ["무료배송", "Free shipping", "包邮", "送料無料", "Miễn phí ship"], "m_get_coupon": ["쿠폰 받기", "Get coupon", "领取优惠券", "クーポンを受け取る", "Nhận mã"], "m_hero1_title": ["라이브에서 본 그 상품,", "What you saw on LIVE,", "直播里看到的那件，", "LIVEで見たあの商品、", "Món bạn thấy trên LIVE,"], "m_hero1_accent": ["지금 바로", "get it now", "现在就买", "今すぐ", "mua ngay"], "m_hero1_desc": ["매장 스튜디오에서 매일 방송하는 K-뷰티·리빙 상품을 한국·일본으로 보내드립니다.", "K-beauty and lifestyle picks from our in-store LIVE studio, shipped to Korea and Japan.", "每天在店内直播间开播的韩妆与生活好物，配送至韩国与日本。", "店内スタジオで毎日配信するKビューティー・リビング商品を韓国・日本へお届けします。", "Mỹ phẩm Hàn và đồ gia dụng từ studio LIVE trong cửa hàng, giao đến Hàn Quốc và Nhật Bản."], "m_hero2_title": ["지금 가장 많이 팔리는", "Best sellers", "当下最热卖", "いま一番売れている", "Bán chạy nhất"], "m_hero2_accent": ["트렌드", "right now", "潮流好物", "トレンド", "hiện nay"], "m_hero2_desc": ["크리에이터가 고른 인기 상품을 한곳에.", "Creator-picked favorites in one place.", "达人精选热门好物一站购齐。", "クリエイター厳選の人気商品をひとまとめに。", "Sản phẩm được nhà sáng tạo chọn lọc, tất cả ở một nơi."], "m_hero3_title": ["매장 안 스튜디오에서", "From our in-store studio,", "来自店内直播间，", "店内スタジオから", "Từ studio trong cửa hàng,"], "m_hero3_accent": ["라이브로", "LIVE", "实时直播", "LIVEで", "trực tiếp"], "m_hero3_desc": ["호스트가 직접 써보고 소개하는 라이브 쇼핑.", "Hosts try and present every product live.", "主播亲自试用讲解的直播购物。", "ホストが実際に使って紹介するライブショッピング。", "Người dẫn dùng thử và giới thiệu trực tiếp."], "m_hero_banners": ["메인 배너", "Main banners", "主横幅", "メインバナー", "Banner chính"], "m_home": ["홈", "Home", "首页", "ホーム", "Trang chủ"], "m_image": ["이미지", "Image", "图片", "画像", "Hình ảnh"], "m_live_now": ["지금 방송 중", "LIVE now", "正在直播", "配信中", "Đang LIVE"], "m_live_subtitle": ["매장 스튜디오에서 진행 중인 방송", "Streaming now from our in-store studio", "店内直播间正在直播", "店内スタジオから配信中", "Đang phát từ studio trong cửa hàng"], "m_name": ["이름", "Name", "姓名", "お名前", "Họ tên"], "m_name_placeholder": ["받는 분 이름", "Recipient name", "收件人姓名", "お受取人のお名前", "Tên người nhận"], "m_new_arrivals": ["신상품", "New arrivals", "新品上架", "新着商品", "Hàng mới"], "m_new_arrivals_desc": ["새로 입점한 상품", "Just landed", "新入驻商品", "新しく入荷した商品", "Vừa lên kệ"], "m_no_results": ["찾는 상품이 없습니다", "No products found", "未找到商品", "商品が見つかりません", "Không tìm thấy sản phẩm"], "m_no_results_desc": ["다른 검색어나 카테고리를 확인해 보세요.", "Try another keyword or category.", "请尝试其他关键词或分类。", "別のキーワードやカテゴリをお試しください。", "Hãy thử từ khóa hoặc danh mục khác."], "m_order_complete": ["주문 완료", "Order complete", "下单完成", "ご注文完了", "Đặt hàng thành công"], "m_order_details": ["주문 내역", "Order details", "订单详情", "ご注文内容", "Chi tiết đơn"], "m_order_email": ["주문 이메일", "Order email", "下单邮箱", "ご注文時のメール", "Email đặt hàng"], "m_order_lookup_desc": ["주문번호와 주문할 때 쓴 이메일로 조회할 수 있습니다.", "Look up with your order number and the email you used.", "可使用订单号与下单邮箱查询。", "注文番号とご注文時のメールで照会できます。", "Tra cứu bằng mã đơn và email đã dùng."], "m_order_number": ["주문번호", "Order number", "订单号", "注文番号", "Mã đơn hàng"], "m_order_number_placeholder": ["예: OD261125-AB12CD", "e.g. OD261125-AB12CD", "例：OD261125-AB12CD", "例：OD261125-AB12CD", "VD: OD261125-AB12CD"], "m_order_products": ["주문 상품", "Items", "订单商品", "ご注文商品", "Sản phẩm"], "m_order_received_desc": ["아래 계좌로 입금하시면 확인 후 바로 발송해 드립니다.", "Transfer to the account below and we'll ship as soon as it's confirmed.", "汇款至下方账户，确认后立即发货。", "下記口座へお振込いただければ、確認後すぐに発送します。", "Chuyển khoản vào tài khoản dưới đây, chúng tôi giao ngay khi xác nhận."], "m_order_received_title": ["주문이 접수되었습니다", "Your order has been placed", "订单已提交", "ご注文を受け付けました", "Đơn hàng đã được tiếp nhận"], "m_order_status": ["주문 상태", "Order status", "订单状态", "注文状況", "Trạng thái đơn"], "m_order_terms_notice": ["주문 내용을 확인했으며 결제 조건에 동의합니다.", "I have checked my order and agree to the payment terms.", "我已确认订单内容并同意支付条件。", "注文内容を確認し、お支払い条件に同意します。", "Tôi đã kiểm tra đơn và đồng ý điều kiện thanh toán."], "m_orders": ["주문조회", "Order lookup", "订单查询", "注文照会", "Tra cứu đơn"], "m_origin": ["원산지", "Origin", "产地", "原産国", "Xuất xứ"], "m_partner": ["파트너 사이트", "Partner site", "合作伙伴网站", "パートナーサイト", "Trang đối tác"], "m_payment_method": ["결제 방법", "Payment method", "支付方式", "お支払い方法", "Phương thức thanh toán"], "m_payment_summary": ["결제 금액", "Payment summary", "支付金额", "お支払い金額", "Tổng thanh toán"], "m_phone": ["연락처", "Phone", "联系电话", "電話番号", "Số điện thoại"], "m_phone_placeholder": ["010-0000-0000", "Phone number", "手机号", "電話番号", "Số điện thoại"], "m_place_order": ["주문하기", "Place order", "提交订单", "注文を確定する", "Đặt hàng"], "m_popular": ["인기 상품", "Popular", "人气商品", "人気商品", "Phổ biến"], "m_popular_desc": ["지금 많이 찾는 상품", "What people are buying", "大家都在买", "いま注目の商品", "Mọi người đang mua"], "m_postcode": ["우편번호", "Postal code", "邮编", "郵便番号", "Mã bưu chính"], "m_privacy_agree": ["주문·배송을 위한 개인정보 수집·이용에 동의합니다.", "I agree to the collection and use of my personal data for ordering and delivery.", "同意为下单与配送收集和使用个人信息。", "注文・配送のための個人情報の収集・利用に同意します。", "Tôi đồng ý thu thập và sử dụng thông tin cá nhân để đặt và giao hàng."], "m_privacy_policy": ["개인정보 처리방침", "Privacy policy", "隐私政策", "個人情報保護方針", "Chính sách bảo mật"], "m_product_amount": ["상품 금액", "Items total", "商品金额", "商品金額", "Tiền hàng"], "m_product_description": ["상품 설명", "Description", "商品说明", "商品説明", "Mô tả"], "m_product_images": ["상품 이미지", "Product images", "商品图片", "商品画像", "Ảnh sản phẩm"], "m_product_information": ["상품 정보", "Product information", "商品信息", "商品情報", "Thông tin sản phẩm"], "m_products_unit": ["개", "items", "件", "件", "sản phẩm"], "m_promotions": ["프로모션", "Promotions", "促销", "プロモーション", "Khuyến mãi"], "m_qty_minus": ["수량 줄이기", "Decrease quantity", "减少数量", "数量を減らす", "Giảm số lượng"], "m_qty_plus": ["수량 늘리기", "Increase quantity", "增加数量", "数量を増やす", "Tăng số lượng"], "m_quantity": ["수량", "Quantity", "数量", "数量", "Số lượng"], "m_related_products": ["비슷한 상품", "Similar products", "相似商品", "似ている商品", "Sản phẩm tương tự"], "m_related_products_desc": ["함께 보면 좋은 상품", "You may also like", "你可能还喜欢", "こちらもおすすめ", "Có thể bạn cũng thích"], "m_remove": ["삭제", "Remove", "删除", "削除", "Xóa"], "m_return_policy": ["교환·반품 안내", "Returns & exchanges", "退换货说明", "交換・返品について", "Đổi trả"], "m_returns": ["교환·반품", "Returns", "退换货", "返品", "Đổi trả"], "m_sample": ["샘플", "Sample", "样品", "サンプル", "Mẫu"], "m_search_placeholder": ["어떤 상품을 찾으세요?", "What are you looking for?", "想找什么商品？", "何をお探しですか？", "Bạn đang tìm gì?"], "m_select_option": ["옵션 선택", "Select an option", "选择选项", "オプションを選択", "Chọn tùy chọn"], "m_seller": ["입점 문의", "Sell with us", "入驻咨询", "出店のお問い合わせ", "Hợp tác bán hàng"], "m_shipping": ["배송비", "Shipping", "运费", "送料", "Phí ship"], "m_shipping_address": ["배송지", "Shipping address", "收货地址", "お届け先", "Địa chỉ giao hàng"], "m_shipping_at_checkout": ["배송비는 주문서에서 계산됩니다", "Shipping calculated at checkout", "运费在结算时计算", "送料は注文時に計算されます", "Phí ship tính khi thanh toán"], "m_shipping_calculated_checkout": ["배송비는 주문서에서 확정됩니다", "Shipping is finalized at checkout", "运费在结算时确定", "送料はご注文時に確定します", "Phí ship được xác định khi thanh toán"], "m_shipping_fee": ["배송비", "Shipping fee", "运费", "送料", "Phí vận chuyển"], "m_shipping_info": ["배송 안내", "Shipping information", "配送说明", "配送について", "Thông tin giao hàng"], "m_shop_now": ["쇼핑하기", "Shop now", "去逛逛", "ショッピングする", "Mua sắm ngay"], "m_sold_out": ["품절", "Sold out", "售罄", "売り切れ", "Hết hàng"], "m_sort": ["정렬", "Sort", "排序", "並び替え", "Sắp xếp"], "m_sort_bestselling": ["판매순", "Best selling", "销量优先", "売れ筋順", "Bán chạy"], "m_sort_price_asc": ["낮은 가격순", "Price: low to high", "价格从低到高", "価格の安い順", "Giá thấp đến cao"], "m_sort_price_desc": ["높은 가격순", "Price: high to low", "价格从高到低", "価格の高い順", "Giá cao đến thấp"], "m_sort_recommended": ["추천순", "Recommended", "推荐", "おすすめ順", "Đề xuất"], "m_start_shopping": ["쇼핑 시작하기", "Start shopping", "开始购物", "ショッピングを始める", "Bắt đầu mua sắm"], "m_status_cancelled": ["취소", "Cancelled", "已取消", "キャンセル", "Đã hủy"], "m_status_delivered": ["배송완료", "Delivered", "已送达", "配達完了", "Đã giao"], "m_status_paid": ["입금확인", "Payment confirmed", "已确认付款", "入金確認", "Đã thanh toán"], "m_status_preparing": ["배송준비", "Preparing", "备货中", "発送準備中", "Đang chuẩn bị"], "m_status_received": ["주문접수", "Order received", "已下单", "注文受付", "Đã nhận đơn"], "m_status_shipped": ["배송중", "Shipped", "运输中", "配送中", "Đang giao"], "m_subtotal": ["합계", "Subtotal", "小计", "小計", "Tạm tính"], "m_time_remaining": ["남은 시간", "Time left", "剩余时间", "残り時間", "Còn lại"], "m_total": ["총", "Total", "共", "合計", "Tổng"], "m_total_payment": ["총 결제금액", "Total", "应付总额", "お支払い合計", "Tổng thanh toán"], "m_track_delivery": ["배송 조회", "Track delivery", "查询物流", "配送状況を確認", "Theo dõi giao hàng"], "m_tracking_number": ["송장번호", "Tracking number", "运单号", "追跡番号", "Mã vận đơn"], "m_view_all": ["전체보기", "View all", "查看全部", "すべて見る", "Xem tất cả"], "m_view_on_tiktok": ["TikTok Shop에서 보기", "View on TikTok Shop", "在 TikTok Shop 查看", "TikTok Shopで見る", "Xem trên TikTok Shop"], "m_watch_live": ["라이브 보기", "Watch LIVE", "观看直播", "LIVEを見る", "Xem LIVE"], "m_cat_all": ["전체", "All", "全部", "すべて", "Tất cả"], "m_cat_deals": ["타임딜", "Deals", "特价", "タイムセール", "Giảm giá"], "m_cat_popular": ["인기", "Popular", "人气", "人気", "Phổ biến"], "m_cat_live": ["LIVE", "LIVE", "直播", "LIVE", "LIVE"], "m_cat_new": ["신상품", "New", "新品", "新着", "Mới"], "m_sold_fmt": ["{n}개 판매", "{n} sold", "已售{n}", "{n}個販売", "Đã bán {n}"], "m_preview": ["오픈 준비 중인 미리보기 몰입니다. 지금은 주문이 접수되지 않습니다.", "This store is in preview before launch. Orders are not being accepted yet.", "商城正在筹备上线（预览中），暂不接受订单。", "オープン準備中のプレビューです。現在ご注文は承っておりません。", "Cửa hàng đang xem trước trước khi ra mắt. Hiện chưa nhận đơn."], "m_err_required": ["필수 항목과 동의란을 확인해 주세요.", "Please fill in the required fields and the consent boxes.", "请填写必填项并勾选同意。", "必須項目と同意欄をご確認ください。", "Vui lòng điền các mục bắt buộc và đồng ý."], "m_err_order": ["주문을 저장하지 못했습니다. 잠시 후 다시 시도해 주세요.", "We couldn't place the order. Please try again shortly.", "订单提交失败，请稍后重试。", "ご注文を保存できませんでした。しばらくしてから再度お試しください。", "Không thể đặt hàng. Vui lòng thử lại sau."], "m_err_option": ["옵션을 선택해 주세요.", "Please select an option.", "请选择选项。", "オプションを選択してください。", "Vui lòng chọn tùy chọn."], "m_added": ["장바구니에 담았습니다", "Added to cart", "已加入购物车", "カートに追加しました", "Đã thêm vào giỏ"], "m_copied": ["복사했습니다", "Copied", "已复制", "コピーしました", "Đã sao chép"], "m_not_found": ["주문을 찾지 못했습니다. 주문번호와 이메일을 확인해 주세요.", "Order not found. Check the order number and email.", "未找到订单，请确认订单号与邮箱。", "注文が見つかりません。注文番号とメールをご確認ください。", "Không tìm thấy đơn. Kiểm tra mã đơn và email."], "m_bank_pending": ["입금 계좌는 주문 확인 메일·연락으로 안내드립니다.", "We'll send the bank details by email or phone.", "汇款账户将通过邮件或电话告知。", "振込先はメールまたはお電話でご案内します。", "Thông tin chuyển khoản sẽ được gửi qua email hoặc điện thoại."], "m_deadline_val": ["주문 후 3일 이내", "Within 3 days of ordering", "下单后3天内", "ご注文後3日以内", "Trong 3 ngày sau khi đặt"], "m_ship_note": ["결제 확인 후 영업일 기준 1~3일 내 출고됩니다. 해외 배송은 지역에 따라 추가 기간이 걸릴 수 있습니다.", "Ships 1–3 business days after payment is confirmed. International delivery may take longer depending on the region.", "确认付款后1~3个工作日内发货，海外配送视地区可能需要更长时间。", "入金確認後、1〜3営業日以内に出荷します。海外配送は地域により日数がかかる場合があります。", "Xuất kho trong 1–3 ngày làm việc sau khi xác nhận thanh toán. Giao quốc tế có thể lâu hơn tùy khu vực."], "m_return_note": ["상품 수령 후 7일 이내 교환·반품을 신청할 수 있습니다. 단순 변심의 경우 왕복 배송비는 고객 부담입니다.", "You can request an exchange or return within 7 days of delivery. For change-of-mind returns, the customer pays round-trip shipping.", "收货后7天内可申请换货或退货。非质量问题退换货，往返运费由顾客承担。", "商品到着後7日以内に交換・返品を申請できます。お客様都合の場合、往復送料はお客様のご負担となります。", "Có thể yêu cầu đổi trả trong 7 ngày sau khi nhận hàng. Nếu đổi ý, khách hàng chịu phí vận chuyển hai chiều."], "m_host": ["스튜디오 호스트", "Studio host", "店内主播", "スタジオホスト", "Người dẫn studio"], "m_live1": ["K-뷰티 스킨케어 특집", "K-beauty skincare special", "韩妆护肤专场", "Kビューティー スキンケア特集", "Chuyên đề skincare K-beauty"], "m_live2": ["일본어 방송 · 생활용품", "Japanese LIVE · daily goods", "日语直播 · 生活用品", "日本語配信 · 生活雑貨", "LIVE tiếng Nhật · đồ gia dụng"], "m_live3": ["크리에이터 게스트 방송", "Creator guest LIVE", "达人嘉宾直播", "クリエイターゲスト配信", "LIVE cùng khách mời"], "nav_mall": ["TikTok Shop 몰", "TikTok Shop mall", "TikTok Shop 商城", "TikTok Shop モール", "TikTok Shop Mall"]};
+/* ==================================================
+   MALL.HTML — DYNAMIC HTML TEMPLATES
+   UI TEMPLATE LAYER ONLY
+
+   Required existing helpers:
+   t(key)       : Translation
+   esc(value)   : HTML / attribute escaping
+   money(value) : Currency formatting
+
+   Prices are passed as numeric values.
+   Image URLs and external links must be validated.
+   No event handlers or DB logic included.
+================================================== */
+
+
+/* ==================================================
+   00. SHARED UI TEMPLATES
+================================================== */
+
+const MALL_UI = {
+
+
+  /* ------------------------------------------------
+     CATEGORY BUTTON
+  ------------------------------------------------ */
+
+  categoryChip: ({
+    id,
+    name,
+    active = false
+  }) => `
+    <button
+      type="button"
+      class="cat-chip ${active ? 'active' : ''}"
+      data-action="category"
+      data-id="${esc(id)}"
+      aria-pressed="${active}">
+      ${esc(name)}
+    </button>
+  `,
+
+
+  /* ------------------------------------------------
+     SECTION HEADER
+  ------------------------------------------------ */
+
+  sectionHead: ({
+    title,
+    subtitle = '',
+    href = ''
+  }) => `
+    <div class="section-head">
+
+      <div>
+        <h2 class="section-title">
+          ${esc(title)}
+        </h2>
+
+        ${subtitle ? `
+          <p class="section-subtitle">
+            ${esc(subtitle)}
+          </p>
+        ` : ''}
+      </div>
+
+      ${href ? `
+        <a class="section-more"
+           href="${esc(href)}">
+          ${esc(t('m_view_all'))}
+        </a>
+      ` : ''}
+
+    </div>
+  `,
+
+
+  /* ------------------------------------------------
+     BACK LINK
+  ------------------------------------------------ */
+
+  backLink: ({
+    href = '#home',
+    label = t('m_back')
+  } = {}) => `
+    <a class="m-back" href="${esc(href)}">
+      <svg class="ico" aria-hidden="true">
+        <use href="#ic-back"/>
+      </svg>
+      ${esc(label)}
+    </a>
+  `,
+
+
+  /* ------------------------------------------------
+     SHARED QUANTITY STEPPER
+  ------------------------------------------------ */
+
+  stepper: ({
+    id,
+    qty = 1,
+    min = 1,
+    max = 999,
+    scope = 'product'
+  }) => `
+    <div class="qty-stepper"
+         data-scope="${esc(scope)}"
+         data-id="${esc(id)}">
+
+      <button
+        type="button"
+        data-action="qty-minus"
+        data-scope="${esc(scope)}"
+        data-id="${esc(id)}"
+        aria-label="${esc(t('m_qty_minus'))}"
+        ${qty <= min ? 'disabled' : ''}>
+        −
+      </button>
+
+      <span class="qty-value"
+            aria-live="polite">
+        ${esc(qty)}
+      </span>
+
+      <button
+        type="button"
+        data-action="qty-plus"
+        data-scope="${esc(scope)}"
+        data-id="${esc(id)}"
+        aria-label="${esc(t('m_qty_plus'))}"
+        ${qty >= max ? 'disabled' : ''}>
+        +
+      </button>
+
+    </div>
+  `,
+
+
+  /* ------------------------------------------------
+     PRODUCT CHIPS
+  ------------------------------------------------ */
+
+  productChips: (p) => `
+    <div class="product-chips">
+
+      ${p.freeShipping ? `
+        <span class="chip chip-free">
+          ${esc(t('m_free_shipping'))}
+        </span>
+      ` : ''}
+
+      ${p.sample ? `
+        <span class="chip chip-sample">
+          ${esc(t('m_sample'))}
+        </span>
+      ` : ''}
+
+      ${p.live ? `
+        <span class="chip chip-live">LIVE</span>
+      ` : ''}
+
+      ${p.coupon ? `
+        <span class="chip chip-coupon">
+          ${esc(t('m_coupon'))}
+        </span>
+      ` : ''}
+
+    </div>
+  `,
+
+
+  /* ==================================================
+     01. HOME PAGE
+  ================================================== */
+
+  home: ({
+    deals = [],
+    popular = [],
+    arrivals = [],
+    liveStreams = [],
+    dealTime = null,
+    promotion = null
+  }) => `
+
+    <div class="home-page">
+
+      <!-- HERO BANNER -->
+      <section aria-label="${esc(t('m_promotions'))}">
+
+        <div class="hero-slider" id="heroSlider"
+             tabindex="0"
+             aria-label="${esc(t('m_hero_banners'))}">
+
+
+          <!-- SLIDE 01 -->
+          <article class="hero-slide hero-01">
+
+            <img
+              class="hero-photo"
+              src="img/hero.jpg"
+              alt=""
+              fetchpriority="high">
+
+            <div class="hero-content">
+
+              <div class="hero-kicker">
+                TIKTOK SHOP · KR & JP
+              </div>
+
+              <h1 class="hero-title">
+                ${esc(t('m_hero1_title'))}
+                <em>${esc(t('m_hero1_accent'))}</em>
+              </h1>
+
+              <p class="hero-desc">
+                ${esc(t('m_hero1_desc'))}
+              </p>
+
+              <a class="btn btn-white"
+                 href="#cat-all">
+                ${esc(t('m_shop_now'))}
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- SLIDE 02 -->
+          <article class="hero-slide hero-02">
+
+            <img
+              class="hero-photo"
+              src="img/hero2.jpg"
+              alt=""
+              loading="lazy">
+
+            <div class="hero-content">
+
+              <div class="hero-kicker">
+                TRENDING NOW
+              </div>
+
+              <h2 class="hero-title">
+                ${esc(t('m_hero2_title'))}
+                <em>${esc(t('m_hero2_accent'))}</em>
+              </h2>
+
+              <p class="hero-desc">
+                ${esc(t('m_hero2_desc'))}
+              </p>
+
+              <a class="btn btn-primary"
+                 href="#cat-popular">
+                ${esc(t('m_explore_trending'))}
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- SLIDE 03 -->
+          <article class="hero-slide hero-03">
+
+            <img
+              class="hero-photo"
+              src="img/studio-wide.jpg"
+              alt=""
+              loading="lazy">
+
+            <div class="hero-content">
+
+              <div class="hero-kicker">
+                LIVE SHOPPING EXPERIENCE
+              </div>
+
+              <h2 class="hero-title">
+                ${esc(t('m_hero3_title'))}
+                <em>${esc(t('m_hero3_accent'))}</em>
+              </h2>
+
+              <p class="hero-desc">
+                ${esc(t('m_hero3_desc'))}
+              </p>
+
+              <a class="btn btn-white"
+                 href="#live-section"
+                 data-action="scroll-live">
+                ${esc(t('m_watch_live'))}
+              </a>
+
+            </div>
+
+          </article>
+
+        </div>
+
+
+        <!-- SLIDE CONTROLS -->
+        <div class="hero-controls"
+             aria-label="${esc(t('m_banner_controls'))}">
+
+          ${[0, 1, 2].map(i => `
+            <button
+              type="button"
+              class="hero-dot ${i === 0 ? 'active' : ''}"
+              data-action="hero-slide"
+              data-index="${i}"
+              aria-current="${i === 0 ? 'true' : 'false'}"
+              aria-label="${esc(t('m_banner'))} ${i + 1}">
+            </button>
+          `).join('')}
+
+        </div>
+
+      </section>
+
+
+      <!-- PROMOTION -->
+      ${promotion ? `
+        <div class="promo-strip">
+
+          <div>
+            <strong>
+              ${esc(promotion.title)}
+            </strong>
+
+            <p>
+              ${esc(promotion.description)}
+            </p>
+          </div>
+
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-action="claim-coupon"
+            data-id="${esc(promotion.id)}">
+            ${esc(t('m_get_coupon'))}
+          </button>
+
+        </div>
+      ` : ''}
+
+
+      <!-- LIVE SHOPPING -->
+      ${liveStreams.length ? `
+        <section class="m-section live-section"
+                 id="live-section">
+
+          <div class="section-head">
+
+            <div>
+              <div class="live-heading">
+
+                <span class="live-heading-mark">
+                  LIVE
+                </span>
+
+                <h2 class="section-title">
+                  ${esc(t('m_live_now'))}
+                </h2>
+
+              </div>
+
+              <p class="section-subtitle">
+                ${esc(t('m_live_subtitle'))}
+              </p>
+            </div>
+
+            <a class="section-more"
+               href="#cat-live">
+              ${esc(t('m_view_all'))}
+            </a>
+
+          </div>
+
+          <div class="live-strip"
+               aria-label="${esc(t('m_live_now'))}">
+
+            ${liveStreams
+              .map(item => MALL_UI.liveCard(item))
+              .join('')}
+
+          </div>
+
+        </section>
+      ` : ''}
+
+
+      <!-- FLASH DEALS -->
+      ${deals.length ? `
+        <section class="m-section deal-section">
+
+          <div class="section-head">
+
+            <div>
+
+              <div class="deal-heading">
+
+                <h2 class="section-title">
+                  ${esc(t('m_flash_deals'))}
+                </h2>
+
+                ${dealTime ? `
+                  <div class="deal-clock"
+                       id="dealClock"
+                       aria-label="${esc(t('m_time_remaining'))}">
+
+                    <span data-time="hours">
+                      ${esc(dealTime.hours)}
+                    </span>
+                    :
+                    <span data-time="minutes">
+                      ${esc(dealTime.minutes)}
+                    </span>
+                    :
+                    <span data-time="seconds">
+                      ${esc(dealTime.seconds)}
+                    </span>
+
+                  </div>
+                ` : ''}
+
+              </div>
+
+              <p class="section-subtitle">
+                ${esc(t('m_flash_deals_desc'))}
+              </p>
+
+            </div>
+
+            <a class="section-more"
+               href="#cat-deals">
+              ${esc(t('m_view_all'))}
+            </a>
+
+          </div>
+
+          <div class="product-grid">
+            ${deals
+              .map(p => MALL_UI.productCard(p))
+              .join('')}
+          </div>
+
+        </section>
+      ` : ''}
+
+
+      <!-- POPULAR PRODUCTS -->
+      ${popular.length ? `
+        <section class="m-section">
+
+          ${MALL_UI.sectionHead({
+            title: t('m_popular'),
+            subtitle: t('m_popular_desc'),
+            href: '#cat-popular'
+          })}
+
+          <div class="product-grid">
+            ${popular
+              .map(p => MALL_UI.productCard(p))
+              .join('')}
+          </div>
+
+        </section>
+      ` : ''}
+
+
+      <!-- NEW ARRIVALS -->
+      ${arrivals.length ? `
+        <section class="m-section">
+
+          ${MALL_UI.sectionHead({
+            title: t('m_new_arrivals'),
+            subtitle: t('m_new_arrivals_desc'),
+            href: '#cat-new'
+          })}
+
+          <div class="product-grid">
+            ${arrivals
+              .map(p => MALL_UI.productCard(p))
+              .join('')}
+          </div>
+
+        </section>
+      ` : ''}
+
+    </div>
+  `,
+
+
+  /* ------------------------------------------------
+     LIVE SHOPPING CARD
+
+     Example photo sources:
+     img/host-jp.jpg
+     img/creator.jpg
+     img/creator2.jpg
+     img/tokyo.jpg
+     img/seoul.jpg
+     img/studio-wide.jpg
+
+     Render only verified active live streams.
+  ------------------------------------------------ */
+
+  liveCard: ({
+    id,
+    image,
+    title,
+    host,
+    viewers,
+    href
+  }) => `
+
+    <a class="live-card"
+       href="${esc(href || '#cat-live')}"
+       data-id="${esc(id)}">
+
+      <img src="${esc(image)}"
+           alt="${esc(title)}"
+           loading="lazy">
+
+      <div class="live-top">
+
+        <span class="live-badge">
+          LIVE
+        </span>
+
+        ${viewers !== null && viewers !== undefined ? `
+          <span class="live-viewers">
+            ${esc(viewers)}
+          </span>
+        ` : ''}
+
+      </div>
+
+      <div class="live-bottom">
+
+        <div class="live-host">
+          ${esc(host)}
+        </div>
+
+        <h3 class="live-title">
+          ${esc(title)}
+        </h3>
+
+      </div>
+
+    </a>
+  `,
+
+
+  /* ==================================================
+     02. PRODUCT CARD
+  ================================================== */
+
+  productCard: (p) => `
+
+    <a class="product-card"
+       href="#p-${esc(encodeURIComponent(p.id))}"
+       data-id="${esc(p.id)}">
+
+      <div class="product-media">
+
+        <img
+          src="${esc(p.image)}"
+          alt="${esc(p.name)}"
+          width="400"
+          height="400"
+          loading="lazy"
+          decoding="async">
+
+        ${p.live ? `
+          <span class="live-badge">
+            LIVE
+          </span>
+        ` : p.rank ? `
+          <span class="product-rank">
+            ${esc(p.rank)}
+          </span>
+        ` : ''}
+
+      </div>
+
+      <div class="product-info">
+
+        <div class="product-price-row">
+
+          ${p.discount > 0 ? `
+            <span class="product-discount">
+              ${esc(p.discount)}%
+            </span>
+          ` : ''}
+
+          <strong class="product-price">
+            ${esc(money(p.price))}
+          </strong>
+
+          ${p.originalPrice > p.price ? `
+            <del class="product-original">
+              ${esc(money(p.originalPrice))}
+            </del>
+          ` : ''}
+
+        </div>
+
+        <h3 class="product-name">
+          ${esc(p.name)}
+        </h3>
+
+        ${p.brand ? `
+          <p class="product-brand">
+            ${esc(p.brand)}
+          </p>
+        ` : ''}
+
+        <div class="product-meta">
+
+          ${p.rating !== null && p.rating !== undefined ? `
+            <span class="product-rating">
+              <span class="rating-star"
+                    aria-hidden="true">★</span>
+              ${esc(p.rating)}
+            </span>
+          ` : ''}
+
+          ${p.rating !== null &&
+            p.rating !== undefined &&
+            p.soldLabel ? `
+            <span class="meta-separator"></span>
+          ` : ''}
+
+          ${p.soldLabel ? `
+            <span class="product-sold">
+              ${esc(p.soldLabel)}
+            </span>
+          ` : ''}
+
+        </div>
+
+        ${MALL_UI.productChips(p)}
+
+      </div>
+
+    </a>
+  `,
+
+
+  /* ==================================================
+     03. CATEGORY / SEARCH RESULTS
+  ================================================== */
+
+  catalog: ({
+    title,
+    description = '',
+    query = '',
+    categoryId = '',
+    sort = 'recommended',
+    total = 0,
+    products = []
+  }) => `
+
+    <div class="catalog-page">
+
+      ${MALL_UI.backLink({
+        href: '#home',
+        label: t('m_home')
+      })}
+
+      <div class="catalog-head">
+
+        <h1 class="page-title">
+          ${esc(title)}
+        </h1>
+
+        ${description ? `
+          <p class="catalog-desc">
+            ${esc(description)}
+          </p>
+        ` : ''}
+
+        ${query ? `
+          <p class="catalog-desc">
+            “${esc(query)}”
+          </p>
+        ` : ''}
+
+      </div>
+
+
+      <div class="catalog-toolbar">
+
+        <div class="result-count">
+          ${esc(t('m_total'))}
+          <strong>${esc(total)}</strong>
+          ${esc(t('m_products_unit'))}
+        </div>
+
+        <select
+          class="sort-select"
+          id="mSort"
+          data-action="sort"
+          data-category="${esc(categoryId)}"
+          aria-label="${esc(t('m_sort'))}">
+
+          ${[
+            ['recommended', 'm_sort_recommended'],
+            ['bestselling', 'm_sort_bestselling'],
+            ['price_asc', 'm_sort_price_asc'],
+            ['price_desc', 'm_sort_price_desc']
+          ].map(([value, key]) => `
+            <option
+              value="${value}"
+              ${sort === value ? 'selected' : ''}>
+              ${esc(t(key))}
+            </option>
+          `).join('')}
+
+        </select>
+
+      </div>
+
+
+      ${products.length ? `
+        <div class="product-grid">
+          ${products
+            .map(p => MALL_UI.productCard(p))
+            .join('')}
+        </div>
+      ` : MALL_UI.emptyCatalog({query})}
+
+    </div>
+  `,
+
+
+  emptyCatalog: ({
+    query = ''
+  } = {}) => `
+
+    <div class="empty-state">
+
+      <svg class="ico" aria-hidden="true">
+        <use href="#ic-search"/>
+      </svg>
+
+      <h2>
+        ${esc(t('m_no_results'))}
+      </h2>
+
+      <p>
+        ${query ? `“${esc(query)}” · ` : ''}
+        ${esc(t('m_no_results_desc'))}
+      </p>
+
+      <a class="btn btn-black"
+         href="#cat-all">
+        ${esc(t('m_browse_all'))}
+      </a>
+
+    </div>
+  `,
+
+
+  /* ==================================================
+     04. PRODUCT DETAIL
+  ================================================== */
+
+  productDetail: ({
+    product: p,
+    related = [],
+    activeImage = 0,
+    qty = 1,
+    selectedOptions = {},
+    backHref = '#home',
+    activeTab = 'description'
+  }) => `
+
+    <div class="detail-page"
+         data-product-id="${esc(p.id)}">
+
+      ${MALL_UI.backLink({
+        href: backHref,
+        label: t('m_back')
+      })}
+
+
+      <div class="detail-layout">
+
+
+        <!-- PRODUCT IMAGE GALLERY -->
+        <div class="detail-gallery">
+
+          <div class="detail-main-image">
+
+            <img
+              id="pMainImage"
+              src="${esc(
+                p.images?.[activeImage] || p.image
+              )}"
+              alt="${esc(p.name)}"
+              width="800"
+              height="800"
+              fetchpriority="high">
+
+            ${p.images?.length > 1 ? `
+              <span class="gallery-counter"
+                    id="pImageCounter">
+                ${activeImage + 1} / ${p.images.length}
+              </span>
+            ` : ''}
+
+          </div>
+
+
+          ${p.images?.length > 1 ? `
+            <div class="detail-thumbs"
+                 id="pThumbs"
+                 aria-label="${esc(t('m_product_images'))}">
+
+              ${p.images.map((src, i) => `
+                <button
+                  type="button"
+                  class="detail-thumb
+                    ${i === activeImage ? 'active' : ''}"
+                  data-action="gallery-image"
+                  data-index="${i}"
+                  data-id="${esc(p.id)}"
+                  aria-pressed="${i === activeImage}"
+                  aria-label="${esc(t('m_image'))} ${i + 1}">
+
+                  <img
+                    src="${esc(src)}"
+                    alt=""
+                    width="90"
+                    height="90"
+                    loading="lazy">
+
+                </button>
+              `).join('')}
+
+            </div>
+          ` : ''}
+
+        </div>
+
+
+        <!-- PRODUCT PURCHASE INFORMATION -->
+        <div class="detail-summary">
+
+          ${p.brand ? `
+            <p class="detail-brand">
+              ${esc(p.brand)}
+            </p>
+          ` : ''}
+
+          <h1 class="detail-name">
+            ${esc(p.name)}
+          </h1>
+
+
+          <div class="detail-meta">
+
+            ${p.rating !== null &&
+              p.rating !== undefined ? `
+              <span class="product-rating">
+                <span class="rating-star"
+                      aria-hidden="true">★</span>
+
+                ${esc(p.rating)}
+
+                ${p.reviewCount !== undefined ? `
+                  (${esc(p.reviewCount)})
+                ` : ''}
+              </span>
+            ` : ''}
+
+            ${p.rating !== null &&
+              p.rating !== undefined &&
+              p.soldLabel ? `
+              <span class="meta-separator"></span>
+            ` : ''}
+
+            ${p.soldLabel ? `
+              <span>${esc(p.soldLabel)}</span>
+            ` : ''}
+
+            ${p.live ? `
+              <span class="live-badge">LIVE</span>
+            ` : ''}
+
+          </div>
+
+
+          <div class="detail-price-block"
+               id="pPriceBlock">
+
+            ${p.discount > 0 ? `
+              <strong class="detail-discount">
+                ${esc(p.discount)}%
+              </strong>
+            ` : ''}
+
+            <strong class="detail-price">
+              ${esc(money(p.price))}
+            </strong>
+
+            ${p.originalPrice > p.price ? `
+              <del class="detail-original">
+                ${esc(money(p.originalPrice))}
+              </del>
+            ` : ''}
+
+          </div>
+
+
+          <!-- COUPON -->
+          ${p.coupon ? `
+            <div class="detail-coupon">
+
+              <span>
+                ${esc(p.coupon.label)}
+              </span>
+
+              <button
+                type="button"
+                data-action="claim-coupon"
+                data-id="${esc(p.coupon.id)}">
+                ${esc(t('m_get_coupon'))}
+              </button>
+
+            </div>
+          ` : ''}
+
+
+          <!-- DELIVERY AND PRODUCT BENEFITS -->
+          <div class="detail-benefits">
+
+            <div class="detail-benefit-row">
+
+              <span class="detail-benefit-label">
+                ${esc(t('m_shipping'))}
+              </span>
+
+              <div class="detail-benefit-value">
+
+                ${p.freeShipping ? `
+                  <span class="m-green">
+                    ${esc(t('m_free_shipping'))}
+                  </span>
+                ` : p.shippingFee !== undefined ? `
+                  ${esc(money(p.shippingFee))}
+                ` : `
+                  ${esc(t('m_shipping_at_checkout'))}
+                `}
+
+                ${p.shippingNote ? `
+                  <small>
+                    ${esc(p.shippingNote)}
+                  </small>
+                ` : ''}
+
+              </div>
+
+            </div>
+
+
+            ${p.deliveryEstimate ? `
+              <div class="detail-benefit-row">
+
+                <span class="detail-benefit-label">
+                  ${esc(t('m_delivery'))}
+                </span>
+
+                <div class="detail-benefit-value">
+                  ${esc(p.deliveryEstimate)}
+                </div>
+
+              </div>
+            ` : ''}
+
+
+            ${p.origin ? `
+              <div class="detail-benefit-row">
+
+                <span class="detail-benefit-label">
+                  ${esc(t('m_origin'))}
+                </span>
+
+                <div class="detail-benefit-value">
+                  ${esc(p.origin)}
+                </div>
+
+              </div>
+            ` : ''}
+
+
+            ${p.returnNote ? `
+              <div class="detail-benefit-row">
+
+                <span class="detail-benefit-label">
+                  ${esc(t('m_returns'))}
+                </span>
+
+                <div class="detail-benefit-value">
+                  ${esc(p.returnNote)}
+                </div>
+
+              </div>
+            ` : ''}
+
+          </div>
+
+
+          <!-- PRODUCT OPTIONS -->
+          <div class="detail-options"
+               id="pOptions">
+
+            ${(p.options || []).map(option => `
+              <div class="option-group">
+
+                <label for="opt-${esc(option.id)}">
+                  ${esc(option.name)}
+                </label>
+
+                <select
+                  class="inp"
+                  id="opt-${esc(option.id)}"
+                  name="option_${esc(option.id)}"
+                  data-action="product-option"
+                  data-option-id="${esc(option.id)}"
+                  data-id="${esc(p.id)}"
+                  ${option.required !== false
+                    ? 'required' : ''}>
+
+                  <option value=""
+                    ${!selectedOptions[option.id]
+                      ? 'selected' : ''}>
+                    ${esc(t('m_select_option'))}
+                  </option>
+
+                  ${option.values.map(v => `
+                    <option
+                      value="${esc(v.id)}"
+                      ${selectedOptions[option.id] === v.id
+                        ? 'selected' : ''}
+                      ${v.disabled ? 'disabled' : ''}>
+
+                      ${esc(v.name)}
+
+                      ${v.priceDelta > 0
+                        ? ` (+${esc(money(v.priceDelta))})`
+                        : v.priceDelta < 0
+                          ? ` (${esc(money(v.priceDelta))})`
+                          : ''}
+
+                      ${v.disabled
+                        ? ` · ${esc(t('m_sold_out'))}`
+                        : ''}
+
+                    </option>
+                  `).join('')}
+
+                </select>
+
+              </div>
+            `).join('')}
+
+
+            <!-- QUANTITY -->
+            <div class="detail-quantity">
+
+              <span>
+                ${esc(t('m_quantity'))}
+              </span>
+
+              ${MALL_UI.stepper({
+                id: p.id,
+                qty,
+                max: p.stock ?? 999,
+                scope: 'product'
+              })}
+
+            </div>
+
+          </div>
+
+
+          <!-- DESKTOP PURCHASE ACTIONS -->
+          <div class="detail-actions">
+
+            <button
+              type="button"
+              class="btn btn-pink-outline btn-lg"
+              data-action="add-to-cart"
+              data-id="${esc(p.id)}"
+              ${p.stock === 0 ? 'disabled' : ''}>
+
+              ${esc(t('m_add_to_cart'))}
+
+            </button>
+
+            <button
+              type="button"
+              class="btn btn-primary btn-lg"
+              data-action="buy-now"
+              data-id="${esc(p.id)}"
+              ${p.stock === 0 ? 'disabled' : ''}>
+
+              ${esc(t(
+                p.stock === 0
+                  ? 'm_sold_out'
+                  : 'm_buy_now'
+              ))}
+
+            </button>
+
+          </div>
+
+
+          <!-- EXTERNAL TIKTOK SHOP LINK -->
+          ${p.tiktokUrl ? `
+            <a
+              class="detail-external"
+              href="${esc(p.tiktokUrl)}"
+              target="_blank"
+              rel="noopener noreferrer">
+
+              <svg class="ttg"
+                   viewBox="-1.5 -1.5 27 27"
+                   aria-hidden="true">
+
+                <use href="#ttp"
+                     fill="#25F4EE"
+                     x="-.85" y="-.6"/>
+
+                <use href="#ttp"
+                     fill="#FE2C55"
+                     x=".85" y=".6"/>
+
+                <use href="#ttp"
+                     fill="currentColor"/>
+
+              </svg>
+
+              ${esc(t('m_view_on_tiktok'))}
+
+            </a>
+          ` : ''}
+
+        </div>
+
+      </div>
+
+
+      <!-- DESCRIPTION / SHIPPING / RETURNS -->
+      <section class="detail-description">
+
+        <div class="detail-tabs"
+             role="tablist"
+             aria-label="${esc(t('m_product_information'))}">
+
+          ${[
+            ['description', 'm_product_description'],
+            ['shipping', 'm_shipping_info'],
+            ['returns', 'm_return_policy']
+          ].map(([value, key]) => `
+            <button
+              type="button"
+              role="tab"
+              id="detail-tab-${value}"
+              class="detail-tab
+                ${activeTab === value ? 'active' : ''}"
+              data-action="detail-tab"
+              data-tab="${value}"
+              aria-controls="detailPanel"
+              aria-selected="${activeTab === value}"
+              tabindex="${activeTab === value ? '0' : '-1'}">
+
+              ${esc(t(key))}
+
+            </button>
+          `).join('')}
+
+        </div>
+
+        <div
+          class="description-content"
+          id="detailPanel"
+          role="tabpanel"
+          aria-labelledby="detail-tab-${esc(activeTab)}"
+          tabindex="0">
+
+          ${MALL_UI.detailPanel({
+            product: p,
+            tab: activeTab
+          })}
+
+        </div>
+
+      </section>
+
+
+      <!-- RELATED PRODUCTS -->
+      ${related.length ? `
+        <section class="m-section">
+
+          ${MALL_UI.sectionHead({
+            title: t('m_related_products'),
+            subtitle: t('m_related_products_desc')
+          })}
+
+          <div class="product-grid">
+
+            ${related
+              .map(item => MALL_UI.productCard(item))
+              .join('')}
+
+          </div>
+
+        </section>
+      ` : ''}
+
+
+      <!-- MOBILE FIXED BUY BAR -->
+      <div class="mobile-buybar">
+
+        <button
+          type="button"
+          class="btn btn-pink-outline"
+          data-action="add-to-cart"
+          data-id="${esc(p.id)}"
+          ${p.stock === 0 ? 'disabled' : ''}>
+
+          <svg class="ico" aria-hidden="true">
+            <use href="#ic-cart"/>
+          </svg>
+
+          ${esc(t('m_add_to_cart'))}
+
+        </button>
+
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-action="buy-now"
+          data-id="${esc(p.id)}"
+          ${p.stock === 0 ? 'disabled' : ''}>
+
+          ${esc(t(
+            p.stock === 0
+              ? 'm_sold_out'
+              : 'm_buy_now'
+          ))}
+
+        </button>
+
+      </div>
+
+    </div>
+  `,
+
+
+  /* ------------------------------------------------
+     DETAIL TAB CONTENT
+
+     HTML fields must already be sanitized.
+     Never pass untrusted raw DB HTML.
+  ------------------------------------------------ */
+
+  detailPanel: ({
+    product: p,
+    tab = 'description'
+  }) => `
+
+    ${tab === 'description' ? `
+      <h2>
+        ${esc(t('m_product_description'))}
+      </h2>
+
+      ${p.safeDescriptionHtml || `
+        <p>${esc(p.description || '')}</p>
+      `}
+
+      ${(p.detailImages || []).map(src => `
+        <img
+          src="${esc(src)}"
+          alt="${esc(p.name)}"
+          loading="lazy"
+          decoding="async">
+      `).join('')}
+
+    ` : tab === 'shipping' ? `
+
+      <h2>
+        ${esc(t('m_shipping_info'))}
+      </h2>
+
+      ${p.safeShippingHtml || `
+        <p>${esc(
+          p.shippingNote || t('m_contact_shipping')
+        )}</p>
+      `}
+
+    ` : `
+
+      <h2>
+        ${esc(t('m_return_policy'))}
+      </h2>
+
+      ${p.safeReturnHtml || `
+        <p>${esc(
+          p.returnNote || t('m_contact_returns')
+        )}</p>
+      `}
+
+    `}
+
+  `,
+
+
+  /* ==================================================
+     05. CART DRAWER
+  ================================================== */
+
+  cartItem: (item) => `
+
+    <article class="cart-item"
+             data-cart-id="${esc(item.lineId)}">
+
+      <a class="cart-item-photo"
+         href="#p-${esc(encodeURIComponent(item.productId))}"
+         data-action="cart-product">
+
+        <img
+          src="${esc(item.image)}"
+          alt="${esc(item.name)}"
+          width="120"
+          height="120">
+
+      </a>
+
+      <div class="cart-item-info">
+
+        <a class="cart-item-name"
+           href="#p-${esc(encodeURIComponent(item.productId))}"
+           data-action="cart-product">
+
+          ${esc(item.name)}
+
+        </a>
+
+        ${item.optionLabel ? `
+          <p class="cart-item-option">
+            ${esc(item.optionLabel)}
+          </p>
+        ` : ''}
+
+        <div class="cart-item-price">
+          ${esc(money(item.unitPrice * item.qty))}
+        </div>
+
+        <div class="cart-item-actions">
+
+          ${MALL_UI.stepper({
+            id: item.lineId,
+            qty: item.qty,
+            max: item.maxQty ?? 999,
+            scope: 'cart'
+          })}
+
+          <button
+            type="button"
+            class="cart-remove"
+            data-action="cart-remove"
+            data-id="${esc(item.lineId)}">
+
+            ${esc(t('m_remove'))}
+
+          </button>
+
+        </div>
+
+      </div>
+
+    </article>
+  `,
+
+
+  /* Render into #cartBody */
+
+  cartBody: ({
+    items = []
+  }) => `
+
+    ${items.length
+      ? items.map(item => MALL_UI.cartItem(item)).join('')
+      : MALL_UI.emptyCart()}
+
+  `,
+
+
+  /* Render into #cartFoot */
+
+  cartFoot: ({
+    subtotal = 0,
+    itemCount = 0
+  }) => `
+
+    ${itemCount > 0 ? `
+
+      <div class="cart-total">
+
+        <span>
+          ${esc(t('m_subtotal'))}
+        </span>
+
+        <strong>
+          ${esc(money(subtotal))}
+        </strong>
+
+      </div>
+
+      <button
+        type="button"
+        class="btn btn-primary btn-lg btn-block"
+        data-action="checkout">
+
+        ${esc(t('m_checkout'))}
+        (${esc(itemCount)})
+
+      </button>
+
+      <p class="cart-foot-note">
+        ${esc(t('m_shipping_calculated_checkout'))}
+      </p>
+
+    ` : `
+
+      <button
+        type="button"
+        class="btn btn-black btn-block"
+        data-action="cart-close">
+
+        ${esc(t('m_continue_shopping'))}
+
+      </button>
+
+    `}
+
+  `,
+
+
+  emptyCart: () => `
+
+    <div class="empty-state">
+
+      <svg class="ico" aria-hidden="true">
+        <use href="#ic-cart"/>
+      </svg>
+
+      <h2>
+        ${esc(t('m_cart_empty'))}
+      </h2>
+
+      <p>
+        ${esc(t('m_cart_empty_desc'))}
+      </p>
+
+      <button
+        type="button"
+        class="btn btn-black"
+        data-action="cart-browse">
+
+        ${esc(t('m_start_shopping'))}
+
+      </button>
+
+    </div>
+
+  `,
+
+
+  /* ==================================================
+     06. CHECKOUT
+  ================================================== */
+
+  checkout: ({
+    items = [],
+    subtotal = 0,
+    shipping = 0,
+    discount = 0,
+    total = 0,
+    customer = {},
+    countries = [
+      {code: 'KR', name: '대한민국'},
+      {code: 'JP', name: '日本'}
+    ],
+    allowPostalLookup = false,
+    privacyUrl = ''
+  }) => `
+
+    <div class="checkout-page">
+
+      <button
+        type="button"
+        class="m-back"
+        data-action="checkout-back">
+
+        <svg class="ico" aria-hidden="true">
+          <use href="#ic-back"/>
+        </svg>
+
+        ${esc(t('m_back_to_cart'))}
+
+      </button>
+
+
+      <div class="checkout-head">
+
+        <h1 class="page-title">
+          ${esc(t('m_checkout'))}
+        </h1>
+
+        <div class="checkout-steps">
+
+          <span class="active">
+            01 ${esc(t('m_cart'))}
+          </span>
+
+          <span aria-hidden="true">/</span>
+
+          <span class="current">
+            02 ${esc(t('m_checkout'))}
+          </span>
+
+          <span aria-hidden="true">/</span>
+
+          <span>
+            03 ${esc(t('m_order_complete'))}
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <form id="coForm"
+            autocomplete="on">
+
+        <div class="checkout-layout">
+
+          <div class="checkout-main">
+
+
+            <!-- ORDER PRODUCTS -->
+            <section class="checkout-block">
+
+              <h2 class="block-title">
+                ${esc(t('m_order_products'))}
+                (${esc(items.length)})
+              </h2>
+
+              <div class="checkout-items">
+
+                ${items
+                  .map(item => MALL_UI.orderItem(item))
+                  .join('')}
+
+              </div>
+
+            </section>
+
+
+            <!-- CUSTOMER INFORMATION -->
+            <section class="checkout-block">
+
+              <h2 class="block-title">
+                ${esc(t('m_customer_info'))}
+              </h2>
+
+              <div class="form-grid">
+
+
+                <div class="form-field">
+
+                  <label for="coName">
+                    ${esc(t('m_name'))}
+                    <span class="required-mark">*</span>
+                  </label>
+
+                  <input
+                    class="inp"
+                    id="coName"
+                    name="name"
+                    type="text"
+                    autocomplete="name"
+                    value="${esc(customer.name || '')}"
+                    placeholder="${esc(t('m_name_placeholder'))}"
+                    maxlength="100"
+                    required>
+
+                </div>
+
+
+                <div class="form-field">
+
+                  <label for="coPhone">
+                    ${esc(t('m_phone'))}
+                    <span class="required-mark">*</span>
+                  </label>
+
+                  <input
+                    class="inp"
+                    id="coPhone"
+                    name="phone"
+                    type="tel"
+                    autocomplete="tel"
+                    value="${esc(customer.phone || '')}"
+                    placeholder="${esc(t('m_phone_placeholder'))}"
+                    maxlength="40"
+                    required>
+
+                </div>
+
+
+                <div class="form-field form-span">
+
+                  <label for="coEmail">
+                    ${esc(t('m_email'))}
+                    <span class="required-mark">*</span>
+                  </label>
+
+                  <input
+                    class="inp"
+                    id="coEmail"
+                    name="email"
+                    type="email"
+                    autocomplete="email"
+                    value="${esc(customer.email || '')}"
+                    placeholder="example@email.com"
+                    maxlength="254"
+                    required>
+
+                  <p class="field-help">
+                    ${esc(t('m_email_order_notice'))}
+                  </p>
+
+                </div>
+
+              </div>
+
+            </section>
+
+
+            <!-- DELIVERY ADDRESS -->
+            <section class="checkout-block">
+
+              <h2 class="block-title">
+                ${esc(t('m_shipping_address'))}
+              </h2>
+
+              <div class="form-grid">
+
+
+                <div class="form-field">
+
+                  <label for="coCountry">
+                    ${esc(t('m_country'))}
+                    <span class="required-mark">*</span>
+                  </label>
+
+                  <select
+                    class="inp"
+                    id="coCountry"
+                    name="country"
+                    autocomplete="country"
+                    data-action="checkout-country"
+                    required>
+
+                    ${countries.map(c => `
+                      <option
+                        value="${esc(c.code)}"
+                        ${(customer.country || 'KR') === c.code
+                          ? 'selected' : ''}>
+
+                        ${esc(c.name)}
+
+                      </option>
+                    `).join('')}
+
+                  </select>
+
+                </div>
+
+
+                <div class="form-field">
+
+                  <label for="coPostcode">
+                    ${esc(t('m_postcode'))}
+                    <span class="required-mark">*</span>
+                  </label>
+
+                  <div class="postal-row">
+
+                    <input
+                      class="inp"
+                      id="coPostcode"
+                      name="postcode"
+                      type="text"
+                      autocomplete="postal-code"
+                      value="${esc(customer.postcode || '')}"
+                      placeholder="${esc(t('m_postcode'))}"
+                      maxlength="20"
+                      required>
+
+                    ${allowPostalLookup ? `
+                      <button
+                        type="button"
+                        class="btn btn-outline"
+                        data-action="postal-search">
+
+                        ${esc(t('m_find_address'))}
+
+                      </button>
+                    ` : ''}
+
+                  </div>
+
+                </div>
+
+
+                <div class="form-field form-span">
+
+                  <label for="coAddress">
+                    ${esc(t('m_address'))}
+                    <span class="required-mark">*</span>
+                  </label>
+
+                  <input
+                    class="inp"
+                    id="coAddress"
+                    name="address"
+                    type="text"
+                    autocomplete="address-line1"
+                    value="${esc(customer.address || '')}"
+                    placeholder="${esc(t('m_address_placeholder'))}"
+                    maxlength="300"
+                    required>
+
+                </div>
+
+
+                <div class="form-field form-span">
+
+                  <label for="coAddress2">
+                    ${esc(t('m_address_detail'))}
+                  </label>
+
+                  <input
+                    class="inp"
+                    id="coAddress2"
+                    name="address2"
+                    type="text"
+                    autocomplete="address-line2"
+                    value="${esc(customer.address2 || '')}"
+                    placeholder="${esc(t('m_address_detail_placeholder'))}"
+                    maxlength="300">
+
+                </div>
+
+
+                <div class="form-field form-span">
+
+                  <label for="coNote">
+                    ${esc(t('m_delivery_note'))}
+                  </label>
+
+                  <textarea
+                    class="inp"
+                    id="coNote"
+                    name="note"
+                    rows="3"
+                    maxlength="500"
+                    placeholder="${esc(t('m_delivery_note_placeholder'))}"
+                  >${esc(customer.note || '')}</textarea>
+
+                </div>
+
+              </div>
+
+            </section>
+
+
+            <!-- PAYMENT METHOD -->
+            <section class="checkout-block">
+
+              <h2 class="block-title">
+                ${esc(t('m_payment_method'))}
+              </h2>
+
+              <div class="payment-options">
+
+
+                <label class="payment-choice">
+
+                  <input
+                    type="radio"
+                    name="payment"
+                    value="bank"
+                    checked
+                    required>
+
+                  <div>
+
+                    <strong>
+                      ${esc(t('m_bank_transfer'))}
+                    </strong>
+
+                    <small>
+                      ${esc(t('m_bank_transfer_desc'))}
+                    </small>
+
+                  </div>
+
+                </label>
+
+
+                <label class="payment-choice disabled">
+
+                  <input
+                    type="radio"
+                    name="payment"
+                    value="card"
+                    disabled>
+
+                  <div>
+                    <strong>
+                      ${esc(t('m_card_payment'))}
+                    </strong>
+                  </div>
+
+                  <span class="coming-soon">
+                    ${esc(t('m_coming_soon'))}
+                  </span>
+
+                </label>
+
+              </div>
+
+            </section>
+
+          </div>
+
+
+          <!-- ORDER PRICE SUMMARY -->
+          <aside class="checkout-aside">
+
+            <h2 class="block-title">
+              ${esc(t('m_payment_summary'))}
+            </h2>
+
+            <div id="coMoneySummary">
+
+              ${MALL_UI.moneySummary({
+                subtotal,
+                shipping,
+                discount,
+                total
+              })}
+
+            </div>
+
+
+            <label class="agree-row">
+
+              <input
+                type="checkbox"
+                name="privacyAgree"
+                value="1"
+                required>
+
+              <span>
+                ${esc(t('m_privacy_agree'))}
+                <span class="required-mark">*</span>
+              </span>
+
+            </label>
+
+
+            ${privacyUrl ? `
+              <a
+                class="privacy-link"
+                href="${esc(privacyUrl)}"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                ${esc(t('m_privacy_policy'))}
+
+              </a>
+            ` : ''}
+
+
+            <button
+              type="submit"
+              id="coSubmit"
+              class="btn btn-primary btn-lg btn-block">
+
+              ${esc(money(total))}
+              ${esc(t('m_place_order'))}
+
+            </button>
+
+            <p class="checkout-notice">
+              ${esc(t('m_order_terms_notice'))}
+            </p>
+
+          </aside>
+
+        </div>
+
+      </form>
+
+    </div>
+  `,
+
+
+  /* ------------------------------------------------
+     SHARED ORDER ITEM
+  ------------------------------------------------ */
+
+  orderItem: (item) => `
+
+    <article class="order-item">
+
+      <a class="order-item-image"
+         href="#p-${esc(encodeURIComponent(item.productId))}">
+
+        <img
+          src="${esc(item.image)}"
+          alt="${esc(item.name)}"
+          width="100"
+          height="100"
+          loading="lazy">
+
+      </a>
+
+      <div class="order-item-info">
+
+        <h3 class="order-item-name">
+          ${esc(item.name)}
+        </h3>
+
+        <p class="order-item-option">
+
+          ${item.optionLabel
+            ? `${esc(item.optionLabel)} · `
+            : ''}
+
+          ${esc(t('m_quantity'))}
+          ${esc(item.qty)}
+
+        </p>
+
+      </div>
+
+      <strong class="order-item-price">
+        ${esc(money(item.unitPrice * item.qty))}
+      </strong>
+
+    </article>
+
+  `,
+
+
+  /* ------------------------------------------------
+     SHARED MONEY SUMMARY
+
+     All values calculated by existing business logic.
+  ------------------------------------------------ */
+
+  moneySummary: ({
+    subtotal = 0,
+    shipping = 0,
+    discount = 0,
+    total = 0
+  }) => `
+
+    <dl class="money-list">
+
+      <div class="money-row">
+
+        <dt>${esc(t('m_product_amount'))}</dt>
+
+        <dd>${esc(money(subtotal))}</dd>
+
+      </div>
+
+      <div class="money-row">
+
+        <dt>${esc(t('m_shipping_fee'))}</dt>
+
+        <dd>
+          ${shipping === 0
+            ? esc(t('m_free'))
+            : esc(money(shipping))}
+        </dd>
+
+      </div>
+
+      ${discount > 0 ? `
+        <div class="money-row">
+
+          <dt>${esc(t('m_discount_amount'))}</dt>
+
+          <dd class="m-pink">
+            −${esc(money(discount))}
+          </dd>
+
+        </div>
+      ` : ''}
+
+      <div class="money-row total">
+
+        <dt>${esc(t('m_total_payment'))}</dt>
+
+        <dd>${esc(money(total))}</dd>
+
+      </div>
+
+    </dl>
+
+  `,
+
+
+  /* ==================================================
+     07. ORDER COMPLETE
+  ================================================== */
+
+  orderComplete: ({
+    orderNo,
+    items = [],
+    customer = {},
+    bank = null,
+    subtotal = 0,
+    shipping = 0,
+    discount = 0,
+    total = 0
+  }) => `
+
+    <div class="complete-page">
+
+
+      <!-- ORDER CONFIRMATION -->
+      <div class="complete-heading">
+
+        <div class="complete-kicker">
+          ORDER RECEIVED
+        </div>
+
+        <h1>
+          ${esc(t('m_order_received_title'))}
+        </h1>
+
+        <p>
+          ${esc(t('m_order_received_desc'))}
+        </p>
+
+        <div class="order-number-box">
+
+          <span class="order-number-label">
+            ${esc(t('m_order_number'))}
+          </span>
+
+          <strong class="order-number">
+            ${esc(orderNo)}
+          </strong>
+
+        </div>
+
+      </div>
+
+
+      <!-- BANK TRANSFER DETAILS -->
+      ${bank ? `
+
+        <section class="bank-box">
+
+          <h2>
+            ${esc(t('m_bank_info'))}
+          </h2>
+
+          <dl class="info-list">
+
+            <div class="info-row">
+
+              <dt>${esc(t('m_bank_name'))}</dt>
+
+              <dd>${esc(bank.name)}</dd>
+
+            </div>
+
+            <div class="info-row">
+
+              <dt>${esc(t('m_bank_account'))}</dt>
+
+              <dd class="bank-account">
+
+                <span id="bankAccount">
+                  ${esc(bank.account)}
+                </span>
+
+                <button
+                  type="button"
+                  class="copy-button"
+                  data-action="copy-account"
+                  data-value="${esc(bank.account)}">
+
+                  ${esc(t('m_copy'))}
+
+                </button>
+
+              </dd>
+
+            </div>
+
+            <div class="info-row">
+
+              <dt>${esc(t('m_account_holder'))}</dt>
+
+              <dd>${esc(bank.holder)}</dd>
+
+            </div>
+
+            <div class="info-row">
+
+              <dt>${esc(t('m_deposit_amount'))}</dt>
+
+              <dd class="m-pink">
+                ${esc(money(total))}
+              </dd>
+
+            </div>
+
+            ${bank.deadline ? `
+              <div class="info-row">
+
+                <dt>${esc(t('m_deposit_deadline'))}</dt>
+
+                <dd>${esc(bank.deadline)}</dd>
+
+              </div>
+            ` : ''}
+
+          </dl>
+
+          <p class="bank-notice">
+
+            ${esc(t('m_bank_transfer_notice'))}
+
+            ${bank.notice ? `
+              <span>${esc(bank.notice)}</span>
+            ` : ''}
+
+          </p>
+
+        </section>
+
+      ` : ''}
+
+
+      <!-- ORDER DETAILS -->
+      <section class="complete-order">
+
+        <h2 class="block-title">
+          ${esc(t('m_order_details'))}
+        </h2>
+
+        ${items
+          .map(item => MALL_UI.orderItem(item))
+          .join('')}
+
+        ${MALL_UI.moneySummary({
+          subtotal,
+          shipping,
+          discount,
+          total
+        })}
+
+      </section>
+
+
+      <!-- DELIVERY INFORMATION -->
+      ${customer.name ? `
+        <section class="checkout-block">
+
+          <h2 class="block-title">
+            ${esc(t('m_shipping_address'))}
+          </h2>
+
+          <dl class="info-list">
+
+            <div class="info-row">
+
+              <dt>${esc(t('m_name'))}</dt>
+
+              <dd>${esc(customer.name)}</dd>
+
+            </div>
+
+            <div class="info-row">
+
+              <dt>${esc(t('m_phone'))}</dt>
+
+              <dd>${esc(customer.phone || '')}</dd>
+
+            </div>
+
+            <div class="info-row">
+
+              <dt>${esc(t('m_address'))}</dt>
+
+              <dd>
+
+                ${esc(customer.countryLabel || '')}
+                ${esc(customer.postcode || '')}
+                ${esc(customer.address || '')}
+                ${esc(customer.address2 || '')}
+
+              </dd>
+
+            </div>
+
+          </dl>
+
+        </section>
+      ` : ''}
+
+
+      <!-- COMPLETION ACTIONS -->
+      <div class="complete-actions">
+
+        <a class="btn btn-outline btn-lg"
+           href="#home">
+
+          ${esc(t('m_continue_shopping'))}
+
+        </a>
+
+        <a class="btn btn-black btn-lg"
+           href="#orders"
+           data-order-no="${esc(orderNo)}">
+
+          ${esc(t('m_orders'))}
+
+        </a>
+
+      </div>
+
+    </div>
+  `,
+
+
+  /* ==================================================
+     08. ORDER LOOKUP
+  ================================================== */
+
+  orderLookup: ({
+    orderNo = '',
+    email = '',
+    result = null,
+    error = ''
+  } = {}) => `
+
+    <div class="lookup-page">
+
+      ${MALL_UI.backLink({
+        href: '#home',
+        label: t('m_home')
+      })}
+
+
+      <div class="lookup-head">
+
+        <h1 class="page-title">
+          ${esc(t('m_orders'))}
+        </h1>
+
+        <p>
+          ${esc(t('m_order_lookup_desc'))}
+        </p>
+
+      </div>
+
+
+      <!-- LOOKUP FORM -->
+      <form id="olForm"
+            class="lookup-form">
+
+        <div class="form-field">
+
+          <label for="olOrderNo">
+            ${esc(t('m_order_number'))}
+          </label>
+
+          <input
+            class="inp"
+            type="text"
+            id="olOrderNo"
+            name="orderNo"
+            value="${esc(orderNo)}"
+            placeholder="${esc(t('m_order_number_placeholder'))}"
+            autocomplete="off"
+            autocapitalize="characters"
+            maxlength="100"
+            required>
+
+        </div>
+
+
+        <div class="form-field">
+
+          <label for="olEmail">
+            ${esc(t('m_order_email'))}
+          </label>
+
+          <input
+            class="inp"
+            type="email"
+            id="olEmail"
+            name="email"
+            value="${esc(email)}"
+            placeholder="example@email.com"
+            autocomplete="email"
+            maxlength="254"
+            required>
+
+        </div>
+
+
+        ${error ? `
+          <p class="lookup-error" role="alert">
+            ${esc(error)}
+          </p>
+        ` : ''}
+
+
+        <button
+          type="submit"
+          class="btn btn-black btn-lg btn-block">
+
+          ${esc(t('m_find_order'))}
+
+        </button>
+
+      </form>
+
+
+      <!-- SEARCH RESULT -->
+      <div id="olResult"
+           aria-live="polite">
+
+        ${result
+          ? MALL_UI.orderLookupResult(result)
+          : ''}
+
+      </div>
+
+    </div>
+  `,
+
+
+  /* ------------------------------------------------
+     ORDER LOOKUP RESULT
+
+     Normal status values:
+     received
+     paid
+     preparing
+     shipped
+     delivered
+
+     Exception states:
+     cancelled
+     refunded
+  ------------------------------------------------ */
+
+  orderLookupResult: (order) => `
+
+    <article class="lookup-result">
+
+
+      <div class="lookup-result-head">
+
+        <strong>
+          ${esc(order.orderNo)}
+        </strong>
+
+        <span class="lookup-order-date">
+          ${esc(order.createdAtLabel || '')}
+        </span>
+
+      </div>
+
+
+      <h2 class="lookup-status-text">
+        ${esc(t(`m_status_${order.status}`))}
+      </h2>
+
+
+      ${[
+        'received',
+        'paid',
+        'preparing',
+        'shipped',
+        'delivered'
+      ].includes(order.status) ? `
+
+        ${MALL_UI.orderStatus(order.status)}
+
+      ` : `
+
+        <p class="field-help"
+           style="margin:12px 0 24px">
+
+          ${esc(order.statusNote || '')}
+
+        </p>
+
+      `}
+
+
+      <!-- TRACKING INFORMATION -->
+      ${order.trackingNo ? `
+
+        <div class="tracking-box">
+
+          <dl class="info-list">
+
+            <div class="info-row">
+
+              <dt>
+                ${esc(t('m_carrier'))}
+              </dt>
+
+              <dd>
+                ${esc(order.carrier || '')}
+              </dd>
+
+            </div>
+
+            <div class="info-row">
+
+              <dt>
+                ${esc(t('m_tracking_number'))}
+              </dt>
+
+              <dd class="bank-account">
+
+                <span>
+                  ${esc(order.trackingNo)}
+                </span>
+
+                <button
+                  type="button"
+                  class="copy-button"
+                  data-action="copy-tracking"
+                  data-value="${esc(order.trackingNo)}">
+
+                  ${esc(t('m_copy'))}
+
+                </button>
+
+              </dd>
+
+            </div>
+
+          </dl>
+
+
+          ${order.trackingUrl ? `
+            <a
+              class="btn btn-outline btn-block"
+              style="margin-top:12px"
+              href="${esc(order.trackingUrl)}"
+              target="_blank"
+              rel="noopener noreferrer">
+
+              ${esc(t('m_track_delivery'))}
+
+            </a>
+          ` : ''}
+
+        </div>
+
+      ` : ''}
+
+
+      <!-- ORDER ITEM LIST -->
+      <section>
+
+        <h3 class="block-title">
+          ${esc(t('m_order_products'))}
+        </h3>
+
+        ${(order.items || [])
+          .map(item => MALL_UI.orderItem(item))
+          .join('')}
+
+      </section>
+
+      <hr class="m-divider">
+
+      ${MALL_UI.moneySummary({
+        subtotal: order.subtotal,
+        shipping: order.shipping,
+        discount: order.discount,
+        total: order.total
+      })}
+
+    </article>
+  `,
+
+
+  /* ------------------------------------------------
+     ORDER STATUS TRACKER
+  ------------------------------------------------ */
+
+  orderStatus: (status) => `
+
+    <ol class="order-status"
+        aria-label="${esc(t('m_order_status'))}">
+
+      ${[
+        'received',
+        'paid',
+        'preparing',
+        'shipped',
+        'delivered'
+      ].map((step, i, steps) => {
+
+        const current = steps.indexOf(status);
+
+        return `
+          <li
+            class="status-step
+              ${i < current ? 'done' : ''}
+              ${i === current ? 'current' : ''}"
+            ${i === current ? 'aria-current="step"' : ''}>
+
+            <span class="status-dot"
+                  aria-hidden="true">
+
+              ${i < current ? '✓' : i + 1}
+
+            </span>
+
+            <span class="status-label">
+              ${esc(t(`m_status_${step}`))}
+            </span>
+
+          </li>
+        `;
+
+      }).join('')}
+
+    </ol>
+  `
+
+};
+/* ===== mall controller ===== */
+const L=['ko','en','zh','ja','vi'];
+let lang='ko';
+try{const s=localStorage.getItem('kj_lang');if(L.includes(s))lang=s;else{const n=(navigator.language||'ko').slice(0,2);if(L.includes(n))lang=n}}catch(e){}
+const t=k=>{const a=I18N[k];if(!a)return k;return a[L.indexOf(lang)]||a[1]||a[0]};
+const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const $=s=>document.querySelector(s);
+const okUrl=u=>/^https:\/\//i.test(String(u||''));
+const imgSrc=u=>{u=String(u||'');return okUrl(u)||/^img\/[a-z0-9-]+\.(jpg|png|webp)$/i.test(u)?u:''};
+let cur='KRW';try{const c=localStorage.getItem('kj_cur');if(c==='KRW'||c==='JPY')cur=c;else if(lang==='ja')cur='JPY'}catch(e){}
+const money=v=>{const n=Number(v)||0;try{return new Intl.NumberFormat(cur==='JPY'?'ja-JP':'ko-KR',{style:'currency',currency:cur,maximumFractionDigits:0}).format(n)}catch(e){return (cur==='JPY'?'¥':'₩')+Math.round(n)}};
+const fmtDate=ms=>{try{return new Intl.DateTimeFormat({ko:'ko-KR',en:'en-US',zh:'zh-CN',ja:'ja-JP',vi:'vi-VN'}[lang],{year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit'}).format(new Date(ms))}catch(e){return new Date(ms).toISOString().slice(0,16)}};
+const toast=m=>{const el=$('#toast');el.textContent=m;el.classList.add('on');clearTimeout(toast.h);toast.h=setTimeout(()=>el.classList.remove('on'),2200)};
+const copyText=async x=>{try{await navigator.clipboard.writeText(x);toast(t('m_copied'))}catch(e){}};
+const textHtml=s=>esc(s||'').replace(/\n/g,'<br>');
+
+const SB_URL='https://eqsswegpkkyiargzggug.supabase.co',SB_KEY='sb_publishable_5uTiEe3t4tbkbHyvWZfaig_0PIAmMJt';
+let sb=null;try{if(window.supabase)sb=window.supabase.createClient(SB_URL,SB_KEY,{auth:{persistSession:false}})}catch(e){sb=null}
+
+let rows=[],cfg={},loaded=false,state={cat:'all',q:'',sort:'recommended'},detail={id:null,img:0,qty:1,opts:{},tab:'description'},lastOrder=null,olState={orderNo:'',email:'',result:null,error:''};
+
+/* --- product model --- */
+const CATS=['beauty','fashion','food','health','living','kids','tech','hobby','etc'];
+const G={beauty:["뷰티","Beauty","美妆","ビューティー","Làm đẹp"],fashion:["패션","Fashion","服饰","ファッション","Thời trang"],food:["식품","Food","食品","食品","Thực phẩm"],health:["건강","Health","健康","健康","Sức khỏe"],living:["리빙","Home","家居","リビング","Nhà cửa"],kids:["키즈","Kids","母婴","キッズ","Mẹ & bé"],tech:["디지털","Tech","数码","デジタル","Điện tử"],hobby:["굿즈","Goods","周边","グッズ","Đồ sưu tầm"],etc:["기타","Other","其他","その他","Khác"]};
+const gname=c=>(G[c]||[c])[L.indexOf(lang)]||c;
+function parseOptions(s){
+ return String(s||'').split('|').map((g,i)=>{const [n,v]=g.split(':');if(!v)return null;const vals=v.split(',').map(x=>x.trim()).filter(Boolean);return vals.length?{id:'o'+i,name:n.trim(),required:true,values:vals.map(x=>({id:x,name:x}))}:null}).filter(Boolean);
+}
+const soldLabel=n=>{n=+n||0;if(!n)return '';let s;if(lang==='ko'||lang==='ja'||lang==='zh'){s=n>=10000?(Math.round(n/1000)/10)+(lang==='ko'?'만':'万'):n.toLocaleString()}else{s=n>=1000?(Math.round(n/100)/10)+'K':String(n)}return t('m_sold_fmt').replace('{n}',s)};
+function toP(r){
+ const price=cur==='JPY'?r.price_jpy:r.price_krw,list=cur==='JPY'?r.list_price_jpy:r.list_price_krw;
+ const imgs=[r.img_url,...(Array.isArray(r.images)?r.images:[])].map(imgSrc).filter(Boolean);
+ const disc=list>price&&price>0?Math.round((1-price/list)*100):0;
+ return {id:r.id,name:r.name,brand:r.brand||'',category:r.category||'etc',section:r.section||'',
+  image:imgs[0]||'',images:imgs.length?imgs:[''],price:+price||0,originalPrice:+list||0,discount:disc,
+  rating:r.rating||null,reviewCount:null,sold:+r.sold||0,soldLabel:soldLabel(r.sold),freeShipping:!!r.free_ship,sample:!!r.sample,live:!!r.live,coupon:false,
+  stock:r.stock==null?null:+r.stock,options:parseOptions(r.options),tiktokUrl:okUrl(r.tts_url)?r.tts_url:'',
+  description:r.descr||'',safeDescriptionHtml:textHtml(r.detail||r.descr||''),safeShippingHtml:textHtml(cfg.shipNote||t('m_ship_note')),safeReturnHtml:textHtml(cfg.returnNote||t('m_return_note')),
+  shippingNote:t('m_shipping_at_checkout'),returnNote:t('m_return_note'),origin:'',deliveryEstimate:'',detailImages:[],sort:+r.sort||0,updated:Date.parse(r.updated_at)||0,
+  hasPrice:price!=null&&price!==''};
+}
+const prods=()=>rows.map(toP).filter(p=>p.hasPrice);
+const byId=id=>prods().find(p=>String(p.id)===String(id));
+function sortList(a,sort){a=a.slice();if(sort==='bestselling')a.sort((x,y)=>y.sold-x.sold);else if(sort==='price_asc')a.sort((x,y)=>x.price-y.price);else if(sort==='price_desc')a.sort((x,y)=>y.price-x.price);else a.sort((x,y)=>x.sort-y.sort||y.sold-x.sold);return a}
+
+/* --- cart --- */
+const CK='kj_cart';
+const loadCart=()=>{try{const a=JSON.parse(localStorage.getItem(CK)||'[]');return Array.isArray(a)?a.filter(x=>x&&x.productId&&x.qty>0):[]}catch(e){return[]}};
+const saveCart=a=>{try{localStorage.setItem(CK,JSON.stringify(a.slice(0,50)))}catch(e){};renderCart()};
+function cartLines(){return loadCart().map(l=>{const p=byId(l.productId);return p?{lineId:l.lineId,productId:p.id,name:p.name,image:p.image,optionLabel:l.optionLabel||'',qty:l.qty,unitPrice:p.price,maxQty:p.stock==null?999:Math.max(1,p.stock)}:null}).filter(Boolean)}
+function addToCart(p,qty,optLabel){const a=loadCart();const key=p.id+'|'+optLabel;const ex=a.find(x=>x.lineId===key);if(ex)ex.qty=Math.min(999,ex.qty+qty);else a.push({lineId:key,productId:p.id,optionLabel:optLabel,qty});saveCart(a)}
+function renderCart(){const items=cartLines();const n=items.reduce((s,x)=>s+x.qty,0);$('#cartCount').textContent=n;$('#cartBody').innerHTML=MALL_UI.cartBody({items});$('#cartFoot').innerHTML=MALL_UI.cartFoot({subtotal:items.reduce((s,x)=>s+x.unitPrice*x.qty,0),itemCount:n})}
+function openCart(o){const d=$('#cartDrawer'),s=$('#cartShade');d.classList.toggle('on',o);s.classList.toggle('on',o);d.setAttribute('aria-hidden',!o);if(o)d.removeAttribute('inert');else d.setAttribute('inert','');$('#cartBtn').setAttribute('aria-expanded',o)}
+
+/* --- shipping --- */
+function shipFor(sub){const fee=+(cur==='JPY'?cfg.shipJPY:cfg.shipKRW)||0;const free=cur==='JPY'?cfg.freeOverJPY:cfg.freeOverKRW;return free!=null&&free!==''&&sub>=+free?0:fee}
+
+/* --- views --- */
+function renderCats(){
+ const cats=['all','deals','popular','live','new',...CATS.filter(c=>prods().some(p=>p.category===c))];
+ $('#mCats').innerHTML=cats.map(c=>MALL_UI.categoryChip({id:c,name:['all','deals','popular','live','new'].includes(c)?t('m_cat_'+c):gname(c),active:state.cat===c&&/^#(cat-|$)/.test(location.hash||'#')})).join('');
+}
+function previewBar(){return cfg.mallOpen?'':`<div class="m-preview">${esc(t('m_preview'))}</div>`}
+function viewHome(){
+ const ps=prods();
+ const deals=sortList(ps.filter(p=>p.discount>0||p.section==='deal'),'recommended').slice(0,10);
+ const popular=sortList(ps,'bestselling').slice(0,10);
+ const arrivals=ps.slice().sort((a,b)=>b.updated-a.updated).slice(0,10);
+ const liveStreams=[['img/creator.jpg','m_live1','24.1K'],['img/host-jp.jpg','m_live2','8.6K'],['img/creator2.jpg','m_live3','12.3K']].map(([image,k,v],i)=>({id:'live'+i,image,title:t(k),host:t('m_host'),viewers:v,href:'#cat-live'}));
+ const end=new Date();end.setHours(23,59,59,999);
+ $('#mView').innerHTML=previewBar()+(loaded&&!ps.length?`<div class="m-preview">${esc(t('m_no_results'))}</div>`:'')+MALL_UI.home({deals,popular,arrivals,liveStreams,dealTime:end.getTime(),promotion:null});
+ tickClock();
+}
+function catTitle(c){return ['all','deals','popular','live','new'].includes(c)?t('m_cat_'+c):gname(c)}
+function viewCat(){
+ let ps=prods();const c=state.cat;
+ if(c==='deals')ps=ps.filter(p=>p.discount>0||p.section==='deal');else if(c==='live')ps=ps.filter(p=>p.live);else if(c==='new')ps=ps.slice().sort((a,b)=>b.updated-a.updated).slice(0,40);else if(c==='popular')ps=sortList(ps,'bestselling');else if(c!=='all')ps=ps.filter(p=>p.category===c);
+ const q=state.q.trim().toLowerCase();if(q)ps=ps.filter(p=>(p.name+' '+p.brand+' '+p.description).toLowerCase().includes(q));
+ if(!(c==='popular'&&state.sort==='recommended'))ps=sortList(ps,state.sort);
+ $('#mView').innerHTML=previewBar()+MALL_UI.catalog({title:catTitle(c),query:state.q,categoryId:c,sort:state.sort,total:ps.length,products:ps});
+}
+function viewDetail(id){
+ const p=byId(id);if(!p){if(loaded){location.hash='#home'}else $('#mView').innerHTML='';return}
+ if(detail.id!==p.id)detail={id:p.id,img:0,qty:1,opts:{},tab:'description'};
+ const related=prods().filter(x=>x.id!==p.id&&x.category===p.category).concat(prods().filter(x=>x.id!==p.id&&x.category!==p.category)).slice(0,8);
+ $('#mView').innerHTML=previewBar()+MALL_UI.productDetail({product:p,related,activeImage:detail.img,qty:detail.qty,selectedOptions:detail.opts,backHref:'#cat-'+(state.cat||'all'),activeTab:detail.tab});
+}
+function checkoutData(){const items=cartLines().map(i=>({...i}));const subtotal=items.reduce((s,x)=>s+x.unitPrice*x.qty,0);const shipping=items.length?shipFor(subtotal):0;return {items,subtotal,shipping,discount:0,total:subtotal+shipping}}
+function viewCheckout(){
+ const d=checkoutData();if(!d.items.length){location.hash='#home';openCart(true);return}
+ let saved={};try{saved=JSON.parse(localStorage.getItem('kj_customer')||'{}')||{}}catch(e){}
+ const countries=[['KR','대한민국 · Korea'],['JP','日本 · Japan'],['CN','中国 · China'],['TW','台灣 · Taiwan'],['HK','香港 · Hong Kong'],['VN','Việt Nam'],['TH','Thailand'],['US','United States'],['OT','Other']].map(([code,name])=>({code,name}));
+ $('#mView').innerHTML=previewBar()+MALL_UI.checkout({...d,customer:{country:cur==='JPY'?'JP':'KR',...saved},countries,allowPostalLookup:false,privacyUrl:''});
+ if(!cfg.mallOpen){const b=$('#coSubmit');if(b){b.disabled=true}}
+}
+function viewDone(){
+ if(!lastOrder){location.hash='#orders';return}
+ const o=lastOrder;const bank=cfg.bankName||cfg.bankAccount?{name:cfg.bankName||'',account:cfg.bankAccount||'',holder:cfg.bankHolder||'',deadline:cfg.bankDeadline||t('m_deadline_val'),notice:t('m_bank_transfer_notice')}:{name:'',account:'',holder:'',deadline:t('m_deadline_val'),notice:t('m_bank_pending')};
+ $('#mView').innerHTML=MALL_UI.orderComplete({orderNo:o.id,items:o.items,customer:o.customer,bank,subtotal:o.subtotal,shipping:o.shipping,discount:0,total:o.total});
+}
+function viewOrders(){$('#mView').innerHTML=MALL_UI.orderLookup(olState)}
+
+function route(){
+ const h=decodeURIComponent(location.hash.slice(1)||'home');
+ if(h==='home'||h==='')viewHome();
+ else if(h.startsWith('cat-')){const c=h.slice(4);if(c!==state.cat){state.cat=c;state.sort='recommended'}viewCat()}
+ else if(h.startsWith('p-'))viewDetail(h.slice(2));
+ else if(h==='checkout')viewCheckout();
+ else if(h==='done')viewDone();
+ else if(h==='orders')viewOrders();
+ else if(h==='live-section'){viewHome();setTimeout(()=>{const el=document.getElementById('live-section');if(el)el.scrollIntoView()},50)}
+ else viewHome();
+ renderCats();
+ if(!h.startsWith('p-')||true)window.scrollTo({top:0});
+}
+function tickClock(){const el=$('#dealClock');if(!el)return;clearInterval(tickClock.h);const f=()=>{const e=new Date();e.setHours(23,59,59,999);let s=Math.max(0,Math.floor((e-Date.now())/1000));const hh=String(Math.floor(s/3600)).padStart(2,'0'),mm=String(Math.floor(s%3600/60)).padStart(2,'0'),ss=String(s%60).padStart(2,'0');el.textContent=`${hh}:${mm}:${ss}`};f();tickClock.h=setInterval(()=>{if(!document.body.contains(el))return clearInterval(tickClock.h);f()},1000)}
+
+/* --- i18n static --- */
+function applyStatic(){
+ document.documentElement.lang=lang;
+ document.querySelectorAll('[data-i]').forEach(el=>{el.textContent=t(el.dataset.i)});
+ document.querySelectorAll('[data-i-placeholder]').forEach(el=>{el.placeholder=t(el.dataset.iPlaceholder)});
+ $('#langSel').value=lang;$('#curSel').value=cur;
+ document.title='TikTok Shop KR·JP';
+ const rowsF=[];const b=cfg.brand||'KJ SHOPLINK';rowsF.push(b);if(cfg.company)rowsF.push(cfg.company);if(cfg.email)rowsF.push('Email : '+cfg.email);if(cfg.phone)rowsF.push('Tel : '+cfg.phone);
+ $('#mFootInfo').innerHTML=rowsF.map(x=>`<p style="white-space:pre-line">${esc(x)}</p>`).join('');
+}
+
+/* --- events --- */
+document.addEventListener('click',async e=>{
+ const a=e.target.closest('[data-action]');if(!a)return;
+ const act=a.dataset.action,id=a.dataset.id;
+ if(act==='category'){e.preventDefault();state.q='';$('#mSearch').value='';location.hash='#cat-'+id}
+ else if(act==='search'){doSearch()}
+ else if(act==='cart-close'||act==='cart-product'){openCart(false)}
+ else if(act==='cart-browse'){openCart(false);location.hash='#cat-all'}
+ else if(act==='checkout'){openCart(false);location.hash='#checkout'}
+ else if(act==='checkout-back'){e.preventDefault();openCart(true)}
+ else if(act==='cart-remove'){saveCart(loadCart().filter(x=>x.lineId!==id))}
+ else if(act==='qty-minus'||act==='qty-plus'){const d=act==='qty-plus'?1:-1;if(a.dataset.scope==='cart'){const c=loadCart();const l=c.find(x=>x.lineId===id);if(l){l.qty=Math.max(1,Math.min(999,l.qty+d));saveCart(c)}if(location.hash==='#checkout')viewCheckout()}else{const p=byId(detail.id);const max=p&&p.stock!=null?Math.max(1,p.stock):999;detail.qty=Math.max(1,Math.min(max,detail.qty+d));viewDetailKeep()}}
+ else if(act==='gallery-image'){detail.img=+a.dataset.index||0;viewDetailKeep()}
+ else if(act==='detail-tab'){detail.tab=a.dataset.tab;viewDetailKeep()}
+ else if(act==='add-to-cart'||act==='buy-now'){const p=byId(detail.id||id);if(!p)return;const miss=p.options.find(o=>!detail.opts[o.id]);if(miss){toast(t('m_err_option'));const s=document.getElementById('opt-'+miss.id);if(s)s.focus();return}const label=p.options.map(o=>o.name+': '+detail.opts[o.id]).join(' / ');addToCart(p,detail.qty,label);if(act==='buy-now')location.hash='#checkout';else{toast(t('m_added'));openCart(true)}}
+ else if(act==='hero-slide'){const s=$('#heroSlider');if(s){const i=+a.dataset.index||0;s.scrollTo({left:s.clientWidth*i,behavior:'smooth'})}}
+ else if(act==='scroll-live'){e.preventDefault();const el=document.getElementById('live-section');if(el)el.scrollIntoView({behavior:'smooth'})}
+ else if(act==='copy-account'){copyText(cfg.bankAccount||'')}
+ else if(act==='copy-tracking'){copyText(a.dataset.value||a.textContent.trim())}
+});
+function viewDetailKeep(){const y=window.scrollY;viewDetail(detail.id);window.scrollTo({top:y})}
+document.addEventListener('change',e=>{
+ const a=e.target.closest('[data-action]');if(!a)return;
+ if(a.dataset.action==='sort'){state.sort=a.value;viewCat()}
+ if(a.dataset.action==='product-option'){detail.opts[a.dataset.optionId]=a.value}
+});
+document.addEventListener('scroll',e=>{const s=e.target;if(s&&s.id==='heroSlider'){const i=Math.round(s.scrollLeft/Math.max(1,s.clientWidth));document.querySelectorAll('.hero-dot').forEach((d,k)=>{d.classList.toggle('active',k===i);d.setAttribute('aria-current',k===i)})}},true);
+function doSearch(){state.q=$('#mSearch').value.trim();state.cat='all';if(location.hash==='#cat-all')viewCat();else location.hash='#cat-all'}
+$('#mSearch').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();doSearch()}});
+$('#cartBtn').onclick=()=>openCart(!$('#cartDrawer').classList.contains('on'));
+$('#cartShade').onclick=()=>openCart(false);
+document.addEventListener('keydown',e=>{if(e.key==='Escape')openCart(false)});
+$('#langSel').onchange=e=>{lang=e.target.value;try{localStorage.setItem('kj_lang',lang)}catch(_){};applyStatic();renderCart();route()};
+$('#curSel').onchange=e=>{cur=e.target.value;try{localStorage.setItem('kj_cur',cur)}catch(_){};renderCart();route()};
+window.addEventListener('hashchange',route);
+const newOrderId=()=>{const d=new Date();const p=n=>String(n).padStart(2,'0');const r=crypto.getRandomValues(new Uint32Array(1))[0].toString(36).toUpperCase().padStart(6,'0').slice(0,6);return 'OD'+String(d.getFullYear()).slice(2)+p(d.getMonth()+1)+p(d.getDate())+'-'+r};
+document.addEventListener('submit',async e=>{
+ if(e.target.id==='coForm'){
+  e.preventDefault();const f=e.target;let bad=false;
+  f.querySelectorAll('[required]').forEach(el=>{const v=el.type==='checkbox'||el.type==='radio'?(el.type==='checkbox'?el.checked:!!f.querySelector(`[name="${el.name}"]:checked`)):el.value.trim();const b=!v||(el.type==='email'&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(el.value));el.classList.toggle('bad',b);el.setAttribute('aria-invalid',b);if(b)bad=true});
+  if(bad){toast(t('m_err_required'));const fb=f.querySelector('.bad');if(fb)fb.focus();return}
+  if(!cfg.mallOpen){toast(t('m_preview'));return}
+  const g=n=>(f.querySelector(`[name="${n}"]`)||{}).value?.trim()||'';
+  const customer={name:g('name'),phone:g('phone'),email:g('email').toLowerCase(),country:g('country'),postcode:g('postcode'),address:g('address'),address2:g('address2'),note:g('note')};
+  try{localStorage.setItem('kj_customer',JSON.stringify({...customer,note:''}))}catch(_){}
+  const lines=cartLines();const row={id:newOrderId(),currency:cur,lang,name:customer.name,phone:customer.phone,email:customer.email,country:customer.country,zip:customer.postcode,addr1:customer.address,addr2:customer.address2,note:customer.note,items:lines.map(l=>({id:l.productId,qty:l.qty,option:l.optionLabel}))};
+  const btn=$('#coSubmit');if(btn)btn.disabled=true;
+  let ok=false;try{const {error}=await sb.from('tts_orders').insert(row);ok=!error}catch(err){ok=false}
+  if(btn)btn.disabled=false;
+  if(!ok){toast(t('m_err_order'));return}
+  const d=checkoutData();lastOrder={id:row.id,items:d.items,customer:{...customer,countryLabel:customer.country},subtotal:d.subtotal,shipping:d.shipping,total:d.total};
+  try{const my=JSON.parse(localStorage.getItem('kj_orders')||'[]');my.push({id:row.id,email:customer.email});localStorage.setItem('kj_orders',JSON.stringify(my.slice(-30)))}catch(_){}
+  saveCart([]);location.hash='#done';
+ }
+ if(e.target.id==='olForm'){
+  e.preventDefault();const f=e.target;const no=(f.querySelector('#olOrderNo')||{}).value?.trim().toUpperCase()||'',em=(f.querySelector('#olEmail')||{}).value?.trim()||'';
+  olState={orderNo:no,email:em,result:null,error:''};
+  if(!no||!em){olState.error=t('m_err_required');return viewOrders()}
+  try{const {data,error}=await sb.rpc('tts_order_status',{p_id:no,p_email:em});if(error||!data||!data.length)olState.error=t('m_not_found');else{const o=data[0];const st={new:'received',paid:'paid',preparing:'preparing',shipping:'shipped',delivered:'delivered',cancelled:'cancelled'}[o.status]||'received';const c0=cur;cur=o.currency||cur;olState.result={orderNo:o.id,status:st,statusNote:'',createdAtLabel:fmtDate(Date.parse(o.created_at)),items:(o.items||[]).map(i=>({lineId:i.id,productId:i.id,name:i.name,image:imgSrc(i.img),optionLabel:i.option||'',qty:i.qty,unitPrice:+i.price})),subtotal:+o.subtotal,shipping:+o.shipping,discount:0,total:+o.total,trackingNo:o.tracking||'',carrier:'',trackingUrl:''};viewOrders();cur=c0;return}}catch(err){olState.error=t('m_err_order')}
+  viewOrders();
+ }
+});
+
+/* --- boot --- */
+applyStatic();renderCart();route();
+(async()=>{
+ if(!sb){loaded=true;route();return}
+ try{const [{data:c},{data:r}]=await Promise.all([sb.from('tts_config').select('data').eq('id',1).maybeSingle(),sb.from('tts_catalog').select('*').eq('mall',true).order('sort',{ascending:true})]);cfg=c&&c.data?c.data:{};rows=r||[]}catch(e){}
+ loaded=true;applyStatic();renderCart();route();
+})();
+
+}
+</script>
+</body>
+</html>
